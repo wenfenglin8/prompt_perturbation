@@ -1,0 +1,16 @@
+base_case_id,task,n_levels,spearman_strength_to_similarity,spearman_strength_to_corrected_drift,spearman_strength_to_abs_correctness_change,spearman_similarity_to_abs_correctness_change
+rq2_dose_humaneval_01,code_generation,5,-0.9,0.0,,
+rq2_dose_humaneval_02,code_generation,5,-0.7,-0.11180339887498948,,
+rq2_dose_humaneval_03,code_generation,5,-0.872081599272381,0.872081599272381,,
+rq2_dose_humaneval_04,code_generation,5,-0.6,0.7071067811865475,0.8944271909999159,-0.8944271909999159
+rq2_dose_humaneval_05,code_generation,5,-0.1,-0.10259783520851541,,
+rq2_dose_math_01,math_reasoning,5,-0.7,,0.7905694150420948,-0.6324555320336759
+rq2_dose_math_02,math_reasoning,5,-0.8,0.35355339059327373,0.5773502691896257,0.0
+rq2_dose_math_03,math_reasoning,5,-0.9,,,
+rq2_dose_math_04,math_reasoning,5,-0.9,0.8944271909999159,-0.35355339059327373,0.0
+rq2_dose_math_05,math_reasoning,5,-0.9,0.7,0.4743416490252569,-0.7905694150420948
+rq2_dose_squad_01,factual_qa,5,,,,
+rq2_dose_squad_02,factual_qa,5,-0.3,,0.8660254037844386,-0.28867513459481287
+rq2_dose_squad_03,factual_qa,5,-0.15389675281277312,,0.8660254037844386,0.29617443887954614
+rq2_dose_squad_04,factual_qa,5,-0.5642880936468347,0.35355339059327373,,
+rq2_dose_squad_05,factual_qa,5,-0.8944271909999159,0.7071067811865475,,

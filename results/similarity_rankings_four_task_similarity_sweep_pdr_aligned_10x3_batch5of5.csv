@@ -1,0 +1,5 @@
+task,rank,perturbation,noise_corrected_drift,raw_perturbation_drift
+factual_qa,1,surface_noise,0.00975379982480836,0.03506617186098942
+math_reasoning,1,surface_noise,0.011120774763495165,0.0616424776009637
+code_generation,1,surface_noise,0.028764274210482808,0.06050751477313203
+open_ended_writing,1,surface_noise,0.026548439560861777,0.11835808115791409

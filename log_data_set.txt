@@ -1,0 +1,98 @@
+Question: Among the five reference papers, which datasets match the four task types required by the proposal?
+
+Summary:
+
+According to the proposal, the four required task types are:
+
+1. factual question answering
+2. mathematical reasoning
+3. code generation
+4. open-ended writing / open-ended generation
+
+Among the five reference papers, the closest usable dataset sources are:
+
+| Reference paper | Dataset | Matching proposal task type | Suitability |
+|---|---|---|---|
+| PromptRobust | SQuAD V2 | factual QA | suitable |
+| PromptRobust | Mathematics / MATH | math reasoning | suitable |
+| POSIX | Alpaca | open-ended writing / open-ended generation | suitable |
+| POSIX | MMLU / BBH | factual QA / reasoning / multiple-choice reasoning | partly suitable |
+| Haase et al. | Alternative Uses Task, plastic bottle | open-ended creative writing | partly suitable |
+| What Did I Do Wrong? | TREC | QA-related, but actually question classification | weak fit |
+| What Did I Do Wrong? | CB, RTE, DBPedia, WoS | classification | not suitable for the four main tasks |
+| Enhancing LLM Robustness | CoLA, QNLI, SST-2 | classification / NLI | not suitable as main tasks; QNLI is only loosely QA-related |
+
+Detailed mapping:
+
+1. Factual QA
+
+Best match:
+
+- PromptRobust: SQuAD V2
+
+Partly related but not ideal:
+
+- Enhancing LLM Robustness: QNLI
+- What Did I Do Wrong?: TREC
+- POSIX: MMLU
+
+Reason:
+
+QNLI is a QA-style entailment task, TREC is question classification, and MMLU is multiple-choice knowledge evaluation. They are related to QA or knowledge, but they are not standard open factual QA in the same sense as SQuAD V2 or TriviaQA.
+
+2. Math Reasoning
+
+Best match:
+
+- PromptRobust: Mathematics / MATH
+
+Partly related:
+
+- POSIX: BBH
+- POSIX: MMLU
+
+Reason:
+
+BBH contains reasoning tasks and MMLU contains some math/science subjects, but neither is a dedicated math reasoning dataset in the same way as MATH.
+
+3. Code Generation
+
+No strong match among the five reference papers.
+
+Not found among the five papers:
+
+- HumanEval
+- MBPP
+- APPS
+- CodeContests
+
+Conclusion:
+
+The code generation task cannot be covered by the five current reference papers' datasets. The project should introduce an external code-generation benchmark such as HumanEval or MBPP.
+
+4. Open-ended Writing / Open-ended Generation
+
+Best match:
+
+- POSIX: Alpaca
+
+Partly related:
+
+- Haase et al.: Alternative Uses Task / plastic bottle creative task
+
+Reason:
+
+Alpaca is closer to general open-ended instruction following. Haase et al.'s AUT task is open-ended and creative, but it is narrower because it focuses on divergent idea generation for one object.
+
+Recommended dataset route for the project:
+
+- factual QA: PromptRobust / SQuAD V2
+- math reasoning: PromptRobust / MATH
+- code generation: external HumanEval or MBPP
+- open-ended writing: POSIX / Alpaca, or self-designed writing prompts
+
+If continuing with only the five current reference papers, the next most useful dataset to run is:
+
+- POSIX: Alpaca open-ended generation
+
+This would help cover the proposal's open-ended writing task type.

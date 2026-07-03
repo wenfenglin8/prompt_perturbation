@@ -1,0 +1,16 @@
+api.txt
+.env
+.env.*
+
+__pycache__/
+*.py[cod]
+
+.agents/
+.codex/
+
+~$*
+*.tmp
+*.log
+
+.DS_Store
+Thumbs.db

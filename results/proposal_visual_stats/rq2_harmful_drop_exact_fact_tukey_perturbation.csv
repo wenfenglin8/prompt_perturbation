@@ -1,0 +1,11 @@
+group1,group2,meandiff,p-adj,lower,upper,reject
+context_injection,formatting,0.0667,0.9384,-0.172,0.3053,False
+context_injection,paraphrase,0.1,0.7754,-0.1387,0.3387,False
+context_injection,reordering,-0.0333,0.9953,-0.272,0.2053,False
+context_injection,surface_noise,0.0,1.0,-0.2387,0.2387,False
+formatting,paraphrase,0.0333,0.9953,-0.2053,0.272,False
+formatting,reordering,-0.1,0.7754,-0.3387,0.1387,False
+formatting,surface_noise,-0.0667,0.9384,-0.3053,0.172,False
+paraphrase,reordering,-0.1333,0.5362,-0.372,0.1053,False
+paraphrase,surface_noise,-0.1,0.7754,-0.3387,0.1387,False
+reordering,surface_noise,0.0333,0.9953,-0.2053,0.272,False

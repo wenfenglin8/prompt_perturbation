@@ -1,0 +1,181 @@
+case_id,task,version,sample_idx,prompt,output
+posix_mmlu_01,mmlu_multiple_choice_reasoning,original,0,"Answer the following multiple-choice question. Choose the single best option and answer with the option letter only.
+
+Subject: abstract_algebra
+Question: Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.
+(A) 0
+(B) 4
+(C) 2
+(D) 6",(B) 4
+posix_mmlu_01,mmlu_multiple_choice_reasoning,original,1,"Answer the following multiple-choice question. Choose the single best option and answer with the option letter only.
+
+Subject: abstract_algebra
+Question: Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.
+(A) 0
+(B) 4
+(C) 2
+(D) 6",(B) 4
+posix_mmlu_01,mmlu_multiple_choice_reasoning,original,2,"Answer the following multiple-choice question. Choose the single best option and answer with the option letter only.
+
+Subject: abstract_algebra
+Question: Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.
+(A) 0
+(B) 4
+(C) 2
+(D) 6",(B) 4
+posix_mmlu_01,mmlu_multiple_choice_reasoning,perturbed,0,"For the question below, select the most appropriate answer choice. Reply using only one option letter.
+
+Subject area: abstract_algebra
+Problem: Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.
+(A) 0
+(B) 4
+(C) 2
+(D) 6",(B) 4
+posix_mmlu_01,mmlu_multiple_choice_reasoning,perturbed,1,"For the question below, select the most appropriate answer choice. Reply using only one option letter.
+
+Subject area: abstract_algebra
+Problem: Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.
+(A) 0
+(B) 4
+(C) 2
+(D) 6",(B) 4
+posix_mmlu_01,mmlu_multiple_choice_reasoning,perturbed,2,"For the question below, select the most appropriate answer choice. Reply using only one option letter.
+
+Subject area: abstract_algebra
+Problem: Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.
+(A) 0
+(B) 4
+(C) 2
+(D) 6",(B) 4
+posix_mmlu_02,mmlu_multiple_choice_reasoning,original,0,"Answer the following multiple-choice question. Choose the single best option and answer with the option letter only.
+
+Subject: abstract_algebra
+Question: Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.
+(A) 8
+(B) 2
+(C) 24
+(D) 120",(A) 8
+posix_mmlu_02,mmlu_multiple_choice_reasoning,original,1,"Answer the following multiple-choice question. Choose the single best option and answer with the option letter only.
+
+Subject: abstract_algebra
+Question: Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.
+(A) 8
+(B) 2
+(C) 24
+(D) 120",(A) 8
+posix_mmlu_02,mmlu_multiple_choice_reasoning,original,2,"Answer the following multiple-choice question. Choose the single best option and answer with the option letter only.
+
+Subject: abstract_algebra
+Question: Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.
+(A) 8
+(B) 2
+(C) 24
+(D) 120",(A) 8
+posix_mmlu_02,mmlu_multiple_choice_reasoning,perturbed,0,"For the question below, select the most appropriate answer choice. Reply using only one option letter.
+
+Subject area: abstract_algebra
+Problem: Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.
+(A) 8
+(B) 2
+(C) 24
+(D) 120",(A) 8
+posix_mmlu_02,mmlu_multiple_choice_reasoning,perturbed,1,"For the question below, select the most appropriate answer choice. Reply using only one option letter.
+
+Subject area: abstract_algebra
+Problem: Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.
+(A) 8
+(B) 2
+(C) 24
+(D) 120",(A) 8
+posix_mmlu_02,mmlu_multiple_choice_reasoning,perturbed,2,"For the question below, select the most appropriate answer choice. Reply using only one option letter.
+
+Subject area: abstract_algebra
+Problem: Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.
+(A) 8
+(B) 2
+(C) 24
+(D) 120",(A) 8
+posix_bbh_logical_deduction_01,bbh_logical_deduction,original,0,"Solve the following reasoning problem. Think carefully, then answer with the correct option only.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a blue jay, a quail, and a falcon. The falcon is to the right of the blue jay. The blue jay is to the right of the quail.
+Options:
+(A) The blue jay is the second from the left
+(B) The quail is the second from the left
+(C) The falcon is the second from the left",(A) The blue jay is the second from the left
+posix_bbh_logical_deduction_01,bbh_logical_deduction,original,1,"Solve the following reasoning problem. Think carefully, then answer with the correct option only.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a blue jay, a quail, and a falcon. The falcon is to the right of the blue jay. The blue jay is to the right of the quail.
+Options:
+(A) The blue jay is the second from the left
+(B) The quail is the second from the left
+(C) The falcon is the second from the left",(A) The blue jay is the second from the left
+posix_bbh_logical_deduction_01,bbh_logical_deduction,original,2,"Solve the following reasoning problem. Think carefully, then answer with the correct option only.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a blue jay, a quail, and a falcon. The falcon is to the right of the blue jay. The blue jay is to the right of the quail.
+Options:
+(A) The blue jay is the second from the left
+(B) The quail is the second from the left
+(C) The falcon is the second from the left",(A) The blue jay is the second from the left
+posix_bbh_logical_deduction_01,bbh_logical_deduction,perturbed,0,"Work out the logic problem below. After reasoning through it, provide only the correct choice.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a blue jay, a quail, and a falcon. The falcon is to the right of the blue jay. The blue jay is to the right of the quail.
+Options:
+(A) The blue jay is the second from the left
+(B) The quail is the second from the left
+(C) The falcon is the second from the left",(A) The blue jay is the second from the left.
+posix_bbh_logical_deduction_01,bbh_logical_deduction,perturbed,1,"Work out the logic problem below. After reasoning through it, provide only the correct choice.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a blue jay, a quail, and a falcon. The falcon is to the right of the blue jay. The blue jay is to the right of the quail.
+Options:
+(A) The blue jay is the second from the left
+(B) The quail is the second from the left
+(C) The falcon is the second from the left",(A) The blue jay is the second from the left
+posix_bbh_logical_deduction_01,bbh_logical_deduction,perturbed,2,"Work out the logic problem below. After reasoning through it, provide only the correct choice.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a blue jay, a quail, and a falcon. The falcon is to the right of the blue jay. The blue jay is to the right of the quail.
+Options:
+(A) The blue jay is the second from the left
+(B) The quail is the second from the left
+(C) The falcon is the second from the left",(A) The blue jay is the second from the left
+posix_bbh_logical_deduction_02,bbh_logical_deduction,original,0,"Solve the following reasoning problem. Think carefully, then answer with the correct option only.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are three vehicles: a motorcyle, a limousine, and a convertible. The motorcyle is newer than the limousine. The convertible is newer than the motorcyle.
+Options:
+(A) The motorcyle is the oldest
+(B) The limousine is the oldest
+(C) The convertible is the oldest",(B) The limousine is the oldest
+posix_bbh_logical_deduction_02,bbh_logical_deduction,original,1,"Solve the following reasoning problem. Think carefully, then answer with the correct option only.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are three vehicles: a motorcyle, a limousine, and a convertible. The motorcyle is newer than the limousine. The convertible is newer than the motorcyle.
+Options:
+(A) The motorcyle is the oldest
+(B) The limousine is the oldest
+(C) The convertible is the oldest",(B) The limousine is the oldest
+posix_bbh_logical_deduction_02,bbh_logical_deduction,original,2,"Solve the following reasoning problem. Think carefully, then answer with the correct option only.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are three vehicles: a motorcyle, a limousine, and a convertible. The motorcyle is newer than the limousine. The convertible is newer than the motorcyle.
+Options:
+(A) The motorcyle is the oldest
+(B) The limousine is the oldest
+(C) The convertible is the oldest",(A) The motorcyle is the oldest
+posix_bbh_logical_deduction_02,bbh_logical_deduction,perturbed,0,"Work out the logic problem below. After reasoning through it, provide only the correct choice.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are three vehicles: a motorcyle, a limousine, and a convertible. The motorcyle is newer than the limousine. The convertible is newer than the motorcyle.
+Options:
+(A) The motorcyle is the oldest
+(B) The limousine is the oldest
+(C) The convertible is the oldest",(B) The limousine is the oldest
+posix_bbh_logical_deduction_02,bbh_logical_deduction,perturbed,1,"Work out the logic problem below. After reasoning through it, provide only the correct choice.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are three vehicles: a motorcyle, a limousine, and a convertible. The motorcyle is newer than the limousine. The convertible is newer than the motorcyle.
+Options:
+(A) The motorcyle is the oldest
+(B) The limousine is the oldest
+(C) The convertible is the oldest",(B) The limousine is the oldest
+posix_bbh_logical_deduction_02,bbh_logical_deduction,perturbed,2,"Work out the logic problem below. After reasoning through it, provide only the correct choice.
+
+The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are three vehicles: a motorcyle, a limousine, and a convertible. The motorcyle is newer than the limousine. The convertible is newer than the motorcyle.
+Options:
+(A) The motorcyle is the oldest
+(B) The limousine is the oldest
+(C) The convertible is the oldest",(B) The limousine is the oldest

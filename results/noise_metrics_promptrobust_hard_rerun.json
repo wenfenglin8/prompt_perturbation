@@ -1,0 +1,58 @@
+{
+  "model": "gpt-4o-mini",
+  "suite": "promptrobust_hard",
+  "embedding_model": "text-embedding-3-small",
+  "samples_per_prompt_version": 8,
+  "temperature": 0.9,
+  "top_p": 0.95,
+  "metrics": [
+    {
+      "case_id": "promptrobust_hard_sst2_01",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 0.06749406483471554,
+      "perturbed_noise": 0.11570714728555953,
+      "noise_baseline": 0.09160060606013753,
+      "raw_perturbation_drift": 0.08436827482825698,
+      "noise_corrected_drift": -0.007232331231880551,
+      "noise_corrected_drift_clipped": 0.0,
+      "signal_to_noise_ratio": 0.9210449412623712,
+      "bootstrap_p_between_gt_noise": 0.426
+    },
+    {
+      "case_id": "promptrobust_hard_sst2_02",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 0.0,
+      "perturbed_noise": 2.257460170581752e-07,
+      "noise_baseline": 1.128730085290876e-07,
+      "raw_perturbation_drift": 1.5802221194072263e-07,
+      "noise_corrected_drift": 4.5149203411635035e-08,
+      "noise_corrected_drift_clipped": 4.5149203411635035e-08,
+      "signal_to_noise_ratio": 1.4,
+      "bootstrap_p_between_gt_noise": 0.867
+    },
+    {
+      "case_id": "promptrobust_hard_sst2_03",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 1.1102230246251565e-16,
+      "perturbed_noise": 2.339420254341259e-07,
+      "noise_baseline": 1.169710127725741e-07,
+      "raw_perturbation_drift": 1.637594178455215e-07,
+      "noise_corrected_drift": 4.67884050729474e-08,
+      "noise_corrected_drift_clipped": 4.67884050729474e-08,
+      "signal_to_noise_ratio": 1.3999999996915284,
+      "bootstrap_p_between_gt_noise": 0.859
+    },
+    {
+      "case_id": "promptrobust_hard_sst2_04",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 0.0,
+      "perturbed_noise": 2.257460170581752e-07,
+      "noise_baseline": 1.128730085290876e-07,
+      "raw_perturbation_drift": 1.5802221194072263e-07,
+      "noise_corrected_drift": 4.5149203411635035e-08,
+      "noise_corrected_drift_clipped": 4.5149203411635035e-08,
+      "signal_to_noise_ratio": 1.4,
+      "bootstrap_p_between_gt_noise": 0.865
+    }
+  ]
+}

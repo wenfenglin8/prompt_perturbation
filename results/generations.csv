@@ -1,0 +1,239 @@
+case_id,task,version,sample_idx,prompt,output
+fact_01,factual_qa,original,0,What is the capital city of Canada? Answer in one short sentence.,The capital city of Canada is Ottawa.
+fact_01,factual_qa,original,1,What is the capital city of Canada? Answer in one short sentence.,The capital city of Canada is Ottawa.
+fact_01,factual_qa,original,2,What is the capital city of Canada? Answer in one short sentence.,The capital city of Canada is Ottawa.
+fact_01,factual_qa,original,3,What is the capital city of Canada? Answer in one short sentence.,The capital city of Canada is Ottawa.
+fact_01,factual_qa,perturbed,0,"In one short sentence, please identify Canada's capital city.",Canada's capital city is Ottawa.
+fact_01,factual_qa,perturbed,1,"In one short sentence, please identify Canada's capital city.",Canada's capital city is Ottawa.
+fact_01,factual_qa,perturbed,2,"In one short sentence, please identify Canada's capital city.",Canada's capital city is Ottawa.
+fact_01,factual_qa,perturbed,3,"In one short sentence, please identify Canada's capital city.",Canada's capital city is Ottawa.
+fact_02,factual_qa,original,0,Who wrote the novel Pride and Prejudice? Answer briefly.,"Jane Austen wrote the novel ""Pride and Prejudice."""
+fact_02,factual_qa,original,1,Who wrote the novel Pride and Prejudice? Answer briefly.,"Jane Austen wrote the novel ""Pride and Prejudice."""
+fact_02,factual_qa,original,2,Who wrote the novel Pride and Prejudice? Answer briefly.,"Jane Austen wrote the novel ""Pride and Prejudice."""
+fact_02,factual_qa,original,3,Who wrote the novel Pride and Prejudice? Answer briefly.,"Jane Austen wrote the novel ""Pride and Prejudice."""
+fact_02,factual_qa,perturbed,0,Answer briefly: the novel Pride and Prejudice was written by whom?,Pride and Prejudice was written by Jane Austen.
+fact_02,factual_qa,perturbed,1,Answer briefly: the novel Pride and Prejudice was written by whom?,Pride and Prejudice was written by Jane Austen.
+fact_02,factual_qa,perturbed,2,Answer briefly: the novel Pride and Prejudice was written by whom?,Pride and Prejudice was written by Jane Austen.
+fact_02,factual_qa,perturbed,3,Answer briefly: the novel Pride and Prejudice was written by whom?,Pride and Prejudice was written by Jane Austen.
+math_01,math_reasoning,original,0,"A shop sells pencils in packs of 8. If Maya buys 6 packs and gives away 11 pencils, how many pencils does she have left? Show the calculation.","First, calculate the total number of pencils Maya buys:
+
+\[
+\text{Total pencils} = \text{packs} \times \text{pencils per pack} = 6 \times 8 = 48
+\]
+
+Next, subtract the number of pencils she gives away:
+
+\[
+\text{Pencils left} = \text{Total pencils} - \text{pencils given away} = 48 - 11 = 37
+\]
+
+Thus, Maya has **37 pencils left**."
+math_01,math_reasoning,original,1,"A shop sells pencils in packs of 8. If Maya buys 6 packs and gives away 11 pencils, how many pencils does she have left? Show the calculation.","First, calculate the total number of pencils Maya buys:
+
+\[
+\text{Total pencils} = \text{Number of packs} \times \text{Pencils per pack} = 6 \times 8 = 48
+\]
+
+Next, subtract the number of pencils she gives away:
+
+\[
+\text{Pencils left} = \text{Total pencils} - \text{Pencils given away} = 48 - 11 = 37
+\]
+
+Therefore, Maya has 37 pencils left."
+math_01,math_reasoning,original,2,"A shop sells pencils in packs of 8. If Maya buys 6 packs and gives away 11 pencils, how many pencils does she have left? Show the calculation.","First, calculate the total number of pencils Maya buys:
+
+\[
+\text{Total pencils} = \text{Number of packs} \times \text{Pencils per pack} = 6 \times 8 = 48
+\]
+
+Next, subtract the number of pencils she gives away:
+
+\[
+\text{Pencils left} = \text{Total pencils} - \text{Pencils given away} = 48 - 11 = 37
+\]
+
+Therefore, Maya has 37 pencils left."
+math_01,math_reasoning,original,3,"A shop sells pencils in packs of 8. If Maya buys 6 packs and gives away 11 pencils, how many pencils does she have left? Show the calculation.","First, we calculate the total number of pencils Maya buys:
+
+Total pencils = Number of packs × Pencils per pack  
+Total pencils = 6 packs × 8 pencils/pack = 48 pencils
+
+Next, we find out how many pencils she has left after giving away 11 pencils:
+
+Pencils left = Total pencils - Pencils given away  
+Pencils left = 48 pencils - 11 pencils = 37 pencils
+
+Therefore, Maya has 37 pencils left."
+math_01,math_reasoning,perturbed,0,"Show your calculation. Maya buys six packs of pencils, with 8 pencils in each pack, then gives away 11. How many remain?","First, calculate the total number of pencils Maya buys:
+
+6 packs × 8 pencils per pack = 48 pencils.
+
+Next, subtract the number of pencils she gives away:
+
+48 pencils - 11 pencils = 37 pencils.
+
+Therefore, Maya has 37 pencils remaining."
+math_01,math_reasoning,perturbed,1,"Show your calculation. Maya buys six packs of pencils, with 8 pencils in each pack, then gives away 11. How many remain?","First, calculate the total number of pencils Maya buys:
+
+\[
+6 \text{ packs} \times 8 \text{ pencils per pack} = 48 \text{ pencils}
+\]
+
+Next, subtract the number of pencils she gives away:
+
+\[
+48 \text{ pencils} - 11 \text{ pencils} = 37 \text{ pencils}
+\]
+
+Thus, the number of pencils that remain is:
+
+\[
+\boxed{37}
+\]"
+math_01,math_reasoning,perturbed,2,"Show your calculation. Maya buys six packs of pencils, with 8 pencils in each pack, then gives away 11. How many remain?","First, calculate the total number of pencils Maya buys:
+
+\[
+\text{Total pencils} = \text{Number of packs} \times \text{Pencils per pack} = 6 \times 8 = 48
+\]
+
+Next, subtract the number of pencils she gives away:
+
+\[
+\text{Remaining pencils} = \text{Total pencils} - \text{Pencils given away} = 48 - 11 = 37
+\]
+
+Thus, Maya has 37 pencils remaining."
+math_01,math_reasoning,perturbed,3,"Show your calculation. Maya buys six packs of pencils, with 8 pencils in each pack, then gives away 11. How many remain?","To find out how many pencils Maya has remaining after her purchases and giving some away, we can follow these steps:
+
+1. Calculate the total number of pencils Maya buys:
+   \[
+   \text{Total pencils} = \text{Number of packs} \times \text{Pencils per pack} = 6 \times 8 = 48
+   \]
+
+2. Subtract the number of pencils she gives away:
+   \[
+   \text{Remaining pencils} = \text{Total pencils} - \text{Pencils given away} = 48 - 11 = 37
+   \]
+
+So, Maya has **37 pencils** remaining."
+math_02,math_reasoning,original,0,A train travels 180 miles in 3 hours. What is its average speed in miles per hour? Give the numeric answer.,60 miles per hour.
+math_02,math_reasoning,original,1,A train travels 180 miles in 3 hours. What is its average speed in miles per hour? Give the numeric answer.,60 miles per hour.
+math_02,math_reasoning,original,2,A train travels 180 miles in 3 hours. What is its average speed in miles per hour? Give the numeric answer.,60 miles per hour.
+math_02,math_reasoning,original,3,A train travels 180 miles in 3 hours. What is its average speed in miles per hour? Give the numeric answer.,60 miles per hour.
+math_02,math_reasoning,perturbed,0,"Give the numeric answer: if a train covers 180 miles over 3 hours, what average speed in mph does that imply?",The average speed is 60 mph.
+math_02,math_reasoning,perturbed,1,"Give the numeric answer: if a train covers 180 miles over 3 hours, what average speed in mph does that imply?",The average speed is 60 mph.
+math_02,math_reasoning,perturbed,2,"Give the numeric answer: if a train covers 180 miles over 3 hours, what average speed in mph does that imply?",The average speed is 60 mph.
+math_02,math_reasoning,perturbed,3,"Give the numeric answer: if a train covers 180 miles over 3 hours, what average speed in mph does that imply?",The average speed is 60 mph.
+code_01,code_generation,original,0,Write a Python function named is_palindrome(s) that returns True if s is a palindrome after ignoring spaces and letter case.,"Here is a Python function named `is_palindrome(s)` that checks if the input string `s` is a palindrome by ignoring spaces and letter case:
+
+```python
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase
+    cleaned_s = ''.join(s.split()).lower()
+    # Check if the cleaned string is the same forwards and backwards
+    return cleaned_s == cleaned_s[::-1]
+```
+
+You can use this function by passing a string to it, and it will return `True` if the string is a palindrome, or `False` otherwise."
+code_01,code_generation,original,1,Write a Python function named is_palindrome(s) that returns True if s is a palindrome after ignoring spaces and letter case.,"Here is a Python function named `is_palindrome` that checks if a given string `s` is a palindrome, ignoring spaces and letter case:
+
+```python
+def is_palindrome(s):
+    # Normalize the string by removing spaces and converting to lowercase
+    normalized_str = ''.join(s.split()).lower()
+    # Check if the normalized string is equal to its reverse
+    return normalized_str == normalized_str[::-1]
+```
+
+You can use this function by passing a string to it, and it will return `True` if the string is a palindrome and `False` otherwise."
+code_01,code_generation,original,2,Write a Python function named is_palindrome(s) that returns True if s is a palindrome after ignoring spaces and letter case.,"Here is a Python function named `is_palindrome(s)` that checks if the given string `s` is a palindrome, ignoring spaces and letter case:
+
+```python
+def is_palindrome(s):
+    # Normalize the string: remove spaces and convert to lowercase
+    normalized_s = ''.join(s.split()).lower()
+    # Check if the normalized string is equal to its reverse
+    return normalized_s == normalized_s[::-1]
+```
+
+You can use this function by passing a string to it, and it will return `True` if the string is a palindrome, or `False` otherwise."
+code_01,code_generation,original,3,Write a Python function named is_palindrome(s) that returns True if s is a palindrome after ignoring spaces and letter case.,"Here is a Python function named `is_palindrome(s)` that checks if the input string `s` is a palindrome, ignoring spaces and letter case:
+
+```python
+def is_palindrome(s):
+    # Normalize the string: remove spaces and convert to lowercase
+    normalized_str = ''.join(s.split()).lower()
+    # Check if the normalized string is the same forwards and backwards
+    return normalized_str == normalized_str[::-1]
+```
+
+You can use this function by passing a string to it, and it will return `True` if the string is a palindrome and `False` otherwise."
+code_01,code_generation,perturbed,0,Please provide Python code for a function is_palindrome(s). It should ignore spaces and capitalization when checking whether the string is a palindrome.,"Here is a Python function `is_palindrome(s)` that checks if a given string `s` is a palindrome, ignoring spaces and capitalization:
+
+```python
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase
+    cleaned_string = ''.join(s.split()).lower()
+    # Check if the cleaned string is equal to its reverse
+    return cleaned_string == cleaned_string[::-1]
+
+# Example usage:
+print(is_palindrome(""A man a plan a canal Panama""))  # Output: True
+print(is_palindrome(""Hello""))                         # Output: False
+```
+
+This function first removes all spaces and converts the string to lowercase before checking if it reads the same forwards and backwards."
+code_01,code_generation,perturbed,1,Please provide Python code for a function is_palindrome(s). It should ignore spaces and capitalization when checking whether the string is a palindrome.,"Here is a Python function that checks if a string is a palindrome, ignoring spaces and capitalization:
+
+```python
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase
+    cleaned_s = ''.join(s.split()).lower()
+    # Check if the cleaned string is the same forwards and backwards
+    return cleaned_s == cleaned_s[::-1]
+
+# Example usage:
+print(is_palindrome(""A man a plan a canal Panama""))  # Output: True
+print(is_palindrome(""Hello""))  # Output: False
+```
+
+This function first removes spaces from the input string and converts it to lowercase, then checks if the cleaned string is equal to its reverse."
+code_01,code_generation,perturbed,2,Please provide Python code for a function is_palindrome(s). It should ignore spaces and capitalization when checking whether the string is a palindrome.,"Here is a Python function that checks if a given string is a palindrome while ignoring spaces and capitalization:
+
+```python
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase
+    cleaned_string = ''.join(s.split()).lower()
+    # Check if the cleaned string is the same forwards and backwards
+    return cleaned_string == cleaned_string[::-1]
+
+# Example usage:
+print(is_palindrome(""A man a plan a canal Panama""))  # True
+print(is_palindrome(""Hello""))                         # False
+```
+
+This function first removes all spaces from the input string and converts it to lowercase. It then checks if the cleaned string reads the same forwards and backwards."
+code_01,code_generation,perturbed,3,Please provide Python code for a function is_palindrome(s). It should ignore spaces and capitalization when checking whether the string is a palindrome.,"Here is a Python function `is_palindrome(s)` that checks if a given string is a palindrome, ignoring spaces and capitalization:
+
+```python
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase
+    cleaned_string = ''.join(s.split()).lower()
+    # Check if the cleaned string is equal to its reverse
+    return cleaned_string == cleaned_string[::-1]
+
+# Example usage:
+print(is_palindrome(""A man a plan a canal Panama""))  # Output: True
+print(is_palindrome(""Hello""))                          # Output: False
+```
+
+This function first removes all spaces and converts the string to lowercase, then checks if the cleaned string is the same as its reverse."
+writing_01,open_ended_writing,original,0,Write a concise paragraph explaining why prompt wording can affect large language model outputs.,"Prompt wording significantly influences large language model outputs because the models interpret and generate responses based on the specific language, structure, and context provided in the prompts. Subtle variations in phrasing can lead to different interpretations, affecting the relevance, tone, and specificity of the generated content. Additionally, the inclusion of specific keywords or questions can guide the model toward certain topics or styles, while ambiguous or vague prompts may result in less focused or off-topic responses. Thus, careful crafting of prompts is essential for obtaining desired outcomes from language models."
+writing_01,open_ended_writing,original,1,Write a concise paragraph explaining why prompt wording can affect large language model outputs.,"Prompt wording significantly influences large language model outputs because the models interpret and generate responses based on the specific language, context, and structure of the prompts provided. Subtle changes in phrasing can lead to different interpretations, emphasizing certain aspects over others or triggering distinct patterns in the model's training data. As the models are sensitive to nuances in wording, the clarity, specificity, and context embedded in prompts can result in varied responses, affecting the relevance, accuracy, and tone of the generated output."
+writing_01,open_ended_writing,original,2,Write a concise paragraph explaining why prompt wording can affect large language model outputs.,"Prompt wording significantly impacts large language model outputs because it shapes the context and cues that guide the model's response generation. Variations in phrasing, specificity, and structure can lead to different interpretations of the query, influencing the model's understanding of the task and the information it retrieves. For example, a prompt that is clear and detailed may elicit more relevant and accurate responses, while vague or ambiguous wording can result in less coherent or off-topic outputs. Thus, careful crafting of prompts is essential for achieving desired outcomes from language models."
+writing_01,open_ended_writing,original,3,Write a concise paragraph explaining why prompt wording can affect large language model outputs.,"Prompt wording significantly influences large language model outputs because the specific choice of words, phrasing, and structure can guide the model's interpretation and response generation. Variations in prompts can highlight different aspects of the task, evoke diverse contextual understandings, and trigger distinct patterns in the model's training data. As language models rely on learned correlations from extensive datasets, subtle changes in prompt wording can lead to varying degrees of relevance, specificity, and creativity in the responses, ultimately shaping the quality and accuracy of the information provided."
+writing_01,open_ended_writing,perturbed,0,"In a concise paragraph, explain how the wording of a prompt may influence what a large language model produces.","The wording of a prompt significantly influences a large language model's output by shaping the context, tone, and specificity of the response. For instance, a clearly defined question with specific keywords can lead to more focused and relevant answers, while vague or ambiguous prompts may result in generalized or off-topic responses. Additionally, the use of formal or informal language can affect the style of the generated text, and incorporating examples or constraints can guide the model to produce more precise and tailored outputs. Thus, the way a prompt is framed can determine the quality and relevance of the generated content."
+writing_01,open_ended_writing,perturbed,1,"In a concise paragraph, explain how the wording of a prompt may influence what a large language model produces.","The wording of a prompt significantly influences the output of a large language model by shaping the context, tone, and specificity of the response. Specific phrasing can guide the model toward certain interpretations or styles, while vague or ambiguous language may lead to a broader range of responses. Additionally, the inclusion of particular keywords or questions can trigger the model to focus on certain aspects of a topic, affecting the depth and relevance of the information provided. Thus, carefully crafted prompts can enhance the quality and precision of the generated content."
+writing_01,open_ended_writing,perturbed,2,"In a concise paragraph, explain how the wording of a prompt may influence what a large language model produces.","The wording of a prompt significantly influences a large language model's output by shaping its interpretation and focus. Specific wording can steer the model toward particular themes, tones, or styles, affecting the relevance and quality of the response. For instance, using clear, detailed language prompts the model to generate more precise and contextually appropriate answers, while vague or ambiguous prompts may lead to broader or less relevant outputs. Additionally, the use of keywords or phrases can cue the model to prioritize certain information or perspectives, thereby impacting the overall direction and content of the generated text."
+writing_01,open_ended_writing,perturbed,3,"In a concise paragraph, explain how the wording of a prompt may influence what a large language model produces.","The wording of a prompt significantly influences a large language model's output by shaping its interpretation and focus. Specific language, tone, and structure can guide the model toward particular themes or styles, while ambiguous or vague prompts may lead to broader, less relevant responses. For example, a prompt that clearly specifies a desired format or context (e.g., ""Write a formal letter"" versus ""Write something about friendship"") helps the model generate more targeted and coherent content. Thus, precise and well-defined prompts are essential for eliciting high-quality responses from the model."

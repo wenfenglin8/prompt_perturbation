@@ -1,0 +1,3 @@
+strength_level,strength_edits,n,mean_cross_similarity,mean_paired_similarity,mean_raw_perturbation_drift,mean_noise_corrected_drift,mean_clean_correctness,mean_perturbed_correctness,mean_abs_repeated_pass_rate_change,mean_repeated_pass_rate_drop,share_harmful_correctness_drop,share_correctness_changed
+0,0,1,1.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0
+1,1,1,1.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,151 @@
+case_id,task,dataset,perturbation,clean_single_correct,perturbed_single_correct,single_sample_pdr,clean_mean_correctness,perturbed_mean_correctness,repeated_sampling_pdr,correctness_sample_noise
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_01,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_01,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_01,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_02,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_02,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_02,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_03,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_03,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_03,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_03,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_03,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_04,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_04,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_04,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_04,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_04,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_05,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_05,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_05,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_05,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_05,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_06,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_06,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_06,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_06,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_06,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_07,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_07,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_07,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_07,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_07,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_08,factual_qa,SQuAD V2,paraphrase,1,0,1.0,1,0,1.0,0.0
+promptrobust_pdr_reordering_squad_08,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_08,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_08,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_08,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,0.6666666666666666,0.33333333333333337,0.23570226039551584
+promptrobust_pdr_paraphrase_squad_09,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_09,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_09,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_09,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_09,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_squad_10,factual_qa,SQuAD V2,paraphrase,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_reordering_squad_10,factual_qa,SQuAD V2,reordering,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_formatting_squad_10,factual_qa,SQuAD V2,formatting,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_context_injection_squad_10,factual_qa,SQuAD V2,context_injection,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_surface_noise_squad_10,factual_qa,SQuAD V2,surface_noise,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,1.0,1.0,0.0,1.0,0.6666666666666666,0.33333333333333337,0.23570226039551584
+promptrobust_pdr_reordering_math_01,math_reasoning,MATH,reordering,1.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_formatting_math_01,math_reasoning,MATH,formatting,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_context_injection_math_01,math_reasoning,MATH,context_injection,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_surface_noise_math_01,math_reasoning,MATH,surface_noise,1.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.23570226039551584
+promptrobust_pdr_reordering_math_02,math_reasoning,MATH,reordering,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.23570226039551584
+promptrobust_pdr_formatting_math_02,math_reasoning,MATH,formatting,0.0,1.0,0.0,0.0,0.6666666666666666,0.0,0.23570226039551584
+promptrobust_pdr_context_injection_math_02,math_reasoning,MATH,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_math_02,math_reasoning,MATH,surface_noise,1.0,0.0,1.0,0.3333333333333333,0.3333333333333333,0.0,0.4714045207910317
+promptrobust_pdr_paraphrase_math_03,math_reasoning,MATH,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_math_03,math_reasoning,MATH,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_math_03,math_reasoning,MATH,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_math_03,math_reasoning,MATH,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_math_03,math_reasoning,MATH,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_paraphrase_math_04,math_reasoning,MATH,paraphrase,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_reordering_math_04,math_reasoning,MATH,reordering,1.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_formatting_math_04,math_reasoning,MATH,formatting,1.0,1.0,0.0,0.3333333333333333,1.0,-2.0000000000000004,0.23570226039551584
+promptrobust_pdr_context_injection_math_04,math_reasoning,MATH,context_injection,1.0,1.0,0.0,1.0,0.6666666666666666,0.33333333333333337,0.23570226039551584
+promptrobust_pdr_surface_noise_math_04,math_reasoning,MATH,surface_noise,1.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_paraphrase_math_05,math_reasoning,MATH,paraphrase,1.0,0.0,1.0,0.3333333333333333,0.6666666666666666,-1.0,0.4714045207910317
+promptrobust_pdr_reordering_math_05,math_reasoning,MATH,reordering,1.0,1.0,0.0,1.0,0.3333333333333333,0.6666666666666667,0.23570226039551584
+promptrobust_pdr_formatting_math_05,math_reasoning,MATH,formatting,0.0,1.0,0.0,0.3333333333333333,1.0,-2.0000000000000004,0.23570226039551584
+promptrobust_pdr_context_injection_math_05,math_reasoning,MATH,context_injection,0.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_surface_noise_math_05,math_reasoning,MATH,surface_noise,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.23570226039551584
+promptrobust_pdr_paraphrase_math_06,math_reasoning,MATH,paraphrase,0.0,0.0,0.0,0.3333333333333333,0.0,1.0,0.23570226039551584
+promptrobust_pdr_reordering_math_06,math_reasoning,MATH,reordering,1.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_formatting_math_06,math_reasoning,MATH,formatting,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_context_injection_math_06,math_reasoning,MATH,context_injection,0.0,1.0,0.0,0.3333333333333333,0.6666666666666666,-1.0,0.4714045207910317
+promptrobust_pdr_surface_noise_math_06,math_reasoning,MATH,surface_noise,1.0,0.0,1.0,1.0,0.0,1.0,0.0
+promptrobust_pdr_paraphrase_math_07,math_reasoning,MATH,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_math_07,math_reasoning,MATH,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_math_07,math_reasoning,MATH,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_math_07,math_reasoning,MATH,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_math_07,math_reasoning,MATH,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_paraphrase_math_08,math_reasoning,MATH,paraphrase,1.0,0.0,1.0,0.6666666666666666,0.0,1.0,0.23570226039551584
+promptrobust_pdr_reordering_math_08,math_reasoning,MATH,reordering,0.0,0.0,0.0,0.3333333333333333,0.0,1.0,0.23570226039551584
+promptrobust_pdr_formatting_math_08,math_reasoning,MATH,formatting,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.0,0.4714045207910317
+promptrobust_pdr_context_injection_math_08,math_reasoning,MATH,context_injection,1.0,0.0,1.0,0.3333333333333333,0.0,1.0,0.23570226039551584
+promptrobust_pdr_surface_noise_math_08,math_reasoning,MATH,surface_noise,0.0,1.0,0.0,0.0,1.0,0.0,0.0
+promptrobust_pdr_paraphrase_math_09,math_reasoning,MATH,paraphrase,0.0,0.0,0.0,0.0,0.3333333333333333,0.0,0.23570226039551584
+promptrobust_pdr_reordering_math_09,math_reasoning,MATH,reordering,1.0,1.0,0.0,0.6666666666666666,0.6666666666666666,0.0,0.4714045207910317
+promptrobust_pdr_formatting_math_09,math_reasoning,MATH,formatting,0.0,0.0,0.0,0.3333333333333333,0.6666666666666666,-1.0,0.4714045207910317
+promptrobust_pdr_context_injection_math_09,math_reasoning,MATH,context_injection,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.0,0.4714045207910317
+promptrobust_pdr_surface_noise_math_09,math_reasoning,MATH,surface_noise,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_paraphrase_math_10,math_reasoning,MATH,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_math_10,math_reasoning,MATH,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_math_10,math_reasoning,MATH,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_math_10,math_reasoning,MATH,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_math_10,math_reasoning,MATH,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_01,code_generation,HumanEval,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_01,code_generation,HumanEval,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_01,code_generation,HumanEval,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_humaneval_01,code_generation,HumanEval,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_02,code_generation,HumanEval,paraphrase,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_02,code_generation,HumanEval,reordering,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_02,code_generation,HumanEval,formatting,1.0,0.0,1.0,1.0,0.3333333333333333,0.6666666666666667,0.23570226039551584
+promptrobust_pdr_context_injection_humaneval_02,code_generation,HumanEval,context_injection,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_03,code_generation,HumanEval,paraphrase,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_03,code_generation,HumanEval,reordering,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_03,code_generation,HumanEval,formatting,1.0,0.0,1.0,1.0,0.0,1.0,0.0
+promptrobust_pdr_context_injection_humaneval_03,code_generation,HumanEval,context_injection,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_surface_noise_humaneval_03,code_generation,HumanEval,surface_noise,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_04,code_generation,HumanEval,paraphrase,1.0,0.0,1.0,1.0,0.0,1.0,0.0
+promptrobust_pdr_reordering_humaneval_04,code_generation,HumanEval,reordering,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_04,code_generation,HumanEval,formatting,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.0,0.4714045207910317
+promptrobust_pdr_context_injection_humaneval_04,code_generation,HumanEval,context_injection,1.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_surface_noise_humaneval_04,code_generation,HumanEval,surface_noise,1.0,0.0,1.0,0.6666666666666666,0.6666666666666666,0.0,0.4714045207910317
+promptrobust_pdr_paraphrase_humaneval_05,code_generation,HumanEval,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_05,code_generation,HumanEval,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_05,code_generation,HumanEval,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_humaneval_05,code_generation,HumanEval,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_humaneval_05,code_generation,HumanEval,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_06,code_generation,HumanEval,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_06,code_generation,HumanEval,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_06,code_generation,HumanEval,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_humaneval_06,code_generation,HumanEval,context_injection,0.0,1.0,0.0,0.0,0.6666666666666666,0.0,0.23570226039551584
+promptrobust_pdr_surface_noise_humaneval_06,code_generation,HumanEval,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_07,code_generation,HumanEval,paraphrase,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_07,code_generation,HumanEval,reordering,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_07,code_generation,HumanEval,formatting,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_context_injection_humaneval_07,code_generation,HumanEval,context_injection,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_surface_noise_humaneval_07,code_generation,HumanEval,surface_noise,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_08,code_generation,HumanEval,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_08,code_generation,HumanEval,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_08,code_generation,HumanEval,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_humaneval_08,code_generation,HumanEval,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_humaneval_08,code_generation,HumanEval,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_paraphrase_humaneval_09,code_generation,HumanEval,paraphrase,0.0,1.0,0.0,0.3333333333333333,1.0,-2.0000000000000004,0.23570226039551584
+promptrobust_pdr_reordering_humaneval_09,code_generation,HumanEval,reordering,0.0,1.0,0.0,0.6666666666666666,1.0,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_formatting_humaneval_09,code_generation,HumanEval,formatting,1.0,0.0,1.0,1.0,0.0,1.0,0.0
+promptrobust_pdr_context_injection_humaneval_09,code_generation,HumanEval,context_injection,1.0,0.0,1.0,0.6666666666666666,0.3333333333333333,0.5,0.4714045207910317
+promptrobust_pdr_surface_noise_humaneval_09,code_generation,HumanEval,surface_noise,1.0,0.0,1.0,1.0,0.0,1.0,0.0
+promptrobust_pdr_paraphrase_humaneval_10,code_generation,HumanEval,paraphrase,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_reordering_humaneval_10,code_generation,HumanEval,reordering,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_formatting_humaneval_10,code_generation,HumanEval,formatting,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_context_injection_humaneval_10,code_generation,HumanEval,context_injection,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+promptrobust_pdr_surface_noise_humaneval_10,code_generation,HumanEval,surface_noise,0.0,0.0,0.0,0.0,0.0,0.0,0.0

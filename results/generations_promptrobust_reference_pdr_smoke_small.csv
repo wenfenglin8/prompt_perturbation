@@ -1,0 +1,150 @@
+case_id,task,dataset,version,sample_idx,prompt,output,reference_answer,correct
+promptrobust_pdr_squad_01,factual_qa,SQuAD V2,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_squad_01,factual_qa,SQuAD V2,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_squad_01,factual_qa,SQuAD V2,perturbed,0,"Raed the passgae and answr the quesiton. Answer with the excat shrot answr onyl.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_squad_01,factual_qa,SQuAD V2,perturbed,1,"Raed the passgae and answr the quesiton. Answer with the excat shrot answr onyl.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_math_01,math_reasoning,MATH,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify where the denominator is equal to zero, since vertical asymptotes occur at these points.
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the factored expression equal to zero:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us two equations to solve:
+
+1. \( x - 2 = 0 \) which leads to \( x = 2 \)
+2. \( x + 3 = 0 \) which leads to \( x = -3 \)
+
+Thus, the values \( x = 2 \) and \( x = -3 \) are the points where the denominator is zero.
+
+Since both values lead to division by zero in the original function, they correspond to vertical asymptotes. 
+
+Therefore, the graph of \( y = \frac{2}{x^2 + x - 6} \) has 2 vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_math_01,math_reasoning,MATH,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine where the denominator equals zero, since vertical asymptotes occur at values of \( x \) that make the denominator zero (provided that the numerator is not also zero at those points).
+
+1. Set the denominator equal to zero:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. Factor the quadratic expression:
+   \[
+   (x - 2)(x + 3) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+
+Thus, the values of \( x \) that make the denominator zero are \( x = 2 \) and \( x = -3 \).
+
+4. Check if the numerator is zero at these points:
+   The numerator is \( 2 \), which is never zero.
+
+Since the denominator is zero at \( x = 2 \) and \( x = -3 \), and the numerator is not zero at those points, both values correspond to vertical asymptotes.
+
+Therefore, the number of vertical asymptotes is:
+
+2",2,1
+promptrobust_pdr_math_01,math_reasoning,MATH,perturbed,0,"Sovle the mathematcis prblem. Put the fnial answr onyl on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we need to determine where the denominator is equal to zero, as vertical asymptotes occur at those points.
+
+First, we factor the denominator:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+To factor this quadratic, we look for two numbers that multiply to \(-6\) and add to \(1\). These numbers are \(3\) and \(-2\). Therefore, we can factor the quadratic as:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Next, we set each factor equal to zero to find the values of \(x\) that make the denominator zero:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Thus, the function \( y = \frac{2}{x^2+x-6} \) has vertical asymptotes at \( x = -3 \) and \( x = 2 \).
+
+Since there are two distinct values where the denominator is zero, the graph has:
+
+\[
+\boxed{2}
+\] vertical asymptotes.",2,1
+promptrobust_pdr_math_01,math_reasoning,MATH,perturbed,1,"Sovle the mathematcis prblem. Put the fnial answr onyl on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, as vertical asymptotes occur at these points.
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). These numbers are \(3\) and \(-2\). Therefore, we can factor the expression as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Now, we set the factored expression equal to zero to find the values of \(x\) that cause the denominator to be zero:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us the equations:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Thus, the function has vertical asymptotes at \(x = -3\) and \(x = 2\).
+
+In conclusion, the number of vertical asymptotes is:
+
+2",2,1

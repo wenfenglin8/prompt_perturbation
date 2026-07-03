@@ -1,0 +1,16 @@
+index,task_perturbation,mean,std,count
+1,code_generation / formatting,0.3,0.48304589153964794,10
+12,math_reasoning / paraphrase,0.3,0.48304589153964794,10
+6,factual_qa / formatting,0.2,0.4216370213557839,10
+10,math_reasoning / context_injection,0.2,0.4216370213557839,10
+13,math_reasoning / reordering,0.2,0.4216370213557839,10
+7,factual_qa / paraphrase,0.2,0.42163702135578396,10
+2,code_generation / paraphrase,0.1,0.31622776601683794,10
+4,code_generation / surface_noise,0.1,0.31622776601683794,10
+9,factual_qa / surface_noise,0.1,0.31622776601683794,10
+0,code_generation / context_injection,0.1,0.31622776601683794,10
+14,math_reasoning / surface_noise,0.1,0.31622776601683794,10
+8,factual_qa / reordering,0.0,0.0,10
+3,code_generation / reordering,0.0,0.0,10
+5,factual_qa / context_injection,0.0,0.0,10
+11,math_reasoning / formatting,0.0,0.0,10

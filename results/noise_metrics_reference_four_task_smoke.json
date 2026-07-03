@@ -1,0 +1,62 @@
+{
+  "model": "gpt-4o-mini",
+  "suite": "reference_four_task",
+  "embedding_model": "text-embedding-3-small",
+  "samples_per_prompt_version": 3,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "metrics": [
+    {
+      "case_id": "ref_squad_v2_01",
+      "task": "factual_qa",
+      "original_noise": 1.1102230246251565e-16,
+      "perturbed_noise": 0.16808026620259167,
+      "noise_baseline": 0.08404013310129589,
+      "uncorrected_single_drift": 0.5555972633920456,
+      "raw_perturbation_drift": 0.5285953228647977,
+      "noise_corrected_drift": 0.44455518976350183,
+      "noise_corrected_drift_clipped": 0.44455518976350183,
+      "signal_to_noise_ratio": 6.289796355125559,
+      "bootstrap_p_between_gt_noise": 1.0
+    },
+    {
+      "case_id": "ref_math_01",
+      "task": "math_reasoning",
+      "original_noise": 0.0323689487708703,
+      "perturbed_noise": 0.056229698125763616,
+      "noise_baseline": 0.044299323448316955,
+      "uncorrected_single_drift": 0.04829920510781749,
+      "raw_perturbation_drift": 0.045004988986178183,
+      "noise_corrected_drift": 0.0007056655378612289,
+      "noise_corrected_drift_clipped": 0.0007056655378612289,
+      "signal_to_noise_ratio": 1.0159294879228689,
+      "bootstrap_p_between_gt_noise": 1.0
+    },
+    {
+      "case_id": "ref_humaneval_01",
+      "task": "code_generation",
+      "original_noise": 0.06434779474066588,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.03217389737033294,
+      "uncorrected_single_drift": 0.2516426807572293,
+      "raw_perturbation_drift": 0.22457485605291663,
+      "noise_corrected_drift": 0.1924009586825837,
+      "noise_corrected_drift_clipped": 0.1924009586825837,
+      "signal_to_noise_ratio": 6.980032709994086,
+      "bootstrap_p_between_gt_noise": 1.0
+    },
+    {
+      "case_id": "ref_alpaca_01",
+      "task": "open_ended_writing",
+      "original_noise": 0.08177859415876831,
+      "perturbed_noise": 0.09026405292745161,
+      "noise_baseline": 0.08602132354310996,
+      "uncorrected_single_drift": 0.10139889541267821,
+      "raw_perturbation_drift": 0.10297961466594321,
+      "noise_corrected_drift": 0.016958291122833258,
+      "noise_corrected_drift_clipped": 0.016958291122833258,
+      "signal_to_noise_ratio": 1.1971405510208704,
+      "bootstrap_p_between_gt_noise": 1.0
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+case_id,task,original_noise,perturbed_noise,noise_baseline,uncorrected_single_drift,raw_perturbation_drift,noise_corrected_drift,noise_corrected_drift_clipped,signal_to_noise_ratio,bootstrap_p_between_gt_noise
+ref_squad_v2_01,factual_qa,0.0,0.0,0.0,0.4745914418103019,0.4745914418103019,0.4745914418103019,0.4745914418103019,inf,1.0
+ref_math_01,math_reasoning,0.0,0.0,0.0,0.04107266969910228,0.04107266969910228,0.04107266969910228,0.04107266969910228,inf,1.0
+ref_humaneval_01,code_generation,0.0,0.0,0.0,0.21104125618654113,0.21104125618654113,0.21104125618654113,0.21104125618654113,inf,1.0
+ref_alpaca_01,open_ended_writing,0.0,0.0,0.0,0.09964114716166228,0.09964114716166228,0.09964114716166228,0.09964114716166228,inf,1.0

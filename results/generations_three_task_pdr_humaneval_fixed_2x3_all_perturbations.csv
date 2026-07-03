@@ -1,0 +1,3571 @@
+case_id,task,dataset,perturbation,version,sample_idx,prompt,output,reference_answer,correct
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,perturbed,0,"Read the text and respond to the question. Provide the precise short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,perturbed,1,"Read the text and respond to the question. Provide the precise short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,perturbed,2,"Read the text and respond to the question. Provide the precise short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_reordering_squad_01,factual_qa,SQuAD V2,reordering,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_reordering_squad_01,factual_qa,SQuAD V2,reordering,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_reordering_squad_01,factual_qa,SQuAD V2,reordering,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_reordering_squad_01,factual_qa,SQuAD V2,reordering,perturbed,0,"Answer the question after reading the passage. Provide only the exact short answer.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_reordering_squad_01,factual_qa,SQuAD V2,reordering,perturbed,1,"Answer the question after reading the passage. Provide only the exact short answer.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_reordering_squad_01,factual_qa,SQuAD V2,reordering,perturbed,2,"Answer the question after reading the passage. Provide only the exact short answer.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_formatting_squad_01,factual_qa,SQuAD V2,formatting,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_formatting_squad_01,factual_qa,SQuAD V2,formatting,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_formatting_squad_01,factual_qa,SQuAD V2,formatting,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_formatting_squad_01,factual_qa,SQuAD V2,formatting,perturbed,0,"Question: Read the passage and answer the question. Answer with the exact short answer only.
+Answer:
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_formatting_squad_01,factual_qa,SQuAD V2,formatting,perturbed,1,"Question: Read the passage and answer the question. Answer with the exact short answer only.
+Answer:
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_formatting_squad_01,factual_qa,SQuAD V2,formatting,perturbed,2,"Question: Read the passage and answer the question. Answer with the exact short answer only.
+Answer:
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_context_injection_squad_01,factual_qa,SQuAD V2,context_injection,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_context_injection_squad_01,factual_qa,SQuAD V2,context_injection,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_context_injection_squad_01,factual_qa,SQuAD V2,context_injection,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_context_injection_squad_01,factual_qa,SQuAD V2,context_injection,perturbed,0,"Read the passage and answer the question. Answer with the exact short answer only and false is not true.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_context_injection_squad_01,factual_qa,SQuAD V2,context_injection,perturbed,1,"Read the passage and answer the question. Answer with the exact short answer only and false is not true.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_context_injection_squad_01,factual_qa,SQuAD V2,context_injection,perturbed,2,"Read the passage and answer the question. Answer with the exact short answer only and false is not true.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,perturbed,0,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,perturbed,1,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,perturbed,2,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,perturbed,0,"Read the text and respond to the question. Provide the precise short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,perturbed,1,"Read the text and respond to the question. Provide the precise short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,perturbed,2,"Read the text and respond to the question. Provide the precise short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_reordering_squad_02,factual_qa,SQuAD V2,reordering,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_reordering_squad_02,factual_qa,SQuAD V2,reordering,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_reordering_squad_02,factual_qa,SQuAD V2,reordering,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_reordering_squad_02,factual_qa,SQuAD V2,reordering,perturbed,0,"Answer the question by reading the passage. Provide the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_reordering_squad_02,factual_qa,SQuAD V2,reordering,perturbed,1,"Answer the question by reading the passage. Provide the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_reordering_squad_02,factual_qa,SQuAD V2,reordering,perturbed,2,"Answer the question by reading the passage. Provide the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_formatting_squad_02,factual_qa,SQuAD V2,formatting,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_formatting_squad_02,factual_qa,SQuAD V2,formatting,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_formatting_squad_02,factual_qa,SQuAD V2,formatting,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_formatting_squad_02,factual_qa,SQuAD V2,formatting,perturbed,0,"Question: Read the passage and answer the question. Answer with the exact short answer only.
+Answer:
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_formatting_squad_02,factual_qa,SQuAD V2,formatting,perturbed,1,"Question: Read the passage and answer the question. Answer with the exact short answer only.
+Answer:
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_formatting_squad_02,factual_qa,SQuAD V2,formatting,perturbed,2,"Question: Read the passage and answer the question. Answer with the exact short answer only.
+Answer:
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_context_injection_squad_02,factual_qa,SQuAD V2,context_injection,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_context_injection_squad_02,factual_qa,SQuAD V2,context_injection,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_context_injection_squad_02,factual_qa,SQuAD V2,context_injection,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_context_injection_squad_02,factual_qa,SQuAD V2,context_injection,perturbed,0,"Read the passage and answer the question. Answer with the exact short answer only and false is not true.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_context_injection_squad_02,factual_qa,SQuAD V2,context_injection,perturbed,1,"Read the passage and answer the question. Answer with the exact short answer only and false is not true.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_context_injection_squad_02,factual_qa,SQuAD V2,context_injection,perturbed,2,"Read the passage and answer the question. Answer with the exact short answer only and false is not true.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,perturbed,0,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",10th and 11th centuries,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,1
+promptrobust_pdr_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,perturbed,1,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",10th and 11th centuries,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,1
+promptrobust_pdr_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,perturbed,2,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine where the denominator is equal to zero, as vertical asymptotes occur at these points.
+
+We start by factoring the quadratic in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). These numbers are \(3\) and \(-2\). Therefore, we can factor the quadratic as:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the factored denominator equal to zero to find the points where the function is undefined:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us two equations:
+
+1. \( x + 3 = 0 \)  which leads to \( x = -3 \)
+2. \( x - 2 = 0 \) which leads to \( x = 2 \)
+
+Thus, the values \( x = -3 \) and \( x = 2 \) are where the denominator is zero, indicating vertical asymptotes.
+
+Since we have identified two values where the function has vertical asymptotes, we conclude that the number of vertical asymptotes is:
+
+\[
+\boxed{2}
+\]",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine when the denominator is equal to zero, since vertical asymptotes occur where the function is undefined due to division by zero.
+
+1. Set the denominator equal to zero:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. Factor the quadratic equation:
+   \[
+   (x - 2)(x + 3) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+
+The values \( x = 2 \) and \( x = -3 \) are the points where the denominator is zero, leading to vertical asymptotes.
+
+Thus, the graph of \( y = \frac{2}{x^2 + x - 6} \) has 2 vertical asymptotes.
+
+Final answer:
+2",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, as vertical asymptotes occur where the function is undefined.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor the quadratic equation:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Now, we set each factor equal to zero to find the values of \( x \):
+
+1. \( x - 2 = 0 \) gives \( x = 2 \)
+2. \( x + 3 = 0 \) gives \( x = -3 \)
+
+Thus, the function has vertical asymptotes at \( x = 2 \) and \( x = -3 \).
+
+Now we count the number of vertical asymptotes:
+
+There are 2 vertical asymptotes.
+
+Final answer:
+
+2",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,perturbed,0,"Resolve the mathematics problem. Place the final answer exclusively on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to identify the values of \( x \) that make the denominator equal to zero, since vertical asymptotes occur where the function is undefined due to division by zero.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor the quadratic equation. We look for two numbers that multiply to \(-6\) and add up to \(1\). The numbers \(3\) and \(-2\) satisfy this condition, so we can factor the equation as follows:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Now, we set each factor equal to zero to find the roots:
+
+1. \( x + 3 = 0 \) leads to \( x = -3 \)
+2. \( x - 2 = 0 \) leads to \( x = 2 \)
+
+Thus, the values \( x = -3 \) and \( x = 2 \) make the denominator zero, indicating potential vertical asymptotes at these points.
+
+Since both values are distinct, we conclude that the function \( y = \frac{2}{x^2 + x - 6} \) has two vertical asymptotes.
+
+The final answer is:
+
+2",2,0
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,perturbed,1,"Resolve the mathematics problem. Place the final answer exclusively on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we need to determine when the denominator equals zero, since vertical asymptotes occur where the function is undefined.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor this quadratic equation. We look for two numbers that multiply to \(-6\) and add up to \(1\). The numbers \(3\) and \(-2\) satisfy this condition. Therefore, we can factor the equation as follows:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Setting each factor equal to zero gives us the solutions:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Thus, the function has vertical asymptotes at \( x = -3 \) and \( x = 2 \).
+
+In total, there are 2 vertical asymptotes.
+
+Final answer:
+2",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,perturbed,2,"Resolve the mathematics problem. Place the final answer exclusively on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to find the values of \( x \) that make the denominator equal to zero, since vertical asymptotes occur at those points where the function is undefined.
+
+First, we factor the quadratic in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+To factor this, we look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) fit this requirement, so we can factor the expression as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the factored expression equal to zero to find the values of \( x \):
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us two equations:
+
+1. \( x + 3 = 0 \)  ⇒  \( x = -3 \)
+2. \( x - 2 = 0 \)  ⇒  \( x = 2 \)
+
+Thus, the values \( x = -3 \) and \( x = 2 \) make the denominator zero, which indicates that there are vertical asymptotes at these points.
+
+Now, we count the number of vertical asymptotes. There are two values where the function is undefined:
+
+1. At \( x = -3 \)
+2. At \( x = 2 \)
+
+Therefore, the graph of \( y = \frac{2}{x^2 + x - 6} \) has a total of 2 vertical asymptotes.
+
+Final answer:
+2",2,1
+promptrobust_pdr_reordering_math_01,math_reasoning,MATH,reordering,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine where the denominator is equal to zero, since vertical asymptotes occur at values of \( x \) where the function is undefined (i.e., where the denominator is zero).
+
+We start by factoring the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+To factor this quadratic expression, we look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions because:
+
+\[
+3 \cdot (-2) = -6 \quad \text{and} \quad 3 + (-2) = 1
+\]
+
+Thus, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the factored denominator equal to zero to find the values of \(x\):
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Setting each factor to zero gives us:
+
+1. \( x + 3 = 0 \)  →  \( x = -3 \)
+2. \( x - 2 = 0 \)  →  \( x = 2 \)
+
+These values, \(x = -3\) and \(x = 2\), indicate the locations of the vertical asymptotes.
+
+Thus, the graph of the function \( y = \frac{2}{x^2 + x - 6} \) has 2 vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_reordering_math_01,math_reasoning,MATH,reordering,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator equals zero since vertical asymptotes occur at these points.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we factor the quadratic expression:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Setting each factor equal to zero gives us the potential vertical asymptotes:
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+Both \( x = 2 \) and \( x = -3 \) are values where the denominator is zero, thus indicating vertical asymptotes.
+
+Now, we count the number of vertical asymptotes:
+
+1. \( x = 2 \)
+2. \( x = -3 \)
+
+Therefore, there are a total of 2 vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_reordering_math_01,math_reasoning,MATH,reordering,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we first need to identify when the denominator is equal to zero, as vertical asymptotes occur at these points.
+
+1. Set the denominator equal to zero:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. Factor the quadratic equation:
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+The solutions \( x = -3 \) and \( x = 2 \) indicate the locations of the vertical asymptotes.
+
+4. Count the number of vertical asymptotes:
+   There are two solutions, thus there are two vertical asymptotes.
+
+Final answer:
+2",2,1
+promptrobust_pdr_reordering_math_01,math_reasoning,MATH,reordering,perturbed,0,"Put the final answer only on the last line. Solve the mathematics problem.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, since vertical asymptotes occur at these points.
+
+First, we factor the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) and add to \(1\). The numbers \(3\) and \(-2\) satisfy this condition:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Now, we set the denominator equal to zero to find the vertical asymptotes:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Setting each factor to zero gives us:
+
+1. \( x + 3 = 0 \)  →  \( x = -3 \)
+2. \( x - 2 = 0 \)  →  \( x = 2 \)
+
+Thus, the vertical asymptotes occur at \( x = -3 \) and \( x = 2 \).
+
+Since we have two distinct values where the denominator is zero, the graph of \( y = \frac{2}{x^2 + x - 6} \) has two vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_reordering_math_01,math_reasoning,MATH,reordering,perturbed,1,"Put the final answer only on the last line. Solve the mathematics problem.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine when the denominator is equal to zero, as vertical asymptotes occur where the function is undefined.
+
+We start by factoring the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions.
+
+Thus, we can factor the quadratic as:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Now, we set the factored form equal to zero to find the values of \(x\) that make the denominator zero:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Setting each factor to zero gives us:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+These values indicate the locations of the vertical asymptotes. Therefore, the graph of the function \( y = \frac{2}{x^2 + x - 6} \) has vertical asymptotes at \( x = -3 \) and \( x = 2 \).
+
+In total, there are:
+
+\[
+\text{2 vertical asymptotes.}
+\]
+
+Final answer: 2",2,1
+promptrobust_pdr_reordering_math_01,math_reasoning,MATH,reordering,perturbed,2,"Put the final answer only on the last line. Solve the mathematics problem.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator equals zero, since vertical asymptotes occur at these points.
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) and add to \(1\). These numbers are \(3\) and \(-2\). Thus, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the denominator equal to zero to find the vertical asymptotes:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Setting each factor to zero gives us the solutions:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Thus, the function has vertical asymptotes at \( x = -3 \) and \( x = 2 \).
+
+Therefore, the total number of vertical asymptotes is:
+
+\[
+\boxed{2}
+\]",2,1
+promptrobust_pdr_formatting_math_01,math_reasoning,MATH,formatting,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify the points where the denominator is equal to zero, as vertical asymptotes occur at these points (as long as they do not also make the numerator zero).
+
+1. Start by factoring the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6 = (x - 2)(x + 3)
+   \]
+
+2. Set the denominator equal to zero:
+   \[
+   (x - 2)(x + 3) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+
+Both \( x = 2 \) and \( x = -3 \) are points where the denominator is zero.
+
+4. Check the numerator at these points:
+   The numerator \( 2 \) is not zero for either \( x = 2 \) or \( x = -3 \).
+
+Since the numerator does not cancel out the denominator at these points, both points result in vertical asymptotes.
+
+Thus, the total number of vertical asymptotes is:
+
+2",2,1
+promptrobust_pdr_formatting_math_01,math_reasoning,MATH,formatting,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify when the denominator is equal to zero, as vertical asymptotes occur at these points.
+
+1. Set the denominator equal to zero:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. Factor the quadratic:
+   \[
+   (x - 2)(x + 3) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+
+The solutions \( x = 2 \) and \( x = -3 \) indicate that there are vertical asymptotes at these points.
+
+Thus, the number of vertical asymptotes is:
+
+2",2,1
+promptrobust_pdr_formatting_math_01,math_reasoning,MATH,formatting,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, since vertical asymptotes occur at these points.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor this quadratic equation. We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2) = 0
+\]
+
+Now, we can find the roots by setting each factor to zero:
+
+1. \(x + 3 = 0 \quad \Rightarrow \quad x = -3\)
+2. \(x - 2 = 0 \quad \Rightarrow \quad x = 2\)
+
+These roots indicate the locations of the vertical asymptotes. Since there are two distinct roots, we conclude that there are two vertical asymptotes.
+
+Therefore, the final answer is:
+
+2",2,0
+promptrobust_pdr_formatting_math_01,math_reasoning,MATH,formatting,perturbed,0,"Question: Solve the mathematics problem. Put the final answer only on the last line.
+Answer:
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify the values of \( x \) that make the denominator equal to zero, since vertical asymptotes occur where the function is undefined.
+
+1. **Factor the denominator**: 
+   We start with the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6
+   \]
+   We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). These numbers are \(3\) and \(-2\). Therefore, we can factor the quadratic as:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. **Set the denominator to zero**:
+   We set the factored form equal to zero to find the critical points:
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+
+   This gives us two equations to solve:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. **Identify the vertical asymptotes**:
+   The vertical asymptotes occur at the values of \( x \) where the denominator is zero and the function is undefined. From our solutions, we find that the vertical asymptotes are at:
+   \[
+   x = -3 \quad \text{and} \quad x = 2
+   \]
+
+Thus, there are a total of **2 vertical asymptotes**.
+
+Final answer:
+2",2,1
+promptrobust_pdr_formatting_math_01,math_reasoning,MATH,formatting,perturbed,1,"Question: Solve the mathematics problem. Put the final answer only on the last line.
+Answer:
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we first need to determine where the denominator is equal to zero. We start by factoring the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+To factor this, we look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) fit this requirement. Therefore, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Now, we set the factored form equal to zero to find the values of \(x\) that make the denominator zero:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us two equations to solve:
+
+1. \(x + 3 = 0 \Rightarrow x = -3\)
+2. \(x - 2 = 0 \Rightarrow x = 2\)
+
+Thus, the function has vertical asymptotes at \(x = -3\) and \(x = 2\).
+
+Since there are two distinct values of \(x\) where the denominator is zero, the graph of \(y = \frac{2}{x^2+x-6}\) has two vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_formatting_math_01,math_reasoning,MATH,formatting,perturbed,2,"Question: Solve the mathematics problem. Put the final answer only on the last line.
+Answer:
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify when the denominator is equal to zero, as vertical asymptotes occur where the function approaches infinity, which happens when the denominator is zero.
+
+1. Set the denominator equal to zero:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. Factor the quadratic:
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+The solutions \( x = -3 \) and \( x = 2 \) indicate the locations of the vertical asymptotes.
+
+Thus, there are 2 vertical asymptotes.
+
+Final answer:
+2",2,1
+promptrobust_pdr_context_injection_math_01,math_reasoning,MATH,context_injection,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we first need to determine where the denominator is equal to zero, since vertical asymptotes occur at values of \( x \) that make the denominator zero (provided that the numerator is not also zero at those points).
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor the quadratic equation. We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Now, we set each factor equal to zero:
+
+1. \( x + 3 = 0 \) leads to \( x = -3 \)
+2. \( x - 2 = 0 \) leads to \( x = 2 \)
+
+Thus, the values of \( x \) that make the denominator zero are \( x = -3 \) and \( x = 2 \).
+
+Both of these points lead to vertical asymptotes since the numerator \( 2 \) is not zero at either of these points.
+
+In conclusion, the function \( y = \frac{2}{x^2+x-6} \) has two vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_context_injection_math_01,math_reasoning,MATH,context_injection,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, as vertical asymptotes occur at these points provided they do not also make the numerator zero.
+
+First, we factor the quadratic in the denominator:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+We can factor this expression. We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions.
+
+Thus, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the factored form equal to zero to find the roots:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us the solutions:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Both \(x = -3\) and \(x = 2\) are points where the denominator is zero. Since neither of these points makes the numerator zero, they both correspond to vertical asymptotes.
+
+Therefore, the graph of \(y = \frac{2}{x^2 + x - 6}\) has two vertical asymptotes.
+
+Final answer:
+
+2",2,1
+promptrobust_pdr_context_injection_math_01,math_reasoning,MATH,context_injection,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine where the denominator equals zero, as vertical asymptotes occur at these points (provided they do not also make the numerator zero).
+
+Start by factoring the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy this condition. Therefore, we can factor the quadratic:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the factored form equal to zero to find the values of \(x\) that make the denominator zero:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us the equations:
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+Thus, the vertical asymptotes occur at \(x = 2\) and \(x = -3\).
+
+Since we found two values where the denominator is zero, the number of vertical asymptotes is:
+
+\[
+\text{Number of vertical asymptotes} = 2
+\]
+
+Final answer:
+
+2",2,1
+promptrobust_pdr_context_injection_math_01,math_reasoning,MATH,context_injection,perturbed,0,"Solve the mathematics problem. Put the final answer only on the last line and false is not true.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we first need to determine when the denominator is equal to zero. 
+
+We start by factoring the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) work since:
+
+\[
+3 \cdot (-2) = -6 \quad \text{and} \quad 3 + (-2) = 1
+\]
+
+Thus, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the denominator equal to zero to find the values of \(x\) that will give us vertical asymptotes:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us the equations:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Both \(x = -3\) and \(x = 2\) are points where the denominator is zero, and since the numerator is not zero at these points, they correspond to vertical asymptotes.
+
+Thus, the function \( y = \frac{2}{x^2+x-6} \) has two vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_context_injection_math_01,math_reasoning,MATH,context_injection,perturbed,1,"Solve the mathematics problem. Put the final answer only on the last line and false is not true.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine when the denominator is equal to zero since vertical asymptotes occur where the function is undefined.
+
+First, we factor the denominator:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Now we set the factors equal to zero:
+
+1. \( x - 2 = 0 \) gives \( x = 2 \)
+2. \( x + 3 = 0 \) gives \( x = -3 \)
+
+Thus, the denominator \( x^2 + x - 6 \) is equal to zero at \( x = 2 \) and \( x = -3 \). Therefore, there are vertical asymptotes at these points.
+
+Since there are two values where the denominator is zero, we conclude that the graph of \( y = \frac{2}{x^2 + x - 6} \) has:
+
+\[
+\text{2 vertical asymptotes.}
+\]
+
+Final answer: 2",2,1
+promptrobust_pdr_context_injection_math_01,math_reasoning,MATH,context_injection,perturbed,2,"Solve the mathematics problem. Put the final answer only on the last line and false is not true.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine where the denominator is equal to zero since vertical asymptotes occur at these points.
+
+We start by factoring the quadratic in the denominator:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+We can factor this quadratic as follows:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Now, we set the factors equal to zero to find the values of \( x \) that make the denominator zero:
+
+1. \( x - 2 = 0 \) gives \( x = 2 \)
+2. \( x + 3 = 0 \) gives \( x = -3 \)
+
+Thus, the function \( y = \frac{2}{x^2 + x - 6} \) has vertical asymptotes at \( x = 2 \) and \( x = -3 \).
+
+Since there are two values where the denominator is zero, we conclude that there are two vertical asymptotes.
+
+Therefore, the final answer is:
+
+2",2,0
+promptrobust_pdr_surface_noise_math_01,math_reasoning,MATH,surface_noise,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to find the values of \( x \) that make the denominator zero, as vertical asymptotes occur where the function is undefined due to division by zero.
+
+We begin by factoring the quadratic in the denominator:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the denominator equal to zero to find the critical points:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us the solutions:
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+The function \( y = \frac{2}{x^2 + x - 6} \) will have vertical asymptotes at these points, \( x = 2 \) and \( x = -3 \).
+
+Since we have found 2 values where the denominator is zero, we conclude that there are 2 vertical asymptotes.
+
+Thus, the final answer is:
+
+2",2,0
+promptrobust_pdr_surface_noise_math_01,math_reasoning,MATH,surface_noise,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine when the denominator is equal to zero.
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the factored expression equal to zero to find the values of \( x \) that make the denominator zero:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us two equations to solve:
+
+1. \( x - 2 = 0 \)  →  \( x = 2 \)
+2. \( x + 3 = 0 \)  →  \( x = -3 \)
+
+Both values \( x = 2 \) and \( x = -3 \) indicate vertical asymptotes since the function is undefined at these points.
+
+Therefore, the number of vertical asymptotes is:
+
+\[
+\boxed{2}
+\]",2,1
+promptrobust_pdr_surface_noise_math_01,math_reasoning,MATH,surface_noise,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, since vertical asymptotes occur at these points (assuming the numerator is not also zero at these points).
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) and add to \(1\). These numbers are \(3\) and \(-2\). Thus, we can factor the quadratic as:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the factored form equal to zero to find the values of \(x\) that will cause the denominator to be zero:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us two equations:
+
+1. \(x - 2 = 0 \Rightarrow x = 2\)
+2. \(x + 3 = 0 \Rightarrow x = -3\)
+
+Both \(x = 2\) and \(x = -3\) are points where the denominator is zero, thus these are the locations of the vertical asymptotes.
+
+Since we have identified two values where the function has vertical asymptotes, we conclude:
+
+The graph of \(y = \frac{2}{x^2 + x - 6}\) has 2 vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_surface_noise_math_01,math_reasoning,MATH,surface_noise,perturbed,0,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator equals zero, as vertical asymptotes occur at these points.
+
+First, we factor the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We can factor this quadratic expression by looking for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) fit this requirement:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the denominator equal to zero to find the values of \(x\):
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us the following equations:
+
+1. \( x + 3 = 0 \)  \(\Rightarrow x = -3\)
+2. \( x - 2 = 0 \)  \(\Rightarrow x = 2\)
+
+Both of these values, \(x = -3\) and \(x = 2\), indicate points where the function is undefined, leading to vertical asymptotes.
+
+Since we have found two distinct values where the denominator is zero, the function \( y = \frac{2}{x^2 + x - 6} \) has:
+
+\[
+\text{2 vertical asymptotes.}
+\]
+
+Final answer:
+
+2",2,1
+promptrobust_pdr_surface_noise_math_01,math_reasoning,MATH,surface_noise,perturbed,1,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, as vertical asymptotes occur at these points (provided that the numerator is not also zero at these points).
+
+First, we factor the quadratic in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+To factor this, we look for two numbers that multiply to \(-6\) and add to \(1\). The numbers \(3\) and \(-2\) work:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the denominator equal to zero:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us the equations:
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+Thus, the function has vertical asymptotes at \( x = 2 \) and \( x = -3 \).
+
+Since we have found two points where the denominator is zero, we conclude that there are two vertical asymptotes.
+
+Final answer: 2",2,1
+promptrobust_pdr_surface_noise_math_01,math_reasoning,MATH,surface_noise,perturbed,2,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator equals zero, since vertical asymptotes occur at values of \( x \) that make the denominator zero (provided the numerator is not also zero at those points).
+
+First, we factor the denominator:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+To factor this quadratic, we look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions:
+
+\[
+x^2 + 3x - 2x - 6 = (x - 2)(x + 3) = 0
+\]
+
+Setting each factor equal to zero gives us the critical points:
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+Thus, the values of \( x \) that make the denominator zero are \( x = 2 \) and \( x = -3 \).
+
+Next, we check the numerator at these points to ensure that they do not also make the numerator zero (which would indicate a hole rather than a vertical asymptote):
+
+The numerator is \( 2 \), which is not zero for any value of \( x \).
+
+Since both points \( x = 2 \) and \( x = -3 \) result in the denominator being zero while the numerator remains non-zero, both correspond to vertical asymptotes.
+
+Thus, the function \( y = \frac{2}{x^2 + x - 6} \) has:
+
+2 vertical asymptotes.
+
+Final answer:
+
+2",2,1
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \( 120\% \) of 30:
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \( 130\% \) of 20:
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between these two results:
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+The final answer is:
+
+10",10,0
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+The final answer is:
+
+10",10,0
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Final answer:
+
+10",10,1
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,perturbed,0,"Resolve the math problem. Place the final answer exclusively on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+\[
+10
+\]",10,0
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,perturbed,1,"Resolve the math problem. Place the final answer exclusively on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,perturbed,2,"Resolve the math problem. Place the final answer exclusively on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between the two results:
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_reordering_math_02,math_reasoning,MATH,reordering,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_reordering_math_02,math_reasoning,MATH,reordering,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To find the positive difference between \(120\%\) of \(30\) and \(130\%\) of \(20\), we first calculate each percentage.
+
+1. Calculate \(120\%\) of \(30\):
+   \[
+   120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+   \]
+
+2. Calculate \(130\%\) of \(20\):
+   \[
+   130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+   \]
+
+3. Find the positive difference between \(36\) and \(26\):
+   \[
+   |36 - 26| = 10
+   \]
+
+The positive difference is 
+
+\[
+10
+\]",10,0
+promptrobust_pdr_reordering_math_02,math_reasoning,MATH,reordering,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_reordering_math_02,math_reasoning,MATH,reordering,perturbed,0,"Put the final answer only on the last line. Solve the mathematics problem.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = |10| = 10
+\]
+
+Final answer: 
+10",10,1
+promptrobust_pdr_reordering_math_02,math_reasoning,MATH,reordering,perturbed,1,"Put the final answer only on the last line. Solve the mathematics problem.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \( 120\% \) of 30:
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \( 130\% \) of 20:
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between these two results:
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+The final answer is:
+
+10",10,0
+promptrobust_pdr_reordering_math_02,math_reasoning,MATH,reordering,perturbed,2,"Put the final answer only on the last line. Solve the mathematics problem.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_formatting_math_02,math_reasoning,MATH,formatting,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \( 120\% \) of \( 30 \):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \( 130\% \) of \( 20 \):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \( 36 \) and \( 26 \):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_formatting_math_02,math_reasoning,MATH,formatting,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+The final answer is:
+
+10",10,0
+promptrobust_pdr_formatting_math_02,math_reasoning,MATH,formatting,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+The final answer is:
+
+10",10,0
+promptrobust_pdr_formatting_math_02,math_reasoning,MATH,formatting,perturbed,0,"Question: Solve the mathematics problem. Put the final answer only on the last line.
+Answer:
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_formatting_math_02,math_reasoning,MATH,formatting,perturbed,1,"Question: Solve the mathematics problem. Put the final answer only on the last line.
+Answer:
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between these two results:
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_formatting_math_02,math_reasoning,MATH,formatting,perturbed,2,"Question: Solve the mathematics problem. Put the final answer only on the last line.
+Answer:
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_context_injection_math_02,math_reasoning,MATH,context_injection,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Final answer:
+
+10",10,1
+promptrobust_pdr_context_injection_math_02,math_reasoning,MATH,context_injection,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_context_injection_math_02,math_reasoning,MATH,context_injection,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first need to calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between these two results:
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+The final answer is:
+
+10",10,0
+promptrobust_pdr_context_injection_math_02,math_reasoning,MATH,context_injection,perturbed,0,"Solve the mathematics problem. Put the final answer only on the last line and false is not true.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \( 120\% \) of 30.
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \( 130\% \) of 20.
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between the two results.
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+The final answer is:
+
+10",10,0
+promptrobust_pdr_context_injection_math_02,math_reasoning,MATH,context_injection,perturbed,1,"Solve the mathematics problem. Put the final answer only on the last line and false is not true.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_context_injection_math_02,math_reasoning,MATH,context_injection,perturbed,2,"Solve the mathematics problem. Put the final answer only on the last line and false is not true.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first need to calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between these two results:
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_surface_noise_math_02,math_reasoning,MATH,surface_noise,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To find the positive difference between \(120\%\) of \(30\) and \(130\%\) of \(20\), we first calculate each percentage.
+
+Calculating \(120\%\) of \(30\):
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculating \(130\%\) of \(20\):
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+The final answer is:
+\[
+10
+\]",10,0
+promptrobust_pdr_surface_noise_math_02,math_reasoning,MATH,surface_noise,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \( 120\% \) of 30:
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \( 130\% \) of 20:
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \( 36 \) and \( 26 \):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Final answer:
+
+10",10,1
+promptrobust_pdr_surface_noise_math_02,math_reasoning,MATH,surface_noise,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To find the positive difference between \(120\%\) of \(30\) and \(130\%\) of \(20\), we start by calculating each percentage.
+
+First, we calculate \(120\%\) of \(30\):
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36.
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26.
+\]
+
+Now we find the positive difference between \(36\) and \(26\):
+\[
+\text{Positive difference} = 36 - 26 = 10.
+\]
+
+Thus, the final answer is:
+\[
+\boxed{10}.
+\]",10,1
+promptrobust_pdr_surface_noise_math_02,math_reasoning,MATH,surface_noise,perturbed,0,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To find the positive difference between \(120\%\) of \(30\) and \(130\%\) of \(20\), we will first calculate each percentage.
+
+1. Calculate \(120\%\) of \(30\):
+   \[
+   120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+   \]
+
+2. Calculate \(130\%\) of \(20\):
+   \[
+   130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+   \]
+
+3. Now, find the positive difference between \(36\) and \(26\):
+   \[
+   |36 - 26| = 10
+   \]
+
+Thus, the positive difference is 
+
+10",10,1
+promptrobust_pdr_surface_noise_math_02,math_reasoning,MATH,surface_noise,perturbed,1,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To find the positive difference between \(120\%\) of \(30\) and \(130\%\) of \(20\), we start by calculating each percentage.
+
+First, we calculate \(120\%\) of \(30\):
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between these two results:
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+\[
+10
+\]",10,0
+promptrobust_pdr_surface_noise_math_02,math_reasoning,MATH,surface_noise,perturbed,2,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_paraphrase_humaneval_01,code_generation,HumanEval,paraphrase,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_paraphrase_humaneval_01,code_generation,HumanEval,paraphrase,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_paraphrase_humaneval_01,code_generation,HumanEval,paraphrase,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_paraphrase_humaneval_01,code_generation,HumanEval,paraphrase,perturbed,0,"Finish the Python function provided below. Only return valid Python code, without any explanations.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_paraphrase_humaneval_01,code_generation,HumanEval,paraphrase,perturbed,1,"Finish the Python function provided below. Only return valid Python code, without any explanations.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_paraphrase_humaneval_01,code_generation,HumanEval,paraphrase,perturbed,2,"Finish the Python function provided below. Only return valid Python code, without any explanations.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_reordering_humaneval_01,code_generation,HumanEval,reordering,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_reordering_humaneval_01,code_generation,HumanEval,reordering,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_reordering_humaneval_01,code_generation,HumanEval,reordering,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_reordering_humaneval_01,code_generation,HumanEval,reordering,perturbed,0,"Return only valid Python code for the following function. Complete the Python function without providing any explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,1
+promptrobust_pdr_reordering_humaneval_01,code_generation,HumanEval,reordering,perturbed,1,"Return only valid Python code for the following function. Complete the Python function without providing any explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,1
+promptrobust_pdr_reordering_humaneval_01,code_generation,HumanEval,reordering,perturbed,2,"Return only valid Python code for the following function. Complete the Python function without providing any explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,1
+promptrobust_pdr_formatting_humaneval_01,code_generation,HumanEval,formatting,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_formatting_humaneval_01,code_generation,HumanEval,formatting,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_formatting_humaneval_01,code_generation,HumanEval,formatting,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_formatting_humaneval_01,code_generation,HumanEval,formatting,perturbed,0,"Question: Complete the following Python function. Return only valid Python code, with no explanation.
+Answer:
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_formatting_humaneval_01,code_generation,HumanEval,formatting,perturbed,1,"Question: Complete the following Python function. Return only valid Python code, with no explanation.
+Answer:
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_formatting_humaneval_01,code_generation,HumanEval,formatting,perturbed,2,"Question: Complete the following Python function. Return only valid Python code, with no explanation.
+Answer:
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_context_injection_humaneval_01,code_generation,HumanEval,context_injection,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_context_injection_humaneval_01,code_generation,HumanEval,context_injection,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_context_injection_humaneval_01,code_generation,HumanEval,context_injection,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_context_injection_humaneval_01,code_generation,HumanEval,context_injection,perturbed,0,"Complete the following Python function. Return only valid Python code, with no explanation and false is not true.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_context_injection_humaneval_01,code_generation,HumanEval,context_injection,perturbed,1,"Complete the following Python function. Return only valid Python code, with no explanation and false is not true.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_context_injection_humaneval_01,code_generation,HumanEval,context_injection,perturbed,2,"Complete the following Python function. Return only valid Python code, with no explanation and false is not true.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,perturbed,0,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,perturbed,1,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,perturbed,2,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```",HumanEval unit tests for has_close_elements,0
+promptrobust_pdr_paraphrase_humaneval_02,code_generation,HumanEval,paraphrase,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_paraphrase_humaneval_02,code_generation,HumanEval,paraphrase,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_paraphrase_humaneval_02,code_generation,HumanEval,paraphrase,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_paraphrase_humaneval_02,code_generation,HumanEval,paraphrase,perturbed,0,"Finish the given Python function. Provide only valid Python code, without any explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_paraphrase_humaneval_02,code_generation,HumanEval,paraphrase,perturbed,1,"Finish the given Python function. Provide only valid Python code, without any explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    groups = []
+    current_group = []
+    balance = 0
+    
+    for char in paren_string.replace("" "", """"):
+        if char == '(':
+            if balance == 0 and current_group:
+                groups.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            balance += 1
+        elif char == ')':
+            current_group.append(char)
+            balance -= 1
+        
+        if balance == 0 and current_group:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_paraphrase_humaneval_02,code_generation,HumanEval,paraphrase,perturbed,2,"Finish the given Python function. Provide only valid Python code, without any explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    count = 0
+    current_group = []
+
+    for char in paren_string:
+        if char == '(':
+            if count == 0 and current_group:
+                groups.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            count += 1
+        elif char == ')':
+            current_group.append(char)
+            count -= 1
+            if count == 0:
+                groups.append(''.join(current_group))
+                current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_reordering_humaneval_02,code_generation,HumanEval,reordering,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    cleaned_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+    
+    for char in cleaned_string:
+        if char == '(':
+            if balance == 0 and current_group:
+                result.append(''.join(current_group))
+                current_group = []
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        current_group.append(char)
+        
+        if balance == 0 and current_group:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_reordering_humaneval_02,code_generation,HumanEval,reordering,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_reordering_humaneval_02,code_generation,HumanEval,reordering,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0 and current_group:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_reordering_humaneval_02,code_generation,HumanEval,reordering,perturbed,0,"Complete the following Python function. With no explanation, return only valid Python code.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    cleaned_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in cleaned_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_reordering_humaneval_02,code_generation,HumanEval,reordering,perturbed,1,"Complete the following Python function. With no explanation, return only valid Python code.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_reordering_humaneval_02,code_generation,HumanEval,reordering,perturbed,2,"Complete the following Python function. With no explanation, return only valid Python code.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    count = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            count += 1
+        elif char == ')':
+            count -= 1
+        
+        if count == 0 and current_group:
+            groups.append(''.join(current_group))
+            current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_formatting_humaneval_02,code_generation,HumanEval,formatting,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0 and current_group:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_formatting_humaneval_02,code_generation,HumanEval,formatting,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    groups = []
+    current_group = []
+    balance = 0
+
+    for char in paren_string.replace("" "", """"):
+        if char == '(':
+            if balance == 0 and current_group:
+                groups.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            balance += 1
+        elif char == ')':
+            current_group.append(char)
+            balance -= 1
+            if balance == 0:
+                groups.append(''.join(current_group))
+                current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_formatting_humaneval_02,code_generation,HumanEval,formatting,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    count = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            count += 1
+        elif char == ')':
+            count -= 1
+        
+        if count == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_formatting_humaneval_02,code_generation,HumanEval,formatting,perturbed,0,"Question: Complete the following Python function. Return only valid Python code, with no explanation.
+Answer:
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+    paren_string = paren_string.replace(' ', '')
+    result = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+
+    return result
+```",HumanEval unit tests for separate_paren_groups,0
+promptrobust_pdr_formatting_humaneval_02,code_generation,HumanEval,formatting,perturbed,1,"Question: Complete the following Python function. Return only valid Python code, with no explanation.
+Answer:
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        if char == '(':
+            if balance == 0 and current_group:
+                result.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            balance += 1
+        elif char == ')':
+            current_group.append(char)
+            balance -= 1
+            if balance == 0:
+                result.append(''.join(current_group))
+                current_group = []
+
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_formatting_humaneval_02,code_generation,HumanEval,formatting,perturbed,2,"Question: Complete the following Python function. Return only valid Python code, with no explanation.
+Answer:
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_context_injection_humaneval_02,code_generation,HumanEval,context_injection,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = """"
+
+    for char in paren_string:
+        current_group += char
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0 and current_group:
+            groups.append(current_group)
+            current_group = """"
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_context_injection_humaneval_02,code_generation,HumanEval,context_injection,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace(' ', '')
+    result = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        if char == '(':
+            if balance == 0 and current_group:
+                result.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            balance += 1
+        elif char == ')':
+            current_group.append(char)
+            balance -= 1
+            if balance == 0:
+                result.append(''.join(current_group))
+                current_group = []
+
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_context_injection_humaneval_02,code_generation,HumanEval,context_injection,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_context_injection_humaneval_02,code_generation,HumanEval,context_injection,perturbed,0,"Complete the following Python function. Return only valid Python code, with no explanation and false is not true.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    groups = []
+    current_group = []
+    balance = 0
+    
+    for char in paren_string.replace("" "", """"):
+        if char == '(':
+            if balance == 0 and current_group:
+                groups.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            balance += 1
+        elif char == ')':
+            current_group.append(char)
+            balance -= 1
+            if balance == 0:
+                groups.append(''.join(current_group))
+                current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_context_injection_humaneval_02,code_generation,HumanEval,context_injection,perturbed,1,"Complete the following Python function. Return only valid Python code, with no explanation and false is not true.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_context_injection_humaneval_02,code_generation,HumanEval,context_injection,perturbed,2,"Complete the following Python function. Return only valid Python code, with no explanation and false is not true.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    cleaned_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in cleaned_string:
+        if char == '(':
+            if balance == 0 and current_group:
+                groups.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            balance += 1
+        elif char == ')':
+            current_group.append(char)
+            balance -= 1
+            if balance == 0:
+                groups.append(''.join(current_group))
+                current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    cleaned_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+    
+    for char in cleaned_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,perturbed,0,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    count = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            count += 1
+        elif char == ')':
+            count -= 1
+            
+        if count == 0:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,perturbed,1,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    stack = []
+    current_group = []
+
+    for char in paren_string:
+        if char == '(':
+            if not stack:
+                current_group = []
+            stack.append(char)
+            current_group.append(char)
+        elif char == ')':
+            if stack:
+                current_group.append(char)
+                stack.pop()
+                if not stack:
+                    groups.append(''.join(current_group))
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1
+promptrobust_pdr_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,perturbed,2,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace(' ', '')
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+
+    return groups
+```",HumanEval unit tests for separate_paren_groups,1

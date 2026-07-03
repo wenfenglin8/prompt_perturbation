@@ -1,0 +1,5 @@
+case_id,task,dataset,clean_single_correct,perturbed_single_correct,single_sample_pdr,clean_mean_correctness,perturbed_mean_correctness,repeated_sampling_pdr,correctness_sample_noise
+promptrobust_pdr_squad_01,factual_qa,SQuAD V2,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_squad_02,factual_qa,SQuAD V2,1,1,0.0,0.6666666666666666,0.3333333333333333,0.5,0.4714045207910317
+promptrobust_pdr_math_01,math_reasoning,MATH,1,1,0.0,0.6666666666666666,0.6666666666666666,0.0,0.4714045207910317
+promptrobust_pdr_math_02,math_reasoning,MATH,0,0,0.0,0.3333333333333333,0.3333333333333333,0.0,0.4714045207910317

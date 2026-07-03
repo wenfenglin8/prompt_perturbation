@@ -1,0 +1,3 @@
+base_case_id,task,dataset,perturbation_family,strength_level,strength_edits,original_noise,perturbed_noise,noise_baseline,raw_perturbation_drift,noise_corrected_drift,mean_cross_similarity,mean_paired_similarity,clean_single_correct,perturbed_single_correct,single_pass_rate_drop,abs_single_pass_rate_change,single_sample_pdr,clean_mean_correctness,perturbed_mean_correctness,repeated_pass_rate_drop,abs_repeated_pass_rate_change,repeated_sampling_pdr,harmful_correctness_drop,correctness_changed
+rq2_dose_squad_01,factual_qa,SQuAD V2,surface_noise,0,0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0,0
+rq2_dose_squad_01,factual_qa,SQuAD V2,surface_noise,1,1,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0,0

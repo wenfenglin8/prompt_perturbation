@@ -1,0 +1,58 @@
+{
+  "model": "gpt-4o-mini",
+  "suite": "promptrobust_hard",
+  "embedding_model": "text-embedding-3-small",
+  "samples_per_prompt_version": 8,
+  "temperature": 0.9,
+  "top_p": 0.95,
+  "metrics": [
+    {
+      "case_id": "promptrobust_hard_sst2_01",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 0.06749406483471554,
+      "perturbed_noise": 1.0534814129381509e-07,
+      "noise_baseline": 0.033747085091428417,
+      "raw_perturbation_drift": 0.03374772620222033,
+      "noise_corrected_drift": 6.411107919129799e-07,
+      "noise_corrected_drift_clipped": 6.411107919129799e-07,
+      "signal_to_noise_ratio": 1.000018997516087,
+      "bootstrap_p_between_gt_noise": 0.58
+    },
+    {
+      "case_id": "promptrobust_hard_sst2_02",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0,
+      "noise_corrected_drift_clipped": 0.0,
+      "signal_to_noise_ratio": Infinity,
+      "bootstrap_p_between_gt_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_hard_sst2_03",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 1.1102230246251565e-16,
+      "perturbed_noise": 1.1102230246251565e-16,
+      "noise_baseline": 1.1102230246251565e-16,
+      "raw_perturbation_drift": 1.1102230246251565e-16,
+      "noise_corrected_drift": 0.0,
+      "noise_corrected_drift_clipped": 0.0,
+      "signal_to_noise_ratio": 1.0,
+      "bootstrap_p_between_gt_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_hard_sst2_04",
+      "task": "sst2_sentiment_hard",
+      "original_noise": 2.257460170581752e-07,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 1.128730085290876e-07,
+      "raw_perturbation_drift": 1.5802221194072263e-07,
+      "noise_corrected_drift": 4.5149203411635035e-08,
+      "noise_corrected_drift_clipped": 4.5149203411635035e-08,
+      "signal_to_noise_ratio": 1.4,
+      "bootstrap_p_between_gt_noise": 0.862
+    }
+  ]
+}

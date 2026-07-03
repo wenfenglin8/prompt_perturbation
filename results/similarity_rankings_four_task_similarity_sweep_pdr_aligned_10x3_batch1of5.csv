@@ -1,0 +1,5 @@
+task,rank,perturbation,noise_corrected_drift,raw_perturbation_drift
+factual_qa,1,paraphrase,0.06110718899430796,0.09601227001394289
+math_reasoning,1,paraphrase,0.004534771425409882,0.04645759755649895
+code_generation,1,paraphrase,0.0197893129780003,0.04852331560634565
+open_ended_writing,1,paraphrase,0.013782257778120005,0.12779612136144736

@@ -1,0 +1,4 @@
+task,paraphrase,formatting,reordering,context_injection,surface_noise
+factual_qa,0.2,0.2,0.0,0.0,0.1
+math_reasoning,0.3,0.0,0.2,0.2,0.1
+code_generation,0.1,0.3,0.0,0.1,0.1

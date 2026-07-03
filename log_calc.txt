@@ -1,0 +1,71 @@
+Code generation drift calculation for code_01
+
+Metric:
+cosine distance = 1 - cosine similarity
+
+Embedding model:
+text-embedding-3-small
+
+Samples:
+Original prompt outputs: O0, O1, O2
+Perturbed prompt outputs: P0, P1, P2
+
+1. Original within-prompt sample noise
+
+O0-O1: 0.019498
+O0-O2: 0.081371
+O1-O2: 0.074299
+
+original_noise
+= (0.019498 + 0.081371 + 0.074299) / 3
+= 0.058389
+
+2. Perturbed within-prompt sample noise
+
+P0-P1: 0.084772
+P0-P2: 0.018770
+P1-P2: 0.053861
+
+perturbed_noise
+= (0.084772 + 0.018770 + 0.053861) / 3
+= 0.052468
+
+3. Sample-noise baseline
+
+noise_baseline
+= (original_noise + perturbed_noise) / 2
+= (0.058389 + 0.052468) / 2
+= 0.055428
+
+4. Original-vs-perturbed raw drift
+
+O0-P0: 0.082927
+O0-P1: 0.053547
+O0-P2: 0.066607
+O1-P0: 0.091839
+O1-P1: 0.055064
+O1-P2: 0.071523
+O2-P0: 0.113507
+O2-P1: 0.133233
+O2-P2: 0.127518
+
+raw_perturbation_drift
+= average of the 9 original-vs-perturbed distances
+= 0.088418
+
+5. Noise-corrected perturbation drift
+
+noise_corrected_drift
+= raw_perturbation_drift - noise_baseline
+= 0.088418 - 0.055428
+= 0.032990
+
+Summary:
+raw drift:             0.0884
+sample noise baseline: 0.0554
+corrected drift:       0.0330
+
+Interpretation:
+For code_01, evaluating only original-vs-perturbed output drift gives 0.0884.
+However, repeated generations from the same prompt already vary by about 0.0554.
+After subtracting this sample-noise baseline, the perturbation-specific drift is 0.0330.

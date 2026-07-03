@@ -1,0 +1,670 @@
+{
+  "model": "gpt-4o-mini",
+  "embedding_model": "text-embedding-3-small",
+  "dataset_cases_per_task": 2,
+  "samples": 3,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "grouped": [
+    {
+      "task": "factual_qa",
+      "perturbation": "character",
+      "dataset": "SQuAD V2",
+      "n": 2,
+      "uncorrected_single_drift": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "task": "factual_qa",
+      "perturbation": "word",
+      "dataset": "SQuAD V2",
+      "n": 2,
+      "uncorrected_single_drift": 0.0,
+      "noise_baseline": 0.04202006655064793,
+      "raw_perturbation_drift": 0.08404013310129584,
+      "noise_corrected_drift": 0.042020066550647904
+    },
+    {
+      "task": "factual_qa",
+      "perturbation": "sentence",
+      "dataset": "SQuAD V2",
+      "n": 2,
+      "uncorrected_single_drift": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "task": "factual_qa",
+      "perturbation": "semantic",
+      "dataset": "SQuAD V2",
+      "n": 2,
+      "uncorrected_single_drift": 0.28972518334504055,
+      "noise_baseline": 0.002494852589026625,
+      "raw_perturbation_drift": 0.29139196481578866,
+      "noise_corrected_drift": 0.288897112226762
+    },
+    {
+      "task": "math_reasoning",
+      "perturbation": "character",
+      "dataset": "MATH",
+      "n": 2,
+      "uncorrected_single_drift": 0.02408614999687686,
+      "noise_baseline": 0.026231794516265765,
+      "raw_perturbation_drift": 0.030075006365398164,
+      "noise_corrected_drift": 0.0038432118491324007
+    },
+    {
+      "task": "math_reasoning",
+      "perturbation": "word",
+      "dataset": "MATH",
+      "n": 2,
+      "uncorrected_single_drift": 0.30329401312698745,
+      "noise_baseline": 0.023588924984125074,
+      "raw_perturbation_drift": 0.294572384939982,
+      "noise_corrected_drift": 0.2711232333434521
+    },
+    {
+      "task": "math_reasoning",
+      "perturbation": "sentence",
+      "dataset": "MATH",
+      "n": 2,
+      "uncorrected_single_drift": 0.023697957299223416,
+      "noise_baseline": 0.031680938413804885,
+      "raw_perturbation_drift": 0.030840577907393966,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "task": "math_reasoning",
+      "perturbation": "semantic",
+      "dataset": "MATH",
+      "n": 2,
+      "uncorrected_single_drift": 0.06826443228402296,
+      "noise_baseline": 0.03841819954712482,
+      "raw_perturbation_drift": 0.05232009014391102,
+      "noise_corrected_drift": 0.013901890596786207
+    },
+    {
+      "task": "code_generation",
+      "perturbation": "character",
+      "dataset": "HumanEval",
+      "n": 2,
+      "uncorrected_single_drift": 0.04101958400522182,
+      "noise_baseline": 0.0177839599958649,
+      "raw_perturbation_drift": 0.016806826478088004,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "task": "code_generation",
+      "perturbation": "word",
+      "dataset": "HumanEval",
+      "n": 2,
+      "uncorrected_single_drift": 0.128143444214383,
+      "noise_baseline": 0.019604113515377303,
+      "raw_perturbation_drift": 0.12473632883294707,
+      "noise_corrected_drift": 0.10513221531756976
+    },
+    {
+      "task": "code_generation",
+      "perturbation": "sentence",
+      "dataset": "HumanEval",
+      "n": 2,
+      "uncorrected_single_drift": 0.09792388867300367,
+      "noise_baseline": 0.03837487996320309,
+      "raw_perturbation_drift": 0.06911164808216241,
+      "noise_corrected_drift": 0.03163006142782384
+    },
+    {
+      "task": "code_generation",
+      "perturbation": "semantic",
+      "dataset": "HumanEval",
+      "n": 2,
+      "uncorrected_single_drift": 0.13557284466717534,
+      "noise_baseline": 0.0028569924657396535,
+      "raw_perturbation_drift": 0.13853867628437275,
+      "noise_corrected_drift": 0.1356816838186331
+    },
+    {
+      "task": "open_ended_writing",
+      "perturbation": "character",
+      "dataset": "Alpaca",
+      "n": 2,
+      "uncorrected_single_drift": 0.014856796805869599,
+      "noise_baseline": 0.0372153541453694,
+      "raw_perturbation_drift": 0.03129824481200419,
+      "noise_corrected_drift": 2.4905469886427056e-07
+    },
+    {
+      "task": "open_ended_writing",
+      "perturbation": "word",
+      "dataset": "Alpaca",
+      "n": 2,
+      "uncorrected_single_drift": 0.01579309227097503,
+      "noise_baseline": 0.025495516655590533,
+      "raw_perturbation_drift": 0.029603023885470956,
+      "noise_corrected_drift": 0.0041075072298804235
+    },
+    {
+      "task": "open_ended_writing",
+      "perturbation": "sentence",
+      "dataset": "Alpaca",
+      "n": 2,
+      "uncorrected_single_drift": 0.0994071297635748,
+      "noise_baseline": 0.04774124554037668,
+      "raw_perturbation_drift": 0.08967599492021083,
+      "noise_corrected_drift": 0.04193474937983415
+    },
+    {
+      "task": "open_ended_writing",
+      "perturbation": "semantic",
+      "dataset": "Alpaca",
+      "n": 2,
+      "uncorrected_single_drift": 0.037593106344424254,
+      "noise_baseline": 0.023360276565010163,
+      "raw_perturbation_drift": 0.03730434062572801,
+      "noise_corrected_drift": 0.013944064060717846
+    }
+  ],
+  "rankings": [
+    {
+      "task": "factual_qa",
+      "rank": 1,
+      "perturbation": "semantic",
+      "noise_corrected_drift": 0.288897112226762,
+      "raw_perturbation_drift": 0.29139196481578866
+    },
+    {
+      "task": "factual_qa",
+      "rank": 2,
+      "perturbation": "word",
+      "noise_corrected_drift": 0.042020066550647904,
+      "raw_perturbation_drift": 0.08404013310129584
+    },
+    {
+      "task": "factual_qa",
+      "rank": 3,
+      "perturbation": "character",
+      "noise_corrected_drift": 0.0,
+      "raw_perturbation_drift": 0.0
+    },
+    {
+      "task": "factual_qa",
+      "rank": 4,
+      "perturbation": "sentence",
+      "noise_corrected_drift": 0.0,
+      "raw_perturbation_drift": 0.0
+    },
+    {
+      "task": "math_reasoning",
+      "rank": 1,
+      "perturbation": "word",
+      "noise_corrected_drift": 0.2711232333434521,
+      "raw_perturbation_drift": 0.294572384939982
+    },
+    {
+      "task": "math_reasoning",
+      "rank": 2,
+      "perturbation": "semantic",
+      "noise_corrected_drift": 0.013901890596786207,
+      "raw_perturbation_drift": 0.05232009014391102
+    },
+    {
+      "task": "math_reasoning",
+      "rank": 3,
+      "perturbation": "character",
+      "noise_corrected_drift": 0.0038432118491324007,
+      "raw_perturbation_drift": 0.030075006365398164
+    },
+    {
+      "task": "math_reasoning",
+      "rank": 4,
+      "perturbation": "sentence",
+      "noise_corrected_drift": 0.0,
+      "raw_perturbation_drift": 0.030840577907393966
+    },
+    {
+      "task": "code_generation",
+      "rank": 1,
+      "perturbation": "semantic",
+      "noise_corrected_drift": 0.1356816838186331,
+      "raw_perturbation_drift": 0.13853867628437275
+    },
+    {
+      "task": "code_generation",
+      "rank": 2,
+      "perturbation": "word",
+      "noise_corrected_drift": 0.10513221531756976,
+      "raw_perturbation_drift": 0.12473632883294707
+    },
+    {
+      "task": "code_generation",
+      "rank": 3,
+      "perturbation": "sentence",
+      "noise_corrected_drift": 0.03163006142782384,
+      "raw_perturbation_drift": 0.06911164808216241
+    },
+    {
+      "task": "code_generation",
+      "rank": 4,
+      "perturbation": "character",
+      "noise_corrected_drift": 0.0,
+      "raw_perturbation_drift": 0.016806826478088004
+    },
+    {
+      "task": "open_ended_writing",
+      "rank": 1,
+      "perturbation": "sentence",
+      "noise_corrected_drift": 0.04193474937983415,
+      "raw_perturbation_drift": 0.08967599492021083
+    },
+    {
+      "task": "open_ended_writing",
+      "rank": 2,
+      "perturbation": "semantic",
+      "noise_corrected_drift": 0.013944064060717846,
+      "raw_perturbation_drift": 0.03730434062572801
+    },
+    {
+      "task": "open_ended_writing",
+      "rank": 3,
+      "perturbation": "word",
+      "noise_corrected_drift": 0.0041075072298804235,
+      "raw_perturbation_drift": 0.029603023885470956
+    },
+    {
+      "task": "open_ended_writing",
+      "rank": 4,
+      "perturbation": "character",
+      "noise_corrected_drift": 2.4905469886427056e-07,
+      "raw_perturbation_drift": 0.03129824481200419
+    }
+  ],
+  "metrics": [
+    {
+      "case_id": "fourtask_character_squad_01",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "character",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_word_squad_01",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "word",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.16808026620259173,
+      "noise_baseline": 0.08404013310129586,
+      "raw_perturbation_drift": 0.16808026620259167,
+      "noise_corrected_drift": 0.08404013310129581
+    },
+    {
+      "case_id": "fourtask_sentence_squad_01",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_semantic_squad_01",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.2521203993038875,
+      "original_noise": 0.0,
+      "perturbed_noise": 1.1102230246251565e-16,
+      "noise_baseline": 5.551115123125783e-17,
+      "raw_perturbation_drift": 0.2521203993038875,
+      "noise_corrected_drift": 0.25212039930388747
+    },
+    {
+      "case_id": "fourtask_character_squad_02",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "character",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_word_squad_02",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "word",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_sentence_squad_02",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_semantic_squad_02",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.3273299673861936,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.009979410356106388,
+      "noise_baseline": 0.004989705178053194,
+      "raw_perturbation_drift": 0.33066353032768975,
+      "noise_corrected_drift": 0.32567382514963655
+    },
+    {
+      "case_id": "fourtask_character_math_01",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "character",
+      "uncorrected_single_drift": 0.03935526448475524,
+      "original_noise": 0.026278656107046345,
+      "perturbed_noise": 0.033964217536099316,
+      "noise_baseline": 0.030121436821572832,
+      "raw_perturbation_drift": 0.03462745205650194,
+      "noise_corrected_drift": 0.004506015234929106
+    },
+    {
+      "case_id": "fourtask_word_math_01",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "word",
+      "uncorrected_single_drift": 0.03880461093578025,
+      "original_noise": 0.04067643540279894,
+      "perturbed_noise": 0.038014931380754846,
+      "noise_baseline": 0.039345683391776895,
+      "raw_perturbation_drift": 0.03906613661658657,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_sentence_math_01",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 0.020084168483091247,
+      "original_noise": 0.016792525255261353,
+      "perturbed_noise": 0.03645243807389068,
+      "noise_baseline": 0.026622481664576016,
+      "raw_perturbation_drift": 0.026035578486447837,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_semantic_math_01",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.06600805937853693,
+      "original_noise": 0.03174320790073596,
+      "perturbed_noise": 0.05381646399080464,
+      "noise_baseline": 0.0427798359457703,
+      "raw_perturbation_drift": 0.04594882520292961,
+      "noise_corrected_drift": 0.0031689892571593117
+    },
+    {
+      "case_id": "fourtask_character_math_02",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "character",
+      "uncorrected_single_drift": 0.008817035508998483,
+      "original_noise": 0.019915013298579327,
+      "perturbed_noise": 0.02476929112333807,
+      "noise_baseline": 0.0223421522109587,
+      "raw_perturbation_drift": 0.025522560674294394,
+      "noise_corrected_drift": 0.0031804084633356954
+    },
+    {
+      "case_id": "fourtask_word_math_02",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "word",
+      "uncorrected_single_drift": 0.5677834153181947,
+      "original_noise": 0.0156643331529465,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.00783216657647325,
+      "raw_perturbation_drift": 0.5500786332633775,
+      "noise_corrected_drift": 0.5422464666869042
+    },
+    {
+      "case_id": "fourtask_sentence_math_02",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 0.027311746115355584,
+      "original_noise": 0.022174919708339624,
+      "perturbed_noise": 0.05130387061772786,
+      "noise_baseline": 0.03673939516303375,
+      "raw_perturbation_drift": 0.035645577328340096,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_semantic_math_02",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.07052080518950898,
+      "original_noise": 0.02235607928708061,
+      "perturbed_noise": 0.04575704700987807,
+      "noise_baseline": 0.03405656314847934,
+      "raw_perturbation_drift": 0.05869135508489244,
+      "noise_corrected_drift": 0.024634791936413103
+    },
+    {
+      "case_id": "fourtask_character_humaneval_01",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "character",
+      "uncorrected_single_drift": 0.06428833203280682,
+      "original_noise": 0.04287126258464776,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.02143563129232388,
+      "raw_perturbation_drift": 0.02142981293457576,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_word_humaneval_01",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "word",
+      "uncorrected_single_drift": 0.23349060952088307,
+      "original_noise": 0.06435650640125552,
+      "perturbed_noise": 0.004706853100514478,
+      "noise_baseline": 0.034531679750885,
+      "raw_perturbation_drift": 0.2235587102388984,
+      "noise_corrected_drift": 0.1890270304880134
+    },
+    {
+      "case_id": "fourtask_sentence_humaneval_01",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 0.18978036856694314,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.12652024571129547,
+      "noise_baseline": 0.06326012285564774,
+      "raw_perturbation_drift": 0.12652024571129541,
+      "noise_corrected_drift": 0.06326012285564768
+    },
+    {
+      "case_id": "fourtask_semantic_humaneval_01",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.2489237917251632,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0003085406257516965,
+      "noise_baseline": 0.00015427031287584825,
+      "raw_perturbation_drift": 0.2506421216064912,
+      "noise_corrected_drift": 0.25048785129361534
+    },
+    {
+      "case_id": "fourtask_character_humaneval_02",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "character",
+      "uncorrected_single_drift": 0.017750835977636825,
+      "original_noise": 0.014401018963592027,
+      "perturbed_noise": 0.013863558435219803,
+      "noise_baseline": 0.014132288699405915,
+      "raw_perturbation_drift": 0.012183840021600247,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_word_humaneval_02",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "word",
+      "uncorrected_single_drift": 0.02279627890788294,
+      "original_noise": 0.008567666088796999,
+      "perturbed_noise": 0.0007854284709422066,
+      "noise_baseline": 0.004676547279869603,
+      "raw_perturbation_drift": 0.025913947426995747,
+      "noise_corrected_drift": 0.021237400147126145
+    },
+    {
+      "case_id": "fourtask_sentence_humaneval_02",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 0.006067408779064198,
+      "original_noise": 0.010585662239872931,
+      "perturbed_noise": 0.01639361190164394,
+      "noise_baseline": 0.013489637070758436,
+      "raw_perturbation_drift": 0.011703050453029416,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_semantic_humaneval_02",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.02222189760918747,
+      "original_noise": 0.0006867166554099432,
+      "perturbed_noise": 0.010432712581796974,
+      "noise_baseline": 0.005559714618603459,
+      "raw_perturbation_drift": 0.026435230962254308,
+      "noise_corrected_drift": 0.020875516343650848
+    },
+    {
+      "case_id": "fourtask_character_alpaca_01",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "character",
+      "uncorrected_single_drift": 0.02971309550234147,
+      "original_noise": 0.05308123800505582,
+      "perturbed_noise": 0.0957801785764218,
+      "noise_baseline": 0.0744307082907388,
+      "raw_perturbation_drift": 0.06259599151461065,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_word_alpaca_01",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "word",
+      "uncorrected_single_drift": 0.03158568643255233,
+      "original_noise": 0.07943304358954455,
+      "perturbed_noise": 0.022548756770044198,
+      "noise_baseline": 0.05099090017979437,
+      "raw_perturbation_drift": 0.059205551167269284,
+      "noise_corrected_drift": 0.008214650987474911
+    },
+    {
+      "case_id": "fourtask_sentence_alpaca_01",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 0.19881376141775187,
+      "original_noise": 0.0839935555268196,
+      "perturbed_noise": 0.10697142663468713,
+      "noise_baseline": 0.09548249108075336,
+      "raw_perturbation_drift": 0.17935149173102394,
+      "noise_corrected_drift": 0.08386900065027057
+    },
+    {
+      "case_id": "fourtask_semantic_alpaca_01",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.07518621268884851,
+      "original_noise": 0.03930757794098042,
+      "perturbed_noise": 0.05413352831906023,
+      "noise_baseline": 0.046720553130020326,
+      "raw_perturbation_drift": 0.07460868125145602,
+      "noise_corrected_drift": 0.027888128121435693
+    },
+    {
+      "case_id": "fourtask_character_alpaca_02",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "character",
+      "uncorrected_single_drift": 4.981093977285411e-07,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 4.981093977285411e-07,
+      "noise_corrected_drift": 4.981093977285411e-07
+    },
+    {
+      "case_id": "fourtask_word_alpaca_02",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "word",
+      "uncorrected_single_drift": 4.981093977285411e-07,
+      "original_noise": 2.662627733851508e-07,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 1.331313866925754e-07,
+      "raw_perturbation_drift": 4.966036726283818e-07,
+      "noise_corrected_drift": 3.634722859358064e-07
+    },
+    {
+      "case_id": "fourtask_sentence_alpaca_02",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "sentence",
+      "uncorrected_single_drift": 4.981093977285411e-07,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 4.981093977285411e-07,
+      "noise_corrected_drift": 4.981093977285411e-07
+    },
+    {
+      "case_id": "fourtask_semantic_alpaca_02",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "semantic",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    }
+  ]
+}

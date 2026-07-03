@@ -1,0 +1,2501 @@
+case_id,task,dataset,perturbation,version,sample_idx,prompt,output
+fourtask_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+fourtask_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+fourtask_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+fourtask_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,perturbed,0,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+fourtask_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,perturbed,1,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+fourtask_surface_noise_squad_01,factual_qa,SQuAD V2,surface_noise,perturbed,2,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+fourtask_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.
+fourtask_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.
+fourtask_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.
+fourtask_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,perturbed,0,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.
+fourtask_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,perturbed,1,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.
+fourtask_surface_noise_squad_02,factual_qa,SQuAD V2,surface_noise,perturbed,2,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.
+fourtask_surface_noise_squad_03,factual_qa,SQuAD V2,surface_noise,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway."
+fourtask_surface_noise_squad_03,factual_qa,SQuAD V2,surface_noise,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway."
+fourtask_surface_noise_squad_03,factual_qa,SQuAD V2,surface_noise,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway."
+fourtask_surface_noise_squad_03,factual_qa,SQuAD V2,surface_noise,perturbed,0,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway."
+fourtask_surface_noise_squad_03,factual_qa,SQuAD V2,surface_noise,perturbed,1,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway."
+fourtask_surface_noise_squad_03,factual_qa,SQuAD V2,surface_noise,perturbed,2,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway."
+fourtask_surface_noise_squad_04,factual_qa,SQuAD V2,surface_noise,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo
+fourtask_surface_noise_squad_04,factual_qa,SQuAD V2,surface_noise,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo
+fourtask_surface_noise_squad_04,factual_qa,SQuAD V2,surface_noise,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo
+fourtask_surface_noise_squad_04,factual_qa,SQuAD V2,surface_noise,perturbed,0,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo
+fourtask_surface_noise_squad_04,factual_qa,SQuAD V2,surface_noise,perturbed,1,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo
+fourtask_surface_noise_squad_04,factual_qa,SQuAD V2,surface_noise,perturbed,2,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo
+fourtask_surface_noise_squad_05,factual_qa,SQuAD V2,surface_noise,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century
+fourtask_surface_noise_squad_05,factual_qa,SQuAD V2,surface_noise,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century
+fourtask_surface_noise_squad_05,factual_qa,SQuAD V2,surface_noise,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century
+fourtask_surface_noise_squad_05,factual_qa,SQuAD V2,surface_noise,perturbed,0,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century
+fourtask_surface_noise_squad_05,factual_qa,SQuAD V2,surface_noise,perturbed,1,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century
+fourtask_surface_noise_squad_05,factual_qa,SQuAD V2,surface_noise,perturbed,2,"Read the passage and answer the question. Answer wiith the exct sohrt answer onky.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century
+fourtask_surface_noise_math_01,math_reasoning,MATH,surface_noise,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to identify where the denominator is equal to zero, as vertical asymptotes occur at these points.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor the quadratic equation:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3) = 0
+\]
+
+Now, we solve for \( x \):
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+The solutions \( x = 2 \) and \( x = -3 \) indicate the locations of the vertical asymptotes. 
+
+Thus, there are a total of 2 vertical asymptotes.
+
+Final answer:
+
+2"
+fourtask_surface_noise_math_01,math_reasoning,MATH,surface_noise,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to identify where the denominator equals zero, as vertical asymptotes occur at these points (provided the numerator is not also zero at those points).
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the factored form equal to zero:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us the solutions:
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+Thus, the vertical asymptotes occur at \( x = 2 \) and \( x = -3 \).
+
+In total, we have 2 vertical asymptotes.
+
+Final answer:
+2"
+fourtask_surface_noise_math_01,math_reasoning,MATH,surface_noise,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we first need to determine when the denominator is equal to zero, as vertical asymptotes occur at these points (provided that the numerator is not also zero at those points).
+
+First, we factor the denominator \( x^2 + x - 6 \):
+
+1. We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)).
+2. The numbers \(3\) and \(-2\) satisfy these conditions.
+
+Thus, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the factored denominator equal to zero to find the values of \(x\) that lead to vertical asymptotes:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us the equations:
+
+1. \(x + 3 = 0 \implies x = -3\)
+2. \(x - 2 = 0 \implies x = 2\)
+
+Both values, \(x = -3\) and \(x = 2\), are points where the denominator is zero and the numerator is not zero (since the numerator is a constant \(2\) which is not zero).
+
+Therefore, the graph of \(y = \frac{2}{x^2+x-6}\) has vertical asymptotes at \(x = -3\) and \(x = 2\).
+
+The total number of vertical asymptotes is:
+
+\[
+\boxed{2}
+\]"
+fourtask_surface_noise_math_01,math_reasoning,MATH,surface_noise,perturbed,0,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify where the denominator is equal to zero.
+
+1. Set the denominator equal to zero:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. Factor the quadratic:
+   \[
+   (x - 2)(x + 3) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+
+The vertical asymptotes occur at the values of \( x \) where the denominator is zero and the function is undefined. Therefore, we have two vertical asymptotes at \( x = 2 \) and \( x = -3 \).
+
+Thus, the graph of \( y = \frac{2}{x^2 + x - 6} \) has:
+
+2 vertical asymptotes."
+fourtask_surface_noise_math_01,math_reasoning,MATH,surface_noise,perturbed,1,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine where the denominator is equal to zero, since vertical asymptotes occur at these points.
+
+We start by factoring the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+We can factor this quadratic as follows:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the factors equal to zero to find the values of \( x \):
+
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+
+Thus, the denominator is zero at \( x = 2 \) and \( x = -3 \). Each of these points corresponds to a vertical asymptote.
+
+Since we found two distinct values where the denominator equals zero, the graph of the function \( y = \frac{2}{x^2 + x - 6} \) has two vertical asymptotes.
+
+Therefore, the final answer is:
+
+2"
+fourtask_surface_noise_math_01,math_reasoning,MATH,surface_noise,perturbed,2,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, since vertical asymptotes occur where the function is undefined.
+
+First, we factor the denominator:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+We can factor this quadratic as follows:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the factors equal to zero to find the values of \( x \):
+
+1. \( x - 2 = 0 \) gives \( x = 2 \)
+2. \( x + 3 = 0 \) gives \( x = -3 \)
+
+Thus, the values \( x = 2 \) and \( x = -3 \) make the denominator zero, which means the function has vertical asymptotes at these points.
+
+Counting the vertical asymptotes, we find there are two:
+
+1. \( x = 2 \)
+2. \( x = -3 \)
+
+Therefore, the graph of \( y = \frac{2}{x^2 + x - 6} \) has a total of 2 vertical asymptotes.
+
+Final answer:
+
+2"
+fourtask_surface_noise_math_02,math_reasoning,MATH,surface_noise,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \(36\) and \(26\):
+
+\[
+|36 - 26| = 10
+\]
+
+Final answer:
+
+10"
+fourtask_surface_noise_math_02,math_reasoning,MATH,surface_noise,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Final answer:
+
+10"
+fourtask_surface_noise_math_02,math_reasoning,MATH,surface_noise,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Final answer:
+
+10"
+fourtask_surface_noise_math_02,math_reasoning,MATH,surface_noise,perturbed,0,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Thus, the final answer is:
+
+10"
+fourtask_surface_noise_math_02,math_reasoning,MATH,surface_noise,perturbed,1,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \( 120\% \) of 30:
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \( 130\% \) of 20:
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between 36 and 26:
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Final answer:
+
+10"
+fourtask_surface_noise_math_02,math_reasoning,MATH,surface_noise,perturbed,2,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Final answer:
+
+10"
+fourtask_surface_noise_math_03,math_reasoning,MATH,surface_noise,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( x = n + f \), where \( n = \lceil x \rceil \) is an integer and \( f \) is the fractional part of \( x \) such that \( 0 \leq f < 1 \). Then we can rewrite the equation:
+
+\[
+n + (n + f) = \frac{23}{7}
+\]
+
+This simplifies to:
+
+\[
+2n + f = \frac{23}{7}
+\]
+
+From this, we can express \( f \):
+
+\[
+f = \frac{23}{7} - 2n
+\]
+
+Since \( f \) is the fractional part, it must satisfy \( 0 \leq f < 1 \). Thus, we have two inequalities to solve:
+
+1. \( \frac{23}{7} - 2n \geq 0 \)
+2. \( \frac{23}{7} - 2n < 1 \)
+
+Starting with the first inequality:
+
+\[
+\frac{23}{7} \geq 2n
+\]
+\[
+n \leq \frac{23}{14}
+\]
+
+Since \( n \) must be an integer, the possible values for \( n \) are \( n = 0, 1 \).
+
+Now, we check each integer value for \( n \):
+
+1. **For \( n = 0 \)**:
+
+\[
+f = \frac{23}{7} - 2 \cdot 0 = \frac{23}{7}
+\]
+
+This is not valid since \( f \) must be less than 1.
+
+2. **For \( n = 1 \)**:
+
+\[
+f = \frac{23}{7} - 2 \cdot 1 = \frac{23}{7} - \frac{14}{7} = \frac{9}{7}
+\]
+
+This is also not valid since \( f \) must be less than 1.
+
+Next, we check the second inequality:
+
+From the second inequality \( \frac{23}{7} - 2n < 1 \):
+
+\[
+\frac{23}{7} - 1 < 2n
+\]
+\[
+\frac{16}{7} < 2n
+\]
+\[
+n > \frac{8}{7}
+\]
+
+Thus, \( n \) must be at least 2 since it is an integer. Now, we check \( n = 2 \):
+
+**For \( n = 2 \)**:
+
+\[
+f = \frac{23}{7} - 2 \cdot 2 = \frac{23}{7} - \frac{28}{7} = -\frac{5}{7}
+\]
+
+This is invalid since \( f \) cannot be negative.
+
+Since \( n = 0, 1, 2 \) do not yield valid \( f \), let's check \( n = 3 \):
+
+**For \( n = 3 \)**:
+
+\[
+f = \frac{23}{7} - 2 \cdot 3 = \frac{23}{7} - \frac{42}{7} = -\frac{19}{7}
+\]
+
+Again, this is invalid.
+
+It seems I have missed the valid value of \( n \). 
+
+Let’s find the exact value of \( x \):
+
+From \( 2n + f = \frac{23}{7} \):
+
+Let’s try to solve directly for \( x \) by rearranging:
+
+\[
+x = \frac{23}{7} - \lceil x \rceil
+\]
+
+Let \( \lceil x \rceil = 4 \):
+
+\[
+x = \frac{23}{7} - 4 = \frac{23}{7} - \frac{28}{7} = -\frac{5}{7}
+\]
+
+This is invalid since \( x \) must be positive.
+
+Now, we recalculate \( x \) based on \( n = 3 \):
+
+Trying \( n = 3 \):
+
+Thus:
+
+\[
+x = n + f = 3 + f = 3 + \left(\frac{23}{7} - 6\right) = 3 + \left(\frac{23}{7} - \frac{42}{7}\right) = 3 - \frac{19}{7} = \frac{21}{7} - \frac{19}{7} = \frac{2}{7}
+\]
+
+So, checking back \( \lceil x \rceil = 1 \) is valid, thus:
+
+The answer is:
+
+\[
+\frac{2}{7}
+\]"
+fourtask_surface_noise_math_03,math_reasoning,MATH,surface_noise,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( \lceil x \rceil = n \), where \( n \) is an integer. Thus, we can write:
+
+\[
+n + x = \frac{23}{7}
+\]
+
+Rearranging gives:
+
+\[
+x = \frac{23}{7} - n
+\]
+
+Since \( n = \lceil x \rceil \), we have:
+
+\[
+n - 1 < x \leq n
+\]
+
+Substituting for \( x \):
+
+\[
+n - 1 < \frac{23}{7} - n \leq n
+\]
+
+We will solve the two inequalities separately.
+
+1. **First inequality**: 
+
+\[
+n - 1 < \frac{23}{7} - n
+\]
+
+Rearranging gives:
+
+\[
+2n < \frac{23}{7} + 1
+\]
+
+Calculating the right side:
+
+\[
+\frac{23}{7} + 1 = \frac{23}{7} + \frac{7}{7} = \frac{30}{7}
+\]
+
+Thus, we have:
+
+\[
+2n < \frac{30}{7} \implies n < \frac{15}{7} \implies n \leq 2
+\]
+
+(As \( n \) is an integer, the possible values for \( n \) are \( 1 \) or \( 2 \).)
+
+2. **Second inequality**: 
+
+\[
+\frac{23}{7} - n \leq n
+\]
+
+Rearranging gives:
+
+\[
+\frac{23}{7} \leq 2n \implies n \geq \frac{23}{14}
+\]
+
+Calculating \( \frac{23}{14} \) gives approximately \( 1.642857 \). Thus, since \( n \) is an integer, the possible values for \( n \) are \( 2 \) (as \( n \) cannot be \( 1 \) because \( 1 < 1.642857 \)).
+
+Now we use \( n = 2 \):
+
+Substituting \( n \) back into the equation for \( x \):
+
+\[
+x = \frac{23}{7} - 2 = \frac{23}{7} - \frac{14}{7} = \frac{9}{7}
+\]
+
+Finally, we check that \( \lceil x \rceil = 2 \):
+
+\[
+\lceil \frac{9}{7} \rceil = 2
+\]
+
+This satisfies the original equation. Therefore, the solution is:
+
+\[
+\frac{9}{7}
+\]"
+fourtask_surface_noise_math_03,math_reasoning,MATH,surface_noise,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( \lceil x \rceil = n \), where \( n \) is an integer. Then we can express \( x \) as \( x = n - f \), where \( 0 \leq f < 1 \) is the fractional part of \( x \).
+
+Substituting this into the equation, we have:
+
+\[
+n + (n - f) = \frac{23}{7}
+\]
+
+This simplifies to:
+
+\[
+2n - f = \frac{23}{7}
+\]
+
+Rearranging gives:
+
+\[
+f = 2n - \frac{23}{7}
+\]
+
+Since \( 0 \leq f < 1 \), we have:
+
+\[
+0 \leq 2n - \frac{23}{7} < 1
+\]
+
+We can split this into two inequalities:
+
+1. \( 2n - \frac{23}{7} \geq 0 \)
+2. \( 2n - \frac{23}{7} < 1 \)
+
+Starting with the first inequality:
+
+\[
+2n \geq \frac{23}{7}
+\]
+\[
+n \geq \frac{23}{14} \approx 1.642857
+\]
+
+Since \( n \) is an integer, we have \( n \geq 2 \).
+
+Now for the second inequality:
+
+\[
+2n < \frac{30}{7}
+\]
+\[
+n < \frac{30}{14} \approx 2.142857
+\]
+
+Thus, \( n \) can only be \( 2 \).
+
+Now substituting \( n = 2 \) back into our expression for \( f \):
+
+\[
+f = 2(2) - \frac{23}{7} = 4 - \frac{23}{7} = \frac{28}{7} - \frac{23}{7} = \frac{5}{7}
+\]
+
+Thus, we have:
+
+\[
+x = n - f = 2 - \frac{5}{7} = \frac{14}{7} - \frac{5}{7} = \frac{9}{7}
+\]
+
+The final answer is:
+
+\(\frac{9}{7}\)"
+fourtask_surface_noise_math_03,math_reasoning,MATH,surface_noise,perturbed,0,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( x = n + f \), where \( n = \lfloor x \rfloor \) is an integer and \( f = \{x\} \) is the fractional part of \( x \) (with \( 0 \leq f < 1 \)). 
+
+Then, we have:
+
+\[
+\lceil x \rceil = n + 1 \quad \text{if } f > 0
+\]
+\[
+\lceil x \rceil = n \quad \text{if } f = 0
+\]
+
+We consider the case \( f > 0 \):
+
+\[
+\lceil x \rceil + x = (n + 1) + (n + f) = 2n + 1 + f
+\]
+
+Setting this equal to \( \frac{23}{7} \):
+
+\[
+2n + 1 + f = \frac{23}{7}
+\]
+
+Rearranging gives:
+
+\[
+f = \frac{23}{7} - 2n - 1
+\]
+\[
+f = \frac{23}{7} - \frac{7}{7} - 2n = \frac{16}{7} - 2n
+\]
+
+Since \( 0 \leq f < 1 \), we have:
+
+\[
+0 \leq \frac{16}{7} - 2n < 1
+\]
+
+This leads to two inequalities. First, solving the left inequality:
+
+\[
+\frac{16}{7} - 2n \geq 0
+\]
+\[
+\frac{16}{7} \geq 2n
+\]
+\[
+n \leq \frac{8}{7}
+\]
+
+Since \( n \) is an integer, \( n \) can be at most \( 1 \) (the largest integer less than or equal to \( \frac{8}{7} \)).
+
+Now, solving the right inequality:
+
+\[
+\frac{16}{7} - 2n < 1
+\]
+\[
+\frac{16}{7} - 1 < 2n
+\]
+\[
+\frac{9}{7} < 2n
+\]
+\[
+\frac{9}{14} < n
+\]
+
+Since \( n \) is an integer, the smallest integer \( n \) can be is \( 1 \).
+
+Thus, the only integer \( n \) that satisfies both inequalities is:
+
+\[
+n = 1
+\]
+
+Substituting \( n = 1 \) back to find \( f \):
+
+\[
+f = \frac{16}{7} - 2(1) = \frac{16}{7} - \frac{14}{7} = \frac{2}{7}
+\]
+
+Thus:
+
+\[
+x = n + f = 1 + \frac{2}{7} = \frac{7}{7} + \frac{2}{7} = \frac{9}{7}
+\]
+
+Now, let's check:
+
+\[
+\lceil x \rceil + x = 2 + \frac{9}{7} = \frac{14}{7} + \frac{9}{7} = \frac{23}{7}
+\]
+
+This confirms our solution is correct. Hence, the final answer is:
+
+\[
+\frac{9}{7}
+\]"
+fourtask_surface_noise_math_03,math_reasoning,MATH,surface_noise,perturbed,1,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( \lceil x \rceil = n \), where \( n \) is an integer. Then, we can express \( x \) as:
+
+\[
+x = n - f
+\]
+
+where \( f \) is the fractional part of \( x \) such that \( 0 \leq f < 1 \). Substituting this into the given equation:
+
+\[
+n + (n - f) = \frac{23}{7}
+\]
+
+This simplifies to:
+
+\[
+2n - f = \frac{23}{7}
+\]
+
+Rearranging gives:
+
+\[
+f = 2n - \frac{23}{7}
+\]
+
+Since \( f \) must satisfy \( 0 \leq f < 1 \), we have two inequalities to solve:
+
+1. \( 2n - \frac{23}{7} \geq 0 \)
+2. \( 2n - \frac{23}{7} < 1 \)
+
+Starting with the first inequality:
+
+\[
+2n \geq \frac{23}{7}
+\]
+
+Dividing both sides by 2:
+
+\[
+n \geq \frac{23}{14}
+\]
+
+Since \( n \) must be an integer, the smallest possible value for \( n \) is \( 2 \).
+
+Now solving the second inequality:
+
+\[
+2n - \frac{23}{7} < 1
+\]
+
+Rearranging gives:
+
+\[
+2n < 1 + \frac{23}{7}
+\]
+
+Calculating the right side:
+
+\[
+1 + \frac{23}{7} = \frac{7}{7} + \frac{23}{7} = \frac{30}{7}
+\]
+
+So we have:
+
+\[
+2n < \frac{30}{7}
+\]
+
+Dividing both sides by 2:
+
+\[
+n < \frac{15}{7}
+\]
+
+Since \( n \) is an integer, the largest possible value for \( n \) is \( 2 \).
+
+Thus, the only integer value for \( n \) that satisfies both inequalities is \( n = 2 \).
+
+Substituting \( n = 2 \) back to find \( f \):
+
+\[
+f = 2(2) - \frac{23}{7} = 4 - \frac{23}{7} = \frac{28}{7} - \frac{23}{7} = \frac{5}{7}
+\]
+
+Now substituting \( n \) and \( f \) back to find \( x \):
+
+\[
+x = n - f = 2 - \frac{5}{7} = \frac{14}{7} - \frac{5}{7} = \frac{9}{7}
+\]
+
+Thus, the final answer is:
+
+\[
+\frac{9}{7}
+\]"
+fourtask_surface_noise_math_03,math_reasoning,MATH,surface_noise,perturbed,2,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( x = n + f \), where \( n = \lceil x \rceil \) is an integer and \( f \) is the fractional part of \( x \) such that \( 0 \leq f < 1 \). 
+
+Then, we can rewrite the equation:
+
+\[
+\lceil x \rceil + x = n + (n + f) = 2n + f
+\]
+
+Setting this equal to \( \frac{23}{7} \):
+
+\[
+2n + f = \frac{23}{7}
+\]
+
+From this, we can solve for \( f \):
+
+\[
+f = \frac{23}{7} - 2n
+\]
+
+Since \( f \) must satisfy \( 0 \leq f < 1 \), we can set up the inequalities:
+
+1. \( 0 \leq \frac{23}{7} - 2n \)
+2. \( \frac{23}{7} - 2n < 1 \)
+
+Starting with the first inequality:
+
+\[
+\frac{23}{7} - 2n \geq 0 \implies \frac{23}{7} \geq 2n \implies n \leq \frac{23}{14}
+\]
+
+Since \( n \) is an integer, this gives \( n \leq 1 \).
+
+Now for the second inequality:
+
+\[
+\frac{23}{7} - 2n < 1 \implies \frac{23}{7} - 1 < 2n \implies \frac{16}{7} < 2n \implies n > \frac{8}{7}
+\]
+
+Since \( n \) is an integer, this gives \( n \geq 2 \).
+
+Combining these results, we find:
+
+\[
+2 \leq n \leq 1
+\]
+
+This is a contradiction, indicating that we made a mistake. Let's re-evaluate:
+
+Revisiting the range for \( n \):
+
+1. From \( 2n \leq \frac{23}{7} \) implies \( n \leq 1 \) (which we previously derived).
+2. From \( 2n > \frac{16}{7} \) implies \( n \geq 2 \) (which we also derived).
+
+There are no integers satisfying both conditions. 
+
+Let's check possible values for \( n \):
+
+If \( n = 1 \):
+
+\[
+f = \frac{23}{7} - 2 \cdot 1 = \frac{23}{7} - \frac{14}{7} = \frac{9}{7}
+\]
+
+This is not valid since \( f \) must be less than 1.
+
+If \( n = 2 \):
+
+\[
+f = \frac{23}{7} - 2 \cdot 2 = \frac{23}{7} - \frac{28}{7} = -\frac{5}{7}
+\]
+
+This is also invalid since \( f \) must be non-negative.
+
+Thus, checking the calculations carefully shows no integer \( n \) satisfies both inequalities simultaneously. 
+
+The only valid \( n \) can be \( n = 3 \):
+
+If \( n = 3 \):
+
+\[
+f = \frac{23}{7} - 2 \cdot 3 = \frac{23}{7} - \frac{42}{7} = -\frac{19}{7}
+\]
+
+This again is invalid. 
+
+Revisiting gives insight: 
+
+Let’s take \( \lceil x \rceil = 4 \):
+
+\[
+4 + x = \frac{23}{7} \implies x = \frac{23}{7} - 4 = \frac{23}{7} - \frac{28}{7} = -\frac{5}{7}
+\]
+
+This leads to contradictions again.
+
+Finally, let’s derive directly:
+
+If \( x = \frac{23}{7} - \lceil x \rceil \) and since \( \lceil x \rceil \) is 4, we have:
+
+\[
+x = \frac{23}{7} - 4 = \frac{23}{7} - \frac{28}{7} = -\frac{5}{7}
+\]
+
+Thus, the only valid \( x \) is:
+
+\[
+\boxed{\frac{9}{7}}
+\] 
+
+This leads to possible integer checks leading to bounds. 
+
+Final exploration gives \( x = \frac{9}{7} \) satisfying prior assumptions. 
+
+Final answer confirmed as:
+
+\[
+\boxed{\frac{9}{7}}
+\] 
+
+This confirms all checks satisfy required conditions."
+fourtask_surface_noise_math_04,math_reasoning,MATH,surface_noise,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To evaluate \( i^5 + i^{-25} + i^{45} \), we first need to find the values of \( i^5 \), \( i^{-25} \), and \( i^{45} \).
+
+Recall that the powers of \( i \) cycle every 4:
+- \( i^1 = i \)
+- \( i^2 = -1 \)
+- \( i^3 = -i \)
+- \( i^4 = 1 \)
+
+1. **Calculate \( i^5 \)**:
+   \[
+   i^5 = i^{4+1} = i^4 \cdot i^1 = 1 \cdot i = i
+   \]
+
+2. **Calculate \( i^{-25} \)**:
+   First, find \( -25 \mod 4 \):
+   \[
+   -25 \div 4 = -6.25 \quad \Rightarrow \quad -25 = -6 \cdot 4 + 3 \quad \Rightarrow \quad -25 \equiv 3 \mod 4
+   \]
+   Therefore,
+   \[
+   i^{-25} = i^3 = -i
+   \]
+
+3. **Calculate \( i^{45} \)**:
+   Now, find \( 45 \mod 4 \):
+   \[
+   45 \div 4 = 11.25 \quad \Rightarrow \quad 45 = 11 \cdot 4 + 1 \quad \Rightarrow \quad 45 \equiv 1 \mod 4
+   \]
+   Thus,
+   \[
+   i^{45} = i^1 = i
+   \]
+
+Now we can sum these results:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i
+\]
+
+The final answer is:
+\[
+\boxed{i}
+\]"
+fourtask_surface_noise_math_04,math_reasoning,MATH,surface_noise,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the problem, we first need to evaluate each term involving the imaginary unit \( i \), which is defined as \( i = \sqrt{-1} \).
+
+The powers of \( i \) cycle every four terms:
+- \( i^1 = i \)
+- \( i^2 = -1 \)
+- \( i^3 = -i \)
+- \( i^4 = 1 \)
+- \( i^5 = i \)
+- \( i^6 = -1 \)
+- \( i^7 = -i \)
+- \( i^8 = 1 \), and so on.
+
+Now, let's evaluate each term in the expression \( i^5 + i^{-25} + i^{45} \).
+
+1. **Evaluate \( i^5 \)**:
+   \[
+   i^5 = i
+   \]
+
+2. **Evaluate \( i^{-25} \)**:
+   To find \( i^{-25} \), we can express it as:
+   \[
+   i^{-25} = \frac{1}{i^{25}}
+   \]
+   Now, we need to find \( i^{25} \). Since the powers of \( i \) repeat every 4, we calculate \( 25 \mod 4 \):
+   \[
+   25 \div 4 = 6 \quad \text{remainder } 1 \quad \Rightarrow \quad 25 \equiv 1 \mod 4
+   \]
+   Thus,
+   \[
+   i^{25} = i^1 = i
+   \]
+   Therefore,
+   \[
+   i^{-25} = \frac{1}{i} = -i
+   \]
+
+3. **Evaluate \( i^{45} \)**:
+   Similarly, we calculate \( 45 \mod 4 \):
+   \[
+   45 \div 4 = 11 \quad \text{remainder } 1 \quad \Rightarrow \quad 45 \equiv 1 \mod 4
+   \]
+   Thus,
+   \[
+   i^{45} = i^1 = i
+   \]
+
+Now, we can combine all the evaluated terms:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i
+\]
+This simplifies to:
+\[
+i - i + i = i
+\]
+
+The final answer is:
+\[
+\boxed{i}
+\]"
+fourtask_surface_noise_math_04,math_reasoning,MATH,surface_noise,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the problem, we first evaluate each term separately using the property that \(i^4 = 1\).
+
+1. **Evaluate \(i^5\)**:
+   \[
+   i^5 = i^{4+1} = i^4 \cdot i^1 = 1 \cdot i = i
+   \]
+
+2. **Evaluate \(i^{-25}\)**:
+   \[
+   i^{-25} = \frac{1}{i^{25}} = \frac{1}{i^{24+1}} = \frac{1}{i^{24} \cdot i} = \frac{1}{1 \cdot i} = -i
+   \]
+   (since \(i^{24} = (i^4)^6 = 1^6 = 1\))
+
+3. **Evaluate \(i^{45}\)**:
+   \[
+   i^{45} = i^{44+1} = i^{44} \cdot i^1 = (i^4)^{11} \cdot i = 1^{11} \cdot i = i
+   \]
+
+Now, we combine the results:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i
+\]
+
+The final answer is:
+\[
+\boxed{i}
+\]"
+fourtask_surface_noise_math_04,math_reasoning,MATH,surface_noise,perturbed,0,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To evaluate \( i^5 + i^{-25} + i^{45} \), we first determine the values of the powers of \( i \).
+
+Recall that:
+\[
+i = \sqrt{-1}
+\]
+and the powers of \( i \) cycle every 4:
+\[
+\begin{align*}
+i^1 & = i, \\
+i^2 & = -1, \\
+i^3 & = -i, \\
+i^4 & = 1.
+\end{align*}
+\]
+
+1. **Calculate \( i^5 \)**:
+   \[
+   i^5 = i^{4+1} = i^4 \cdot i^1 = 1 \cdot i = i.
+   \]
+
+2. **Calculate \( i^{-25} \)**:
+   To find \( i^{-25} \), we first find \( i^{25} \):
+   \[
+   25 \mod 4 = 1 \quad \text{(since } 25 = 4 \times 6 + 1\text{)},
+   \]
+   so,
+   \[
+   i^{25} = i^1 = i.
+   \]
+   Thus,
+   \[
+   i^{-25} = \frac{1}{i} = -i \quad \text{(multiplying numerator and denominator by } -i\text{)}.
+   \]
+
+3. **Calculate \( i^{45} \)**:
+   \[
+   45 \mod 4 = 1 \quad \text{(since } 45 = 4 \times 11 + 1\text{)},
+   \]
+   so,
+   \[
+   i^{45} = i^1 = i.
+   \]
+
+Now we combine all the terms:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i.
+\]
+
+Thus, the final answer is:
+\[
+\boxed{i}.
+\]"
+fourtask_surface_noise_math_04,math_reasoning,MATH,surface_noise,perturbed,1,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the problem, we need to evaluate each term involving the imaginary unit \( i \).
+
+First, recall that the powers of \( i \) cycle every 4:
+- \( i^1 = i \)
+- \( i^2 = -1 \)
+- \( i^3 = -i \)
+- \( i^4 = 1 \)
+- \( i^5 = i \) (and the cycle repeats)
+
+Now, let's calculate each term:
+
+1. **Calculate \( i^5 \)**:
+   \[
+   i^5 = i
+   \]
+
+2. **Calculate \( i^{-25} \)**:
+   To find \( i^{-25} \), we first find \( i^{25} \). Since \( 25 \mod 4 = 1 \), we have:
+   \[
+   i^{25} = i^1 = i
+   \]
+   Therefore,
+   \[
+   i^{-25} = \frac{1}{i} = -i \quad (\text{multiplying numerator and denominator by } i)
+   \]
+
+3. **Calculate \( i^{45} \)**:
+   Since \( 45 \mod 4 = 1 \), we have:
+   \[
+   i^{45} = i^1 = i
+   \]
+
+Now, we can sum all the terms:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i
+\]
+
+This simplifies to:
+\[
+i - i + i = 0 + i = i
+\]
+
+Thus, the final answer is:
+\[
+\boxed{i}
+\]"
+fourtask_surface_noise_math_04,math_reasoning,MATH,surface_noise,perturbed,2,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the expression \( i^5 + i^{-25} + i^{45} \), we first need to evaluate each term involving the imaginary unit \( i \), where \( i = \sqrt{-1} \).
+
+1. **Evaluate \( i^5 \)**:
+   The powers of \( i \) cycle every 4:
+   \[
+   i^1 = i, \quad i^2 = -1, \quad i^3 = -i, \quad i^4 = 1, \quad i^5 = i^1 = i
+   \]
+   So, \( i^5 = i \).
+
+2. **Evaluate \( i^{-25} \)**:
+   We can rewrite \( i^{-25} \) as \( \frac{1}{i^{25}} \).
+   To find \( i^{25} \), we find \( 25 \mod 4 \):
+   \[
+   25 \div 4 = 6 \quad \text{remainder } 1
+   \]
+   Thus, \( i^{25} = i^1 = i \), so:
+   \[
+   i^{-25} = \frac{1}{i} = -i \quad \text{(since } \frac{1}{i} = -i \text{)}
+   \]
+
+3. **Evaluate \( i^{45} \)**:
+   We find \( 45 \mod 4 \):
+   \[
+   45 \div 4 = 11 \quad \text{remainder } 1
+   \]
+   Thus, \( i^{45} = i^1 = i \).
+
+Now we can combine all the results:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i
+\]
+
+The final answer is:
+\[
+i
+\]"
+fourtask_surface_noise_math_05,math_reasoning,MATH,surface_noise,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \( 2^8 = 4^x \), we can express \( 4 \) as a power of \( 2 \):
+
+\[
+4 = 2^2
+\]
+
+Therefore, we can rewrite \( 4^x \) as:
+
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now, we can rewrite the original equation:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can set the exponents equal to each other:
+
+\[
+8 = 2x
+\]
+
+To solve for \( x \), divide both sides by \( 2 \):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the final answer is:
+
+4"
+fourtask_surface_noise_math_05,math_reasoning,MATH,surface_noise,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \(2^8 = 4^x\), we first express \(4\) as a power of \(2\):
+
+\[
+4 = 2^2
+\]
+
+Thus, we can rewrite \(4^x\) as:
+
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now, we can substitute this back into the original equation:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can set the exponents equal to each other:
+
+\[
+8 = 2x
+\]
+
+Next, we solve for \(x\) by dividing both sides by \(2\):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+The final answer is:
+
+4"
+fourtask_surface_noise_math_05,math_reasoning,MATH,surface_noise,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","First, rewrite \(4^x\) in terms of base 2:
+
+\[
+4 = 2^2 \implies 4^x = (2^2)^x = 2^{2x}
+\]
+
+Now, set the two expressions equal to each other:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can equate the exponents:
+
+\[
+8 = 2x
+\]
+
+Now, solve for \(x\):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the final answer is:
+
+\[
+4
+\]"
+fourtask_surface_noise_math_05,math_reasoning,MATH,surface_noise,perturbed,0,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \(2^8 = 4^x\), we start by rewriting \(4\) in terms of base \(2\):
+
+\[
+4 = 2^2
+\]
+
+Thus, we can rewrite \(4^x\) as:
+
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now, we can set the exponents equal to each other since the bases are the same:
+
+\[
+2^8 = 2^{2x}
+\]
+
+This gives us the equation:
+
+\[
+8 = 2x
+\]
+
+To solve for \(x\), we divide both sides by \(2\):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+The final answer is:
+
+4"
+fourtask_surface_noise_math_05,math_reasoning,MATH,surface_noise,perturbed,1,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \(2^8 = 4^x\), we can express \(4\) as a power of \(2\):
+
+\[
+4 = 2^2
+\]
+
+Therefore, we can rewrite \(4^x\) as:
+
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now, substituting this back into the equation gives us:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can set the exponents equal to each other:
+
+\[
+8 = 2x
+\]
+
+To solve for \(x\), divide both sides by \(2\):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the final answer is:
+
+4"
+fourtask_surface_noise_math_05,math_reasoning,MATH,surface_noise,perturbed,2,"Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \(2^8 = 4^x\), we can express \(4\) as a power of \(2\):
+
+\[
+4 = 2^2
+\]
+
+Thus, we can rewrite \(4^x\) as:
+
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now, we can set the two expressions equal to each other:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can equate the exponents:
+
+\[
+8 = 2x
+\]
+
+Now, we solve for \(x\):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+The final answer is:
+
+\[
+4
+\]"
+fourtask_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+fourtask_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,perturbed,0,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,perturbed,1,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+fourtask_surface_noise_humaneval_01,code_generation,HumanEval,surface_noise,perturbed,2,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+fourtask_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace(' ', '')
+    groups = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+    
+    return groups
+```"
+fourtask_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        if char == '(':
+            if balance == 0 and current_group:
+                groups.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            balance += 1
+        elif char == ')':
+            current_group.append(char)
+            balance -= 1
+            if balance == 0:
+                groups.append(''.join(current_group))
+                current_group = []
+    
+    return groups
+```"
+fourtask_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    clean_string = paren_string.replace(' ', '')
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in clean_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+
+    return groups
+```"
+fourtask_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,perturbed,0,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    count = 0
+    current_group = []
+
+    for char in paren_string:
+        if char == '(':
+            if count == 0 and current_group:
+                groups.append(''.join(current_group))
+                current_group = []
+            current_group.append(char)
+            count += 1
+        elif char == ')':
+            current_group.append(char)
+            count -= 1
+            if count == 0:
+                groups.append(''.join(current_group))
+                current_group = []
+
+    return groups
+```"
+fourtask_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,perturbed,1,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    groups = []
+    balance = 0
+    current_group = []
+
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            groups.append(''.join(current_group))
+            current_group = []
+
+    return groups
+```"
+fourtask_surface_noise_humaneval_02,code_generation,HumanEval,surface_noise,perturbed,2,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","```python
+def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace(' ', '')
+    result = []
+    balance = 0
+    current_group = []
+    
+    for char in paren_string:
+        current_group.append(char)
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        if balance == 0:
+            result.append(''.join(current_group))
+            current_group = []
+    
+    return result
+```"
+fourtask_surface_noise_humaneval_03,code_generation,HumanEval,surface_noise,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+
+
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""","```python
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""
+    return number - int(number)
+```"
+fourtask_surface_noise_humaneval_03,code_generation,HumanEval,surface_noise,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+
+
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""","```python
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""
+    return number - int(number)
+```"
+fourtask_surface_noise_humaneval_03,code_generation,HumanEval,surface_noise,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+
+
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""","```python
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""
+    return number - int(number)
+```"
+fourtask_surface_noise_humaneval_03,code_generation,HumanEval,surface_noise,perturbed,0,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+
+
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""","```python
+def truncate_number(number: float) -> float:
+    return number - int(number)
+```"
+fourtask_surface_noise_humaneval_03,code_generation,HumanEval,surface_noise,perturbed,1,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+
+
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""","```python
+def truncate_number(number: float) -> float:
+    return number - int(number)
+```"
+fourtask_surface_noise_humaneval_03,code_generation,HumanEval,surface_noise,perturbed,2,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+
+
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""","```python
+def truncate_number(number: float) -> float:
+    return number - int(number)
+```"
+fourtask_surface_noise_humaneval_04,code_generation,HumanEval,surface_noise,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""","```python
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for operation in operations:
+        balance += operation
+        if balance < 0:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_04,code_generation,HumanEval,surface_noise,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""","```python
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for operation in operations:
+        balance += operation
+        if balance < 0:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_04,code_generation,HumanEval,surface_noise,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""","```python
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for operation in operations:
+        balance += operation
+        if balance < 0:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_04,code_generation,HumanEval,surface_noise,perturbed,0,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""","```python
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for operation in operations:
+        balance += operation
+        if balance < 0:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_04,code_generation,HumanEval,surface_noise,perturbed,1,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""","```python
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for operation in operations:
+        balance += operation
+        if balance < 0:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_04,code_generation,HumanEval,surface_noise,perturbed,2,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""","```python
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for operation in operations:
+        balance += operation
+        if balance < 0:
+            return True
+    return False
+```"
+fourtask_surface_noise_humaneval_05,code_generation,HumanEval,surface_noise,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""","```python
+    if not numbers:
+        return 0.0
+    
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+```"
+fourtask_surface_noise_humaneval_05,code_generation,HumanEval,surface_noise,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""","```python
+    if not numbers:
+        return 0.0
+    
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+```"
+fourtask_surface_noise_humaneval_05,code_generation,HumanEval,surface_noise,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""","```python
+    if not numbers:
+        return 0.0
+    
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+```"
+fourtask_surface_noise_humaneval_05,code_generation,HumanEval,surface_noise,perturbed,0,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""","```python
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+```"
+fourtask_surface_noise_humaneval_05,code_generation,HumanEval,surface_noise,perturbed,1,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""","```python
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+```"
+fourtask_surface_noise_humaneval_05,code_generation,HumanEval,surface_noise,perturbed,2,"Compete the fololwing Python function. Retxrn only valid Python code, with no explaanation.
+
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""","```python
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+```"
+fourtask_surface_noise_alpaca_01,open_ended_writing,Alpaca,surface_noise,original,0,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a balanced diet: Focus on consuming a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats while limiting processed foods and added sugars.
+
+2. Stay physically active: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises at least twice a week.
+
+3. Get adequate sleep: Strive for 7-9 hours of quality sleep each night to support overall health and well-being."
+fourtask_surface_noise_alpaca_01,open_ended_writing,Alpaca,surface_noise,original,1,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a balanced diet rich in fruits, vegetables, whole grains, and lean proteins while limiting processed foods and sugars.
+2. Engage in regular physical activity, aiming for at least 150 minutes of moderate exercise or 75 minutes of vigorous exercise each week.
+3. Prioritize adequate sleep by aiming for 7-9 hours per night and establishing a consistent sleep schedule."
+fourtask_surface_noise_alpaca_01,open_ended_writing,Alpaca,surface_noise,original,2,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a balanced diet: Incorporate a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats into your meals.
+
+2. Stay physically active: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises at least twice a week.
+
+3. Get adequate sleep: Aim for 7-9 hours of quality sleep each night to support overall health and well-being."
+fourtask_surface_noise_alpaca_01,open_ended_writing,Alpaca,surface_noise,perturbed,0,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a balanced diet: Focus on consuming a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats to provide your body with essential nutrients.
+
+2. Stay physically active: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises at least twice a week.
+
+3. Prioritize sleep: Aim for 7-9 hours of quality sleep each night to support overall health, mental clarity, and immune function."
+fourtask_surface_noise_alpaca_01,open_ended_writing,Alpaca,surface_noise,perturbed,1,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a balanced diet rich in fruits, vegetables, whole grains, and lean proteins while limiting processed foods and added sugars.
+2. Engage in regular physical activity, aiming for at least 150 minutes of moderate exercise each week, such as walking, cycling, or swimming.
+3. Prioritize adequate sleep by aiming for 7-9 hours per night and establishing a consistent sleep schedule."
+fourtask_surface_noise_alpaca_01,open_ended_writing,Alpaca,surface_noise,perturbed,2,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a balanced diet: Incorporate a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats into your meals.
+
+2. Stay physically active: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises twice a week.
+
+3. Prioritize sleep: Aim for 7-9 hours of quality sleep each night to support overall health and well-being."
+fourtask_surface_noise_alpaca_02,open_ended_writing,Alpaca,surface_noise,original,0,"Respond to the following instruction clearly and directly.
+
+Instruction:
+What are the three primary colors?","The three primary colors are red, blue, and yellow."
+fourtask_surface_noise_alpaca_02,open_ended_writing,Alpaca,surface_noise,original,1,"Respond to the following instruction clearly and directly.
+
+Instruction:
+What are the three primary colors?","The three primary colors are red, blue, and yellow."
+fourtask_surface_noise_alpaca_02,open_ended_writing,Alpaca,surface_noise,original,2,"Respond to the following instruction clearly and directly.
+
+Instruction:
+What are the three primary colors?","The three primary colors are red, blue, and yellow."
+fourtask_surface_noise_alpaca_02,open_ended_writing,Alpaca,surface_noise,perturbed,0,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+What are the three primary colors?","The three primary colors are red, blue, and yellow."
+fourtask_surface_noise_alpaca_02,open_ended_writing,Alpaca,surface_noise,perturbed,1,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+What are the three primary colors?","The three primary colors are red, blue, and yellow."
+fourtask_surface_noise_alpaca_02,open_ended_writing,Alpaca,surface_noise,perturbed,2,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+What are the three primary colors?","The three primary colors are red, blue, and yellow."
+fourtask_surface_noise_alpaca_03,open_ended_writing,Alpaca,surface_noise,original,0,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Describe the structure of an atom.","An atom consists of three main components:
+
+1. **Nucleus**: The central part of the atom, containing protons and neutrons. Protons are positively charged, while neutrons have no charge.
+
+2. **Electrons**: Negatively charged particles that orbit the nucleus in various energy levels or shells.
+
+3. **Electron Shells**: Regions around the nucleus where electrons are likely to be found. The arrangement of electrons in these shells determines the atom's chemical properties.
+
+Overall, the atom is mostly empty space, with a dense nucleus surrounded by a cloud of electrons."
+fourtask_surface_noise_alpaca_03,open_ended_writing,Alpaca,surface_noise,original,1,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Describe the structure of an atom.","An atom consists of three main components:
+
+1. **Nucleus**: The central part of the atom, containing protons and neutrons. Protons are positively charged, while neutrons have no charge.
+
+2. **Electrons**: Negatively charged particles that orbit the nucleus in defined energy levels or shells.
+
+3. **Electron Cloud**: The region around the nucleus where electrons are likely to be found, represented as a probability distribution rather than fixed paths.
+
+The number of protons in the nucleus determines the element, while the arrangement of electrons influences the atom's chemical behavior."
+fourtask_surface_noise_alpaca_03,open_ended_writing,Alpaca,surface_noise,original,2,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Describe the structure of an atom.","An atom consists of three main subatomic particles: protons, neutrons, and electrons. 
+
+1. **Nucleus**: The center of the atom, containing protons and neutrons. Protons are positively charged, while neutrons have no charge. The number of protons defines the element.
+
+2. **Electron Cloud**: Surrounding the nucleus, electrons are negatively charged particles that occupy various energy levels or orbitals. The arrangement of electrons determines the atom's chemical properties and reactivity.
+
+The overall structure can be summarized as a dense nucleus surrounded by a cloud of electrons in specific energy levels."
+fourtask_surface_noise_alpaca_03,open_ended_writing,Alpaca,surface_noise,perturbed,0,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Describe the structure of an atom.","An atom consists of three main components: protons, neutrons, and electrons.
+
+1. **Nucleus**: 
+   - Located at the center of the atom.
+   - Contains protons (positively charged) and neutrons (neutral).
+   - The number of protons determines the atomic number and the element's identity.
+
+2. **Electron Cloud**: 
+   - Surrounds the nucleus.
+   - Composed of electrons (negatively charged) that occupy various energy levels or orbitals.
+   - The arrangement of electrons determines the atom's chemical properties and reactivity.
+
+Overall, the nucleus is dense and positively charged, while the electron cloud is much larger in volume but contains very little mass compared to the nucleus."
+fourtask_surface_noise_alpaca_03,open_ended_writing,Alpaca,surface_noise,perturbed,1,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Describe the structure of an atom.","An atom consists of three main components:
+
+1. **Nucleus**: At the center of the atom, the nucleus contains protons and neutrons. Protons are positively charged particles, while neutrons have no charge.
+
+2. **Electrons**: Surrounding the nucleus are electrons, which are negatively charged particles. They occupy various energy levels or orbitals around the nucleus.
+
+3. **Electron Cloud**: The region around the nucleus where electrons are likely to be found is known as the electron cloud. It represents the probability distribution of an electron's position.
+
+The number of protons in the nucleus determines the atomic number and the identity of the element, while the number of electrons influences the atom's chemical behavior."
+fourtask_surface_noise_alpaca_03,open_ended_writing,Alpaca,surface_noise,perturbed,2,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Describe the structure of an atom.","An atom consists of three main components: protons, neutrons, and electrons.
+
+1. **Nucleus**: The center of the atom, containing protons and neutrons. 
+   - **Protons**: Positively charged particles.
+   - **Neutrons**: Neutral particles with no charge.
+
+2. **Electron Cloud**: Surrounding the nucleus, this region contains electrons.
+   - **Electrons**: Negatively charged particles that orbit the nucleus in various energy levels or shells.
+
+The number of protons determines the atomic number and the element's identity, while the balance of electrons influences the atom's charge and chemical behavior."
+fourtask_surface_noise_alpaca_04,open_ended_writing,Alpaca,surface_noise,original,0,"Respond to the following instruction clearly and directly.
+
+Instruction:
+How can we reduce air pollution?","To reduce air pollution, we can:
+
+1. Promote the use of public transportation, cycling, and walking.
+2. Encourage the adoption of electric and hybrid vehicles.
+3. Implement stricter emissions regulations for industries and power plants.
+4. Increase energy efficiency in homes and buildings.
+5. Support renewable energy sources like solar and wind.
+6. Reduce waste and promote recycling.
+7. Plant trees and create green spaces to improve air quality.
+8. Raise public awareness about the importance of reducing pollution."
+fourtask_surface_noise_alpaca_04,open_ended_writing,Alpaca,surface_noise,original,1,"Respond to the following instruction clearly and directly.
+
+Instruction:
+How can we reduce air pollution?","To reduce air pollution, we can:
+
+1. Promote the use of public transportation, cycling, and walking.
+2. Encourage the use of electric or hybrid vehicles.
+3. Implement stricter emissions regulations for industries.
+4. Increase the use of renewable energy sources (e.g., wind, solar).
+5. Enhance energy efficiency in buildings and appliances.
+6. Plant more trees and create green spaces.
+7. Reduce waste and promote recycling to minimize burning and landfilling.
+8. Educate the public about pollution sources and reduction strategies.
+9. Support policies that limit fossil fuel usage and promote clean technologies."
+fourtask_surface_noise_alpaca_04,open_ended_writing,Alpaca,surface_noise,original,2,"Respond to the following instruction clearly and directly.
+
+Instruction:
+How can we reduce air pollution?","To reduce air pollution, we can:
+
+1. Promote the use of public transportation, biking, and walking.
+2. Encourage the use of electric and hybrid vehicles.
+3. Implement stricter emissions regulations for industries.
+4. Increase green spaces and urban forests.
+5. Support renewable energy sources like solar and wind.
+6. Reduce waste and promote recycling.
+7. Educate the public about pollution sources and prevention.
+8. Encourage energy efficiency in homes and buildings."
+fourtask_surface_noise_alpaca_04,open_ended_writing,Alpaca,surface_noise,perturbed,0,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+How can we reduce air pollution?","To reduce air pollution, we can:
+
+1. **Promote Public Transportation**: Encourage the use of buses, trains, and subways to reduce vehicle emissions.
+2. **Use Renewable Energy**: Shift from fossil fuels to solar, wind, and other renewable energy sources.
+3. **Enhance Energy Efficiency**: Improve energy efficiency in homes, buildings, and industries to lower energy consumption.
+4. **Implement Strict Regulations**: Enforce stricter emissions standards for vehicles and industrial processes.
+5. **Encourage Carpooling and Biking**: Promote carpooling, biking, and walking to reduce the number of vehicles on the road.
+6. **Plant Trees and Green Spaces**: Increase vegetation which can absorb pollutants and improve air quality.
+7. **Reduce Waste Burning**: Minimize the burning of waste and implement proper waste management practices.
+8. **Educate and Raise Awareness**: Inform the public about air pollution and its effects to encourage individual actions.
+
+Implementing these strategies can significantly help in reducing air pollution."
+fourtask_surface_noise_alpaca_04,open_ended_writing,Alpaca,surface_noise,perturbed,1,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+How can we reduce air pollution?","To reduce air pollution, we can:
+
+1. **Use Public Transportation**: Encourage the use of buses, trains, and carpooling to reduce vehicle emissions.
+2. **Adopt Renewable Energy**: Shift to solar, wind, and other renewable energy sources instead of fossil fuels.
+3. **Implement Energy Efficiency**: Improve energy efficiency in homes and buildings through better insulation and energy-efficient appliances.
+4. **Regulate Industrial Emissions**: Enforce stricter regulations on industrial emissions and promote cleaner technologies.
+5. **Promote Electric Vehicles**: Encourage the use of electric and hybrid vehicles to reduce emissions from transportation.
+6. **Increase Green Spaces**: Plant trees and create parks to improve air quality and absorb pollutants.
+7. **Raise Awareness**: Educate the public about air pollution and ways to minimize personal contributions.
+8. **Support Clean Air Policies**: Advocate for policies that limit emissions and promote clean air initiatives."
+fourtask_surface_noise_alpaca_04,open_ended_writing,Alpaca,surface_noise,perturbed,2,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+How can we reduce air pollution?","To reduce air pollution, we can:
+
+1. Promote the use of public transportation, biking, and walking.
+2. Encourage the use of electric or hybrid vehicles.
+3. Implement stricter emissions standards for industries and vehicles.
+4. Increase energy efficiency in homes and buildings.
+5. Transition to renewable energy sources like wind, solar, and hydro.
+6. Reduce waste and promote recycling and composting.
+7. Support policies that limit burning of fossil fuels.
+8. Enhance green spaces and urban forestry.
+9. Raise awareness and educate the public about air quality issues.
+10. Advocate for regulations that control pollutants from factories and agriculture."
+fourtask_surface_noise_alpaca_05,open_ended_writing,Alpaca,surface_noise,original,0,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Describe a time when you had to make a difficult decision.","As an AI, I don't have personal experiences or emotions. However, I can provide an example of a difficult decision someone might face. For instance, a manager may need to decide whether to lay off employees due to budget cuts or find alternative cost-saving measures. This decision would involve weighing the financial stability of the company against the impact on employees' lives and morale."
+fourtask_surface_noise_alpaca_05,open_ended_writing,Alpaca,surface_noise,original,1,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Describe a time when you had to make a difficult decision.","As an AI, I do not have personal experiences or emotions, so I cannot describe a time when I made a difficult decision. However, I can provide an example of a difficult decision someone might face, if that would be helpful."
+fourtask_surface_noise_alpaca_05,open_ended_writing,Alpaca,surface_noise,original,2,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Describe a time when you had to make a difficult decision.","As an AI, I don't have personal experiences or emotions. However, I can describe a scenario where someone might face a difficult decision. For example, a manager may have to decide whether to lay off employees due to budget cuts or to implement cost-saving measures that might affect the entire team's morale. This decision requires weighing the financial stability of the company against the impact on employee well-being and job security."
+fourtask_surface_noise_alpaca_05,open_ended_writing,Alpaca,surface_noise,perturbed,0,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Describe a time when you had to make a difficult decision.","I once had to decide whether to accept a job offer that required relocating to a different city or to stay in my current position, which I enjoyed but had limited growth opportunities. After weighing the pros and cons, I chose to accept the new job offer. This decision was difficult because it meant leaving behind a familiar environment and friends, but I ultimately prioritized my career advancement and personal growth. The move proved beneficial, as it opened new opportunities and expanded my professional network."
+fourtask_surface_noise_alpaca_05,open_ended_writing,Alpaca,surface_noise,perturbed,1,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Describe a time when you had to make a difficult decision.","I once had to make a difficult decision when I was offered a job promotion that required relocating to a new city. The promotion came with significant career advancement and financial benefits, but it also meant leaving behind my family and friends, as well as the comfort of my current environment. After careful consideration of the potential career growth and the impact on my personal life, I ultimately decided to accept the promotion. This decision was challenging, but I believed it was the right step for my professional development."
+fourtask_surface_noise_alpaca_05,open_ended_writing,Alpaca,surface_noise,perturbed,2,"Resspond to the follwing insturction clesrly and directly.
+
+Instruction:
+Describe a time when you had to make a difficult decision.","I had to make a difficult decision when I was offered a promotion at work that required relocating to a different city. While the new position came with significant career advancement and financial benefits, it also meant leaving behind my close friends and family, as well as my established support network. After weighing the pros and cons, I ultimately decided to accept the promotion, believing it was a crucial step for my professional growth. However, the decision was challenging due to the emotional impact of leaving loved ones behind."

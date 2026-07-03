@@ -1,0 +1,5 @@
+case_id,task,original_noise,perturbed_noise,noise_baseline,raw_perturbation_drift,noise_corrected_drift,noise_corrected_drift_clipped,signal_to_noise_ratio,bootstrap_p_between_gt_noise
+promptrobust_hard_sst2_01,sst2_sentiment_hard,0.06749406483471554,1.0534814129381509e-07,0.033747085091428417,0.03374772620222033,6.411107919129799e-07,6.411107919129799e-07,1.000018997516087,0.58
+promptrobust_hard_sst2_02,sst2_sentiment_hard,0.0,0.0,0.0,0.0,0.0,0.0,inf,0.0
+promptrobust_hard_sst2_03,sst2_sentiment_hard,1.1102230246251565e-16,1.1102230246251565e-16,1.1102230246251565e-16,1.1102230246251565e-16,0.0,0.0,1.0,0.0
+promptrobust_hard_sst2_04,sst2_sentiment_hard,2.257460170581752e-07,0.0,1.128730085290876e-07,1.5802221194072263e-07,4.5149203411635035e-08,4.5149203411635035e-08,1.4,0.862

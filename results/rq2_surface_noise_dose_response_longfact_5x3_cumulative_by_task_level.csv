@@ -1,0 +1,6 @@
+task,strength_level,strength_edits,n,mean_cross_similarity,mean_noise_corrected_drift,mean_abs_repeated_pass_rate_change,mean_repeated_pass_rate_drop,share_harmful_correctness_drop,share_correctness_changed
+long_factual_qa,0,0,5,1.0,0.0,0.0,0.0,0.0,0.0
+long_factual_qa,1,1,5,0.9738766584133833,0.0,0.13333333333333333,-1.1102230246251566e-17,0.2,0.4
+long_factual_qa,2,2,5,0.9628765863144222,0.00015288634517518772,0.06666666666666668,-0.06666666666666668,0.0,0.2
+long_factual_qa,3,4,5,0.9762569340013296,1.8040810952298785e-06,0.13333333333333333,0.13333333333333333,0.4,0.4
+long_factual_qa,4,8,5,0.9562660921233976,0.003087194703091918,0.33333333333333337,-0.2,0.2,0.8

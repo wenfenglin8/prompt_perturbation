@@ -1,0 +1,193 @@
+case_id,task,version,sample_idx,prompt,output
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,0,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,1,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,2,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,3,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,4,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,5,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",negative
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,6,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,original,7,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,0,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",negative
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,1,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,2,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,3,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,4,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",negative
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,5,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,6,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_01,sst2_sentiment_hard,perturbed,7,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,0,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,1,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,2,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,3,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,4,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,5,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,6,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,original,7,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,0,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,1,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,2,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,3,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,4,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,5,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,6,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_02,sst2_sentiment_hard,perturbed,7,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: not especially original, yet charming enough to keep me smiling.",positive
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,0,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,1,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,2,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,3,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,4,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,5,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,6,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,original,7,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,0,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,1,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,2,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,3,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,4,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,5,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,6,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_03,sst2_sentiment_hard,perturbed,7,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: beautifully shot, but emotionally empty and slow.",negative
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,0,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,1,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,2,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,3,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,4,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,5,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,6,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,original,7,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,0,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,1,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,2,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,3,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,4,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,5,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,6,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive
+promptrobust_hard_sst2_04,sst2_sentiment_hard,perturbed,7,"Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Review: I wanted to dislike it, but the performances won me over.",positive

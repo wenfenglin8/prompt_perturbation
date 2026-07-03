@@ -1,0 +1,348 @@
+{
+  "model": "gpt-4o-mini",
+  "embedding_model": "text-embedding-3-small",
+  "dataset_cases_per_task": 5,
+  "samples": 3,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "total_generation_calls": 120,
+  "batch_count": 5,
+  "batch_index": 5,
+  "tasks": [
+    "factual_qa",
+    "math_reasoning",
+    "code_generation",
+    "open_ended_writing"
+  ],
+  "datasets_by_task": {
+    "factual_qa": "SQuAD V2",
+    "math_reasoning": "MATH",
+    "code_generation": "HumanEval",
+    "open_ended_writing": "Alpaca"
+  },
+  "perturbation_alignment": {
+    "source": "pdr_report_three_task_pdr_humaneval_fixed_10x3_all_perturbations_combined.md",
+    "perturbations": [
+      "paraphrase",
+      "reordering",
+      "formatting",
+      "context_injection",
+      "surface_noise"
+    ],
+    "scope": "Same perturbation taxonomy as the three-task PDR validation; applied to instruction text only."
+  },
+  "grouped": [
+    {
+      "task": "factual_qa",
+      "perturbation": "surface_noise",
+      "dataset": "SQuAD V2",
+      "n": 5,
+      "uncorrected_single_drift": 4.4408920985006264e-17,
+      "noise_baseline": 4.4408920985006264e-17,
+      "raw_perturbation_drift": 4.4408920985006264e-17,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "task": "math_reasoning",
+      "perturbation": "surface_noise",
+      "dataset": "MATH",
+      "n": 5,
+      "uncorrected_single_drift": 0.03275242052641556,
+      "noise_baseline": 0.06161330588142084,
+      "raw_perturbation_drift": 0.0546953827452825,
+      "noise_corrected_drift": 0.0006605253754801254
+    },
+    {
+      "task": "code_generation",
+      "perturbation": "surface_noise",
+      "dataset": "HumanEval",
+      "n": 5,
+      "uncorrected_single_drift": 0.040277113298575126,
+      "noise_baseline": 0.01275444176511747,
+      "raw_perturbation_drift": 0.04572130026929781,
+      "noise_corrected_drift": 0.033324708336368886
+    },
+    {
+      "task": "open_ended_writing",
+      "perturbation": "surface_noise",
+      "dataset": "Alpaca",
+      "n": 5,
+      "uncorrected_single_drift": 0.1647389794748106,
+      "noise_baseline": 0.061782282115249366,
+      "raw_perturbation_drift": 0.15974915095072179,
+      "noise_corrected_drift": 0.10161939916660757
+    }
+  ],
+  "rankings": [
+    {
+      "task": "factual_qa",
+      "rank": 1,
+      "perturbation": "surface_noise",
+      "noise_corrected_drift": 0.0,
+      "raw_perturbation_drift": 4.4408920985006264e-17
+    },
+    {
+      "task": "math_reasoning",
+      "rank": 1,
+      "perturbation": "surface_noise",
+      "noise_corrected_drift": 0.0006605253754801254,
+      "raw_perturbation_drift": 0.0546953827452825
+    },
+    {
+      "task": "code_generation",
+      "rank": 1,
+      "perturbation": "surface_noise",
+      "noise_corrected_drift": 0.033324708336368886,
+      "raw_perturbation_drift": 0.04572130026929781
+    },
+    {
+      "task": "open_ended_writing",
+      "rank": 1,
+      "perturbation": "surface_noise",
+      "noise_corrected_drift": 0.10161939916660757,
+      "raw_perturbation_drift": 0.15974915095072179
+    }
+  ],
+  "metrics": [
+    {
+      "case_id": "fourtask_surface_noise_squad_01",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_squad_02",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_squad_03",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_squad_04",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 2.220446049250313e-16,
+      "original_noise": 2.220446049250313e-16,
+      "perturbed_noise": 2.220446049250313e-16,
+      "noise_baseline": 2.220446049250313e-16,
+      "raw_perturbation_drift": 2.220446049250313e-16,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_squad_05",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_math_01",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.051284209584007034,
+      "original_noise": 0.03895329652756533,
+      "perturbed_noise": 0.02514350725302683,
+      "noise_baseline": 0.03204840189029608,
+      "raw_perturbation_drift": 0.035351028767696704,
+      "noise_corrected_drift": 0.0033026268774006273
+    },
+    {
+      "case_id": "fourtask_surface_noise_math_02",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.0197233539359718,
+      "original_noise": 0.01738154942133881,
+      "perturbed_noise": 0.008754183535017149,
+      "noise_baseline": 0.01306786647817798,
+      "raw_perturbation_drift": 0.012956264066014418,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_math_03",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.054650984213961085,
+      "original_noise": 0.1246641375375438,
+      "perturbed_noise": 0.09290288739631151,
+      "noise_baseline": 0.10878351246692766,
+      "raw_perturbation_drift": 0.09523545665597083,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_math_04",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.012897143162363012,
+      "original_noise": 0.11582102398124357,
+      "perturbed_noise": 0.09603136201114189,
+      "noise_baseline": 0.10592619299619273,
+      "raw_perturbation_drift": 0.08548579837408837,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_math_05",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.02520641173577487,
+      "original_noise": 0.07867871579542111,
+      "perturbed_noise": 0.017802395355598355,
+      "noise_baseline": 0.048240555575509735,
+      "raw_perturbation_drift": 0.04444836586264218,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_humaneval_01",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.020216412267285322,
+      "original_noise": 0.06435650640125552,
+      "perturbed_noise": 0.04287126258464776,
+      "noise_baseline": 0.05361388449295164,
+      "raw_perturbation_drift": 0.05453641739382274,
+      "noise_corrected_drift": 0.0009225329008711036
+    },
+    {
+      "case_id": "fourtask_surface_noise_humaneval_02",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.01546550214559883,
+      "original_noise": 0.00666923772867493,
+      "perturbed_noise": 0.013647132135882534,
+      "noise_baseline": 0.010158184932278732,
+      "raw_perturbation_drift": 0.008368935771336005,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_humaneval_03",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.16114536171724436,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.16114536171724436,
+      "noise_corrected_drift": 0.16114536171724436
+    },
+    {
+      "case_id": "fourtask_surface_noise_humaneval_04",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 3.734388800413768e-07,
+      "original_noise": 2.220446049250313e-16,
+      "perturbed_noise": 1.1102230246251565e-16,
+      "noise_baseline": 1.6653345369377348e-16,
+      "raw_perturbation_drift": 3.734388800413768e-07,
+      "noise_corrected_drift": 3.7343887987484337e-07
+    },
+    {
+      "case_id": "fourtask_surface_noise_humaneval_05",
+      "task": "code_generation",
+      "dataset": "HumanEval",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.004557916923867089,
+      "original_noise": 0.0,
+      "perturbed_noise": 2.7880071362673675e-07,
+      "noise_baseline": 1.3940035681336838e-07,
+      "raw_perturbation_drift": 0.004555413025205901,
+      "noise_corrected_drift": 0.004555273624849088
+    },
+    {
+      "case_id": "fourtask_surface_noise_alpaca_01",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.06039954249095558,
+      "original_noise": 0.0674163936730496,
+      "perturbed_noise": 0.10770904307684208,
+      "noise_baseline": 0.08756271837494584,
+      "raw_perturbation_drift": 0.06930006671927003,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_alpaca_02",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.0,
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "raw_perturbation_drift": 0.0,
+      "noise_corrected_drift": 0.0
+    },
+    {
+      "case_id": "fourtask_surface_noise_alpaca_03",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.09689067485299918,
+      "original_noise": 0.08986824266303266,
+      "perturbed_noise": 0.04036024969899491,
+      "noise_baseline": 0.06511424618101379,
+      "raw_perturbation_drift": 0.07572400557176434,
+      "noise_corrected_drift": 0.010609759390750553
+    },
+    {
+      "case_id": "fourtask_surface_noise_alpaca_04",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.06787354986169347,
+      "original_noise": 0.02923600312975631,
+      "perturbed_noise": 0.0607621983904573,
+      "noise_baseline": 0.044999100760106804,
+      "raw_perturbation_drift": 0.059760349648975905,
+      "noise_corrected_drift": 0.014761248888869101
+    },
+    {
+      "case_id": "fourtask_surface_noise_alpaca_05",
+      "task": "open_ended_writing",
+      "dataset": "Alpaca",
+      "perturbation": "surface_noise",
+      "uncorrected_single_drift": 0.5985311301684048,
+      "original_noise": 0.11764483957169669,
+      "perturbed_noise": 0.10482585094866408,
+      "noise_baseline": 0.11123534526018039,
+      "raw_perturbation_drift": 0.5939613328135986,
+      "noise_corrected_drift": 0.4827259875534182
+    }
+  ]
+}

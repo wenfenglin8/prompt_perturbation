@@ -1,0 +1,178 @@
+{
+  "model": "gpt-4o-mini",
+  "embedding_model": "text-embedding-3-small",
+  "dataset_cases_per_task": 1,
+  "samples": 1,
+  "levels": [
+    0,
+    1
+  ],
+  "tasks": [
+    "factual_qa"
+  ],
+  "perturbation_family": "surface_noise",
+  "case_level_rows": 2,
+  "by_level": [
+    {
+      "strength_level": 0,
+      "strength_edits": 0,
+      "n": 1,
+      "mean_cross_similarity": 1.0,
+      "mean_paired_similarity": 1.0,
+      "mean_raw_perturbation_drift": 0.0,
+      "mean_noise_corrected_drift": 0.0,
+      "mean_clean_correctness": 1.0,
+      "mean_perturbed_correctness": 1.0,
+      "mean_abs_repeated_pass_rate_change": 0.0,
+      "mean_repeated_pass_rate_drop": 0.0,
+      "share_harmful_correctness_drop": 0.0,
+      "share_correctness_changed": 0.0
+    },
+    {
+      "strength_level": 1,
+      "strength_edits": 1,
+      "n": 1,
+      "mean_cross_similarity": 1.0,
+      "mean_paired_similarity": 1.0,
+      "mean_raw_perturbation_drift": 0.0,
+      "mean_noise_corrected_drift": 0.0,
+      "mean_clean_correctness": 1.0,
+      "mean_perturbed_correctness": 1.0,
+      "mean_abs_repeated_pass_rate_change": 0.0,
+      "mean_repeated_pass_rate_drop": 0.0,
+      "share_harmful_correctness_drop": 0.0,
+      "share_correctness_changed": 0.0
+    }
+  ],
+  "correlations": [
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "strength_edits",
+      "y": "mean_cross_similarity",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "strength_edits",
+      "y": "noise_corrected_drift",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "strength_edits",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "mean_cross_similarity",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "mean_paired_similarity",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "noise_corrected_drift",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "mean_cross_similarity",
+      "y": "harmful_correctness_drop",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "all_levels",
+      "n": 2,
+      "x": "noise_corrected_drift",
+      "y": "harmful_correctness_drop",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "strength_edits",
+      "y": "mean_cross_similarity",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "strength_edits",
+      "y": "noise_corrected_drift",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "strength_edits",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "mean_cross_similarity",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "mean_paired_similarity",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "noise_corrected_drift",
+      "y": "abs_repeated_pass_rate_change",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "mean_cross_similarity",
+      "y": "harmful_correctness_drop",
+      "pearson": "",
+      "spearman": ""
+    },
+    {
+      "scope": "task:factual_qa",
+      "n": 2,
+      "x": "noise_corrected_drift",
+      "y": "harmful_correctness_drop",
+      "pearson": "",
+      "spearman": ""
+    }
+  ],
+  "within_case_monotonicity": []
+}

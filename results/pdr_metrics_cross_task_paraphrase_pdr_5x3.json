@@ -1,0 +1,153 @@
+{
+  "model": "gpt-4o-mini",
+  "samples_per_prompt_version": 3,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "dataset_cases_per_task": 5,
+  "perturbations": [
+    "paraphrase"
+  ],
+  "reference_alignment": {
+    "paper": "PromptRobust / PromptBench",
+    "datasets": [
+      "SQuAD V2",
+      "MATH"
+    ],
+    "perturbation": [
+      "paraphrase"
+    ],
+    "evaluation": "Performance Drop Rate (PDR)"
+  },
+  "metrics": [
+    {
+      "case_id": "promptrobust_pdr_paraphrase_squad_01",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 1,
+      "perturbed_single_correct": 1,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 1,
+      "perturbed_mean_correctness": 1,
+      "repeated_sampling_pdr": 0.0,
+      "correctness_sample_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_squad_02",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 0,
+      "perturbed_single_correct": 0,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 0,
+      "perturbed_mean_correctness": 0,
+      "repeated_sampling_pdr": 0.0,
+      "correctness_sample_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_squad_03",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 0,
+      "perturbed_single_correct": 0,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 0,
+      "perturbed_mean_correctness": 0,
+      "repeated_sampling_pdr": 0.0,
+      "correctness_sample_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_squad_04",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 1,
+      "perturbed_single_correct": 1,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 1,
+      "perturbed_mean_correctness": 1,
+      "repeated_sampling_pdr": 0.0,
+      "correctness_sample_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_squad_05",
+      "task": "factual_qa",
+      "dataset": "SQuAD V2",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 1,
+      "perturbed_single_correct": 0,
+      "single_sample_pdr": 1.0,
+      "clean_mean_correctness": 1,
+      "perturbed_mean_correctness": 0,
+      "repeated_sampling_pdr": 1.0,
+      "correctness_sample_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_math_01",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 0,
+      "perturbed_single_correct": 1,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 0.6666666666666666,
+      "perturbed_mean_correctness": 0.6666666666666666,
+      "repeated_sampling_pdr": 0.0,
+      "correctness_sample_noise": 0.4714045207910317
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_math_02",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 1,
+      "perturbed_single_correct": 1,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 0.6666666666666666,
+      "perturbed_mean_correctness": 1,
+      "repeated_sampling_pdr": -0.5000000000000001,
+      "correctness_sample_noise": 0.23570226039551584
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_math_03",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 0,
+      "perturbed_single_correct": 0,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 0,
+      "perturbed_mean_correctness": 0,
+      "repeated_sampling_pdr": 0.0,
+      "correctness_sample_noise": 0.0
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_math_04",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 1,
+      "perturbed_single_correct": 1,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 0.3333333333333333,
+      "perturbed_mean_correctness": 1,
+      "repeated_sampling_pdr": -2.0000000000000004,
+      "correctness_sample_noise": 0.23570226039551584
+    },
+    {
+      "case_id": "promptrobust_pdr_paraphrase_math_05",
+      "task": "math_reasoning",
+      "dataset": "MATH",
+      "perturbation": "paraphrase",
+      "clean_single_correct": 0,
+      "perturbed_single_correct": 1,
+      "single_sample_pdr": 0.0,
+      "clean_mean_correctness": 0.3333333333333333,
+      "perturbed_mean_correctness": 1,
+      "repeated_sampling_pdr": -2.0000000000000004,
+      "correctness_sample_noise": 0.23570226039551584
+    }
+  ]
+}

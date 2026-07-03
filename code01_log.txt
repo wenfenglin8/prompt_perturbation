@@ -1,0 +1,18 @@
+code_01 original sample O1
+
+Here's a Python function that checks if a given string `s` is a palindrome by ignoring spaces and letter case:
+
+```python
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase
+    cleaned = ''.join(s.split()).lower()
+    # Check if the cleaned string is equal to its reverse
+    return cleaned == cleaned[::-1]
+```
+
+You can use this function by passing a string to it. For example:
+
+```python
+print(is_palindrome("A man a plan a canal Panama"))  # Output: True
+print(is_palindrome("Hello"))  # Output: False
+```

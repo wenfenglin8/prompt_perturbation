@@ -1,0 +1,5 @@
+case_id,task,original_noise,perturbed_noise,noise_baseline,raw_perturbation_drift,noise_corrected_drift,noise_corrected_drift_clipped,signal_to_noise_ratio,bootstrap_p_between_gt_noise
+posix_mmlu_01,mmlu_multiple_choice_reasoning,1.1102230246251565e-16,2.220446049250313e-16,1.6653345369377348e-16,5.144577672755446e-07,5.144577671090111e-07,5.144577671090111e-07,3089215745.3333335,1.0
+posix_mmlu_02,mmlu_multiple_choice_reasoning,0.0,0.0,0.0,0.0,0.0,0.0,inf,0.0
+posix_bbh_logical_deduction_01,bbh_logical_deduction,0.0,0.016793489070169382,0.008396744535084691,0.008396744535084691,0.0,0.0,1.0,0.228
+posix_bbh_logical_deduction_02,bbh_logical_deduction,0.2627118484675223,0.0,0.13135592423376116,0.131346368357764,-9.555875997158125e-06,0.0,0.9999272520363821,0.554

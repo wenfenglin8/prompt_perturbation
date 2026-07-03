@@ -1,0 +1,4 @@
+group1,group2,meandiff,p-adj,lower,upper,reject
+code_generation,factual_qa,-0.02,0.9521,-0.1786,0.1386,False
+code_generation,math_reasoning,0.04,0.822,-0.1186,0.1986,False
+factual_qa,math_reasoning,0.06,0.644,-0.0986,0.2186,False

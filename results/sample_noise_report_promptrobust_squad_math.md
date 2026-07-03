@@ -1,0 +1,29 @@
+# Sample Noise Pilot Report
+
+- Suite: `promptrobust_squad_math`
+- Model: `gpt-4o-mini`
+- Embedding model: `text-embedding-3-small`
+- Samples per original/perturbed prompt: `3`
+- Decoding: temperature `0.7`, top_p `0.9`
+
+## Aggregate Result
+
+- Average raw perturbation drift: `0.0119`
+- Average sample-noise baseline: `0.0111`
+- Average noise-corrected drift: `0.0007`
+- Estimated share of raw drift explainable by sampling noise: `93.9%`
+
+Interpretation: raw prompt-perturbation drift overstates the perturbation effect whenever the noise baseline is non-trivial. The noise-corrected value estimates the part of the observed drift that remains after accounting for ordinary repeated-generation variability.
+
+## Per-Item Metrics
+
+| case | task | noise baseline | raw drift | corrected drift | SNR | bootstrap P(raw>noise) |
+|---|---:|---:|---:|---:|---:|---:|
+| promptrobust_squad_v2_01 | squad_v2_factual_qa | 0.0000 | 0.0000 | 0.0000 | 7792639138.00 | 1.000 |
+| promptrobust_squad_v2_02 | squad_v2_factual_qa | 0.0000 | 0.0000 | 0.0000 | inf | 0.000 |
+| promptrobust_math_01 | math_reasoning | 0.0267 | 0.0282 | 0.0016 | 1.06 | 1.000 |
+| promptrobust_math_02 | math_reasoning | 0.0178 | 0.0192 | 0.0013 | 1.07 | 1.000 |
+
+## Link to Haase et al.
+
+Haase et al. argue that LLM evaluation based on a single generation conflates prompt effects with sampling variability. This pilot operationalizes that claim for prompt perturbation: first estimate within-prompt variability from repeated generations, then subtract that baseline from between-prompt drift. A perturbation should be treated as meaningful only when its between-version drift clearly exceeds the within-version noise baseline.

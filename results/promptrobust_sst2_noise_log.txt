@@ -1,0 +1,74 @@
+PromptRobust-style sample-noise pilot
+
+Reference:
+PromptRobust / PromptBench evaluates LLM robustness to adversarial prompt perturbations across tasks including SST-2 sentiment classification.
+
+Current pilot setting:
+- Suite: promptrobust
+- Task: SST-2-style sentiment classification
+- Number of cases: 2
+- Samples per original/perturbed prompt: 5
+- Model: gpt-4o-mini
+- Embedding model: text-embedding-3-small
+- Decoding: temperature = 0.7, top_p = 0.9
+
+Perturbation method:
+The perturbation follows PromptRobust's character-level prompt-attack idea.
+Only the instruction prompt is perturbed; the review text is unchanged.
+
+Original instruction:
+Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Perturbed instruction:
+Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+The typo perturbations are:
+- Determine -> Detrmine
+- review -> reveiw
+
+Case 1:
+Review:
+a warm, funny, engaging film.
+
+Outputs:
+- original samples: positive, positive, positive, positive, positive
+- perturbed samples: positive, positive, positive, positive, positive
+
+Metrics:
+- original_noise: 0.000000253
+- perturbed_noise: 0.000000169
+- noise_baseline: 0.000000211
+- raw_perturbation_drift: 0.000000185
+- noise_corrected_drift: 0.000000000 after clipping
+
+Case 2:
+Review:
+dull, lifeless, and far too long.
+
+Outputs:
+- original samples: negative, negative, negative, negative, negative
+- perturbed samples: negative, negative, negative, negative, negative
+
+Metrics:
+- original_noise: 0.000000000
+- perturbed_noise: 0.000000000
+- noise_baseline: 0.000000000
+- raw_perturbation_drift: 0.000000000
+- noise_corrected_drift: 0.000000000
+
+Interpretation:
+For this PromptRobust-style SST-2 classification pilot, repeated sampling produced identical labels across both original and perturbed prompts. Therefore, the measured sample noise is essentially zero, and the character-level typo perturbation did not change the model's output.
+
+This is different from the earlier code-generation/open-ended-writing pilot, where the output space was larger and sample noise was measurable. The current result suggests that strict-label classification tasks may need either:
+
+1. a larger PromptRobust-style sample set,
+2. stronger perturbations,
+3. harder/ambiguous SST-2 examples, or
+4. generation-heavy PromptRobust tasks
+
+to reveal meaningful sample-noise effects.
+
+Generated files:
+- results/generations_promptrobust_sst2.csv
+- results/noise_metrics_promptrobust_sst2.csv
+- results/sample_noise_report_promptrobust_sst2.md

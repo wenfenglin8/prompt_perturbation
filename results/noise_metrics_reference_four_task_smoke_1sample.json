@@ -1,0 +1,62 @@
+{
+  "model": "gpt-4o-mini",
+  "suite": "reference_four_task",
+  "embedding_model": "text-embedding-3-small",
+  "samples_per_prompt_version": 1,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "metrics": [
+    {
+      "case_id": "ref_squad_v2_01",
+      "task": "factual_qa",
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "uncorrected_single_drift": 0.4745914418103019,
+      "raw_perturbation_drift": 0.4745914418103019,
+      "noise_corrected_drift": 0.4745914418103019,
+      "noise_corrected_drift_clipped": 0.4745914418103019,
+      "signal_to_noise_ratio": Infinity,
+      "bootstrap_p_between_gt_noise": 1.0
+    },
+    {
+      "case_id": "ref_math_01",
+      "task": "math_reasoning",
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "uncorrected_single_drift": 0.04107266969910228,
+      "raw_perturbation_drift": 0.04107266969910228,
+      "noise_corrected_drift": 0.04107266969910228,
+      "noise_corrected_drift_clipped": 0.04107266969910228,
+      "signal_to_noise_ratio": Infinity,
+      "bootstrap_p_between_gt_noise": 1.0
+    },
+    {
+      "case_id": "ref_humaneval_01",
+      "task": "code_generation",
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "uncorrected_single_drift": 0.21104125618654113,
+      "raw_perturbation_drift": 0.21104125618654113,
+      "noise_corrected_drift": 0.21104125618654113,
+      "noise_corrected_drift_clipped": 0.21104125618654113,
+      "signal_to_noise_ratio": Infinity,
+      "bootstrap_p_between_gt_noise": 1.0
+    },
+    {
+      "case_id": "ref_alpaca_01",
+      "task": "open_ended_writing",
+      "original_noise": 0.0,
+      "perturbed_noise": 0.0,
+      "noise_baseline": 0.0,
+      "uncorrected_single_drift": 0.09964114716166228,
+      "raw_perturbation_drift": 0.09964114716166228,
+      "noise_corrected_drift": 0.09964114716166228,
+      "noise_corrected_drift_clipped": 0.09964114716166228,
+      "signal_to_noise_ratio": Infinity,
+      "bootstrap_p_between_gt_noise": 1.0
+    }
+  ]
+}

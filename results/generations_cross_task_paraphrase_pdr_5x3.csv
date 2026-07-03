@@ -1,0 +1,1655 @@
+case_id,task,dataset,perturbation,version,sample_idx,prompt,output,reference_answer,correct
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,perturbed,0,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,perturbed,1,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_01,factual_qa,SQuAD V2,paraphrase,perturbed,2,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France,France | France | France | France,1
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,perturbed,0,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",The Normans were in Normandy during the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,perturbed,1,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_02,factual_qa,SQuAD V2,paraphrase,perturbed,2,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",In the 10th and 11th centuries.,10th and 11th centuries | in the 10th and 11th centuries | 10th and 11th centuries | 10th and 11th centuries,0
+promptrobust_pdr_paraphrase_squad_03,factual_qa,SQuAD V2,paraphrase,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway.","Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway",0
+promptrobust_pdr_paraphrase_squad_03,factual_qa,SQuAD V2,paraphrase,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway.","Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway",0
+promptrobust_pdr_paraphrase_squad_03,factual_qa,SQuAD V2,paraphrase,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway.","Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway",0
+promptrobust_pdr_paraphrase_squad_03,factual_qa,SQuAD V2,paraphrase,perturbed,0,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway.","Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway",0
+promptrobust_pdr_paraphrase_squad_03,factual_qa,SQuAD V2,paraphrase,perturbed,1,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway.","Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway",0
+promptrobust_pdr_paraphrase_squad_03,factual_qa,SQuAD V2,paraphrase,perturbed,2,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: From which countries did the Norse originate?","Denmark, Iceland, and Norway.","Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway | Denmark, Iceland and Norway",0
+promptrobust_pdr_paraphrase_squad_04,factual_qa,SQuAD V2,paraphrase,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo,Rollo | Rollo | Rollo | Rollo,1
+promptrobust_pdr_paraphrase_squad_04,factual_qa,SQuAD V2,paraphrase,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo,Rollo | Rollo | Rollo | Rollo,1
+promptrobust_pdr_paraphrase_squad_04,factual_qa,SQuAD V2,paraphrase,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo,Rollo | Rollo | Rollo | Rollo,1
+promptrobust_pdr_paraphrase_squad_04,factual_qa,SQuAD V2,paraphrase,perturbed,0,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo,Rollo | Rollo | Rollo | Rollo,1
+promptrobust_pdr_paraphrase_squad_04,factual_qa,SQuAD V2,paraphrase,perturbed,1,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo,Rollo | Rollo | Rollo | Rollo,1
+promptrobust_pdr_paraphrase_squad_04,factual_qa,SQuAD V2,paraphrase,perturbed,2,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: Who was the Norse leader?",Rollo,Rollo | Rollo | Rollo | Rollo,1
+promptrobust_pdr_paraphrase_squad_05,factual_qa,SQuAD V2,paraphrase,original,0,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century,10th century | the first half of the 10th century | 10th | 10th,1
+promptrobust_pdr_paraphrase_squad_05,factual_qa,SQuAD V2,paraphrase,original,1,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century,10th century | the first half of the 10th century | 10th | 10th,1
+promptrobust_pdr_paraphrase_squad_05,factual_qa,SQuAD V2,paraphrase,original,2,"Read the passage and answer the question. Answer with the exact short answer only.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",10th century,10th century | the first half of the 10th century | 10th | 10th,1
+promptrobust_pdr_paraphrase_squad_05,factual_qa,SQuAD V2,paraphrase,perturbed,0,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",The first half of the 10th century.,10th century | the first half of the 10th century | 10th | 10th,0
+promptrobust_pdr_paraphrase_squad_05,factual_qa,SQuAD V2,paraphrase,perturbed,1,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",The 10th century.,10th century | the first half of the 10th century | 10th | 10th,0
+promptrobust_pdr_paraphrase_squad_05,factual_qa,SQuAD V2,paraphrase,perturbed,2,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: What century did the Normans first gain their separate identity?",The first half of the 10th century.,10th century | the first half of the 10th century | 10th | 10th,0
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2+x-6} \), we first need to identify the values of \( x \) for which the denominator is equal to zero, since vertical asymptotes occur at these points.
+
+We start by factoring the quadratic in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) and add to \(1\). The numbers \(3\) and \(-2\) satisfy these conditions. Thus, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the factored expression equal to zero to find the critical points:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us two equations:
+
+1. \( x + 3 = 0 \) which implies \( x = -3 \)
+2. \( x - 2 = 0 \) which implies \( x = 2 \)
+
+Both \( x = -3 \) and \( x = 2 \) will create vertical asymptotes, as they cause the denominator to be zero and the numerator to be non-zero.
+
+Since we have identified two distinct values where the denominator is zero, we conclude that there are two vertical asymptotes.
+
+Thus, the final answer is:
+
+2",2,0
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to determine where the denominator is equal to zero, as vertical asymptotes occur at these points.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we will factor the quadratic equation. We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions.
+
+Thus, we can factor the quadratic as follows:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Setting each factor to zero gives us the potential points for vertical asymptotes:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Since the denominator is zero at these two values, they correspond to vertical asymptotes.
+
+In conclusion, the graph of \( y = \frac{2}{x^2 + x - 6} \) has:
+
+2 vertical asymptotes.
+
+Final answer:
+2",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To find the vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to determine where the denominator is equal to zero, since vertical asymptotes occur at these points.
+
+1. Set the denominator equal to zero:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. Factor the quadratic:
+   \[
+   (x - 2)(x + 3) = 0
+   \]
+
+3. Solve for \( x \):
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+
+The solutions \( x = 2 \) and \( x = -3 \) indicate the locations of the vertical asymptotes.
+
+Thus, the number of vertical asymptotes is:
+
+2",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,perturbed,0,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify where the denominator is equal to zero, since vertical asymptotes occur at the values of \( x \) that make the denominator zero (provided the numerator is not also zero at those points).
+
+1. **Factor the denominator**: We start by factoring the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6
+   \]
+   We need to find two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. **Set the denominator equal to zero**: Next, we set the factored form of the denominator to zero to find the values of \(x\):
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+   This gives us two equations:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. **Determine vertical asymptotes**: The values \(x = -3\) and \(x = 2\) are the points where the denominator is zero. Since the numerator \(2\) is a non-zero constant, these points correspond to vertical asymptotes.
+
+4. **Conclusion**: Since we have found two distinct values where the denominator is zero and the numerator is not zero, the graph of \(y = \frac{2}{x^2 + x - 6}\) has two vertical asymptotes.
+
+Thus, the final answer is:
+\[
+\boxed{2}
+\]",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,perturbed,1,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2+x-6} \), we need to identify the values of \( x \) that make the denominator equal to zero, as vertical asymptotes occur at these points provided the numerator does not also equal zero at those points.
+
+1. **Factor the denominator**: We start with the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6
+   \]
+   To factor this, we need to find two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions since:
+   \[
+   3 \times (-2) = -6 \quad \text{and} \quad 3 + (-2) = 1
+   \]
+   Thus, we can factor the quadratic as:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. **Set the denominator equal to zero**: Next, we set the factored form of the denominator equal to zero to find the critical points:
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+   This gives us the solutions:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. **Check the numerator**: The numerator of our function is \(2\), which is a constant and never equals zero. Therefore, we do not need to worry about any removable discontinuities in this case.
+
+4. **Conclusion**: Since the denominator is zero at \(x = -3\) and \(x = 2\), and the numerator is never zero at these points, both points correspond to vertical asymptotes.
+
+Thus, the graph of \( y = \frac{2}{x^2+x-6} \) has **two vertical asymptotes**.
+
+Final answer: \(\boxed{2}\)",2,1
+promptrobust_pdr_paraphrase_math_01,math_reasoning,MATH,paraphrase,perturbed,2,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we need to identify where the denominator is equal to zero, as vertical asymptotes occur at these points (assuming the numerator is not also zero at these points).
+
+First, we will set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we will factor the quadratic expression. We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions because:
+
+\[
+3 \cdot (-2) = -6 \quad \text{and} \quad 3 + (-2) = 1
+\]
+
+Thus, we can factor the quadratic as follows:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Now, we will set each factor equal to zero to find the roots:
+
+1. \( x + 3 = 0 \) gives \( x = -3 \)
+2. \( x - 2 = 0 \) gives \( x = 2 \)
+
+These roots indicate the values of \(x\) where the denominator is zero. Therefore, we have potential vertical asymptotes at \( x = -3 \) and \( x = 2 \).
+
+Next, we must check that the numerator does not equal zero at these points. The numerator is a constant \(2\), which is never zero. Therefore, there are no cancellations between the numerator and the denominator at these points.
+
+Since the denominator is zero and the numerator is not zero at both \(x = -3\) and \(x = 2\), we conclude that there are vertical asymptotes at both of these points.
+
+Finally, we summarize the findings:
+
+The graph of \(y = \frac{2}{x^2 + x - 6}\) has vertical asymptotes at \(x = -3\) and \(x = 2\).
+
+Thus, the final answer is:
+
+\[
+\text{The graph has } 2 \text{ vertical asymptotes.}
+\]",2,0
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \( 120\% \) of 30:
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \( 130\% \) of 20:
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between the two results:
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Final answer:
+
+10",10,1
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \( 120\% \) of \( 30 \):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \( 130\% \) of \( 20 \):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \( 36 \) and \( 26 \):
+
+\[
+|36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+10",10,0
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","First, we calculate \(120\%\) of \(30\):
+
+\[
+120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+\]
+
+Now, we find the positive difference between \(36\) and \(26\):
+
+\[
+\text{Positive difference} = 36 - 26 = 10
+\]
+
+Final answer:
+
+10",10,1
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,perturbed,0,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we need to calculate two percentages and then find the positive difference between them.
+
+1. **Calculate $120\%$ of 30:**
+   \[
+   120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+   \]
+
+2. **Calculate $130\%$ of 20:**
+   \[
+   130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+   \]
+
+3. **Find the positive difference between the two results:**
+   \[
+   \text{Positive difference} = |36 - 26| = 10
+   \]
+
+Thus, the final answer is:
+\[
+\boxed{10}
+\]",10,1
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,perturbed,1,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first need to calculate \(120\%\) of \(30\) and \(130\%\) of \(20\).
+
+1. **Calculate \(120\%\) of \(30\)**:
+   \[
+   120\% = \frac{120}{100} = 1.2
+   \]
+   Therefore, 
+   \[
+   120\% \text{ of } 30 = 1.2 \times 30 = 36.
+   \]
+
+2. **Calculate \(130\%\) of \(20\)**:
+   \[
+   130\% = \frac{130}{100} = 1.3
+   \]
+   Thus,
+   \[
+   130\% \text{ of } 20 = 1.3 \times 20 = 26.
+   \]
+
+3. **Find the positive difference between \(36\) and \(26\)**:
+   \[
+   \text{Positive difference} = |36 - 26| = 10.
+   \]
+
+Finally, the positive difference between \(120\%\) of \(30\) and \(130\%\) of \(20\) is \(10\).
+
+Thus, the final answer is:
+\[
+\boxed{10}.
+\]",10,1
+promptrobust_pdr_paraphrase_math_02,math_reasoning,MATH,paraphrase,perturbed,2,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we need to find the positive difference between \(120\%\) of \(30\) and \(130\%\) of \(20\).
+
+First, let's calculate \(120\%\) of \(30\):
+
+\[
+120\% = \frac{120}{100} = 1.2
+\]
+\[
+120\% \text{ of } 30 = 1.2 \times 30 = 36
+\]
+
+Next, we calculate \(130\%\) of \(20\):
+
+\[
+130\% = \frac{130}{100} = 1.3
+\]
+\[
+130\% \text{ of } 20 = 1.3 \times 20 = 26
+\]
+
+Now we have both quantities:
+- \(120\%\) of \(30\) is \(36\).
+- \(130\%\) of \(20\) is \(26\).
+
+Next, we find the positive difference between these two results:
+
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+
+\[
+\boxed{10}
+\]",10,1
+promptrobust_pdr_paraphrase_math_03,math_reasoning,MATH,paraphrase,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( \lceil x \rceil = n \), where \( n \) is an integer. Then we have the equation:
+
+\[
+n + x = \frac{23}{7}
+\]
+
+From this, we can isolate \( x \):
+
+\[
+x = \frac{23}{7} - n
+\]
+
+Since \( n = \lceil x \rceil \), it follows that:
+
+\[
+n - 1 < x \leq n
+\]
+
+Substituting our expression for \( x \):
+
+\[
+n - 1 < \frac{23}{7} - n \leq n
+\]
+
+We can split this into two inequalities.
+
+1. For the left side:
+
+\[
+n - 1 < \frac{23}{7} - n
+\]
+
+Rearranging gives:
+
+\[
+2n < \frac{30}{7}
+\]
+
+\[
+n < \frac{15}{7}
+\]
+
+Since \( n \) is an integer, the possible values for \( n \) are \( n = 1 \ \text{or} \ 2 \).
+
+2. For the right side:
+
+\[
+\frac{23}{7} - n \leq n
+\]
+
+Rearranging gives:
+
+\[
+\frac{23}{7} \leq 2n
+\]
+
+\[
+n \geq \frac{23}{14}
+\]
+
+Again, since \( n \) is an integer, the smallest integer \( n \) can take is \( n = 2 \).
+
+Thus, the only possible value for \( n \) is \( n = 2 \). Now we substitute \( n = 2 \) back into our expression for \( x \):
+
+\[
+x = \frac{23}{7} - 2
+\]
+
+Converting \( 2 \) into a fraction with a denominator of \( 7 \):
+
+\[
+x = \frac{23}{7} - \frac{14}{7} = \frac{9}{7}
+\]
+
+Finally, we verify that \( \lceil x \rceil = 2 \) holds true:
+
+\[
+\lceil \frac{9}{7} \rceil = 2
+\]
+
+Thus, the solution satisfies the original equation. The final answer is:
+
+\[
+\frac{9}{7}
+\]","First, we note that $x$ must be positive, since otherwise $\lceil x \rceil + x$ is nonpositive. Next, we know that the decimal part of $x$ must be $\dfrac{2}{7}$. We write $x$ as $n+\dfrac{2}{7}$, where $n$ is the greatest integer less than $x.$ Then, $\lceil x \rceil = n + 1.$ Therefore, we can write $\lceil x \rceil + x$ as $n+1+n+\dfrac{2}{7}=\dfrac{23}{7}$. Solving, we get $n=1$. Therefore, the only value $x$ that satisfies the equation is $1+\dfrac{2}{7}=\boxed{\dfrac{9}{7}}$.",0
+promptrobust_pdr_paraphrase_math_03,math_reasoning,MATH,paraphrase,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( \lceil x \rceil = n \), where \( n \) is an integer. Then, we can express \( x \) as:
+
+\[
+x = n - f
+\]
+
+where \( f \) is the fractional part of \( x \) such that \( 0 \leq f < 1 \). Substituting \( x \) into the equation, we have:
+
+\[
+n + (n - f) = \frac{23}{7}
+\]
+
+This simplifies to:
+
+\[
+2n - f = \frac{23}{7}
+\]
+
+Rearranging gives:
+
+\[
+f = 2n - \frac{23}{7}
+\]
+
+Since \( f \) must satisfy \( 0 \leq f < 1 \), we can set up the inequalities:
+
+1. \( 0 \leq 2n - \frac{23}{7} \)
+2. \( 2n - \frac{23}{7} < 1 \)
+
+Starting with the first inequality:
+
+\[
+2n \geq \frac{23}{7}
+\]
+\[
+n \geq \frac{23}{14}
+\]
+
+Since \( n \) is an integer, we have \( n \geq 2 \).
+
+Now for the second inequality:
+
+\[
+2n < \frac{30}{7}
+\]
+\[
+n < \frac{15}{7}
+\]
+
+Again, since \( n \) is an integer, we find \( n \leq 2 \).
+
+Combining these results, we have:
+
+\[
+n = 2
+\]
+
+Substituting \( n = 2 \) back into the expression for \( f \):
+
+\[
+f = 2(2) - \frac{23}{7} = 4 - \frac{23}{7} = \frac{28}{7} - \frac{23}{7} = \frac{5}{7}
+\]
+
+Thus,
+
+\[
+x = n - f = 2 - \frac{5}{7} = \frac{14}{7} - \frac{5}{7} = \frac{9}{7}
+\]
+
+The final answer is:
+
+\[
+\frac{9}{7}
+\]","First, we note that $x$ must be positive, since otherwise $\lceil x \rceil + x$ is nonpositive. Next, we know that the decimal part of $x$ must be $\dfrac{2}{7}$. We write $x$ as $n+\dfrac{2}{7}$, where $n$ is the greatest integer less than $x.$ Then, $\lceil x \rceil = n + 1.$ Therefore, we can write $\lceil x \rceil + x$ as $n+1+n+\dfrac{2}{7}=\dfrac{23}{7}$. Solving, we get $n=1$. Therefore, the only value $x$ that satisfies the equation is $1+\dfrac{2}{7}=\boxed{\dfrac{9}{7}}$.",0
+promptrobust_pdr_paraphrase_math_03,math_reasoning,MATH,paraphrase,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","Let \( \lceil x \rceil = n \) where \( n \) is an integer. By the definition of the ceiling function, we have:
+
+\[
+n - 1 < x \leq n
+\]
+
+Substituting \( \lceil x \rceil \) into the equation gives:
+
+\[
+n + x = \frac{23}{7}
+\]
+
+From this, we can express \( x \) in terms of \( n \):
+
+\[
+x = \frac{23}{7} - n
+\]
+
+Now, substituting this expression for \( x \) into the inequality we derived from the ceiling function:
+
+\[
+n - 1 < \frac{23}{7} - n \leq n
+\]
+
+We will break this into two inequalities.
+
+**First Inequality:**
+
+1. \( n - 1 < \frac{23}{7} - n \)
+
+Adding \( n \) to both sides:
+
+\[
+n + n - 1 < \frac{23}{7}
+\]
+
+This simplifies to:
+
+\[
+2n - 1 < \frac{23}{7}
+\]
+
+Adding 1 to both sides:
+
+\[
+2n < \frac{23}{7} + 1
+\]
+
+Converting 1 to a fraction with a denominator of 7:
+
+\[
+2n < \frac{23}{7} + \frac{7}{7} = \frac{30}{7}
+\]
+
+Dividing both sides by 2:
+
+\[
+n < \frac{15}{7}
+\]
+
+Since \( n \) is an integer, the possible values for \( n \) are \( n \leq 2 \).
+
+**Second Inequality:**
+
+2. \( \frac{23}{7} - n \leq n \)
+
+Adding \( n \) to both sides:
+
+\[
+\frac{23}{7} \leq 2n
+\]
+
+Dividing both sides by 2:
+
+\[
+\frac{23}{14} \leq n
+\]
+
+Since \( n \) is an integer, the smallest value \( n \) can take is 2. 
+
+Now, we combine our results for \( n \):
+
+\[
+2 \leq n < \frac{15}{7}
+\]
+
+Since \( \frac{15}{7} \approx 2.14 \), the only integer solution is \( n = 2 \).
+
+Now substituting \( n = 2 \) back into the expression for \( x \):
+
+\[
+x = \frac{23}{7} - 2 = \frac{23}{7} - \frac{14}{7} = \frac{9}{7}
+\]
+
+Thus, the final answer is:
+
+\[
+\frac{9}{7}
+\]","First, we note that $x$ must be positive, since otherwise $\lceil x \rceil + x$ is nonpositive. Next, we know that the decimal part of $x$ must be $\dfrac{2}{7}$. We write $x$ as $n+\dfrac{2}{7}$, where $n$ is the greatest integer less than $x.$ Then, $\lceil x \rceil = n + 1.$ Therefore, we can write $\lceil x \rceil + x$ as $n+1+n+\dfrac{2}{7}=\dfrac{23}{7}$. Solving, we get $n=1$. Therefore, the only value $x$ that satisfies the equation is $1+\dfrac{2}{7}=\boxed{\dfrac{9}{7}}$.",0
+promptrobust_pdr_paraphrase_math_03,math_reasoning,MATH,paraphrase,perturbed,0,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","To solve the equation \(\lceil x \rceil + x = \frac{23}{7}\), we start by letting \(\lceil x \rceil\) be \(n\), where \(n\) is an integer. By definition of the ceiling function, we have:
+
+\[
+n - 1 < x \leq n
+\]
+
+Substituting \(n\) into the equation gives us:
+
+\[
+n + x = \frac{23}{7}
+\]
+
+From this, we can express \(x\) in terms of \(n\):
+
+\[
+x = \frac{23}{7} - n
+\]
+
+Next, we need to ensure that \(x\) falls within the bounds defined by the ceiling function:
+
+\[
+n - 1 < \frac{23}{7} - n \leq n
+\]
+
+We will break this into two inequalities:
+
+1. **The left inequality:**
+
+\[
+n - 1 < \frac{23}{7} - n
+\]
+
+Rearranging this gives:
+
+\[
+n + n - 1 < \frac{23}{7}
+\]
+
+\[
+2n - 1 < \frac{23}{7}
+\]
+
+Adding 1 to both sides:
+
+\[
+2n < \frac{23}{7} + 1
+\]
+
+Calculating the right-hand side:
+
+\[
+\frac{23}{7} + 1 = \frac{23}{7} + \frac{7}{7} = \frac{30}{7}
+\]
+
+Now, we have:
+
+\[
+2n < \frac{30}{7}
+\]
+
+Dividing both sides by 2:
+
+\[
+n < \frac{15}{7}
+\]
+
+Since \(n\) is an integer, the maximum integer \(n\) can be is 2 (since \(\frac{15}{7} \approx 2.14\)).
+
+2. **The right inequality:**
+
+Now consider the right inequality:
+
+\[
+\frac{23}{7} - n \leq n
+\]
+
+Rearranging gives:
+
+\[
+\frac{23}{7} \leq 2n
+\]
+
+Dividing by 2:
+
+\[
+\frac{23}{14} \leq n
+\]
+
+Since \(\frac{23}{14} \approx 1.64\), the smallest integer \(n\) can be is 2.
+
+Now, from both inequalities, we find that \(n = 2\) is the only possible integer value.
+
+Substituting \(n = 2\) back into the equation for \(x\):
+
+\[
+x = \frac{23}{7} - 2 = \frac{23}{7} - \frac{14}{7} = \frac{9}{7}
+\]
+
+Finally, we verify the bounds of \(x\):
+
+1. \(n - 1 < x \leq n\) becomes \(1 < \frac{9}{7} \leq 2\), which is true.
+
+Therefore, the solution for \(x\) is:
+
+\[
+\boxed{\frac{9}{7}}
+\]","First, we note that $x$ must be positive, since otherwise $\lceil x \rceil + x$ is nonpositive. Next, we know that the decimal part of $x$ must be $\dfrac{2}{7}$. We write $x$ as $n+\dfrac{2}{7}$, where $n$ is the greatest integer less than $x.$ Then, $\lceil x \rceil = n + 1.$ Therefore, we can write $\lceil x \rceil + x$ as $n+1+n+\dfrac{2}{7}=\dfrac{23}{7}$. Solving, we get $n=1$. Therefore, the only value $x$ that satisfies the equation is $1+\dfrac{2}{7}=\boxed{\dfrac{9}{7}}$.",0
+promptrobust_pdr_paraphrase_math_03,math_reasoning,MATH,paraphrase,perturbed,1,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","To solve the equation \(\lceil x \rceil + x = \frac{23}{7}\), we start by letting \(\lceil x \rceil\) denote the smallest integer greater than or equal to \(x\). We can express \(\lceil x \rceil\) as \(n\), where \(n\) is an integer. Hence, we can write:
+
+\[
+\lceil x \rceil = n \quad \text{and therefore} \quad n + x = \frac{23}{7}.
+\]
+
+From this, we can isolate \(x\):
+
+\[
+x = \frac{23}{7} - n.
+\]
+
+Next, since \(n = \lceil x \rceil\), it must hold that:
+
+\[
+n - 1 < x \leq n.
+\]
+
+Substituting the expression for \(x\) into these inequalities gives us:
+
+\[
+n - 1 < \frac{23}{7} - n \leq n.
+\]
+
+Now we will break this down into two inequalities.
+
+1. **First inequality**: 
+
+\[
+n - 1 < \frac{23}{7} - n
+\]
+
+Rearranging this gives:
+
+\[
+n + n - 1 < \frac{23}{7}
+\]
+
+\[
+2n - 1 < \frac{23}{7}
+\]
+
+Adding 1 to both sides:
+
+\[
+2n < \frac{23}{7} + 1
+\]
+
+Converting 1 to a fraction with the same denominator:
+
+\[
+2n < \frac{23}{7} + \frac{7}{7} = \frac{30}{7}
+\]
+
+Dividing both sides by 2:
+
+\[
+n < \frac{30}{14} = \frac{15}{7} \approx 2.142857.
+\]
+
+Since \(n\) is an integer, the possible values for \(n\) are \(0, 1, 2\).
+
+2. **Second inequality**:
+
+\[
+\frac{23}{7} - n \leq n
+\]
+
+Rearranging gives:
+
+\[
+\frac{23}{7} \leq n + n
+\]
+
+\[
+\frac{23}{7} \leq 2n
+\]
+
+Dividing both sides by 2:
+
+\[
+\frac{23}{14} \leq n \approx 1.642857.
+\]
+
+Since \(n\) is an integer, the only possible value for \(n\) is \(2\).
+
+Now we substitute \(n = 2\) back into the expression for \(x\):
+
+\[
+x = \frac{23}{7} - 2.
+\]
+
+Converting \(2\) into a fraction with a denominator of \(7\):
+
+\[
+x = \frac{23}{7} - \frac{14}{7} = \frac{23 - 14}{7} = \frac{9}{7}.
+\]
+
+Finally, we check that \(\lceil x \rceil\) is indeed \(2\):
+
+\[
+\lceil \frac{9}{7} \rceil = 2.
+\]
+
+Thus, the solution satisfies the original equation:
+
+\[
+\lceil x \rceil + x = 2 + \frac{9}{7} = \frac{14}{7} + \frac{9}{7} = \frac{23}{7}.
+\]
+
+Therefore, the final answer is:
+
+\[
+\boxed{\frac{9}{7}}.
+\]","First, we note that $x$ must be positive, since otherwise $\lceil x \rceil + x$ is nonpositive. Next, we know that the decimal part of $x$ must be $\dfrac{2}{7}$. We write $x$ as $n+\dfrac{2}{7}$, where $n$ is the greatest integer less than $x.$ Then, $\lceil x \rceil = n + 1.$ Therefore, we can write $\lceil x \rceil + x$ as $n+1+n+\dfrac{2}{7}=\dfrac{23}{7}$. Solving, we get $n=1$. Therefore, the only value $x$ that satisfies the equation is $1+\dfrac{2}{7}=\boxed{\dfrac{9}{7}}$.",0
+promptrobust_pdr_paraphrase_math_03,math_reasoning,MATH,paraphrase,perturbed,2,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: Find $x$ such that $\lceil x \rceil + x = \dfrac{23}{7}$. Express $x$ as a common fraction.","To solve the equation \(\lceil x \rceil + x = \frac{23}{7}\), we start by defining \(\lceil x \rceil\). The ceiling function \(\lceil x \rceil\) gives the smallest integer greater than or equal to \(x\). We can denote \(\lceil x \rceil\) as \(n\), where \(n\) is an integer. Thus, we can express \(x\) in terms of \(n\):
+
+\[
+x = n - f
+\]
+
+where \(f\) is the fractional part of \(x\), and \(0 \leq f < 1\). Substituting this into the equation, we get:
+
+\[
+n + (n - f) = \frac{23}{7}
+\]
+
+Simplifying this, we have:
+
+\[
+2n - f = \frac{23}{7}
+\]
+
+From this, we can isolate \(f\):
+
+\[
+f = 2n - \frac{23}{7}
+\]
+
+Since \(f\) must satisfy \(0 \leq f < 1\), we can derive two inequalities:
+
+1. \(2n - \frac{23}{7} \geq 0\)
+2. \(2n - \frac{23}{7} < 1\)
+
+Starting with the first inequality:
+
+\[
+2n \geq \frac{23}{7}
+\]
+
+Dividing both sides by 2 gives:
+
+\[
+n \geq \frac{23}{14}
+\]
+
+Since \(n\) is an integer, the smallest integer satisfying this inequality is \(n = 2\).
+
+Now, let's check the second inequality:
+
+\[
+2n - \frac{23}{7} < 1
+\]
+
+Rearranging this gives:
+
+\[
+2n < 1 + \frac{23}{7}
+\]
+
+Calculating the right side:
+
+\[
+1 + \frac{23}{7} = \frac{7}{7} + \frac{23}{7} = \frac{30}{7}
+\]
+
+So, we have:
+
+\[
+2n < \frac{30}{7}
+\]
+
+Dividing both sides by 2 gives:
+
+\[
+n < \frac{15}{7}
+\]
+
+Since \(n\) is an integer, the largest integer satisfying this inequality is \(n = 2\).
+
+Thus, we have \(n = 2\) as the only possible value for \(n\). Now we can substitute back to find \(f\):
+
+\[
+f = 2(2) - \frac{23}{7} = 4 - \frac{23}{7}
+\]
+
+To perform this subtraction, we convert 4 to a fraction with a denominator of 7:
+
+\[
+4 = \frac{28}{7}
+\]
+
+Thus:
+
+\[
+f = \frac{28}{7} - \frac{23}{7} = \frac{5}{7}
+\]
+
+Now we can find \(x\):
+
+\[
+x = n - f = 2 - \frac{5}{7} = \frac{14}{7} - \frac{5}{7} = \frac{9}{7}
+\]
+
+Finally, we confirm that \(\lceil x \rceil + x\) equals \(\frac{23}{7}\):
+
+\[
+\lceil \frac{9}{7} \rceil = 2
+\]
+\[
+\lceil x \rceil + x = 2 + \frac{9}{7} = \frac{14}{7} + \frac{9}{7} = \frac{23}{7}
+\]
+
+This confirms our solution. Therefore, the final answer is:
+
+\[
+\boxed{\frac{9}{7}}
+\]","First, we note that $x$ must be positive, since otherwise $\lceil x \rceil + x$ is nonpositive. Next, we know that the decimal part of $x$ must be $\dfrac{2}{7}$. We write $x$ as $n+\dfrac{2}{7}$, where $n$ is the greatest integer less than $x.$ Then, $\lceil x \rceil = n + 1.$ Therefore, we can write $\lceil x \rceil + x$ as $n+1+n+\dfrac{2}{7}=\dfrac{23}{7}$. Solving, we get $n=1$. Therefore, the only value $x$ that satisfies the equation is $1+\dfrac{2}{7}=\boxed{\dfrac{9}{7}}$.",0
+promptrobust_pdr_paraphrase_math_04,math_reasoning,MATH,paraphrase,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the problem, we need to evaluate \( i^5 + i^{-25} + i^{45} \).
+
+Recall that \( i \) is the imaginary unit, defined as \( i = \sqrt{-1} \), and its powers cycle every 4 terms as follows:
+- \( i^1 = i \)
+- \( i^2 = -1 \)
+- \( i^3 = -i \)
+- \( i^4 = 1 \)
+- \( i^5 = i \)
+- \( i^6 = -1 \)
+- \( i^7 = -i \)
+- \( i^8 = 1 \)
+
+### Step 1: Evaluate \( i^5 \)
+Since \( 5 \mod 4 = 1 \), we have:
+\[
+i^5 = i
+\]
+
+### Step 2: Evaluate \( i^{-25} \)
+To evaluate \( i^{-25} \), we first find \( 25 \mod 4 \):
+\[
+25 \mod 4 = 1 \quad \text{(since \( 25 = 4 \times 6 + 1 \))}
+\]
+Thus,
+\[
+i^{-25} = \frac{1}{i^{25}} = \frac{1}{i} = -i
+\]
+
+### Step 3: Evaluate \( i^{45} \)
+Now, for \( i^{45} \):
+\[
+45 \mod 4 = 1 \quad \text{(since \( 45 = 4 \times 11 + 1 \))}
+\]
+Therefore,
+\[
+i^{45} = i
+\]
+
+### Step 4: Combine all parts
+Now we can combine all the evaluated parts:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i
+\]
+
+Thus, the final answer is:
+\[
+\boxed{i}
+\]",i,1
+promptrobust_pdr_paraphrase_math_04,math_reasoning,MATH,paraphrase,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the problem, we start by recalling the powers of the imaginary unit \(i\):
+
+\[
+i^1 = i, \quad i^2 = -1, \quad i^3 = -i, \quad i^4 = 1
+\]
+
+These powers repeat every four terms, so for any integer \(n\), we can determine \(i^n\) using \(n \mod 4\).
+
+1. **Calculate \(i^5\)**:
+   \[
+   5 \mod 4 = 1 \quad \Rightarrow \quad i^5 = i^1 = i
+   \]
+
+2. **Calculate \(i^{-25}\)**:
+   First, we find \(i^{25}\):
+   \[
+   25 \mod 4 = 1 \quad \Rightarrow \quad i^{25} = i^1 = i
+   \]
+   Therefore,
+   \[
+   i^{-25} = \frac{1}{i} = -i \quad \text{(since } i \cdot (-i) = 1\text{)}
+   \]
+
+3. **Calculate \(i^{45}\)**:
+   \[
+   45 \mod 4 = 1 \quad \Rightarrow \quad i^{45} = i^1 = i
+   \]
+
+Now we can combine these results:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i
+\]
+
+Thus, the final answer is:
+
+\[
+i
+\]",i,0
+promptrobust_pdr_paraphrase_math_04,math_reasoning,MATH,paraphrase,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the problem, we first need to evaluate each term involving the imaginary unit \(i\), where \(i = \sqrt{-1}\).
+
+1. **Evaluate \(i^5\)**:
+   The powers of \(i\) cycle every 4:
+   - \(i^1 = i\)
+   - \(i^2 = -1\)
+   - \(i^3 = -i\)
+   - \(i^4 = 1\)
+   - \(i^5 = i^1 = i\)
+
+2. **Evaluate \(i^{-25}\)**:
+   First, we can find \(i^{25}\):
+   \[
+   25 \mod 4 = 1 \quad \text{(since \(25 = 4 \times 6 + 1\))}
+   \]
+   Thus, \(i^{25} = i\). Therefore,
+   \[
+   i^{-25} = \frac{1}{i^{25}} = \frac{1}{i} = -i \quad \text{(by multiplying numerator and denominator by \(-i\))}
+   \]
+
+3. **Evaluate \(i^{45}\)**:
+   Similarly, we find \(45 \mod 4\):
+   \[
+   45 \mod 4 = 1 \quad \text{(since \(45 = 4 \times 11 + 1\))}
+   \]
+   Thus, \(i^{45} = i\).
+
+Now, we combine all the evaluated terms:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i
+\]
+
+Therefore, the final answer is:
+
+\[
+i
+\]",i,0
+promptrobust_pdr_paraphrase_math_04,math_reasoning,MATH,paraphrase,perturbed,0,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To evaluate the expression \( i^5 + i^{-25} + i^{45} \), we first need to understand the powers of \( i \), the imaginary unit. The powers of \( i \) cycle every four terms:
+
+\[
+\begin{align*}
+i^1 & = i, \\
+i^2 & = -1, \\
+i^3 & = -i, \\
+i^4 & = 1, \\
+i^5 & = i^1 = i, \\
+i^6 & = i^2 = -1, \\
+i^7 & = i^3 = -i, \\
+i^8 & = i^4 = 1, \\
+\end{align*}
+\]
+
+This cycle repeats, so to simplify \( i^n \), we can find \( n \mod 4 \).
+
+1. **Calculating \( i^5 \)**:
+   \[
+   5 \mod 4 = 1 \quad \Rightarrow \quad i^5 = i^1 = i.
+   \]
+
+2. **Calculating \( i^{-25} \)**:
+   We first convert the negative exponent to a positive exponent:
+   \[
+   i^{-25} = \frac{1}{i^{25}}.
+   \]
+   Now we compute \( 25 \mod 4 \):
+   \[
+   25 \mod 4 = 1 \quad \Rightarrow \quad i^{25} = i^1 = i.
+   \]
+   Therefore,
+   \[
+   i^{-25} = \frac{1}{i} = -i \quad (\text{since } \frac{1}{i} = -i).
+   \]
+
+3. **Calculating \( i^{45} \)**:
+   Now we compute \( 45 \mod 4 \):
+   \[
+   45 \mod 4 = 1 \quad \Rightarrow \quad i^{45} = i^1 = i.
+   \]
+
+Now we can combine all the computed values:
+
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i.
+\]
+
+This simplifies as follows:
+\[
+i - i + i = 0 + i = i.
+\]
+
+Thus, the final answer is:
+\[
+\boxed{i}.
+\]",i,1
+promptrobust_pdr_paraphrase_math_04,math_reasoning,MATH,paraphrase,perturbed,1,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To solve the expression \(i^5 + i^{-25} + i^{45}\), we will evaluate each term separately.
+
+First, we recall that \(i\) is the imaginary unit, defined as \(i = \sqrt{-1}\). The powers of \(i\) cycle every four terms:
+- \(i^1 = i\)
+- \(i^2 = -1\)
+- \(i^3 = -i\)
+- \(i^4 = 1\)
+- \(i^5 = i\) (and the cycle repeats)
+
+### Step 1: Calculate \(i^5\)
+
+Since \(i^5\) is the same as \(i^1\) due to the cycle:
+\[
+i^5 = i
+\]
+
+### Step 2: Calculate \(i^{-25}\)
+
+To evaluate \(i^{-25}\), we first need to find \(i^{25}\). We can determine \(25 \mod 4\) to find its equivalent power in the cycle:
+\[
+25 \div 4 = 6 \quad \text{(remainder } 1\text{)}
+\]
+Thus, \(25 \mod 4 = 1\), which means:
+\[
+i^{25} = i^1 = i
+\]
+Now we find \(i^{-25}\):
+\[
+i^{-25} = \frac{1}{i^{25}} = \frac{1}{i} = -i
+\]
+(where we used the fact that \(\frac{1}{i} = -i\)).
+
+### Step 3: Calculate \(i^{45}\)
+
+Next, we calculate \(i^{45}\). We find \(45 \mod 4\):
+\[
+45 \div 4 = 11 \quad \text{(remainder } 1\text{)}
+\]
+Thus, \(45 \mod 4 = 1\), which means:
+\[
+i^{45} = i^1 = i
+\]
+
+### Step 4: Combine the results
+
+Now we can combine the results from steps 1, 2, and 3:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i = i - i + i = i
+\]
+
+### Final Answer
+
+Thus, the final answer is:
+\[
+\boxed{i}
+\]",i,1
+promptrobust_pdr_paraphrase_math_04,math_reasoning,MATH,paraphrase,perturbed,2,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: Evaluate $i^5+i^{-25}+i^{45}$.","To evaluate the expression \( i^5 + i^{-25} + i^{45} \), we first need to understand the powers of the imaginary unit \( i \), which is defined as \( i = \sqrt{-1} \).
+
+The powers of \( i \) cycle every four terms:
+\[
+\begin{align*}
+i^1 & = i, \\
+i^2 & = -1, \\
+i^3 & = -i, \\
+i^4 & = 1, \\
+i^5 & = i \quad (\text{since } i^5 = i^4 \cdot i^1 = 1 \cdot i = i), \\
+i^6 & = -1, \\
+i^7 & = -i, \\
+i^8 & = 1, \\
+& \vdots
+\end{align*}
+\]
+From this pattern, we can conclude that \( i^n \) can be determined by \( n \mod 4 \).
+
+Now we will evaluate each term in the expression \( i^5 + i^{-25} + i^{45} \).
+
+1. **Calculating \( i^5 \)**:
+   \[
+   5 \mod 4 = 1 \quad \Rightarrow \quad i^5 = i.
+   \]
+
+2. **Calculating \( i^{-25} \)**:
+   First, we find \( -25 \mod 4 \):
+   \[
+   -25 \div 4 = -6.25 \quad \Rightarrow \quad -25 = -24 - 1 \quad \Rightarrow \quad -25 \mod 4 = 3.
+   \]
+   Therefore,
+   \[
+   i^{-25} = i^3 = -i.
+   \]
+
+3. **Calculating \( i^{45} \)**:
+   Now we find \( 45 \mod 4 \):
+   \[
+   45 \div 4 = 11.25 \quad \Rightarrow \quad 45 = 44 + 1 \quad \Rightarrow \quad 45 \mod 4 = 1.
+   \]
+   Hence,
+   \[
+   i^{45} = i^1 = i.
+   \]
+
+Now we substitute these values back into the original expression:
+\[
+i^5 + i^{-25} + i^{45} = i + (-i) + i.
+\]
+
+Combining these terms:
+\[
+i - i + i = 0 + i = i.
+\]
+
+Thus, the final answer is:
+\[
+\boxed{i}.
+\]",i,1
+promptrobust_pdr_paraphrase_math_05,math_reasoning,MATH,paraphrase,original,0,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","We start with the equation given in the problem:
+
+\[
+2^8 = 4^x
+\]
+
+Next, we can express \(4\) as a power of \(2\):
+
+\[
+4 = 2^2
+\]
+
+Therefore, we can rewrite \(4^x\) as:
+
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now we can substitute this back into the original equation:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can set the exponents equal to each other:
+
+\[
+8 = 2x
+\]
+
+To solve for \(x\), we divide both sides by \(2\):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the final answer is:
+
+\[
+4
+\]",4,0
+promptrobust_pdr_paraphrase_math_05,math_reasoning,MATH,paraphrase,original,1,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \( 2^8 = 4^x \), we can rewrite \( 4^x \) in terms of base 2.
+
+Since \( 4 = 2^2 \), we have:
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now we can set the exponents equal to each other because the bases are the same:
+\[
+2^8 = 2^{2x}
+\]
+
+This implies:
+\[
+8 = 2x
+\]
+
+To solve for \( x \), we divide both sides by 2:
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the value of \( x \) is:
+
+4",4,1
+promptrobust_pdr_paraphrase_math_05,math_reasoning,MATH,paraphrase,original,2,"Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \(2^8 = 4^x\), we first express \(4\) in terms of \(2\):
+
+\[
+4 = 2^2
+\]
+
+Thus, we can rewrite \(4^x\) as:
+
+\[
+4^x = (2^2)^x = 2^{2x}
+\]
+
+Now we substitute this back into the original equation:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can set the exponents equal to each other:
+
+\[
+8 = 2x
+\]
+
+Next, we solve for \(x\) by dividing both sides by \(2\):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+The final answer is:
+
+4",4,0
+promptrobust_pdr_paraphrase_math_05,math_reasoning,MATH,paraphrase,perturbed,0,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \(2^8 = 4^x\), we can start by expressing \(4\) in terms of base \(2\). 
+
+We know that:
+\[
+4 = 2^2
+\]
+
+Therefore, we can rewrite \(4^x\) as:
+\[
+4^x = (2^2)^x
+\]
+
+Using the power of a power property, this simplifies to:
+\[
+(2^2)^x = 2^{2x}
+\]
+
+Now we can rewrite the original equation:
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can set the exponents equal to each other:
+\[
+8 = 2x
+\]
+
+Next, we solve for \(x\) by dividing both sides by \(2\):
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the value of \(x\) is:
+\[
+\boxed{4}
+\]",4,1
+promptrobust_pdr_paraphrase_math_05,math_reasoning,MATH,paraphrase,perturbed,1,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \( 2^8 = 4^x \), we first need to express \( 4 \) in terms of base \( 2 \). We know that:
+
+\[
+4 = 2^2
+\]
+
+Now, we can rewrite \( 4^x \) using this expression:
+
+\[
+4^x = (2^2)^x
+\]
+
+Applying the power of a power property of exponents, we have:
+
+\[
+(2^2)^x = 2^{2x}
+\]
+
+Now our equation \( 2^8 = 4^x \) can be rewritten as:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same (both are base \( 2 \)), we can set the exponents equal to each other:
+
+\[
+8 = 2x
+\]
+
+Next, we solve for \( x \) by dividing both sides by \( 2 \):
+
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the value of \( x \) is 
+
+\[
+\boxed{4}
+\]",4,1
+promptrobust_pdr_paraphrase_math_05,math_reasoning,MATH,paraphrase,perturbed,2,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: If $2^8=4^x$, what is the value of $x$?","To solve the equation \( 2^8 = 4^x \), we can start by expressing \( 4^x \) in terms of base 2, since \( 4 \) is a power of \( 2 \).
+
+We know that:
+\[
+4 = 2^2
+\]
+Thus, we can rewrite \( 4^x \) as:
+\[
+4^x = (2^2)^x
+\]
+
+Using the power of a power property, we can simplify this:
+\[
+(2^2)^x = 2^{2x}
+\]
+
+Now our equation \( 2^8 = 4^x \) can be rewritten as:
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can equate the exponents:
+\[
+8 = 2x
+\]
+
+Next, we solve for \( x \) by dividing both sides by \( 2 \):
+\[
+x = \frac{8}{2} = 4
+\]
+
+Thus, the value of \( x \) is:
+\[
+\boxed{4}
+\]",4,1

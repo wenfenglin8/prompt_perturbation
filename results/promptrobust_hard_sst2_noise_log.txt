@@ -1,0 +1,79 @@
+PromptRobust-style hard-sample noise pilot
+
+Reference style:
+PromptRobust / PromptBench evaluates robustness on classification datasets such as SST-2 and applies prompt-level perturbations including character-level attacks.
+
+Current setting:
+- Suite: promptrobust_hard
+- Task: SST-2-style sentiment classification
+- Cases: 4 harder / more ambiguous review samples
+- Samples per original/perturbed prompt: 8
+- Model: gpt-4o-mini
+- Embedding model: text-embedding-3-small
+- Decoding: temperature = 0.9, top_p = 0.95
+
+Perturbation:
+Only the instruction was perturbed. The review text stayed unchanged.
+
+Original instruction:
+Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Perturbed instruction:
+Dtermin whethr the movie reveiw is positve or negativ. Answer with exactly one label: positive or negative.
+
+Character-level perturbations:
+- Determine -> Dtermin
+- whether -> whethr
+- review -> reveiw
+- positive -> positve
+- negative -> negativ
+
+Label distributions:
+
+promptrobust_hard_sst2_01
+Review: uneven and frequently frustrating, but its final act is surprisingly moving.
+- original: positive = 7, negative = 1
+- perturbed: positive = 8, negative = 0
+- noise_baseline: 0.033747
+- raw_perturbation_drift: 0.033748
+- noise_corrected_drift: 0.000001
+
+promptrobust_hard_sst2_02
+Review: not especially original, yet charming enough to keep me smiling.
+- original: positive = 8
+- perturbed: positive = 8
+- noise_baseline: 0.000000
+- raw_perturbation_drift: 0.000000
+- noise_corrected_drift: 0.000000
+
+promptrobust_hard_sst2_03
+Review: beautifully shot, but emotionally empty and slow.
+- original: negative = 8
+- perturbed: negative = 8
+- noise_baseline: 0.000000
+- raw_perturbation_drift: 0.000000
+- noise_corrected_drift: 0.000000
+
+promptrobust_hard_sst2_04
+Review: I wanted to dislike it, but the performances won me over.
+- original: positive = 8
+- perturbed: positive = 8
+- noise_baseline: 0.000000
+- raw_perturbation_drift: 0.000000
+- noise_corrected_drift: 0.000000
+
+Aggregate result:
+- average raw perturbation drift: 0.0084
+- average sample-noise baseline: 0.0084
+- average noise-corrected drift: 0.0000
+- estimated share of raw drift explainable by sample noise: about 100%
+
+Interpretation:
+Changing to harder SST-2-style samples revealed sample noise in one ambiguous case. For promptrobust_hard_sst2_01, the original prompt produced 7 positive labels and 1 negative label, while the perturbed prompt produced 8 positive labels. The raw original-vs-perturbed drift was almost exactly equal to the within-prompt noise baseline.
+
+Therefore, this run supports the noise-correction argument: without subtracting sample noise, the original-vs-perturbed difference could be mistaken for a perturbation effect. After correction, there is almost no remaining perturbation-specific drift.
+
+Generated files:
+- results/generations_promptrobust_hard_sst2.csv
+- results/noise_metrics_promptrobust_hard_sst2.csv
+- results/sample_noise_report_promptrobust_hard_sst2.md

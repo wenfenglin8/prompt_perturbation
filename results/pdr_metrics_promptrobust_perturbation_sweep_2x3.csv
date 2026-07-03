@@ -1,0 +1,17 @@
+case_id,task,dataset,perturbation,clean_single_correct,perturbed_single_correct,single_sample_pdr,clean_mean_correctness,perturbed_mean_correctness,repeated_sampling_pdr,correctness_sample_noise
+promptrobust_pdr_character_squad_01,factual_qa,SQuAD V2,character,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_word_squad_01,factual_qa,SQuAD V2,word,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_sentence_squad_01,factual_qa,SQuAD V2,sentence,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_semantic_squad_01,factual_qa,SQuAD V2,semantic,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_character_squad_02,factual_qa,SQuAD V2,character,0,1,0.0,0.3333333333333333,0.6666666666666666,-1.0,0.4714045207910317
+promptrobust_pdr_word_squad_02,factual_qa,SQuAD V2,word,0,0,0.0,0,0,0.0,0.0
+promptrobust_pdr_sentence_squad_02,factual_qa,SQuAD V2,sentence,0,0,0.0,0,0,0.0,0.0
+promptrobust_pdr_semantic_squad_02,factual_qa,SQuAD V2,semantic,0,0,0.0,0,0,0.0,0.0
+promptrobust_pdr_character_math_01,math_reasoning,MATH,character,0,0,0.0,0.6666666666666666,0.6666666666666666,0.0,0.4714045207910317
+promptrobust_pdr_word_math_01,math_reasoning,MATH,word,0,1,0.0,0.3333333333333333,1,-2.0000000000000004,0.23570226039551584
+promptrobust_pdr_sentence_math_01,math_reasoning,MATH,sentence,1,1,0.0,0.6666666666666666,1,-0.5000000000000001,0.23570226039551584
+promptrobust_pdr_semantic_math_01,math_reasoning,MATH,semantic,1,1,0.0,1,1,0.0,0.0
+promptrobust_pdr_character_math_02,math_reasoning,MATH,character,0,0,0.0,0,0,0.0,0.0
+promptrobust_pdr_word_math_02,math_reasoning,MATH,word,0,1,0.0,0,0.6666666666666666,0.0,0.23570226039551584
+promptrobust_pdr_sentence_math_02,math_reasoning,MATH,sentence,0,0,0.0,0,0,0.0,0.0
+promptrobust_pdr_semantic_math_02,math_reasoning,MATH,semantic,0,1,0.0,0,1,0.0,0.0

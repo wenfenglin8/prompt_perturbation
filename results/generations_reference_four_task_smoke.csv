@@ -1,0 +1,424 @@
+case_id,task,version,sample_idx,prompt,output
+ref_squad_v2_01,factual_qa,original,0,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+ref_squad_v2_01,factual_qa,original,1,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+ref_squad_v2_01,factual_qa,original,2,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+ref_squad_v2_01,factual_qa,perturbed,0,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+ref_squad_v2_01,factual_qa,perturbed,1,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France
+ref_squad_v2_01,factual_qa,perturbed,2,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France.
+ref_math_01,math_reasoning,original,0,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we need to identify the values of \( x \) that make the denominator equal to zero, as vertical asymptotes occur where the function is undefined due to division by zero.
+
+First, we set the denominator equal to zero:
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor the quadratic equation. We need two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2) = 0
+\]
+
+Now, we solve for \(x\) by setting each factor equal to zero:
+
+1. \( x + 3 = 0 \) gives \( x = -3 \)
+2. \( x - 2 = 0 \) gives \( x = 2 \)
+
+Thus, the values \( x = -3 \) and \( x = 2 \) are where the denominator is zero, indicating potential vertical asymptotes at these points.
+
+Since both values are distinct and do not result in any further restrictions (such as holes in the graph), we conclude that there are two vertical asymptotes.
+
+Therefore, the final answer is:
+
+\[
+\boxed{2}
+\]"
+ref_math_01,math_reasoning,original,1,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we need to identify the values of \( x \) that make the denominator equal to zero since vertical asymptotes occur at these points (as long as the numerator is not also zero at those points).
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We need to find two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions because:
+
+\[
+3 \times (-2) = -6 \quad \text{and} \quad 3 + (-2) = 1
+\]
+
+Thus, we can factor the quadratic as:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the denominator equal to zero to find the points of potential vertical asymptotes:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us two equations:
+
+1. \( x - 2 = 0 \) which leads to \( x = 2 \)
+2. \( x + 3 = 0 \) which leads to \( x = -3 \)
+
+Now we have identified the points \( x = 2 \) and \( x = -3 \) where the denominator is zero. 
+
+To confirm that these points are indeed vertical asymptotes, we check the behavior of the function as \( x \) approaches these values:
+
+- As \( x \to 2 \), \( y \) approaches \( \pm \infty \) (since the numerator is a constant positive value).
+- As \( x \to -3 \), \( y \) also approaches \( \pm \infty \).
+
+Since both conditions confirm vertical asymptotes at these points, we conclude that the graph of \( y = \frac{2}{x^2 + x - 6} \) has two vertical asymptotes.
+
+Thus, the final answer is:
+
+\[
+\boxed{2}
+\]"
+ref_math_01,math_reasoning,original,2,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify the values of \( x \) that make the denominator equal to zero, since vertical asymptotes occur at these points.
+
+1. **Factor the denominator**: We start with the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6
+   \]
+   We need to factor this expression. We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) fit this requirement. Therefore, we can factor the expression as:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. **Set the denominator to zero**: We find the values of \( x \) that make the denominator zero by solving:
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+   This gives us two equations:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. **Identify vertical asymptotes**: The function \( y = \frac{2}{x^2 + x - 6} \) will have vertical asymptotes at the values of \( x \) where the denominator is zero (and the numerator is not zero). From our factorization, we found:
+   - \( x = -3 \)
+   - \( x = 2 \)
+
+Both values result in the denominator being zero while the numerator remains non-zero.
+
+4. **Conclusion**: Therefore, there are two vertical asymptotes for the graph of the function.
+
+Final answer: \( \boxed{2} \)"
+ref_math_01,math_reasoning,perturbed,0,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify where the denominator equals zero, since vertical asymptotes occur at points where the function is undefined, which typically happens when the denominator is zero.
+
+1. **Factor the Denominator**: We start by factoring the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6
+   \]
+   We need to find two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. **Set the Denominator to Zero**: Next, we find the values of \(x\) that make the denominator zero:
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+   This gives us two equations:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. **Determine Vertical Asymptotes**: The function \( y = \frac{2}{(x + 3)(x - 2)} \) will have vertical asymptotes at the points where the denominator is zero, provided that the numerator does not also equal zero at those points. Since the numerator \(2\) is a constant and does not equal zero, we confirm that both points correspond to vertical asymptotes.
+
+4. **Count the Vertical Asymptotes**: We have found two values of \(x\) where the function is undefined:
+   - \(x = -3\)
+   - \(x = 2\)
+
+Since both of these points correspond to vertical asymptotes, we conclude that the function has:
+
+\[
+\text{Final Answer: } 2
+\] vertical asymptotes."
+ref_math_01,math_reasoning,perturbed,1,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we need to find the values of \( x \) for which the denominator \( x^2 + x - 6 \) equals zero. Vertical asymptotes occur at these points, provided that the numerator is not also zero at the same points.
+
+First, we factor the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions. Thus, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Next, we set the factored form equal to zero to find the values of \( x \):
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+This gives us two equations to solve:
+
+1. \( x + 3 = 0 \)  →  \( x = -3 \)
+2. \( x - 2 = 0 \)  →  \( x = 2 \)
+
+Now we have found the points where the denominator is zero, which are \( x = -3 \) and \( x = 2 \). 
+
+Next, we check if the numerator \( 2 \) is zero at these points. Since the numerator is a constant \( 2 \), it is not zero at either \( x = -3 \) or \( x = 2 \).
+
+Since the denominator is zero and the numerator is non-zero at both points, both \( x = -3 \) and \( x = 2 \) correspond to vertical asymptotes.
+
+Thus, the graph of \( y = \frac{2}{x^2 + x - 6} \) has:
+
+- One vertical asymptote at \( x = -3 \)
+- One vertical asymptote at \( x = 2 \)
+
+In conclusion, the total number of vertical asymptotes is:
+
+\[
+\boxed{2}
+\]"
+ref_math_01,math_reasoning,perturbed,2,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2+x-6} \), we need to identify where the denominator equals zero, since vertical asymptotes occur at values of \( x \) where the function is undefined due to division by zero.
+
+First, we set the denominator equal to zero and solve for \( x \):
+
+\[
+x^2 + x - 6 = 0
+\]
+
+Next, we can factor the quadratic expression. We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) work, so we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Now we set each factor equal to zero to find the critical points:
+
+1. \( x + 3 = 0 \) gives \( x = -3 \)
+2. \( x - 2 = 0 \) gives \( x = 2 \)
+
+These values \( x = -3 \) and \( x = 2 \) are the points where the denominator becomes zero, which implies that the function is undefined at these points. Therefore, these points correspond to vertical asymptotes.
+
+Since we have identified two values where the function is undefined, we conclude that the graph of \( y = \frac{2}{x^2+x-6} \) has:
+
+\[
+\boxed{2}
+\]
+
+Thus, the final answer is that there are 2 vertical asymptotes."
+ref_humaneval_01,code_generation,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if numbers[i + 1] - numbers[i] < threshold:
+            return True
+    return False
+```"
+ref_humaneval_01,code_generation,original,1,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+ref_humaneval_01,code_generation,original,2,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+ref_humaneval_01,code_generation,perturbed,0,"Implement the Python function below. Provide only executable Python code and do not add prose.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+ref_humaneval_01,code_generation,perturbed,1,"Implement the Python function below. Provide only executable Python code and do not add prose.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+ref_humaneval_01,code_generation,perturbed,2,"Implement the Python function below. Provide only executable Python code and do not add prose.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+ref_alpaca_01,open_ended_writing,original,0,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a Balanced Diet: Focus on consuming a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats to provide essential nutrients for your body.
+
+2. Stay Physically Active: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with muscle-strengthening exercises on two or more days.
+
+3. Prioritize Sleep: Aim for 7-9 hours of quality sleep each night to support overall health, improve mood, and enhance cognitive function."
+ref_alpaca_01,open_ended_writing,original,1,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. **Maintain a Balanced Diet**: Incorporate a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats into your meals while limiting processed foods and added sugars.
+
+2. **Stay Physically Active**: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with muscle-strengthening exercises on two or more days.
+
+3. **Prioritize Sleep and Stress Management**: Ensure you get 7-9 hours of quality sleep each night and practice stress-reduction techniques such as mindfulness, meditation, or regular physical activity."
+ref_alpaca_01,open_ended_writing,original,2,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a Balanced Diet: Incorporate a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats into your meals to ensure you get essential nutrients.
+
+2. Stay Physically Active: Aim for at least 150 minutes of moderate aerobic exercise or 75 minutes of vigorous exercise each week, along with strength training exercises at least twice a week.
+
+3. Prioritize Sleep: Aim for 7-9 hours of quality sleep each night to support overall health, mental clarity, and emotional well-being."
+ref_alpaca_01,open_ended_writing,perturbed,0,"Please produce a clear response to this request.
+
+Request:
+Give three tips for staying healthy.","1. **Maintain a Balanced Diet**: Focus on eating a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, sugar, and excessive salt.
+
+2. **Stay Physically Active**: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises at least twice a week.
+
+3. **Prioritize Sleep and Stress Management**: Ensure you get 7-9 hours of quality sleep each night and practice stress-reducing techniques such as mindfulness, meditation, or regular relaxation activities."
+ref_alpaca_01,open_ended_writing,perturbed,1,"Please produce a clear response to this request.
+
+Request:
+Give three tips for staying healthy.","1. **Maintain a Balanced Diet**: Eat a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, added sugars, and sodium to promote overall health.
+
+2. **Stay Active**: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week. Include strength training exercises at least two days a week.
+
+3. **Prioritize Sleep and Manage Stress**: Aim for 7-9 hours of quality sleep each night and practice stress-reducing techniques such as mindfulness, meditation, or regular physical activity to support mental health."
+ref_alpaca_01,open_ended_writing,perturbed,2,"Please produce a clear response to this request.
+
+Request:
+Give three tips for staying healthy.","Here are three tips for staying healthy:
+
+1. **Maintain a Balanced Diet**: Focus on eating a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, added sugars, and excessive salt.
+
+2. **Stay Physically Active**: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises at least twice a week.
+
+3. **Prioritize Sleep and Stress Management**: Aim for 7-9 hours of quality sleep each night and incorporate stress-reducing practices such as mindfulness, meditation, or regular physical activity to support mental health."

@@ -1,0 +1,417 @@
+case_id,task,version,sample_idx,prompt,output
+promptrobust_squad_v2_01,squad_v2_factual_qa,original,0,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+promptrobust_squad_v2_01,squad_v2_factual_qa,original,1,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+promptrobust_squad_v2_01,squad_v2_factual_qa,original,2,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+promptrobust_squad_v2_01,squad_v2_factual_qa,perturbed,0,"Raed the passgae and answr the quesiton. If the answr cannot be found in the passgae, say unanswrable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+promptrobust_squad_v2_01,squad_v2_factual_qa,perturbed,1,"Raed the passgae and answr the quesiton. If the answr cannot be found in the passgae, say unanswrable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+promptrobust_squad_v2_01,squad_v2_factual_qa,perturbed,2,"Raed the passgae and answr the quesiton. If the answr cannot be found in the passgae, say unanswrable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+promptrobust_squad_v2_02,squad_v2_factual_qa,original,0,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",The Normans were in Normandy during the 10th and 11th centuries.
+promptrobust_squad_v2_02,squad_v2_factual_qa,original,1,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",The Normans were in Normandy during the 10th and 11th centuries.
+promptrobust_squad_v2_02,squad_v2_factual_qa,original,2,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",The Normans were in Normandy during the 10th and 11th centuries.
+promptrobust_squad_v2_02,squad_v2_factual_qa,perturbed,0,"Raed the passgae and answr the quesiton. If the answr cannot be found in the passgae, say unanswrable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",The Normans were in Normandy during the 10th and 11th centuries.
+promptrobust_squad_v2_02,squad_v2_factual_qa,perturbed,1,"Raed the passgae and answr the quesiton. If the answr cannot be found in the passgae, say unanswrable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",The Normans were in Normandy during the 10th and 11th centuries.
+promptrobust_squad_v2_02,squad_v2_factual_qa,perturbed,2,"Raed the passgae and answr the quesiton. If the answr cannot be found in the passgae, say unanswrable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: When were the Normans in Normandy?",The Normans were in Normandy during the 10th and 11th centuries.
+promptrobust_math_01,math_reasoning,original,0,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify where the denominator equals zero, as vertical asymptotes occur at these points.
+
+1. **Set the denominator equal to zero**:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. **Factor the quadratic**:
+   We need to factor the expression \( x^2 + x - 6 \). We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions.
+
+   Thus, we can factor the quadratic as:
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+
+3. **Solve for \(x\)**:
+   Set each factor equal to zero:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+4. **Identify the vertical asymptotes**:
+   The values \(x = -3\) and \(x = 2\) are where the denominator is zero, thus these points are where vertical asymptotes occur.
+
+Therefore, the graph of \(y = \frac{2}{x^2 + x - 6}\) has **2 vertical asymptotes** at \(x = -3\) and \(x = 2\).
+
+Final answer: \(\boxed{2}\)"
+promptrobust_math_01,math_reasoning,original,1,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to find the values of \( x \) that make the denominator equal to zero, since vertical asymptotes occur where the function is undefined (i.e., where the denominator is zero).
+
+Start by factoring the quadratic expression in the denominator:
+
+\[
+x^2 + x - 6
+\]
+
+We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of the \(x\) term). These numbers are \(3\) and \(-2\). Therefore, we can factor the quadratic as follows:
+
+\[
+x^2 + x - 6 = (x - 2)(x + 3)
+\]
+
+Next, we set the denominator equal to zero to find the points where the function is undefined:
+
+\[
+(x - 2)(x + 3) = 0
+\]
+
+This gives us two equations to solve:
+
+1. \( x - 2 = 0 \)  →  \( x = 2 \)
+2. \( x + 3 = 0 \)  →  \( x = -3 \)
+
+Thus, the function \( y = \frac{2}{x^2 + x - 6} \) is undefined at \( x = 2 \) and \( x = -3 \).
+
+Since each of these points corresponds to a division by zero in the function, they both represent vertical asymptotes.
+
+In conclusion, the graph of \( y = \frac{2}{x^2 + x - 6} \) has:
+
+\[
+\text{Final answer: } 2 \text{ vertical asymptotes.}
+\]"
+promptrobust_math_01,math_reasoning,original,2,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we need to find the values of \( x \) that make the denominator zero, since vertical asymptotes occur at these points (as long as the numerator is not also zero at those points).
+
+First, we will factor the denominator \( x^2 + x - 6 \).
+
+To factor \( x^2 + x - 6 \), we look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy these conditions:
+
+\[
+x^2 + x - 6 = (x + 3)(x - 2)
+\]
+
+Now, we set the denominator equal to zero to find the values of \( x \) that will create vertical asymptotes:
+
+\[
+(x + 3)(x - 2) = 0
+\]
+
+Setting each factor to zero gives:
+
+\[
+x + 3 = 0 \quad \Rightarrow \quad x = -3
+\]
+\[
+x - 2 = 0 \quad \Rightarrow \quad x = 2
+\]
+
+Thus, the function \( y = \frac{2}{x^2 + x - 6} \) has vertical asymptotes at \( x = -3 \) and \( x = 2 \).
+
+Since both of these values are distinct and do not make the numerator \(2\) equal to zero, we conclude that the graph has two vertical asymptotes.
+
+Therefore, the final answer is:
+
+\[
+\boxed{2}
+\]"
+promptrobust_math_01,math_reasoning,perturbed,0,"As a mathematcis instrctor, calcluate the answr to the folowing prblem. SHow your reasnoing and put the final answr at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we need to identify the values of \( x \) that make the denominator equal to zero, as vertical asymptotes occur where the function is undefined due to division by zero.
+
+1. **Factor the denominator**: We start with the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6
+   \]
+   We need to factor this expression. We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) fit this requirement:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. **Set the denominator equal to zero**: Now we set the factored form of the denominator to zero to find the values of \( x \):
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+   This gives us two equations:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. **Identify the vertical asymptotes**: The function \( y = \frac{2}{x^2 + x - 6} \) is undefined at \( x = -3 \) and \( x = 2 \). Thus, there are vertical asymptotes at these points.
+
+4. **Count the vertical asymptotes**: There are a total of 2 vertical asymptotes.
+
+The final answer is:
+\[
+\text{The graph has 2 vertical asymptotes.}
+\]"
+promptrobust_math_01,math_reasoning,perturbed,1,"As a mathematcis instrctor, calcluate the answr to the folowing prblem. SHow your reasnoing and put the final answr at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify the values of \( x \) that make the denominator equal to zero, as vertical asymptotes occur at these points.
+
+1. **Set the denominator to zero**:
+   \[
+   x^2 + x - 6 = 0
+   \]
+
+2. **Factor the quadratic equation**:
+   We look for two numbers that multiply to \(-6\) (the constant term) and add up to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) satisfy this condition:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+3. **Solve for \(x\)**:
+   Set each factor equal to zero:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+4. **Conclusion**:
+   The values \(x = -3\) and \(x = 2\) are the points where the denominator is zero. Therefore, there are vertical asymptotes at these two points.
+
+Thus, the graph of \(y = \frac{2}{x^2 + x - 6}\) has **2 vertical asymptotes**.
+
+Final answer: **2**"
+promptrobust_math_01,math_reasoning,perturbed,2,"As a mathematcis instrctor, calcluate the answr to the folowing prblem. SHow your reasnoing and put the final answr at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes for the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify the values of \( x \) that make the denominator equal to zero, since vertical asymptotes occur where the function is undefined (i.e., where the denominator is zero and the numerator is not zero).
+
+1. **Factor the denominator**: Start with the quadratic expression in the denominator:
+   \[
+   x^2 + x - 6
+   \]
+
+   We can factor this expression. We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)). The numbers \(3\) and \(-2\) work because:
+   \[
+   3 \cdot (-2) = -6 \quad \text{and} \quad 3 + (-2) = 1
+   \]
+
+   Therefore, we can factor the quadratic as:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. **Set the denominator equal to zero**: We now set the factored form of the denominator equal to zero to find the values of \( x \):
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+
+   This gives us two equations:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. **Determine the vertical asymptotes**: The values \( x = -3 \) and \( x = 2 \) are where the function is undefined. Since the numerator \( 2 \) is not zero at these points, there are indeed vertical asymptotes at these \( x \)-values.
+
+4. **Count the vertical asymptotes**: We have found two vertical asymptotes.
+
+Thus, the final answer is:
+
+**The graph of \( y = \frac{2}{x^2 + x - 6} \) has 2 vertical asymptotes.**"
+promptrobust_math_02,math_reasoning,original,0,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first need to calculate \( 120\% \) of \( 30 \) and \( 130\% \) of \( 20 \).
+
+1. **Calculate \( 120\% \) of \( 30 \)**:
+   \[
+   120\% = \frac{120}{100} = 1.2
+   \]
+   Now, multiply \( 1.2 \) by \( 30 \):
+   \[
+   1.2 \times 30 = 36
+   \]
+
+2. **Calculate \( 130\% \) of \( 20 \)**:
+   \[
+   130\% = \frac{130}{100} = 1.3
+   \]
+   Now, multiply \( 1.3 \) by \( 20 \):
+   \[
+   1.3 \times 20 = 26
+   \]
+
+3. **Find the positive difference between the two results**:
+   We need to find the positive difference between \( 36 \) and \( 26 \):
+   \[
+   |36 - 26| = 10
+   \]
+
+Thus, the positive difference between \( 120\% \) of \( 30 \) and \( 130\% \) of \( 20 \) is \( \boxed{10} \)."
+promptrobust_math_02,math_reasoning,original,1,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we need to calculate \( 120\% \) of \( 30 \) and \( 130\% \) of \( 20 \), then find the positive difference between the two results.
+
+1. Calculate \( 120\% \) of \( 30 \):
+   \[
+   120\% = \frac{120}{100} = 1.2
+   \]
+   \[
+   120\% \text{ of } 30 = 1.2 \times 30 = 36
+   \]
+
+2. Calculate \( 130\% \) of \( 20 \):
+   \[
+   130\% = \frac{130}{100} = 1.3
+   \]
+   \[
+   130\% \text{ of } 20 = 1.3 \times 20 = 26
+   \]
+
+3. Find the positive difference between \( 36 \) and \( 26 \):
+   \[
+   \text{Positive difference} = |36 - 26| = 10
+   \]
+
+Thus, the final answer is \( \boxed{10} \)."
+promptrobust_math_02,math_reasoning,original,2,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we need to calculate \(120\%\) of \(30\) and \(130\%\) of \(20\) and then find the positive difference between the two results.
+
+1. **Calculate \(120\%\) of \(30\)**:
+   \[
+   120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+   \]
+
+2. **Calculate \(130\%\) of \(20\)**:
+   \[
+   130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+   \]
+
+3. **Find the positive difference**:
+   \[
+   \text{Positive difference} = |36 - 26| = 10
+   \]
+
+Thus, the final answer is \(\boxed{10}\)."
+promptrobust_math_02,math_reasoning,perturbed,0,"As a mathematcis instrctor, calcluate the answr to the folowing prblem. SHow your reasnoing and put the final answr at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we first need to calculate \(120\%\) of \(30\) and \(130\%\) of \(20\).
+
+1. Calculate \(120\%\) of \(30\):
+   \[
+   120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+   \]
+
+2. Calculate \(130\%\) of \(20\):
+   \[
+   130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+   \]
+
+Next, we find the positive difference between the two results:
+\[
+\text{Positive difference} = |36 - 26| = 10
+\]
+
+Thus, the final answer is:
+\[
+\boxed{10}
+\]"
+promptrobust_math_02,math_reasoning,perturbed,1,"As a mathematcis instrctor, calcluate the answr to the folowing prblem. SHow your reasnoing and put the final answr at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we need to calculate \(120\%\) of \(30\) and \(130\%\) of \(20\), and then find the positive difference between the two results.
+
+1. **Calculate \(120\%\) of \(30\)**:
+   \[
+   120\% = \frac{120}{100} = 1.2
+   \]
+   \[
+   120\% \text{ of } 30 = 1.2 \times 30 = 36
+   \]
+
+2. **Calculate \(130\%\) of \(20\)**:
+   \[
+   130\% = \frac{130}{100} = 1.3
+   \]
+   \[
+   130\% \text{ of } 20 = 1.3 \times 20 = 26
+   \]
+
+3. **Find the positive difference between \(36\) and \(26\)**:
+   \[
+   \text{Positive difference} = |36 - 26| = 10
+   \]
+
+Thus, the final answer is:
+\[
+\boxed{10}
+\]"
+promptrobust_math_02,math_reasoning,perturbed,2,"As a mathematcis instrctor, calcluate the answr to the folowing prblem. SHow your reasnoing and put the final answr at the end.
+
+Problem: What is the positive difference between $120\%$ of 30 and $130\%$ of 20?","To solve the problem, we need to calculate \(120\%\) of \(30\) and \(130\%\) of \(20\), and then find the positive difference between the two results.
+
+1. **Calculate \(120\%\) of \(30\)**:
+   \[
+   120\% \text{ of } 30 = \frac{120}{100} \times 30 = 1.2 \times 30 = 36
+   \]
+
+2. **Calculate \(130\%\) of \(20\)**:
+   \[
+   130\% \text{ of } 20 = \frac{130}{100} \times 20 = 1.3 \times 20 = 26
+   \]
+
+3. **Find the positive difference between \(36\) and \(26\)**:
+   \[
+   \text{Positive difference} = |36 - 26| = 10
+   \]
+
+Thus, the final answer is:
+\[
+\boxed{10}
+\]"

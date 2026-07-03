@@ -1,0 +1,61 @@
+case_id,task,version,sample_idx,prompt,output
+promptrobust_sst2_01,sst2_sentiment,original,0,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,original,1,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,original,2,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,original,3,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,original,4,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,perturbed,0,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,perturbed,1,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,perturbed,2,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,perturbed,3,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_01,sst2_sentiment,perturbed,4,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: a warm, funny, engaging film.",positive
+promptrobust_sst2_02,sst2_sentiment,original,0,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,original,1,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,original,2,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,original,3,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,original,4,"Determine whether the movie review is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,perturbed,0,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,perturbed,1,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,perturbed,2,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,perturbed,3,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative
+promptrobust_sst2_02,sst2_sentiment,perturbed,4,"Detrmine whether the movie reveiw is positive or negative. Answer with exactly one label: positive or negative.
+
+Review: dull, lifeless, and far too long.",negative

@@ -1,0 +1,144 @@
+case_id,task,version,sample_idx,prompt,output
+ref_squad_v2_01,factual_qa,original,0,"Read the passage and answer the question. If the answer cannot be found in the passage, say unanswerable. Answer in one concise sentence.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",Normandy is located in France.
+ref_squad_v2_01,factual_qa,perturbed,0,"Using only the passage below, provide a concise answer to the question. If the passage does not contain the answer, say unanswerable.
+
+Passage: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (""Norman"" comes from ""Norseman"") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+
+Question: In what country is Normandy located?",France.
+ref_math_01,math_reasoning,original,0,"As a mathematics instructor, calculate the answer to the following problem. Show your reasoning and put the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify the values of \( x \) that make the denominator equal to zero, since vertical asymptotes occur at these points.
+
+1. Start by factoring the quadratic expression in the denominator:
+
+   \[
+   x^2 + x - 6
+   \]
+
+   We need to find two numbers that multiply to \(-6\) and add to \(1\). These numbers are \(3\) and \(-2\). Thus, we can factor the quadratic as:
+
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2)
+   \]
+
+2. Next, we set the denominator equal to zero to find the points where the function is undefined:
+
+   \[
+   (x + 3)(x - 2) = 0
+   \]
+
+   This gives us two equations:
+
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2
+   \]
+
+3. Since both values of \( x \) result in the denominator being zero, we have found the locations of the vertical asymptotes. Therefore, the graph of the function \( y = \frac{2}{x^2 + x - 6} \) has vertical asymptotes at \( x = -3 \) and \( x = 2 \).
+
+4. To conclude, we count the number of vertical asymptotes:
+
+   There are 2 vertical asymptotes.
+
+Thus, the final answer is:
+
+\[
+\boxed{2}
+\]"
+ref_math_01,math_reasoning,perturbed,0,"Work through the following math problem carefully. Explain the reasoning, then state the final answer at the end.
+
+Problem: How many vertical asymptotes does the graph of $y=\frac{2}{x^2+x-6}$ have?","To determine the number of vertical asymptotes of the function \( y = \frac{2}{x^2 + x - 6} \), we first need to identify where the denominator is equal to zero, since vertical asymptotes occur at values of \( x \) that make the denominator zero (provided the numerator is not also zero at those points).
+
+1. **Factor the Denominator**: We start with the denominator \( x^2 + x - 6 \). We can factor this quadratic expression. We look for two numbers that multiply to \(-6\) (the constant term) and add to \(1\) (the coefficient of \(x\)).
+
+   The numbers \(3\) and \(-2\) fit this requirement because:
+   \[
+   3 \times (-2) = -6 \quad \text{and} \quad 3 + (-2) = 1.
+   \]
+
+   Thus, we can factor the quadratic as:
+   \[
+   x^2 + x - 6 = (x + 3)(x - 2).
+   \]
+
+2. **Set the Denominator to Zero**: Next, we set the factored denominator equal to zero to find the points where vertical asymptotes might occur:
+   \[
+   (x + 3)(x - 2) = 0.
+   \]
+
+   This gives us the solutions:
+   \[
+   x + 3 = 0 \quad \Rightarrow \quad x = -3,
+   \]
+   \[
+   x - 2 = 0 \quad \Rightarrow \quad x = 2.
+   \]
+
+3. **Check the Numerator**: The numerator of our function is \(2\), which is a constant and does not equal zero for any value of \(x\). Thus, the points we found from the denominator are indeed vertical asymptotes.
+
+4. **Conclusion**: Since we found two points where the denominator is zero and the numerator is not zero at these points, we conclude that there are two vertical asymptotes.
+
+The final answer is that the graph of \( y = \frac{2}{x^2 + x - 6} \) has \(\boxed{2}\) vertical asymptotes."
+ref_humaneval_01,code_generation,original,0,"Complete the following Python function. Return only valid Python code, with no explanation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+ref_humaneval_01,code_generation,perturbed,0,"Implement the Python function below. Provide only executable Python code and do not add prose.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```"
+ref_alpaca_01,open_ended_writing,original,0,"Respond to the following instruction clearly and directly.
+
+Instruction:
+Give three tips for staying healthy.","1. Maintain a balanced diet: Incorporate a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats into your meals to ensure you get essential nutrients.
+
+2. Stay physically active: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises twice a week.
+
+3. Prioritize sleep: Aim for 7-9 hours of quality sleep each night to support overall health, mental well-being, and recovery."
+ref_alpaca_01,open_ended_writing,perturbed,0,"Please produce a clear response to this request.
+
+Request:
+Give three tips for staying healthy.","1. **Maintain a Balanced Diet**: Focus on eating a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, sugar, and excessive salt.
+
+2. **Stay Physically Active**: Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with muscle-strengthening exercises on two or more days.
+
+3. **Prioritize Sleep and Stress Management**: Aim for 7-9 hours of quality sleep each night and practice stress-reduction techniques such as meditation, deep breathing, or yoga to support overall well-being."

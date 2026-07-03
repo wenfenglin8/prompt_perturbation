@@ -1,0 +1,96 @@
+Reference mapping for the current pilot experiment
+
+1. Is the dataset consistent with any reference paper?
+
+Short answer:
+No, the pilot dataset is not directly copied from any one reference paper.
+
+In this pilot, I used two small hand-written examples:
+
+- code_01: code generation task
+- writing_01: open-ended writing task
+
+These examples are aligned with the task categories in the proposal, especially code generation and open-ended writing, but they are not the exact datasets used in the reference papers.
+
+More precise mapping:
+
+- The code-generation direction is closest to the proposal's planned HumanEval-style task, but the current pilot did not use HumanEval yet.
+- The open-ended writing task is closest in spirit to Haase et al., because Haase et al. study generative/creative tasks where repeated sampling creates visible within-model variability.
+- The factual QA and math reasoning datasets planned in the proposal, such as TriviaQA and GSM8K, were not used in this small pilot.
+
+Conclusion:
+The pilot dataset is a small validation set designed to test the method first. It is task-type aligned with the proposal, but it is not dataset-identical to any reference paper.
+
+2. Which reference supports the perturbation method?
+
+The perturbation used in the pilot is a meaning-preserving paraphrase.
+
+For code_01:
+
+Original:
+Write a Python function named is_palindrome(s) that returns True if s is a palindrome after ignoring spaces and letter case.
+
+Perturbed:
+Please provide Python code for a function is_palindrome(s). It should ignore spaces and capitalization when checking whether the string is a palindrome.
+
+For writing_01:
+
+Original:
+Write a concise paragraph explaining why prompt wording can affect large language model outputs.
+
+Perturbed:
+In a concise paragraph, explain how the wording of a prompt may influence what a large language model produces.
+
+This perturbation method is most consistent with:
+
+- POSIX: uses intent-preserving prompt variants/rephrasings to measure prompt sensitivity.
+- PromptRobust / PromptBench: includes semantic-level and sentence-level prompt perturbations, including rephrasing while preserving the original intent.
+
+It is less directly aligned with Agrawal et al. because that paper focuses mainly on character-level and word-level perturbations of task instructions in classification tasks. The current pilot did not use character noise, word deletion, typo attacks, or instruction denoising.
+
+Conclusion:
+The current perturbation method is closest to POSIX and PromptRobust-style intent-preserving paraphrase perturbation. It is not an adversarial attack and not a character-level/noise perturbation.
+
+3. Which reference supports the drift evaluation method?
+
+The drift evaluation has two parts:
+
+Part A: Semantic drift measurement
+
+I measured drift by embedding each model output and computing cosine distance:
+
+cosine distance = 1 - cosine similarity
+
+This follows the proposal's semantic-similarity design, which cites Sentence-BERT-style semantic similarity measurement. The closest methodological reference for embedding-based semantic similarity is:
+
+- Reimers and Gurevych, "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"
+
+In the pilot, I used OpenAI's text-embedding-3-small instead of Sentence-BERT, but the logic is the same: convert outputs to semantic vectors, then compare them with cosine similarity/distance.
+
+Part B: Noise correction
+
+The idea of calculating within-prompt sample noise and subtracting it from raw prompt-perturbation drift is mainly motivated by:
+
+- Haase et al., "Within-Model vs Between-Prompt Variability in Large Language Models for Creative Tasks"
+
+Haase et al. show that repeated generations from the same model and prompt can vary substantially, so single-generation evaluation can confuse true prompt effects with sampling noise.
+
+The current pilot applies that idea to prompt perturbation:
+
+- First, estimate within-prompt sample noise from repeated outputs under the same prompt.
+- Second, estimate raw perturbation drift from original-vs-perturbed outputs.
+- Third, compute noise-corrected drift:
+
+noise_corrected_drift = raw_perturbation_drift - noise_baseline
+
+Conclusion:
+The semantic drift metric is based on embedding cosine distance, consistent with the proposal's Sentence-BERT-style semantic similarity approach. The correction for sample noise is specifically inspired by Haase et al.
+
+4. Overall answer
+
+- Dataset: not identical to any reference dataset; it is a small pilot dataset aligned with the proposal's code generation and open-ended writing task types.
+- Perturbation method: closest to POSIX and PromptRobust, because it uses intent-preserving paraphrase/rephrasing.
+- Drift evaluation: semantic drift uses embedding cosine distance, aligned with Sentence-BERT-style semantic similarity; noise correction is motivated by Haase et al.'s within-model sampling variability argument.
+
+Important limitation:
+This pilot is only a method validation. To make the experiment fully consistent with the proposal, the next step should use established datasets such as HumanEval for code generation, TriviaQA for factual QA, GSM8K for math reasoning, and a fixed open-ended writing prompt set. It should also implement all five planned perturbation types: paraphrasing, reordering, formatting changes, context injection, and surface noise.

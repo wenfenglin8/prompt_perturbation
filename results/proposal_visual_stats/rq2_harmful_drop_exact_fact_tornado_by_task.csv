@@ -1,0 +1,4 @@
+index,task,mean,std,count
+2,math_reasoning,0.16,0.3703280399090206,50
+0,code_generation,0.12,0.32826072265931594,50
+1,factual_qa,0.1,0.30304576336566325,50
