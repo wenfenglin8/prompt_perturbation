@@ -38,9 +38,9 @@
       "dataset": "SQuAD V2",
       "n": 25,
       "uncorrected_single_drift": 0.13007557152526472,
-      "noise_baseline": 0.039289723608706174,
+      "noise_baseline": 0.036270416448788735,
       "raw_perturbation_drift": 0.11524723751562711,
-      "noise_corrected_drift": 0.07844940285153196
+      "noise_corrected_drift": 0.09201631449171246
     },
     {
       "task": "math_reasoning",
@@ -48,9 +48,9 @@
       "dataset": "MATH",
       "n": 25,
       "uncorrected_single_drift": 0.04993968415880186,
-      "noise_baseline": 0.05027651555861893,
+      "noise_baseline": 0.049538033943969065,
       "raw_perturbation_drift": 0.04938442854157469,
-      "noise_corrected_drift": 0.004032916137922109
+      "noise_corrected_drift": 0.007311187291809279
     },
     {
       "task": "code_generation",
@@ -58,9 +58,9 @@
       "dataset": "HumanEval",
       "n": 25,
       "uncorrected_single_drift": 0.08061292700694406,
-      "noise_baseline": 0.03335686926448387,
+      "noise_baseline": 0.030117352718374978,
       "raw_perturbation_drift": 0.0786357053288719,
-      "noise_corrected_drift": 0.04812172544040106
+      "noise_corrected_drift": 0.05097009671184828
     },
     {
       "task": "open_ended_writing",
@@ -68,9 +68,9 @@
       "dataset": "Alpaca",
       "n": 25,
       "uncorrected_single_drift": 0.060142124542685645,
-      "noise_baseline": 0.06259669182344033,
+      "noise_baseline": 0.06715534875874779,
       "raw_perturbation_drift": 0.06332473340433717,
-      "noise_corrected_drift": 0.005909671308803968
+      "noise_corrected_drift": 0.005799283114884823
     }
   ],
   "rankings": [
@@ -78,28 +78,28 @@
       "task": "factual_qa",
       "rank": 1,
       "perturbation": "paraphrase",
-      "noise_corrected_drift": 0.07844940285153196,
+      "noise_corrected_drift": 0.09201631449171246,
       "raw_perturbation_drift": 0.11524723751562711
     },
     {
       "task": "math_reasoning",
       "rank": 1,
       "perturbation": "paraphrase",
-      "noise_corrected_drift": 0.004032916137922109,
+      "noise_corrected_drift": 0.007311187291809279,
       "raw_perturbation_drift": 0.04938442854157469
     },
     {
       "task": "code_generation",
       "rank": 1,
       "perturbation": "paraphrase",
-      "noise_corrected_drift": 0.04812172544040106,
+      "noise_corrected_drift": 0.05097009671184828,
       "raw_perturbation_drift": 0.0786357053288719
     },
     {
       "task": "open_ended_writing",
       "rank": 1,
       "perturbation": "paraphrase",
-      "noise_corrected_drift": 0.005909671308803968,
+      "noise_corrected_drift": 0.005799283114884823,
       "raw_perturbation_drift": 0.06332473340433717
     }
   ],
@@ -112,9 +112,9 @@
       "uncorrected_single_drift": 0.2521203993038875,
       "original_noise": 0.0,
       "perturbed_noise": 1.1102230246251565e-16,
-      "noise_baseline": 5.551115123125783e-17,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.2521203993038875,
-      "noise_corrected_drift": 0.25212039930388747
+      "noise_corrected_drift": 0.2521203993038875
     },
     {
       "case_id": "fourtask_paraphrase_squad_03",
@@ -160,9 +160,9 @@
       "uncorrected_single_drift": 2.220446049250313e-16,
       "original_noise": 2.220446049250313e-16,
       "perturbed_noise": 0.10939174148241027,
-      "noise_baseline": 0.054695870741205244,
+      "noise_baseline": 2.220446049250313e-16,
       "raw_perturbation_drift": 0.05696413916462961,
-      "noise_corrected_drift": 0.002268268423424369
+      "noise_corrected_drift": 0.05696413916462939
     },
     {
       "case_id": "fourtask_paraphrase_squad_11",
@@ -172,9 +172,9 @@
       "uncorrected_single_drift": 0.8471019859992216,
       "original_noise": 0.256376510507575,
       "perturbed_noise": 0.677302051972045,
-      "noise_baseline": 0.46683928123981,
+      "noise_baseline": 0.256376510507575,
       "raw_perturbation_drift": 0.405348630382009,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.14897211987443404
     },
     {
       "case_id": "fourtask_paraphrase_squad_13",
@@ -184,9 +184,9 @@
       "uncorrected_single_drift": 0.4443505287074905,
       "original_noise": 0.29621157669372794,
       "perturbed_noise": 0.0,
-      "noise_baseline": 0.14810578834686397,
+      "noise_baseline": 0.29621157669372794,
       "raw_perturbation_drift": 0.14811697583855774,
-      "noise_corrected_drift": 1.1187491693764873e-05
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_squad_15",
@@ -244,9 +244,9 @@
       "uncorrected_single_drift": 0.0,
       "original_noise": 0.0,
       "perturbed_noise": 0.06047404148050687,
-      "noise_baseline": 0.030237020740253435,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.030237020740253435,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.030237020740253435
     },
     {
       "case_id": "fourtask_paraphrase_squad_25",
@@ -256,7 +256,7 @@
       "uncorrected_single_drift": 0.0015092711357844735,
       "original_noise": 0.3541723240184149,
       "perturbed_noise": 0.0,
-      "noise_baseline": 0.17708616200920746,
+      "noise_baseline": 0.3541723240184149,
       "raw_perturbation_drift": 0.17627958925173312,
       "noise_corrected_drift": 0.0
     },
@@ -292,9 +292,9 @@
       "uncorrected_single_drift": 0.3569003408900082,
       "original_noise": 2.220446049250313e-16,
       "perturbed_noise": 0.0,
-      "noise_baseline": 1.1102230246251565e-16,
+      "noise_baseline": 2.220446049250313e-16,
       "raw_perturbation_drift": 0.3569003408900082,
-      "noise_corrected_drift": 0.3569003408900081
+      "noise_corrected_drift": 0.356900340890008
     },
     {
       "case_id": "fourtask_paraphrase_squad_33",
@@ -304,9 +304,9 @@
       "uncorrected_single_drift": 0.0,
       "original_noise": 0.0,
       "perturbed_noise": 0.027240347343549853,
-      "noise_baseline": 0.013620173671774927,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.013620173671774927,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.013620173671774927
     },
     {
       "case_id": "fourtask_paraphrase_squad_35",
@@ -316,9 +316,9 @@
       "uncorrected_single_drift": 5.034912226031807e-07,
       "original_noise": 0.0,
       "perturbed_noise": 0.18331758693707764,
-      "noise_baseline": 0.09165879346853882,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.09168741004382101,
-      "noise_corrected_drift": 2.861657528219208e-05
+      "noise_corrected_drift": 0.09168741004382101
     },
     {
       "case_id": "fourtask_paraphrase_squad_37",
@@ -340,9 +340,9 @@
       "uncorrected_single_drift": 0.044769967505546404,
       "original_noise": 0.0,
       "perturbed_noise": 2.220446049250313e-16,
-      "noise_baseline": 1.1102230246251565e-16,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.044769967505546404,
-      "noise_corrected_drift": 0.04476996750554629
+      "noise_corrected_drift": 0.044769967505546404
     },
     {
       "case_id": "fourtask_paraphrase_squad_41",
@@ -400,9 +400,9 @@
       "uncorrected_single_drift": 0.07110694067898438,
       "original_noise": 0.0,
       "perturbed_noise": 1.1102230246251565e-16,
-      "noise_baseline": 5.551115123125783e-17,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.07110694067898438,
-      "noise_corrected_drift": 0.07110694067898432
+      "noise_corrected_drift": 0.07110694067898438
     },
     {
       "case_id": "fourtask_paraphrase_math_01",
@@ -412,7 +412,7 @@
       "uncorrected_single_drift": 0.035213851007578234,
       "original_noise": 0.0384493337173063,
       "perturbed_noise": 0.03484457362663396,
-      "noise_baseline": 0.03664695367197013,
+      "noise_baseline": 0.0384493337173063,
       "raw_perturbation_drift": 0.03010814860864588,
       "noise_corrected_drift": 0.0
     },
@@ -424,9 +424,9 @@
       "uncorrected_single_drift": 0.070890245661128,
       "original_noise": 0.08402079448979667,
       "perturbed_noise": 0.014434408204952601,
-      "noise_baseline": 0.04922760134737464,
+      "noise_baseline": 0.08402079448979667,
       "raw_perturbation_drift": 0.06615386887003308,
-      "noise_corrected_drift": 0.01692626752265844
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_math_05",
@@ -436,9 +436,9 @@
       "uncorrected_single_drift": 0.11046666439851072,
       "original_noise": 0.017504851791513103,
       "perturbed_noise": 0.07122332578831991,
-      "noise_baseline": 0.04436408878991651,
+      "noise_baseline": 0.017504851791513103,
       "raw_perturbation_drift": 0.05547091193882633,
-      "noise_corrected_drift": 0.011106823148909817
+      "noise_corrected_drift": 0.03796606014731323
     },
     {
       "case_id": "fourtask_paraphrase_math_07",
@@ -448,7 +448,7 @@
       "uncorrected_single_drift": 0.15290580328296888,
       "original_noise": 0.12477623463782199,
       "perturbed_noise": 0.10959874935455134,
-      "noise_baseline": 0.11718749199618667,
+      "noise_baseline": 0.12477623463782199,
       "raw_perturbation_drift": 0.09804304347203657,
       "noise_corrected_drift": 0.0
     },
@@ -460,7 +460,7 @@
       "uncorrected_single_drift": 0.09356423106259448,
       "original_noise": 0.09503124376722387,
       "perturbed_noise": 0.08688368691513652,
-      "noise_baseline": 0.0909574653411802,
+      "noise_baseline": 0.09503124376722387,
       "raw_perturbation_drift": 0.07885606330765636,
       "noise_corrected_drift": 0.0
     },
@@ -472,7 +472,7 @@
       "uncorrected_single_drift": 0.04604646425400749,
       "original_noise": 0.050034572680310675,
       "perturbed_noise": 0.051748986411645825,
-      "noise_baseline": 0.05089177954597825,
+      "noise_baseline": 0.050034572680310675,
       "raw_perturbation_drift": 0.04812113520668326,
       "noise_corrected_drift": 0.0
     },
@@ -484,7 +484,7 @@
       "uncorrected_single_drift": 0.006089037762384453,
       "original_noise": 0.026723375532598997,
       "perturbed_noise": 0.02479562077251385,
-      "noise_baseline": 0.025759498152556425,
+      "noise_baseline": 0.026723375532598997,
       "raw_perturbation_drift": 0.022501846853616534,
       "noise_corrected_drift": 0.0
     },
@@ -496,9 +496,9 @@
       "uncorrected_single_drift": 0.02019283044703557,
       "original_noise": 0.03751244267838864,
       "perturbed_noise": 0.01064882250116598,
-      "noise_baseline": 0.024080632589777308,
+      "noise_baseline": 0.03751244267838864,
       "raw_perturbation_drift": 0.030108589567549717,
-      "noise_corrected_drift": 0.006027956977772409
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_math_17",
@@ -508,9 +508,9 @@
       "uncorrected_single_drift": 0.006390753342167987,
       "original_noise": 0.006673144211606548,
       "perturbed_noise": 0.007386839547450637,
-      "noise_baseline": 0.0070299918795285925,
+      "noise_baseline": 0.006673144211606548,
       "raw_perturbation_drift": 0.007190917660577655,
-      "noise_corrected_drift": 0.00016092578104906236
+      "noise_corrected_drift": 0.0005177734489711068
     },
     {
       "case_id": "fourtask_paraphrase_math_19",
@@ -520,9 +520,9 @@
       "uncorrected_single_drift": 0.04590952023797856,
       "original_noise": 0.03228778827437059,
       "perturbed_noise": 0.03601593414498431,
-      "noise_baseline": 0.03415186120967745,
+      "noise_baseline": 0.03228778827437059,
       "raw_perturbation_drift": 0.035207542805716,
-      "noise_corrected_drift": 0.0010556815960385546
+      "noise_corrected_drift": 0.0029197545313454157
     },
     {
       "case_id": "fourtask_paraphrase_math_21",
@@ -532,7 +532,7 @@
       "uncorrected_single_drift": 0.04190020795705407,
       "original_noise": 0.050177271894625695,
       "perturbed_noise": 0.05371902909848288,
-      "noise_baseline": 0.05194815049655429,
+      "noise_baseline": 0.050177271894625695,
       "raw_perturbation_drift": 0.04826667239751445,
       "noise_corrected_drift": 0.0
     },
@@ -544,9 +544,9 @@
       "uncorrected_single_drift": 0.05282338811531184,
       "original_noise": 0.016379978815072804,
       "perturbed_noise": 0.05380573665282621,
-      "noise_baseline": 0.035092857733949503,
+      "noise_baseline": 0.016379978815072804,
       "raw_perturbation_drift": 0.0499860508620081,
-      "noise_corrected_drift": 0.014893193128058597
+      "noise_corrected_drift": 0.0336060720469353
     },
     {
       "case_id": "fourtask_paraphrase_math_25",
@@ -556,9 +556,9 @@
       "uncorrected_single_drift": 0.02519655238257057,
       "original_noise": 0.055362107217633495,
       "perturbed_noise": 0.08321592100030273,
-      "noise_baseline": 0.06928901410896811,
+      "noise_baseline": 0.055362107217633495,
       "raw_perturbation_drift": 0.058705408535141265,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.00334330131750777
     },
     {
       "case_id": "fourtask_paraphrase_math_27",
@@ -568,7 +568,7 @@
       "uncorrected_single_drift": 0.0058407758144313204,
       "original_noise": 0.07067531688908828,
       "perturbed_noise": 0.07206317710116524,
-      "noise_baseline": 0.07136924699512676,
+      "noise_baseline": 0.07067531688908828,
       "raw_perturbation_drift": 0.05792368402992371,
       "noise_corrected_drift": 0.0
     },
@@ -580,7 +580,7 @@
       "uncorrected_single_drift": 0.14628588201391957,
       "original_noise": 0.13923424100781875,
       "perturbed_noise": 0.15985284503493744,
-      "noise_baseline": 0.1495435430213781,
+      "noise_baseline": 0.13923424100781875,
       "raw_perturbation_drift": 0.11047372559810818,
       "noise_corrected_drift": 0.0
     },
@@ -592,9 +592,9 @@
       "uncorrected_single_drift": 0.02594934928476822,
       "original_noise": 0.0269729161149513,
       "perturbed_noise": 0.06423302886649314,
-      "noise_baseline": 0.04560297249072222,
+      "noise_baseline": 0.0269729161149513,
       "raw_perturbation_drift": 0.07109741189126012,
-      "noise_corrected_drift": 0.025494439400537902
+      "noise_corrected_drift": 0.04412449577630882
     },
     {
       "case_id": "fourtask_paraphrase_math_33",
@@ -604,7 +604,7 @@
       "uncorrected_single_drift": 0.08599133960458527,
       "original_noise": 0.09292374217667343,
       "perturbed_noise": 0.05291060031012965,
-      "noise_baseline": 0.07291717124340154,
+      "noise_baseline": 0.09292374217667343,
       "raw_perturbation_drift": 0.07242048741453837,
       "noise_corrected_drift": 0.0
     },
@@ -616,7 +616,7 @@
       "uncorrected_single_drift": 0.03760466430635878,
       "original_noise": 0.04607558795396238,
       "perturbed_noise": 0.026374780628433903,
-      "noise_baseline": 0.03622518429119814,
+      "noise_baseline": 0.04607558795396238,
       "raw_perturbation_drift": 0.03457266368894699,
       "noise_corrected_drift": 0.0
     },
@@ -628,9 +628,9 @@
       "uncorrected_single_drift": 0.049970944400318906,
       "original_noise": 0.028704438195651976,
       "perturbed_noise": 0.025709855152530475,
-      "noise_baseline": 0.027207146674091225,
+      "noise_baseline": 0.028704438195651976,
       "raw_perturbation_drift": 0.040974042444138575,
-      "noise_corrected_drift": 0.01376689577004735
+      "noise_corrected_drift": 0.0122696042484866
     },
     {
       "case_id": "fourtask_paraphrase_math_39",
@@ -640,7 +640,7 @@
       "uncorrected_single_drift": 0.00814302668167144,
       "original_noise": 0.03738052424056023,
       "perturbed_noise": 0.025251860624481925,
-      "noise_baseline": 0.03131619243252108,
+      "noise_baseline": 0.03738052424056023,
       "raw_perturbation_drift": 0.02463074140603858,
       "noise_corrected_drift": 0.0
     },
@@ -652,9 +652,9 @@
       "uncorrected_single_drift": 0.03212764555469616,
       "original_noise": 0.03143424445080049,
       "perturbed_noise": 0.028676392516692368,
-      "noise_baseline": 0.03005531848374643,
+      "noise_baseline": 0.03143424445080049,
       "raw_perturbation_drift": 0.038021401452543735,
-      "noise_corrected_drift": 0.007966082968797306
+      "noise_corrected_drift": 0.006587157001743248
     },
     {
       "case_id": "fourtask_paraphrase_math_43",
@@ -664,7 +664,7 @@
       "uncorrected_single_drift": 0.009144800042593992,
       "original_noise": 0.021268022303467953,
       "perturbed_noise": 0.021024128050018447,
-      "noise_baseline": 0.0211460751767432,
+      "noise_baseline": 0.021268022303467953,
       "raw_perturbation_drift": 0.02026899556170045,
       "noise_corrected_drift": 0.0
     },
@@ -676,9 +676,9 @@
       "uncorrected_single_drift": 0.041315761716497756,
       "original_noise": 0.023772609260627964,
       "perturbed_noise": 0.06160700518620473,
-      "noise_baseline": 0.04268980722341635,
+      "noise_baseline": 0.023772609260627964,
       "raw_perturbation_drift": 0.04199084657402855,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.01821823731340059
     },
     {
       "case_id": "fourtask_paraphrase_math_47",
@@ -688,9 +688,9 @@
       "uncorrected_single_drift": 0.01187369567278218,
       "original_noise": 0.012383817219698093,
       "perturbed_noise": 0.06308020580925522,
-      "noise_baseline": 0.03773201151447666,
+      "noise_baseline": 0.012383817219698093,
       "raw_perturbation_drift": 0.03561104368291801,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.023227226463219917
     },
     {
       "case_id": "fourtask_paraphrase_math_49",
@@ -700,9 +700,9 @@
       "uncorrected_single_drift": 0.08665466896613205,
       "original_noise": 0.07269224907765644,
       "perturbed_noise": 0.03626941603241037,
-      "noise_baseline": 0.0544808325550334,
+      "noise_baseline": 0.07269224907765644,
       "raw_perturbation_drift": 0.05790546970921668,
-      "noise_corrected_drift": 0.0034246371541832785
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_01",
@@ -712,9 +712,9 @@
       "uncorrected_single_drift": 0.09653475960188329,
       "original_noise": 0.013449164515809834,
       "perturbed_noise": 0.0,
-      "noise_baseline": 0.006724582257904917,
+      "noise_baseline": 0.013449164515809834,
       "raw_perturbation_drift": 0.0750186854713828,
-      "noise_corrected_drift": 0.06829410321347788
+      "noise_corrected_drift": 0.061569520955572964
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_03",
@@ -724,9 +724,9 @@
       "uncorrected_single_drift": 0.16114536171724436,
       "original_noise": 0.0,
       "perturbed_noise": 0.10743024114482957,
-      "noise_baseline": 0.05371512057241479,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.10743024114482957,
-      "noise_corrected_drift": 0.05371512057241479
+      "noise_corrected_drift": 0.10743024114482957
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_05",
@@ -736,7 +736,7 @@
       "uncorrected_single_drift": 0.002200334714494434,
       "original_noise": 0.0017872810961914916,
       "perturbed_noise": 0.0014666540647450728,
-      "noise_baseline": 0.0016269675804682822,
+      "noise_baseline": 0.0017872810961914916,
       "raw_perturbation_drift": 0.001590335030144669,
       "noise_corrected_drift": 0.0
     },
@@ -748,9 +748,9 @@
       "uncorrected_single_drift": 0.03754540894702052,
       "original_noise": 0.005671409287582067,
       "perturbed_noise": 0.008347700831703034,
-      "noise_baseline": 0.00700955505964255,
+      "noise_baseline": 0.005671409287582067,
       "raw_perturbation_drift": 0.03478391236508765,
-      "noise_corrected_drift": 0.0277743573054451
+      "noise_corrected_drift": 0.02911250307750558
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_09",
@@ -760,9 +760,9 @@
       "uncorrected_single_drift": 0.12038562604912684,
       "original_noise": 0.0009274622842785352,
       "perturbed_noise": 0.00468256353592759,
-      "noise_baseline": 0.0028050129101030627,
+      "noise_baseline": 0.0009274622842785352,
       "raw_perturbation_drift": 0.11543868206395654,
-      "noise_corrected_drift": 0.11263366915385348
+      "noise_corrected_drift": 0.114511219779678
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_11",
@@ -772,9 +772,9 @@
       "uncorrected_single_drift": 0.013506751179670262,
       "original_noise": 0.006146237575645659,
       "perturbed_noise": 0.00967676468820633,
-      "noise_baseline": 0.007911501131925994,
+      "noise_baseline": 0.006146237575645659,
       "raw_perturbation_drift": 0.007273105566401323,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.0011268679907556634
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_13",
@@ -808,7 +808,7 @@
       "uncorrected_single_drift": 2.220446049250313e-16,
       "original_noise": 0.10191871775031387,
       "perturbed_noise": 0.1019187177503138,
-      "noise_baseline": 0.10191871775031383,
+      "noise_baseline": 0.10191871775031387,
       "raw_perturbation_drift": 0.08493226479192822,
       "noise_corrected_drift": 0.0
     },
@@ -820,9 +820,9 @@
       "uncorrected_single_drift": 0.24400874302554376,
       "original_noise": 0.0028457414530527934,
       "perturbed_noise": 0.04484689567530542,
-      "noise_baseline": 0.023846318564179108,
+      "noise_baseline": 0.0028457414530527934,
       "raw_perturbation_drift": 0.236887582095355,
-      "noise_corrected_drift": 0.2130412635311759
+      "noise_corrected_drift": 0.23404184064230218
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_21",
@@ -832,9 +832,9 @@
       "uncorrected_single_drift": 0.018742803985553724,
       "original_noise": 0.01273170037360242,
       "perturbed_noise": 0.125141388171688,
-      "noise_baseline": 0.0689365442726452,
+      "noise_baseline": 0.01273170037360242,
       "raw_perturbation_drift": 0.06918964314765667,
-      "noise_corrected_drift": 0.0002530988750114732
+      "noise_corrected_drift": 0.056457942774054255
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_23",
@@ -856,7 +856,7 @@
       "uncorrected_single_drift": 1.1102230246251565e-16,
       "original_noise": 0.0007526704402236831,
       "perturbed_noise": 1.1102230246251565e-16,
-      "noise_baseline": 0.0003763352201118971,
+      "noise_baseline": 0.0007526704402236831,
       "raw_perturbation_drift": 0.0003763352201118971,
       "noise_corrected_drift": 0.0
     },
@@ -868,9 +868,9 @@
       "uncorrected_single_drift": 0.010024965500616823,
       "original_noise": 0.0070700733356434675,
       "perturbed_noise": 0.000690586292680706,
-      "noise_baseline": 0.0038803298141620868,
+      "noise_baseline": 0.0070700733356434675,
       "raw_perturbation_drift": 0.006894436517475554,
-      "noise_corrected_drift": 0.0030141067033134673
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_29",
@@ -892,9 +892,9 @@
       "uncorrected_single_drift": 0.1942100759365839,
       "original_noise": 0.08269553286688613,
       "perturbed_noise": 0.0,
-      "noise_baseline": 0.04134776643344307,
+      "noise_baseline": 0.08269553286688613,
       "raw_perturbation_drift": 0.2758843415086718,
-      "noise_corrected_drift": 0.23453657507522874
+      "noise_corrected_drift": 0.19318880864178567
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_33",
@@ -904,9 +904,9 @@
       "uncorrected_single_drift": 0.2653746131353042,
       "original_noise": 0.1690988611602635,
       "perturbed_noise": 0.20841540854127716,
-      "noise_baseline": 0.18875713485077034,
+      "noise_baseline": 0.1690988611602635,
       "raw_perturbation_drift": 0.1740408342615711,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.004941973101307617
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_35",
@@ -916,9 +916,9 @@
       "uncorrected_single_drift": 0.3297676375721741,
       "original_noise": 1.1102230246251565e-16,
       "perturbed_noise": 0.0,
-      "noise_baseline": 5.551115123125783e-17,
+      "noise_baseline": 1.1102230246251565e-16,
       "raw_perturbation_drift": 0.3297676375721741,
-      "noise_corrected_drift": 0.32976763757217403
+      "noise_corrected_drift": 0.329767637572174
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_37",
@@ -928,9 +928,9 @@
       "uncorrected_single_drift": 0.0,
       "original_noise": 0.0,
       "perturbed_noise": 0.002302804543465283,
-      "noise_baseline": 0.0011514022717326415,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.002302804543465283,
-      "noise_corrected_drift": 0.0011514022717326415
+      "noise_corrected_drift": 0.002302804543465283
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_39",
@@ -940,7 +940,7 @@
       "uncorrected_single_drift": 0.007804630377179711,
       "original_noise": 0.005203086918119808,
       "perturbed_noise": 0.005208261730406598,
-      "noise_baseline": 0.005205674324263203,
+      "noise_baseline": 0.005203086918119808,
       "raw_perturbation_drift": 0.003779893279935936,
       "noise_corrected_drift": 0.0
     },
@@ -952,7 +952,7 @@
       "uncorrected_single_drift": 0.027286830573420184,
       "original_noise": 0.020491559315670704,
       "perturbed_noise": 0.010758827035025731,
-      "noise_baseline": 0.015625193175348218,
+      "noise_baseline": 0.020491559315670704,
       "raw_perturbation_drift": 0.014057502855256556,
       "noise_corrected_drift": 0.0
     },
@@ -976,9 +976,9 @@
       "uncorrected_single_drift": 0.15860034147289936,
       "original_noise": 0.10793843135124759,
       "perturbed_noise": 0.06483570172066644,
-      "noise_baseline": 0.08638706653595701,
+      "noise_baseline": 0.10793843135124759,
       "raw_perturbation_drift": 0.24478205752822918,
-      "noise_corrected_drift": 0.15839499099227217
+      "noise_corrected_drift": 0.1368436261769816
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_47",
@@ -988,9 +988,9 @@
       "uncorrected_single_drift": 0.00687495025211593,
       "original_noise": 0.0,
       "perturbed_noise": 0.0049812413037355245,
-      "noise_baseline": 0.0024906206518677623,
+      "noise_baseline": 0.0,
       "raw_perturbation_drift": 0.002956922615289089,
-      "noise_corrected_drift": 0.0004663019634213268
+      "noise_corrected_drift": 0.002956922615289089
     },
     {
       "case_id": "fourtask_paraphrase_humaneval_49",
@@ -1012,7 +1012,7 @@
       "uncorrected_single_drift": 0.04986979732483432,
       "original_noise": 0.08994153554648436,
       "perturbed_noise": 0.09168012144865967,
-      "noise_baseline": 0.09081082849757202,
+      "noise_baseline": 0.08994153554648436,
       "raw_perturbation_drift": 0.08760518369859328,
       "noise_corrected_drift": 0.0
     },
@@ -1024,7 +1024,7 @@
       "uncorrected_single_drift": 0.07197896953575922,
       "original_noise": 0.07627737471046107,
       "perturbed_noise": 0.04928711708856459,
-      "noise_baseline": 0.06278224589951284,
+      "noise_baseline": 0.07627737471046107,
       "raw_perturbation_drift": 0.059281225176730595,
       "noise_corrected_drift": 0.0
     },
@@ -1036,7 +1036,7 @@
       "uncorrected_single_drift": 0.12274531151833867,
       "original_noise": 0.11297016082900058,
       "perturbed_noise": 0.1395610543015847,
-      "noise_baseline": 0.12626560756529265,
+      "noise_baseline": 0.11297016082900058,
       "raw_perturbation_drift": 0.11178120693834068,
       "noise_corrected_drift": 0.0
     },
@@ -1048,9 +1048,9 @@
       "uncorrected_single_drift": 0.0025614724052085425,
       "original_noise": 0.01974608006601497,
       "perturbed_noise": 0.0050120346523447505,
-      "noise_baseline": 0.01237905735917986,
+      "noise_baseline": 0.01974608006601497,
       "raw_perturbation_drift": 0.012535445325549795,
-      "noise_corrected_drift": 0.00015638796636993461
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_09",
@@ -1060,7 +1060,7 @@
       "uncorrected_single_drift": 0.05323266854942321,
       "original_noise": 0.13556014552582418,
       "perturbed_noise": 0.07730086724602196,
-      "noise_baseline": 0.10643050638592308,
+      "noise_baseline": 0.13556014552582418,
       "raw_perturbation_drift": 0.08821401597641079,
       "noise_corrected_drift": 0.0
     },
@@ -1072,7 +1072,7 @@
       "uncorrected_single_drift": 0.08412218264530247,
       "original_noise": 0.06388509137937363,
       "perturbed_noise": 0.07791436167868442,
-      "noise_baseline": 0.07089972652902903,
+      "noise_baseline": 0.06388509137937363,
       "raw_perturbation_drift": 0.06348810875360666,
       "noise_corrected_drift": 0.0
     },
@@ -1084,7 +1084,7 @@
       "uncorrected_single_drift": 0.05718519337314176,
       "original_noise": 0.08185561299019402,
       "perturbed_noise": 0.017911494589599952,
-      "noise_baseline": 0.049883553789896985,
+      "noise_baseline": 0.08185561299019402,
       "raw_perturbation_drift": 0.04862221316745985,
       "noise_corrected_drift": 0.0
     },
@@ -1108,9 +1108,9 @@
       "uncorrected_single_drift": 0.07802726995050457,
       "original_noise": 0.012661579654923353,
       "perturbed_noise": 0.031028969135272495,
-      "noise_baseline": 0.021845274395097924,
+      "noise_baseline": 0.012661579654923353,
       "raw_perturbation_drift": 0.08201349937242233,
-      "noise_corrected_drift": 0.06016822497732441
+      "noise_corrected_drift": 0.06935191971749897
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_19",
@@ -1120,9 +1120,9 @@
       "uncorrected_single_drift": 0.03444073098673428,
       "original_noise": 0.06902423446652939,
       "perturbed_noise": 0.10235017259197561,
-      "noise_baseline": 0.08568720352925249,
+      "noise_baseline": 0.06902423446652939,
       "raw_perturbation_drift": 0.07898203486236201,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.00995780039583262
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_21",
@@ -1144,9 +1144,9 @@
       "uncorrected_single_drift": 0.22050163666686784,
       "original_noise": 0.20467658735029212,
       "perturbed_noise": 0.16300680805539247,
-      "noise_baseline": 0.1838416977028423,
+      "noise_baseline": 0.20467658735029212,
       "raw_perturbation_drift": 0.18687335773941263,
-      "noise_corrected_drift": 0.0030316600365703217
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_25",
@@ -1156,9 +1156,9 @@
       "uncorrected_single_drift": 0.0,
       "original_noise": 0.11471184624316581,
       "perturbed_noise": 0.0,
-      "noise_baseline": 0.05735592312158291,
+      "noise_baseline": 0.11471184624316581,
       "raw_perturbation_drift": 0.11223437695279037,
-      "noise_corrected_drift": 0.054878453831207465
+      "noise_corrected_drift": 0.0
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_27",
@@ -1180,7 +1180,7 @@
       "uncorrected_single_drift": 0.04002926947494356,
       "original_noise": 0.05361590771600092,
       "perturbed_noise": 0.03492551654683181,
-      "noise_baseline": 0.04427071213141637,
+      "noise_baseline": 0.05361590771600092,
       "raw_perturbation_drift": 0.036324258843842286,
       "noise_corrected_drift": 0.0
     },
@@ -1192,9 +1192,9 @@
       "uncorrected_single_drift": 0.058175508368977225,
       "original_noise": 0.016306707141124033,
       "perturbed_noise": 0.04817556503709889,
-      "noise_baseline": 0.03224113608911146,
+      "noise_baseline": 0.016306707141124033,
       "raw_perturbation_drift": 0.037992033027184804,
-      "noise_corrected_drift": 0.0057508969380733466
+      "noise_corrected_drift": 0.02168532588606077
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_33",
@@ -1204,7 +1204,7 @@
       "uncorrected_single_drift": 0.05947281712161412,
       "original_noise": 0.0430505885084963,
       "perturbed_noise": 0.04695520344313516,
-      "noise_baseline": 0.045002895975815735,
+      "noise_baseline": 0.0430505885084963,
       "raw_perturbation_drift": 0.04004897589305837,
       "noise_corrected_drift": 0.0
     },
@@ -1216,7 +1216,7 @@
       "uncorrected_single_drift": 0.08831083284209063,
       "original_noise": 0.056556455546736606,
       "perturbed_noise": 0.04403707617077013,
-      "noise_baseline": 0.05029676585875337,
+      "noise_baseline": 0.056556455546736606,
       "raw_perturbation_drift": 0.0485659605361449,
       "noise_corrected_drift": 0.0
     },
@@ -1228,7 +1228,7 @@
       "uncorrected_single_drift": 0.04786480988767938,
       "original_noise": 0.05046457070696512,
       "perturbed_noise": 0.04797128398250139,
-      "noise_baseline": 0.04921792734473325,
+      "noise_baseline": 0.05046457070696512,
       "raw_perturbation_drift": 0.03545204622939906,
       "noise_corrected_drift": 0.0
     },
@@ -1240,7 +1240,7 @@
       "uncorrected_single_drift": 0.025384195420363187,
       "original_noise": 0.10841310154425969,
       "perturbed_noise": 0.06846067758709391,
-      "noise_baseline": 0.0884368895656768,
+      "noise_baseline": 0.10841310154425969,
       "raw_perturbation_drift": 0.0752362353301013,
       "noise_corrected_drift": 0.0
     },
@@ -1252,7 +1252,7 @@
       "uncorrected_single_drift": 0.1218247881993686,
       "original_noise": 0.1294719824250623,
       "perturbed_noise": 0.14877483421869372,
-      "noise_baseline": 0.13912340832187803,
+      "noise_baseline": 0.1294719824250623,
       "raw_perturbation_drift": 0.12835694650220048,
       "noise_corrected_drift": 0.0
     },
@@ -1264,7 +1264,7 @@
       "uncorrected_single_drift": 0.043431939986838586,
       "original_noise": 0.09348200732478314,
       "perturbed_noise": 0.10009826403916178,
-      "noise_baseline": 0.09679013568197245,
+      "noise_baseline": 0.09348200732478314,
       "raw_perturbation_drift": 0.08087949035748011,
       "noise_corrected_drift": 0.0
     },
@@ -1276,9 +1276,9 @@
       "uncorrected_single_drift": 0.03829406754109954,
       "original_noise": 0.03531299864439619,
       "perturbed_noise": 0.05612559055526486,
-      "noise_baseline": 0.045719294599830526,
+      "noise_baseline": 0.03531299864439619,
       "raw_perturbation_drift": 0.041440446964966404,
-      "noise_corrected_drift": 0.0
+      "noise_corrected_drift": 0.006127448320570217
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_47",
@@ -1288,9 +1288,9 @@
       "uncorrected_single_drift": 0.07293131144071296,
       "original_noise": 0.015057975908812749,
       "perturbed_noise": 0.05132973342146896,
-      "noise_baseline": 0.033193854665140854,
+      "noise_baseline": 0.015057975908812749,
       "raw_perturbation_drift": 0.052917060834607094,
-      "noise_corrected_drift": 0.01972320616946624
+      "noise_corrected_drift": 0.037859084925794345
     },
     {
       "case_id": "fourtask_paraphrase_alpaca_49",
@@ -1300,9 +1300,19 @@
       "uncorrected_single_drift": 0.12326158331778814,
       "original_noise": 0.08923700248433641,
       "perturbed_noise": 0.042439954157742266,
-      "noise_baseline": 0.06583847832103934,
+      "noise_baseline": 0.08923700248433641,
       "raw_perturbation_drift": 0.06987093249576318,
-      "noise_corrected_drift": 0.004032454174723837
+      "noise_corrected_drift": 0.0
     }
-  ]
+  ],
+  "sample_noise_definition": "noise_baseline = original_noise; original_noise is the average pairwise embedding distance among repeated generations under the original prompt.",
+  "perturbations": [
+    "paraphrase",
+    "reordering",
+    "formatting",
+    "context_injection",
+    "surface_noise"
+  ],
+  "total_generation_rows": 600,
+  "total_metric_rows": 100
 }

@@ -382,7 +382,7 @@ def main() -> None:
         perturbed_vectors = vectors[args.samples :]
         original_noise = avg_pairwise_distance(original_vectors)
         perturbed_noise = avg_pairwise_distance(perturbed_vectors)
-        noise_baseline = (original_noise + perturbed_noise) / 2.0
+        noise_baseline = original_noise
         uncorrected = max(0.0, 1.0 - float(np.dot(original_vectors[0], perturbed_vectors[0])))
         raw = avg_cross_distance(original_vectors, perturbed_vectors)
         corrected = max(0.0, raw - noise_baseline)

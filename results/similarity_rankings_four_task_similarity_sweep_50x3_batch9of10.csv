@@ -1,5 +1,5 @@
 task,rank,perturbation,noise_corrected_drift,raw_perturbation_drift
-factual_qa,1,context_injection,0.0041746845366568445,0.01849213986927447
-math_reasoning,1,context_injection,0.00883385048001084,0.05330784833783091
-code_generation,1,context_injection,0.002288038934921005,0.027893604504059158
-open_ended_writing,1,context_injection,0.01957697626989756,0.09187670089180812
+factual_qa,1,context_injection,0.0028875059725116214,0.01849213986927447
+math_reasoning,1,context_injection,0.011686940766824671,0.05330784833783091
+code_generation,1,context_injection,0.003597419561755723,0.027893604504059158
+open_ended_writing,1,context_injection,0.027268662225927418,0.09187670089180812
