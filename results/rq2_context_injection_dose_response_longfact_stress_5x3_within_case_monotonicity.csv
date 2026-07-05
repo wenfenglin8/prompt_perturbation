@@ -1,0 +1,6 @@
+base_case_id,task,n_levels,spearman_strength_to_similarity,spearman_strength_to_corrected_drift,spearman_strength_to_abs_correctness_change,spearman_similarity_to_abs_correctness_change
+rq2_dose_longfact_01,long_factual_qa,6,-0.37142857142857144,0.6982532518267537,-0.3927922024247863,-0.6546536707079772
+rq2_dose_longfact_02,long_factual_qa,6,0.08571428571428572,-0.33394720739540396,0.0,-0.9258200997725515
+rq2_dose_longfact_03,long_factual_qa,6,-0.37142857142857144,,,
+rq2_dose_longfact_04,long_factual_qa,6,-0.7714285714285715,0.7826908981308054,0.753702346348183,-0.9856107606091623
+rq2_dose_longfact_05,long_factual_qa,6,-0.08571428571428572,-0.13093073414159545,,

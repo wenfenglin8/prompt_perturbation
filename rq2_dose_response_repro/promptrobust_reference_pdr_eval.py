@@ -283,6 +283,10 @@ def pdr(clean_performance: float, perturbed_performance: float) -> float:
     return (clean_performance - perturbed_performance) / clean_performance
 
 
+def performance_loss(performance: float) -> float:
+    return 1.0 - performance
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default="gpt-4o-mini")
@@ -381,8 +385,9 @@ def main() -> None:
         perturbed_single = correctness["perturbed"][0]
         clean_mean = statistics.mean(correctness["original"])
         perturbed_mean = statistics.mean(correctness["perturbed"])
-        single_pdr = pdr(clean_single, perturbed_single)
-        repeated_pdr = pdr(clean_mean, perturbed_mean)
+        clean_loss = performance_loss(clean_mean)
+        perturbed_loss = performance_loss(perturbed_mean)
+        corrected_pdr = perturbed_loss - clean_loss
         clean_noise = statistics.pstdev(correctness["original"]) if len(correctness["original"]) > 1 else 0.0
         perturbed_noise = statistics.pstdev(correctness["perturbed"]) if len(correctness["perturbed"]) > 1 else 0.0
         correctness_noise = (clean_noise + perturbed_noise) / 2.0
@@ -395,10 +400,11 @@ def main() -> None:
                 "perturbation": case["perturbation"],
                 "clean_single_correct": clean_single,
                 "perturbed_single_correct": perturbed_single,
-                "single_sample_pdr": single_pdr,
                 "clean_mean_correctness": clean_mean,
                 "perturbed_mean_correctness": perturbed_mean,
-                "repeated_sampling_pdr": repeated_pdr,
+                "uncorrected_pdr_loss": clean_loss,
+                "perturbed_pdr_loss": perturbed_loss,
+                "corrected_pdr": corrected_pdr,
                 "correctness_sample_noise": correctness_noise,
             }
         )
@@ -455,8 +461,9 @@ def main() -> None:
     avg_perturbed_single = statistics.mean(row["perturbed_single_correct"] for row in metric_rows)
     avg_clean_repeated = statistics.mean(row["clean_mean_correctness"] for row in metric_rows)
     avg_perturbed_repeated = statistics.mean(row["perturbed_mean_correctness"] for row in metric_rows)
-    dataset_single_pdr = pdr(avg_clean_single, avg_perturbed_single)
-    dataset_repeated_pdr = pdr(avg_clean_repeated, avg_perturbed_repeated)
+    dataset_uncorrected_pdr = performance_loss(avg_clean_repeated)
+    dataset_perturbed_loss = performance_loss(avg_perturbed_repeated)
+    dataset_corrected_pdr = dataset_perturbed_loss - dataset_uncorrected_pdr
 
     group_rows = []
     for perturbation in perturbations:
@@ -472,8 +479,9 @@ def main() -> None:
             perturbed_single = statistics.mean(row["perturbed_single_correct"] for row in rows)
             clean_repeated = statistics.mean(row["clean_mean_correctness"] for row in rows)
             perturbed_repeated = statistics.mean(row["perturbed_mean_correctness"] for row in rows)
-            single = pdr(clean_single, perturbed_single)
-            repeated = pdr(clean_repeated, perturbed_repeated)
+            uncorrected = performance_loss(clean_repeated)
+            perturbed_loss = performance_loss(perturbed_repeated)
+            corrected = perturbed_loss - uncorrected
             group_rows.append(
                 {
                     "perturbation": perturbation,
@@ -481,11 +489,11 @@ def main() -> None:
                     "n": len(rows),
                     "clean_single": clean_single,
                     "perturbed_single": perturbed_single,
-                    "single_pdr": single,
                     "clean_repeated": clean_repeated,
                     "perturbed_repeated": perturbed_repeated,
-                    "repeated_pdr": repeated,
-                    "difference": single - repeated,
+                    "uncorrected_pdr": uncorrected,
+                    "perturbed_loss": perturbed_loss,
+                    "corrected_pdr": corrected,
                 }
             )
 
@@ -497,45 +505,49 @@ def main() -> None:
         f"- Datasets: `{', '.join(sorted({row['dataset'] for row in metric_rows}))}`.",
         f"- Tasks: `{', '.join(task for task in task_order if task in tasks)}`.",
         f"- Perturbations: `{', '.join(perturbations)}` applied to the instruction only.",
-        "- Evaluation criterion: Performance Drop Rate (PDR), using task correctness as performance.",
+        "- Evaluation criterion: loss-based Performance Drop Rate (PDR), using task correctness as performance.",
+        "- Uncorrected PDR: clean-prompt loss from repeated clean generations, `1 - mean(clean correctness)`.",
+        "- Corrected PDR: additional perturbed-prompt loss, `(1 - mean(perturbed correctness)) - (1 - mean(clean correctness))`.",
         "- Code generation correctness: HumanEval pass@1-style unit-test pass/fail; completions are evaluated as HumanEval prompt + model completion, with standalone full-code outputs accepted as a fallback.",
         "",
         "## Aggregate Result",
         "",
         f"- Average clean single-sample correctness: `{avg_clean_single:.4f}`",
         f"- Average perturbed single-sample correctness: `{avg_perturbed_single:.4f}`",
-        f"- Dataset-level uncorrected single-sample PDR: `{dataset_single_pdr:.4f}`",
         f"- Average clean repeated correctness: `{avg_clean_repeated:.4f}`",
         f"- Average perturbed repeated correctness: `{avg_perturbed_repeated:.4f}`",
-        f"- Dataset-level repeated-sampling PDR: `{dataset_repeated_pdr:.4f}`",
+        f"- Dataset-level uncorrected PDR loss: `{dataset_uncorrected_pdr:.4f}`",
+        f"- Dataset-level perturbed PDR loss: `{dataset_perturbed_loss:.4f}`",
+        f"- Dataset-level corrected PDR: `{dataset_corrected_pdr:.4f}`",
         "",
         "## Grouped Result",
         "",
-        "| perturbation | task | n | clean single | perturbed single | uncorrected PDR | clean repeated | perturbed repeated | repeated PDR | difference |",
+        "| perturbation | task | n | clean single | perturbed single | clean repeated | perturbed repeated | uncorrected PDR loss | perturbed loss | corrected PDR |",
         "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for row in group_rows:
         lines.append(
             f"| {row['perturbation']} | {row['task']} | {row['n']} | "
-            f"{row['clean_single']:.4f} | {row['perturbed_single']:.4f} | {row['single_pdr']:.4f} | "
-            f"{row['clean_repeated']:.4f} | {row['perturbed_repeated']:.4f} | {row['repeated_pdr']:.4f} | "
-            f"{row['difference']:.4f} |"
+            f"{row['clean_single']:.4f} | {row['perturbed_single']:.4f} | "
+            f"{row['clean_repeated']:.4f} | {row['perturbed_repeated']:.4f} | "
+            f"{row['uncorrected_pdr']:.4f} | {row['perturbed_loss']:.4f} | {row['corrected_pdr']:.4f} |"
         )
     lines.extend(
         [
         "",
         "## Per-Item Metrics",
         "",
-        "| case | perturbation | task | dataset | clean single | perturbed single | uncorrected PDR | clean mean | perturbed mean | repeated PDR | correctness noise |",
-        "|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|",
+        "| case | perturbation | task | dataset | clean single | perturbed single | clean mean | perturbed mean | uncorrected PDR loss | perturbed loss | corrected PDR | correctness noise |",
+        "|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     )
     for row in metric_rows:
         lines.append(
             f"| {row['case_id']} | {row['perturbation']} | {row['task']} | {row['dataset']} | "
             f"{row['clean_single_correct']} | {row['perturbed_single_correct']} | "
-            f"{row['single_sample_pdr']:.4f} | {row['clean_mean_correctness']:.4f} | "
-            f"{row['perturbed_mean_correctness']:.4f} | {row['repeated_sampling_pdr']:.4f} | "
+            f"{row['clean_mean_correctness']:.4f} | {row['perturbed_mean_correctness']:.4f} | "
+            f"{row['uncorrected_pdr_loss']:.4f} | {row['perturbed_pdr_loss']:.4f} | "
+            f"{row['corrected_pdr']:.4f} | "
             f"{row['correctness_sample_noise']:.4f} |"
         )
     lines.extend(
@@ -543,9 +555,9 @@ def main() -> None:
             "",
             "## Interpretation",
             "",
-            "The uncorrected condition estimates PDR from one clean output and one perturbed output. "
-            "The repeated-sampling condition keeps the same dataset, perturbation, model, decoding parameters, and PDR criterion, but estimates clean and perturbed performance from repeated generations. "
-            "This is the apple-to-apple comparison needed to test whether single-generation PDR overstates or understates perturbation impact.",
+            "The uncorrected condition estimates clean-prompt loss from repeated clean-prompt generations compared with the reference answer. "
+            "The corrected condition estimates additional perturbed-prompt loss by subtracting the clean-prompt loss from the perturbed-prompt loss. "
+            "This separates baseline task failure under the clean prompt from additional loss attributable to prompt perturbation.",
         ]
     )
     report_path.write_text("\n".join(lines), encoding="utf-8")
