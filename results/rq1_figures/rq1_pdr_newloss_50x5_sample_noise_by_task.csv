@@ -1,0 +1,4 @@
+task,sample_noise,n
+factual_qa,0.0020084149397730337,250
+math_reasoning,0.20333714047668638,250
+code_generation,0.07511101947298394,250

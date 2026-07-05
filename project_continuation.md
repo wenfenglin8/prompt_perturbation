@@ -2807,3 +2807,1371 @@ After all 10 batches complete, merge them with:
 ```powershell
 python merge_similarity_batches.py --batch-count 10 --batch-tag-prefix four_task_similarity_sweep_50x3 --output-tag four_task_similarity_sweep_50x3
 ```
+
+## 2026-07-03 Update: RQ2 Evaluator and Perturbation Dose-Response Progress
+
+This section records the latest RQ2 work after reading `from_kayley/rq2_methodology_design.md`.
+
+### Evaluator Updates
+
+Updated files:
+
+```text
+promptrobust_reference_pdr_eval.py
+rq2_perturbation_dose_response.py
+```
+
+Factual QA evaluator:
+
+```text
+SQuAD-style short factual QA no longer uses exact whole-output match.
+It now uses containment-first + token F1:
+
+factual_score = max(answer_containment_score, token_f1)
+```
+
+Implementation details:
+
+```text
+normalize: lowercase, remove punctuation, remove English articles, collapse whitespace
+containment: if normalized reference appears in normalized output, score = 1.0
+backup: SQuAD-style token F1 over normalized full output and reference answer
+multiple answers: take the max score
+```
+
+Math evaluator:
+
+```text
+Still binary 0/1 correctness.
+Now closer to from_kayley methodology:
+- extract boxed answer
+- extract "final answer is" / "answer is"
+- fallback to last numeric/simple expression
+- normalized string comparison
+- numeric/simple expression equivalence when possible
+```
+
+Code evaluator:
+
+```text
+Unchanged in principle.
+Still uses HumanEval-style unit-test pass/fail.
+```
+
+Generation-level output now includes:
+
+```text
+correct
+performance_score
+```
+
+For factual QA and long factual QA, `correct` can be blank and `performance_score` is the main performance variable.
+For math/code, `performance_score` is still 0/1.
+
+### Long Factual QA Scoring Revision
+
+The earlier long factual QA evaluator used hard all-or-nothing fact coverage:
+
+```text
+score = 1 only if every required fact group is present
+score = 0 otherwise
+```
+
+This was too coarse. For example, answers that covered 5/6 or 6/7 required facts were scored as 0.
+
+The long factual QA evaluator was changed to fractional required-fact coverage:
+
+```text
+long_factqa_score = matched_required_fact_groups / total_required_fact_groups
+```
+
+For the new stress set, the score also subtracts decoy contamination:
+
+```text
+long_factqa_score =
+    required_fact_coverage - forbidden_fact_coverage
+
+clipped at 0.0
+```
+
+This makes long factual QA more suitable for RQ2 because partial omissions and wrong decoy facts become measurable.
+
+### LongFactQA Stress-Decoy Set
+
+A new long factual QA set was added:
+
+```text
+--long-factqa-set stress
+```
+
+It contains five built-in stress cases:
+
+```text
+Aster Bridge
+Riverbend Clinic
+Northgate Archive
+Aurora-3 satellite
+Cedar Water Treaty
+```
+
+Each case contains:
+
+```text
+VERIFIED RECORD
+DECOY RECORD
+required_fact_groups
+forbidden_fact_groups
+```
+
+The goal is to make context-injection and instruction-conflict perturbations measurable.
+
+### Perturbation Family Parameterization
+
+`rq2_perturbation_dose_response.py` now supports:
+
+```text
+--perturbation-family surface_noise
+--perturbation-family context_injection
+```
+
+The script also supports:
+
+```text
+--long-factqa-set standard
+--long-factqa-set stress
+```
+
+Surface noise remains character-level instruction corruption.
+
+Context injection uses deterministic severity levels:
+
+```text
+level 0: no injection
+level 1: one irrelevant background note
+level 2: more irrelevant background notes
+level 3: weakly conflicting note about using later records if relevant
+level 4: direct instruction to blend DECOY RECORD with VERIFIED RECORD
+level 5: override instruction to prioritize DECOY RECORD if it conflicts
+```
+
+Important implementation detail:
+
+```text
+Only the instruction is perturbed.
+The passage, math problem, and HumanEval function prompt are kept unchanged.
+```
+
+### Surface Noise Stress LongFactQA Run
+
+Command:
+
+```powershell
+python rq2_perturbation_dose_response.py --dataset-cases-per-task 5 --samples 3 --levels 0,1,2,4,8 --tasks long_factual_qa --long-factqa-set stress --sleep 0 --output-tag rq2_surface_noise_dose_response_longfact_stress_5x3
+```
+
+Scale:
+
+```text
+5 long_factual_qa stress cases
+5 strength levels
+3 samples per prompt version
+75 actual generation requests
+25 metric rows
+```
+
+Output files:
+
+```text
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_generations.csv
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_metrics.csv
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_by_level.csv
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_by_task_level.csv
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_correlations.csv
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_within_case_monotonicity.csv
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_summary.json
+results/rq2_surface_noise_dose_response_longfact_stress_5x3_report.md
+```
+
+Main result:
+
+```text
+level 0 abs change = 0.0000
+level 1 abs change = 0.0167
+level 2 abs change = 0.0262
+level 4 abs change = 0.0095
+level 8 abs change = 0.0179
+```
+
+Interpretation:
+
+```text
+The stress set is more sensitive than the original long factual QA set,
+but surface noise remains too weak for a clean monotonic dose-response.
+The model can usually recover from light instruction typos.
+```
+
+### Context Injection Stress LongFactQA Run
+
+Command:
+
+```powershell
+python rq2_perturbation_dose_response.py --dataset-cases-per-task 5 --samples 3 --levels 0,1,2,3,4,5 --tasks long_factual_qa --long-factqa-set stress --perturbation-family context_injection --sleep 0 --output-tag rq2_context_injection_dose_response_longfact_stress_5x3
+```
+
+Scale:
+
+```text
+5 long_factual_qa stress cases
+6 strength levels
+3 samples per prompt version
+90 actual generation requests
+30 metric rows
+```
+
+Output files:
+
+```text
+results/rq2_context_injection_dose_response_longfact_stress_5x3_generations.csv
+results/rq2_context_injection_dose_response_longfact_stress_5x3_metrics.csv
+results/rq2_context_injection_dose_response_longfact_stress_5x3_by_level.csv
+results/rq2_context_injection_dose_response_longfact_stress_5x3_by_task_level.csv
+results/rq2_context_injection_dose_response_longfact_stress_5x3_correlations.csv
+results/rq2_context_injection_dose_response_longfact_stress_5x3_within_case_monotonicity.csv
+results/rq2_context_injection_dose_response_longfact_stress_5x3_summary.json
+results/rq2_context_injection_dose_response_longfact_stress_5x3_report.md
+```
+
+Main result:
+
+```text
+level 0 abs change = 0.0000
+level 1 abs change = 0.0552
+level 2 abs change = 0.0390
+level 3 abs change = 0.0324
+level 4 abs change = 0.0495
+level 5 abs change = 0.0495
+```
+
+Correlations:
+
+```text
+nonzero levels:
+mean_cross_similarity -> abs performance change:
+Spearman = -0.7443
+
+noise_corrected_drift -> abs performance change:
+Spearman = 0.5858
+```
+
+Interpretation:
+
+```text
+Context injection is much more useful than surface noise for RQ2 in the long factual QA stress setting.
+It does not produce strictly monotonic performance change by numeric level,
+but the semantic-drift relationship is in the expected direction.
+```
+
+### Context Injection Three-Task Run
+
+The user then asked to validate context injection across three task types.
+
+Command:
+
+```powershell
+python rq2_perturbation_dose_response.py --dataset-cases-per-task 5 --samples 3 --levels 0,1,2,3,4,5 --tasks long_factual_qa,math_reasoning,code_generation --long-factqa-set stress --perturbation-family context_injection --sleep 0 --output-tag rq2_context_injection_dose_response_three_task_stress_5x3
+```
+
+Scale:
+
+```text
+3 task types
+5 cases per task
+6 strength levels
+3 samples per prompt version
+270 actual generation requests
+315 generation rows including level-0 perturbed baseline copies
+90 metric rows
+```
+
+Output files:
+
+```text
+results/rq2_context_injection_dose_response_three_task_stress_5x3_generations.csv
+results/rq2_context_injection_dose_response_three_task_stress_5x3_metrics.csv
+results/rq2_context_injection_dose_response_three_task_stress_5x3_by_level.csv
+results/rq2_context_injection_dose_response_three_task_stress_5x3_by_task_level.csv
+results/rq2_context_injection_dose_response_three_task_stress_5x3_correlations.csv
+results/rq2_context_injection_dose_response_three_task_stress_5x3_within_case_monotonicity.csv
+results/rq2_context_injection_dose_response_three_task_stress_5x3_summary.json
+results/rq2_context_injection_dose_response_three_task_stress_5x3_report.md
+```
+
+Completeness check:
+
+```text
+generation rows = 315
+metric rows = 90
+tasks = code_generation, long_factual_qa, math_reasoning
+perturbation_family = context_injection
+```
+
+Overall nonzero-level correlations:
+
+```text
+mean_cross_similarity -> abs_repeated_pass_rate_change:
+Spearman = -0.2992
+
+noise_corrected_drift -> abs_repeated_pass_rate_change:
+Spearman = 0.1802
+
+strength_edits -> abs_repeated_pass_rate_change:
+Spearman = -0.0350
+```
+
+Task-specific nonzero-level correlations:
+
+```text
+long_factual_qa:
+mean_cross_similarity -> abs change:
+Spearman = -0.8155
+
+noise_corrected_drift -> abs change:
+Spearman = 0.4688
+
+math_reasoning:
+mean_cross_similarity -> abs change:
+Spearman = 0.4662
+
+noise_corrected_drift -> abs change:
+Spearman = -0.0339
+
+code_generation:
+mean_cross_similarity -> abs change:
+Spearman = -0.4187
+
+noise_corrected_drift -> abs change:
+Spearman = 0.2848
+```
+
+Interpretation:
+
+```text
+Context injection was validated across all three objective task types.
+The expected semantic-drift/performance-change direction is strongest for long_factual_qa,
+present but weaker for code_generation, and unstable for math_reasoning.
+The numeric strength level itself is not a reliable monotonic predictor.
+The observed semantic drift/similarity is more informative than nominal perturbation level.
+```
+
+Current best RQ2 framing:
+
+```text
+Across context-injection perturbations, larger observed semantic drift is more informative
+than the nominal injection level. Long factual QA shows the clearest relationship between
+output similarity and performance change, code generation shows a weaker but directionally
+consistent relationship, and math reasoning remains unstable at the current sample size.
+```
+
+### Current Uncommitted Files and Cautions
+
+Known modified files:
+
+```text
+promptrobust_reference_pdr_eval.py
+rq2_perturbation_dose_response.py
+project_continuation.md
+```
+
+Known unrelated or pre-existing modified/untracked files:
+
+```text
+errica_methodology_adaptation_for_proposal0.1.docx
+diagnose_math_repeats.py
+```
+
+Do not include the `.docx` change in a commit unless the user explicitly asks.
+
+New result files from this update are under:
+
+```text
+results/rq2_surface_noise_dose_response_longfact_stress_5x3*
+results/rq2_context_injection_dose_response_longfact_stress_5x3*
+results/rq2_context_injection_dose_response_three_task_stress_5x3*
+```
+
+Recommended next step:
+
+```text
+Use the three-task context-injection result as the main RQ2 dose-response evidence.
+If more budget is available, increase cases per task from 5 to 10 or 20 before making formal claims.
+```
+
+## 2026-07-04 Surface Noise Combined 50x5 Batch Run
+
+This update completed a larger RQ2 surface-noise combined run over LongFactQA plus the three objective tasks.
+
+### Code Changes
+
+Updated:
+
+```text
+rq2_perturbation_dose_response.py
+plot_rq2_surface_noise_combined.py
+```
+
+New scripts:
+
+```text
+run_rq2_surface_noise_combined_50x5.ps1
+run_rq2_surface_noise_combined_50x5_batches.ps1
+merge_rq2_surface_noise_combined_50x5_batches.ps1
+plot_rq2_surface_noise_code_direction.py
+```
+
+LongFactQA stress support was expanded:
+
+```text
+explicit LongFactQA stress cases: 29
+deterministic generated stress-decoy cases: 25
+available stress cases: 54
+```
+
+This allows a balanced 50 cases/task design:
+
+```text
+factual_qa       50 cases
+long_factual_qa  50 cases
+math_reasoning   50 cases
+code_generation  50 cases
+```
+
+Batch slicing was added to `rq2_perturbation_dose_response.py`:
+
+```text
+--case-batch-count
+--case-batch-index
+```
+
+The 50x5 run was split into 5 parallel batches:
+
+```text
+5 batches
+10 cases/task per batch
+40 base cases per batch
+200 metric rows per batch
+1200 generation CSV rows per batch including level-0 perturbed baseline copies
+```
+
+Combined total:
+
+```text
+200 base cases
+1000 metric rows
+6000 generation CSV rows
+strength_edits = 0, 2, 4, 8, 16
+samples = 5 per prompt version
+```
+
+### Batch Output Files
+
+Each batch wrote independent files under `results/`:
+
+```text
+results/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_batch1of5_*
+results/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_batch2of5_*
+results/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_batch3of5_*
+results/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_batch4of5_*
+results/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_batch5of5_*
+```
+
+Per-batch logs are under:
+
+```text
+logs/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_batch*of5.out.log
+logs/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_batch*of5.err.log
+```
+
+Final completion:
+
+```text
+batch1: 200/200 metric rows
+batch2: 200/200 metric rows
+batch3: 200/200 metric rows
+batch4: 200/200 metric rows
+batch5: 200/200 metric rows
+total: 1000/1000 metric rows
+```
+
+### Combined Visual Outputs
+
+Generated combined figures and summary CSVs under:
+
+```text
+results/rq2_figures/
+```
+
+Key files:
+
+```text
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_by_level.csv
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_by_task_level.csv
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_overall_dose_response.png
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_similarity_by_task.png
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_correctness_change_by_task.png
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_similarity_vs_correctness_scatter.png
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_corrected_drift_vs_correctness_scatter.png
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_visualization_index.md
+```
+
+Code-only diagnostic figures:
+
+```text
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_code_only_similarity_vs_correctness_direction.png
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_code_only_similarity_bin_trend.png
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_code_only_similarity_bins.csv
+```
+
+### Main Combined Statistics
+
+From:
+
+```text
+results/rq2_figures/rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_visualization_index.md
+```
+
+Key correlations:
+
+```text
+Strength vs mean cross similarity:
+Spearman = -0.4800
+
+Strength vs absolute repeated-pass-rate change:
+Spearman = 0.2659
+
+Nonzero-level similarity vs absolute correctness change:
+Spearman = -0.4460
+
+Nonzero-level corrected drift vs absolute correctness change:
+Spearman = 0.3137
+```
+
+Combined mean by strength:
+
+```text
+strength_edits  n    mean_cross_similarity  mean_noise_corrected_drift  mean_abs_repeated_pass_rate_change  harmful_drop_share  correctness_changed
+0               200  1.0000                 0.0000                      0.0000                              0.0000              0.0000
+2               200  0.9611                 0.0070                      0.0781                              0.1500              0.3900
+4               200  0.9581                 0.0109                      0.0889                              0.1700              0.3750
+8               200  0.9565                 0.0125                      0.0984                              0.1900              0.4150
+16              200  0.9534                 0.0131                      0.0964                              0.2250              0.4300
+```
+
+Interpretation:
+
+```text
+The 50x5 combined surface-noise result shows the expected overall pattern:
+stronger requested surface-noise edit budget lowers mean output similarity,
+increases noise-corrected drift, and is associated with larger correctness movement.
+The relationship remains weaker and more task-dependent than context injection,
+so surface noise is still best treated as contrast/supporting evidence rather than
+the strongest RQ2 dose-response condition.
+```
+
+### Code-Generation Scatter Diagnostic
+
+The code-only scatter was created because code_generation points were visually dispersed in:
+
+```text
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_similarity_vs_correctness_scatter.png
+```
+
+Diagnostic result:
+
+```text
+code_generation nonzero similarity vs correctness-change Spearman = -0.7385
+n = 200 nonzero code rows
+```
+
+Direction counts for code-generation nonzero rows:
+
+```text
+unchanged: 127
+improved under perturbed: 56
+dropped under perturbed: 17
+```
+
+For high-change rows:
+
+```text
+abs_repeated_pass_rate_change >= 0.4
+improved under perturbed: 37
+dropped under perturbed: 9
+```
+
+Interpretation:
+
+```text
+The code-generation scatter is not a merge/counting bug. HumanEval correctness is binary and
+format-sensitive, so repeated pass-rate change is discrete in steps of 0.2. The plotted y-axis
+uses absolute movement, so improvements and harmful drops both appear as high-y points.
+The code-only trend remains strongly negative: lower output similarity is associated with
+larger correctness movement.
+```
+
+Explanation documents:
+
+```text
+rq2_surface_noise_code_scatter_explanation.md
+rq2_surface_noise_code_scatter_explanation_zh.md
+```
+
+### Similarity-by-Task Nonmonotonicity Note
+
+The task-level similarity plot:
+
+```text
+rq2_surface_noise_combined_balanced_50x5_l0_2_4_8_16_similarity_by_task.png
+```
+
+shows small local rebounds for some tasks, such as factual QA and LongFactQA from edits 4 to 8.
+
+Important clarification:
+
+```text
+mean_cross_similarity is output similarity, not prompt/instruction similarity.
+strength_edits is the requested corruption budget, not always the actual number of newly corrupted words.
+```
+
+For short instructions, surface-noise edits can saturate because there are few eligible non-essential words.
+The overall combined mean remains monotonic:
+
+```text
+0: 1.0000
+2: 0.9611
+4: 0.9581
+8: 0.9565
+16: 0.9534
+```
+
+Within-case direction checks:
+
+```text
+code_generation: 48/49 cases negative strength-to-similarity Spearman
+factual_qa: 39/45 cases negative
+long_factual_qa: 48/50 cases negative
+math_reasoning: 50/50 cases negative
+```
+
+Conclusion:
+
+```text
+The local task-level rebounds are not clear evidence of a calculation bug.
+They are expected from output-level embedding similarity, repeated-sampling noise,
+and saturation of surface-noise edits on short instructions.
+Future plots should label x-axis as requested edit budget and ideally include error bars.
+```
+
+Explanation document:
+
+```text
+rq2_surface_noise_similarity_by_task_nonmonotonic_explanation_zh.md
+```
+
+### Current Recommendation
+
+For RQ2 reporting:
+
+```text
+Use context injection as the primary dose-response evidence.
+Use the 50x5 surface-noise result as a larger-scale contrast condition.
+Report surface-noise effects as output-similarity movement and modest correctness movement,
+not as the strongest perturbation family.
+```
+
+For future improvement:
+
+```text
+Add actual_corrupted_words, prompt_edit_distance, or prompt_similarity to the metrics.
+Add error bars or bootstrap confidence intervals to similarity-by-task plots.
+For code_generation, report direction-separated scatter because absolute correctness movement
+mixes harmful drops and improvements.
+```
+
+## 2026-07-05 Update: RQ1 New-Loss PDR 50x5 Completion and Visualization
+
+### Parallel Run Setup
+
+The unfinished RQ1 PDR simulation was identified as:
+
+```text
+rq1_pdr_newloss_three_task_50x5_batch*of25
+```
+
+Before today's continuation, only batches 1 through 5 were complete. The remaining 20
+batches were split across five Python worker scripts so that five jobs could run in
+parallel without multiple processes writing to the same output file:
+
+```text
+run_rq1_pdr_newloss_50x5_worker1.py  -> batches 6, 7, 8, 9
+run_rq1_pdr_newloss_50x5_worker2.py  -> batches 10, 11, 12, 13
+run_rq1_pdr_newloss_50x5_worker3.py  -> batches 14, 15, 16, 17
+run_rq1_pdr_newloss_50x5_worker4.py  -> batches 18, 19, 20, 21
+run_rq1_pdr_newloss_50x5_worker5.py  -> batches 22, 23, 24, 25
+```
+
+Each worker calls:
+
+```text
+promptrobust_reference_pdr_eval.py
+```
+
+with:
+
+```text
+model: gpt-4o-mini
+dataset-cases-per-task: 50
+samples: 5
+temperature: 0.7
+top_p: 0.9
+tasks: factual_qa, math_reasoning, code_generation
+perturbations: paraphrase, reordering, formatting, context_injection, surface_noise
+batch_count: 25
+resume: true
+```
+
+There was one temporary DNS/network failure:
+
+```text
+Failed to resolve api.openai.com
+```
+
+The run was restarted with `--resume`, so completed case-level outputs were preserved
+and the partial batches continued rather than being rerun from scratch.
+
+### Completion Status
+
+The full RQ1 PDR 50x5 simulation is now complete:
+
+```text
+metric rows:     750 / 750
+generation rows: 7500 / 7500
+completed batch: 1-25
+partial batch:   none
+```
+
+Per-batch scale:
+
+```text
+30 metric rows per batch
+300 generation rows per batch
+```
+
+Full scale:
+
+```text
+3 tasks x 5 perturbations x 50 cases = 750 case-level metric rows
+750 case-level rows x 2 prompt versions x 5 samples = 7500 generation rows
+```
+
+### Combined Output Files
+
+The 25 batch files were merged into:
+
+```text
+results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+results/pdr_metrics_rq1_pdr_newloss_three_task_50x5_combined.csv
+results/pdr_metrics_rq1_pdr_newloss_three_task_50x5_combined.json
+results/pdr_report_rq1_pdr_newloss_three_task_50x5_combined.md
+```
+
+Combined row-count validation:
+
+```text
+generations_rq1_pdr_newloss_three_task_50x5_combined.csv: 7500 rows
+pdr_metrics_rq1_pdr_newloss_three_task_50x5_combined.csv: 750 rows
+```
+
+### Main Combined PDR Result
+
+Aggregate repeated-sampling performance:
+
+```text
+Average clean single-sample performance:     0.6213
+Average perturbed single-sample performance: 0.6169
+Average clean repeated performance:          0.6279
+Average perturbed repeated performance:      0.6179
+Dataset-level uncorrected PDR loss:          0.3721
+Dataset-level perturbed PDR loss:            0.3821
+Dataset-level corrected PDR:                 0.0100
+```
+
+Interpretation:
+
+```text
+The combined repeated-sampling PDR shows a small aggregate perturbation effect:
+clean repeated performance decreases from 0.6279 to 0.6179, corresponding to
+a corrected PDR of 0.0100.
+```
+
+This should be described as a 1.00 percentage-point absolute performance drop,
+not as a 1 percent relative decrease.
+
+### Task-by-Perturbation PDR Pattern
+
+Grouped corrected PDR:
+
+```text
+paraphrase / factual_qa:          0.0072
+paraphrase / math_reasoning:      0.0720
+paraphrase / code_generation:     0.1040
+
+reordering / factual_qa:         -0.0013
+reordering / math_reasoning:     -0.0040
+reordering / code_generation:    -0.0400
+
+formatting / factual_qa:          0.0040
+formatting / math_reasoning:     -0.0320
+formatting / code_generation:     0.2560
+
+context_injection / factual_qa:   0.0013
+context_injection / math_reasoning: -0.0600
+context_injection / code_generation: -0.1160
+
+surface_noise / factual_qa:      -0.0013
+surface_noise / math_reasoning:   0.0040
+surface_noise / code_generation: -0.0440
+```
+
+Important example:
+
+```text
+formatting + code_generation
+clean repeated performance:     0.5240
+perturbed repeated performance: 0.2680
+corrected PDR:                 0.2560
+```
+
+This means the formatting perturbation is associated with a 25.6 percentage-point
+absolute repeated-performance drop for code generation. It is not a 25.6 percent
+relative decrease; the relative decrease would be about 48.9 percent of the clean
+repeated performance.
+
+### Sample-Noise Interpretation
+
+The combined correctness sample-noise summary is:
+
+```text
+overall mean correctness sample noise:   0.0935
+overall median correctness sample noise: 0.0000
+overall min correctness sample noise:    0.0000
+overall max correctness sample noise:    0.4899
+```
+
+By task:
+
+```text
+factual_qa:      0.0020
+math_reasoning:  0.2033
+code_generation: 0.0751
+```
+
+Important interpretation boundary:
+
+```text
+Do not write that sample noise causes 9.35 percentage points of performance loss.
+```
+
+Correct wording:
+
+```text
+The aggregate corrected PDR is 0.0100. Separately, the average within-condition
+correctness sample noise is 0.0935. These quantities measure different things:
+corrected PDR measures the mean clean-vs-perturbed performance difference, while
+sample noise measures repeated-generation variability under the same condition.
+The sample-noise value should therefore be interpreted as a single-sample estimation
+confound, not as additional loss.
+```
+
+Recommended paper phrasing:
+
+```text
+The combined repeated-sampling PDR shows a small aggregate perturbation effect:
+clean repeated performance decreases from 0.6279 to 0.6179, corresponding to a
+corrected PDR of 0.0100. Separately, the average within-condition correctness
+sample noise is 0.0935, indicating substantial repeated-generation variability,
+especially for math reasoning. This variability should not be interpreted as
+performance loss, but as a source of instability that can confound single-sample
+robustness estimates.
+```
+
+Avoid phrasing such as:
+
+```text
+sample noise is larger than perturbation loss
+sample noise causes more loss
+the perturbation effect is overwhelmed by sample noise
+```
+
+because those sentences mix two different metrics.
+
+### Visualization Output
+
+A new plotting script was created:
+
+```text
+plot_rq1_pdr_newloss_50x5.py
+```
+
+It generates a two-panel figure that keeps corrected PDR and sample noise visually
+separate:
+
+```text
+Panel A: corrected PDR by perturbation and task
+Panel B: within-condition correctness sample noise by task
+```
+
+Output files:
+
+```text
+results/rq1_figures/rq1_pdr_newloss_50x5_effect_and_sample_noise.png
+results/rq1_figures/rq1_pdr_newloss_50x5_effect_and_sample_noise.pdf
+results/rq1_figures/rq1_pdr_newloss_50x5_grouped_for_figure.csv
+results/rq1_figures/rq1_pdr_newloss_50x5_sample_noise_by_task.csv
+results/rq1_figures/rq1_pdr_newloss_50x5_figure_caption.md
+```
+
+Suggested figure caption:
+
+```text
+Figure X. Repeated-sampling PDR and within-condition sampling variability for the
+three objective tasks at 50 cases per task and 5 samples per prompt version. Panel A
+reports corrected PDR by perturbation and task, computed as the difference between
+perturbed-prompt loss and clean-prompt loss using repeated-sampling mean performance.
+Across all task-perturbation cells, clean repeated performance is 0.6279 and perturbed
+repeated performance is 0.6179, giving a small aggregate corrected PDR of 0.0100.
+Panel B separately reports within-condition correctness sample noise, whose overall
+mean is 0.0935; this quantity measures repeated-generation variability and should
+not be interpreted as additional performance loss.
+```
+
+## 2026-07-05 Update: RQ1 PDR Evaluator Audit, Recomputed Results, and Paper Figures
+
+Today's work focused on carefully auditing the RQ1 PDR 50x5 result:
+
+```text
+results/pdr_report_rq1_pdr_newloss_three_task_50x5_combined.md
+```
+
+The audit found important evaluator bugs in the original stored PDR metrics.
+Therefore the original combined report should now be treated as superseded for
+paper claims.
+
+### Main Evaluator Problems Found
+
+#### Math Reasoning
+
+The original math evaluator produced many false negatives.
+
+Observed problems:
+
+```text
+final answer on next line was sometimes extracted as ":"
+nested LaTeX such as \boxed{\frac{11}{2}} was not handled robustly
+numeric equivalents such as 5.5 and 11/2 were not matched
+interval and symbolic equivalents were under-normalized
+```
+
+Concrete examples:
+
+```text
+Model output: 402
+Reference:    402
+Stored result: incorrect
+
+Model output: 5.5
+Reference:    11/2
+Stored result: incorrect
+```
+
+Manual check of the canonical 50 clean math cases found:
+
+```text
+true wrong clean math cases: 6 / 50
+manual correct or equivalent cases: 44 / 50
+```
+
+The six true wrong clean math cases were:
+
+```text
+math_08
+math_09
+math_18
+math_21
+math_24
+math_33
+```
+
+The remaining stored wrong cases were mostly evaluator false negatives or
+mathematically equivalent answers.
+
+#### Code Generation
+
+The original HumanEval evaluator also produced many false negatives.
+
+Main issue:
+
+```text
+Markdown code fence stripping damaged function-body indentation.
+```
+
+This caused valid function bodies such as:
+
+```python
+    return len(string)
+```
+
+to be evaluated as top-level code and fail with errors such as:
+
+```text
+SyntaxError: 'return' outside function
+IndentationError
+```
+
+Manual / robust re-evaluation of 50 canonical clean HumanEval cases found:
+
+```text
+stored clean code accuracy: 26 / 50 = 0.5200
+robust true clean code accuracy: 49 / 50 = 0.9800
+confirmed true wrong coding cases: 1 / 50
+```
+
+The only confirmed true wrong clean coding case was:
+
+```text
+humaneval_11 / make_palindrome
+```
+
+Reason:
+
+```text
+The model checked palindromic prefixes rather than palindromic suffixes.
+```
+
+### Recomputed RQ1 PDR V2
+
+The RQ1 PDR metrics were recomputed from existing generation outputs, without
+rerunning model generation.
+
+Input:
+
+```text
+results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+```
+
+Recomputed output files:
+
+```text
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_generation_scores.csv
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_metrics.csv
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_summary.json
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_report.md
+```
+
+Recomputed V2 evaluator policy:
+
+```text
+factual_qa: keep original continuous SQuAD-style score
+math_reasoning: repaired final-answer extraction and equivalence handling
+code_generation: robust HumanEval execution preserving code-fence indentation
+```
+
+Aggregate recomputed result:
+
+```text
+metric rows:                   750
+generation rows:               7500
+changed generation scores:     2392
+
+Average clean single-sample performance:     0.9413
+Average perturbed single-sample performance: 0.9382
+Average clean repeated performance:          0.9426
+Average perturbed repeated performance:      0.9395
+Dataset-level uncorrected PDR loss:          0.0574
+Dataset-level perturbed PDR loss:            0.0605
+Dataset-level corrected PDR:                 0.0031
+```
+
+Comparison with the superseded original report:
+
+```text
+Original clean repeated performance:     0.6279
+Recomputed clean repeated performance:   0.9426
+
+Original corrected PDR:                  0.0100
+Recomputed corrected PDR:                0.0031
+```
+
+Main conclusion:
+
+```text
+The original RQ1 PDR report was strongly affected by evaluator false negatives.
+After repair, clean and perturbed performance are both high, and the aggregate
+perturbation-induced loss is very small: corrected PDR = 0.0031.
+```
+
+### Task-Level Recomputed Result
+
+```text
+factual_qa:
+clean repeated performance:      0.9789
+perturbed repeated performance:  0.9770
+clean baseline loss:             0.0211
+perturbation-induced loss:       0.0020
+
+math_reasoning:
+clean repeated performance:      0.8776
+perturbed repeated performance:  0.8736
+clean baseline loss:             0.1224
+perturbation-induced loss:       0.0040
+
+code_generation:
+clean repeated performance:      0.9712
+perturbed repeated performance:  0.9680
+clean baseline loss:             0.0288
+perturbation-induced loss:       0.0032
+```
+
+Interpretation:
+
+```text
+Most observed loss is clean-prompt baseline loss, not perturbation-induced loss.
+```
+
+### RQ1 Answer Using Repaired PDR
+
+For PDR, open-ended writing is excluded because no correctness/PDR evaluator was
+implemented for it.
+
+Included tasks:
+
+```text
+factual_qa
+math_reasoning
+code_generation
+```
+
+Corrected PDR by perturbation and task:
+
+```text
+factual_qa:
+paraphrase:          0.0072
+formatting:          0.0040
+context_injection:   0.0013
+reordering:         -0.0013
+surface_noise:      -0.0013
+
+math_reasoning:
+reordering:          0.0240
+paraphrase:          0.0160
+surface_noise:       0.0000
+formatting:         -0.0080
+context_injection:  -0.0120
+
+code_generation:
+paraphrase:          0.0200
+context_injection:   0.0040
+formatting:          0.0000
+surface_noise:       0.0000
+reordering:         -0.0080
+```
+
+Ranking by harmful corrected PDR:
+
+```text
+factual_qa:
+paraphrase > formatting > context injection > reordering ≈ surface noise
+
+math_reasoning:
+reordering > paraphrase > surface noise > formatting > context injection
+
+code_generation:
+paraphrase > context injection > formatting ≈ surface noise > reordering
+```
+
+RQ1 answer:
+
+```text
+The repaired PDR evidence supports a task-dependent perturbation ranking.
+Paraphrasing is consistently harmful across the three objective tasks, but the
+full ranking changes by task.
+```
+
+Important caveat:
+
+```text
+PDR measures correctness/performance loss, not semantic similarity directly.
+It should be presented as correctness-side evidence alongside the semantic
+similarity / noise-corrected drift analysis.
+```
+
+### Clean-Prompt Repeated Math Accuracy
+
+For canonical clean math prompts only, excluding perturbed prompts:
+
+```text
+sample 1: 44/50 = 0.8800
+sample 2: 46/50 = 0.9200
+sample 3: 44/50 = 0.8800
+sample 4: 42/50 = 0.8400
+sample 5: 43/50 = 0.8600
+
+overall: 219/250 = 0.8760
+```
+
+Cases with inconsistent correctness across five clean math samples:
+
+```text
+math_03
+math_08
+math_09
+math_11
+math_18
+math_22
+math_26
+math_29
+math_33
+math_35
+```
+
+Manual interpretation:
+
+```text
+8 cases showed real model-output variability.
+2 cases were remaining evaluator/format artifacts.
+```
+
+### Math Improvement Cases After Perturbation
+
+Some math cases had higher perturbed pass rates than clean pass rates.
+
+Across 250 math case-perturbation units:
+
+```text
+neutral: 194
+harmful: 31
+helpful: 25
+```
+
+Examples:
+
+```text
+promptrobust_pdr_paraphrase_math_09:
+clean pass rate:     2/5 = 0.4
+perturbed pass rate: 5/5 = 1.0
+
+promptrobust_pdr_context_injection_math_22:
+clean pass rate:     0/5 = 0.0
+perturbed pass rate: 3/5 = 0.6
+
+promptrobust_pdr_formatting_math_35:
+clean pass rate:     2/5 = 0.4
+perturbed pass rate: 4/5 = 0.8
+```
+
+Interpretation:
+
+```text
+Negative corrected PDR values are best treated as stochastic task-level
+variability rather than evidence that perturbations are generally beneficial.
+```
+
+### PDR Loss Decomposition Recommendation
+
+Recommended decomposition:
+
+```text
+total_perturbed_loss = clean_baseline_loss + perturbation_induced_loss
+
+clean_baseline_loss = 1 - mean(clean repeated correctness)
+perturbation_induced_loss = mean(clean repeated correctness)
+                              - mean(perturbed repeated correctness)
+```
+
+Sample noise should be reported separately:
+
+```text
+correctness_sample_noise = average_{i<j} |score_i - score_j|
+```
+
+Do not write that sample noise is additional loss.
+
+### New RQ1 PDR Figures And Analysis Files
+
+New plotting script:
+
+```text
+plot_rq1_pdr_recomputed_v2_paper.py
+```
+
+Main figure:
+
+```text
+results/rq1_figures/rq1_pdr_recomputed_v2_task_dependent_ranking.png
+results/rq1_figures/rq1_pdr_recomputed_v2_task_dependent_ranking.pdf
+```
+
+Supplementary bar figure:
+
+```text
+results/rq1_figures/rq1_pdr_recomputed_v2_corrected_pdr_by_task_bars.png
+results/rq1_figures/rq1_pdr_recomputed_v2_corrected_pdr_by_task_bars.pdf
+```
+
+Figure data and captions:
+
+```text
+results/rq1_figures/rq1_pdr_recomputed_v2_grouped_for_paper.csv
+results/rq1_figures/rq1_pdr_recomputed_v2_paper_figure_caption.md
+```
+
+English and Chinese analysis files:
+
+```text
+results/rq1_figures/rq1_pdr_recomputed_v2_analysis_en.md
+results/rq1_figures/rq1_pdr_recomputed_v2_analysis_zh.md
+results/rq1_figures/rq1_pdr_recomputed_v2_rankings_bilingual.md
+```
+
+Reproduction specification:
+
+```text
+results/rq1_figures/rq1_pdr_reproduction_spec.md
+```
+
+### Recommended Paper Wording
+
+```text
+After repairing the math and code evaluators, the PDR-based correctness analysis
+shows that perturbation effects are small in magnitude and task-dependent.
+Excluding open-ended writing, paraphrasing is the only perturbation that remains
+consistently harmful across factual QA, mathematical reasoning, and code generation.
+However, the complete ranking of perturbation types is not stable: reordering is
+most harmful for math reasoning but not for factual QA or code generation, while
+formatting, context injection, and surface noise are near-neutral or slightly
+beneficial depending on the task. Thus, the repaired PDR evidence supports a
+task-dependent rather than universal perturbation ranking.
+```
+
+### Important Caution For Future Work
+
+Do not use these superseded original-report claims:
+
+```text
+clean repeated performance = 0.6279
+corrected PDR = 0.0100
+formatting + code_generation corrected PDR = 0.2560
+```
+
+These were affected by evaluator false negatives.
+
+Use the recomputed V2 files instead.

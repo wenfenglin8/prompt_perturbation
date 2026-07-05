@@ -1,0 +1,2541 @@
+PDR result check
+Date: 2026-07-05
+
+Source files checked:
+- promptrobust_reference_pdr_eval.py
+- results/pdr_report_rq1_pdr_newloss_three_task_50x5_combined.md
+
+How PDR is calculated in the current RQ1 script
+
+The current report uses a loss-based PDR calculation.
+
+For each case:
+
+clean_mean_performance = mean correctness across repeated original-prompt generations
+perturbed_mean_performance = mean correctness across repeated perturbed-prompt generations
+
+clean_loss = 1 - clean_mean_performance
+perturbed_loss = 1 - perturbed_mean_performance
+
+uncorrected_pdr_loss = clean_loss
+corrected_pdr = perturbed_loss - clean_loss
+
+Equivalently:
+
+corrected_pdr = (1 - perturbed_mean_performance) - (1 - clean_mean_performance)
+              = clean_mean_performance - perturbed_mean_performance
+
+Important interpretation:
+
+- uncorrected_pdr_loss is the loss under the original clean prompt.
+- perturbed_pdr_loss is the loss under the perturbed prompt.
+- corrected_pdr is the additional loss caused by the perturbation relative to the original prompt.
+- If the original prompt is compared against itself, corrected_pdr is 0 by definition.
+
+Code locations:
+
+- promptrobust_reference_pdr_eval.py:427-428 defines performance_loss(performance) = 1.0 - performance.
+- promptrobust_reference_pdr_eval.py:622-626 computes clean_mean, perturbed_mean, clean_loss, perturbed_loss, and corrected_pdr.
+- promptrobust_reference_pdr_eval.py:673-677 computes dataset-level clean repeated performance, perturbed repeated performance, uncorrected PDR loss, perturbed loss, and corrected PDR.
+
+Main RQ1 50x5 combined result
+
+Metric rows: 750
+Generation rows: 7500
+
+Average clean single-sample performance:     0.6213
+Average perturbed single-sample performance: 0.6169
+Average clean repeated performance:          0.6279
+Average perturbed repeated performance:      0.6179
+
+Original clean-prompt result:
+
+Dataset-level uncorrected PDR loss = 1 - 0.6279 = 0.3721
+
+This is the PDR/loss after using the original prompt only.
+
+Perturbed-prompt result:
+
+Dataset-level perturbed PDR loss = 1 - 0.6179 = 0.3821
+
+Perturbation-specific additional effect:
+
+Dataset-level corrected PDR = 0.3821 - 0.3721 = 0.0100
+
+Interpretation:
+
+The original prompts have repeated-sampling performance 0.6279, so their clean-prompt loss / uncorrected PDR is 0.3721.
+After perturbation, repeated-sampling performance is 0.6179, so perturbed loss is 0.3821.
+The additional perturbation effect is 0.0100, i.e. a 1.00 percentage-point absolute performance drop.
+
+Do not describe 0.0100 as a 1 percent relative decrease. It is a 1.00 percentage-point absolute drop.
+
+Plain Chinese explanation of clean_mean_performance and perturbed_mean_performance
+
+clean_mean_performance 的意思：
+
+对同一个原始 prompt，不只让模型回答一次，而是重复生成多次。
+每一次回答都会被判定为一个正确性分数。
+
+例如 samples = 5 时，同一个原始 prompt 会得到 5 个回答：
+
+回答1: 正确 = 1
+回答2: 正确 = 1
+回答3: 错误 = 0
+回答4: 正确 = 1
+回答5: 错误 = 0
+
+那么：
+
+clean_mean_performance = (1 + 1 + 0 + 1 + 0) / 5 = 0.6
+
+也就是说，在原始 prompt 下，这个 case 的平均正确率是 0.6。
+
+perturbed_mean_performance 的意思：
+
+把同一个任务的 prompt 做扰动，例如 paraphrase、reordering、formatting、context injection 或 surface noise。
+然后也让模型对这个扰动后的 prompt 重复回答多次。
+每一次扰动 prompt 的回答也会被判定为正确或错误。
+
+例如同一个 case 的扰动 prompt 也生成 5 次：
+
+回答1: 正确 = 1
+回答2: 错误 = 0
+回答3: 错误 = 0
+回答4: 正确 = 1
+回答5: 错误 = 0
+
+那么：
+
+perturbed_mean_performance = (1 + 0 + 0 + 1 + 0) / 5 = 0.4
+
+也就是说，在扰动 prompt 下，这个 case 的平均正确率是 0.4。
+
+然后 PDR 比较的就是：
+
+原始 prompt 的平均正确率 clean_mean_performance
+和
+扰动 prompt 的平均正确率 perturbed_mean_performance
+
+如果原始 prompt 平均正确率是 0.6，扰动 prompt 平均正确率是 0.4：
+
+clean_loss = 1 - 0.6 = 0.4
+perturbed_loss = 1 - 0.4 = 0.6
+corrected_pdr = 0.6 - 0.4 = 0.2
+
+这个 0.2 表示：扰动 prompt 让性能额外下降了 20 个百分点。
+
+关键点：
+
+clean_mean_performance 不是单次原始 prompt 的结果，而是原始 prompt 重复生成后的平均正确率。
+perturbed_mean_performance 也不是单次扰动 prompt 的结果，而是扰动 prompt 重复生成后的平均正确率。
+这样做是为了避免只看一次回答时，被模型本身的随机波动误导。
+
+Why average clean single-sample performance is only 0.6213
+
+Question:
+
+Average clean single-sample performance = 0.6213. Why is it so low? Are all tasks this low?
+
+Answer:
+
+No. The low overall average does not mean every task has only about 62% accuracy.
+After splitting by task, factual QA is very high, while math reasoning and code generation are much lower.
+
+Task-level clean performance from results/pdr_metrics_rq1_pdr_newloss_three_task_50x5_combined.csv:
+
+task              n     clean_single    perturbed_single    clean_repeated    perturbed_repeated
+factual_qa        250   0.9800          0.9787              0.9789            0.9770
+math_reasoning    250   0.3680          0.3880              0.3944            0.3984
+code_generation   250   0.5160          0.4840              0.5104            0.4784
+
+Therefore:
+
+The overall clean single-sample performance is:
+
+(0.9800 + 0.3680 + 0.5160) / 3 = 0.6213
+
+So the 0.6213 aggregate is low because it averages three very different tasks:
+
+- factual_qa is easy/high-performing in this setup: clean single = 0.9800
+- math_reasoning is hard/low-performing: clean single = 0.3680
+- code_generation is moderate but still low: clean single = 0.5160
+
+Chinese explanation:
+
+0.6213 不是说每个任务都只有 62% 正确率。
+它是 factual QA、math reasoning、code generation 三类任务混合后的平均值。
+
+其中：
+
+factual QA 的原始 prompt 单次正确率是 0.9800，非常高。
+math reasoning 的原始 prompt 单次正确率是 0.3680，很低。
+code generation 的原始 prompt 单次正确率是 0.5160，也不高。
+
+所以总平均被 math_reasoning 和 code_generation 拉低了。
+
+为什么 math 和 code 低：
+
+1. math_reasoning 使用的是 MATH 风格题目，本身难度较高。模型需要完整推理和最终答案匹配，错误空间很大。
+2. code_generation 使用 HumanEval 风格任务，判分通常是通过测试用例或严格函数行为判断。代码只要格式、边界条件、函数实现有问题，就会被判错。
+3. factual_qa 使用 SQuAD V2 风格问答，当前样本下模型表现很稳定，所以正确率接近 0.98。
+
+Important caution:
+
+The aggregate 0.6213 should not be interpreted alone as "the model is only 62% accurate on every task."
+A better paper/report description is:
+
+The aggregate clean single-sample performance is 0.6213, but this average masks strong task heterogeneity: factual QA is near ceiling at 0.9800, whereas math reasoning and code generation are substantially lower at 0.3680 and 0.5160, respectively.
+
+Math reasoning low accuracy check
+
+Question:
+
+Why is math_reasoning accuracy so low? Are simple math reasoning problems really mostly wrong?
+
+Short answer:
+
+No. A manual/diagnostic check shows that the reported math_reasoning accuracy is probably too low because the math evaluator has many false negatives.
+Several model outputs are mathematically correct but were marked incorrect due to final-answer extraction and formatting normalization problems.
+
+Official stored math clean performance:
+
+By perturbation, original prompt, sample_idx = 0:
+
+perturbation        stored clean single
+paraphrase          0.3200
+reordering          0.3600
+formatting          0.3400
+context_injection   0.4200
+surface_noise       0.4000
+
+By perturbation, original prompt, all 5 samples:
+
+perturbation        stored clean repeated
+paraphrase          0.4000
+reordering          0.4240
+formatting          0.3840
+context_injection   0.3680
+surface_noise       0.3960
+
+Diagnostic re-scoring:
+
+I ran a diagnostic re-score on original math generations only, without changing the official result files.
+The diagnostic scorer used more robust answer extraction:
+
+- handles final answer on the next line after "The final answer is:"
+- handles display math wrappers such as \[ ... \]
+- handles nested \boxed{\frac{...}{...}}
+- compares simple numeric equivalents such as 5.5 and 11/2
+
+Result on original math generations:
+
+original math generations: 1250
+stored correct:            493
+stored accuracy:           0.3944
+diagnostic correct:        1000
+diagnostic accuracy:       0.8000
+possible false negatives:  507
+
+By perturbation, original prompt, sample_idx = 0:
+
+perturbation        stored clean single    diagnostic clean single
+paraphrase          0.3200                 0.7800
+reordering          0.3600                 0.8200
+formatting          0.3400                 0.7600
+context_injection   0.4200                 0.8000
+surface_noise       0.4000                 0.8200
+
+By perturbation, original prompt, all 5 samples:
+
+perturbation        stored clean repeated  diagnostic clean repeated
+paraphrase          0.4000                 0.8080
+reordering          0.4240                 0.8120
+formatting          0.3840                 0.7920
+context_injection   0.3680                 0.7840
+surface_noise       0.3960                 0.8040
+
+Concrete false-negative examples:
+
+1. arithmetic sequence problem
+
+Problem:
+What is the 100th term of the arithmetic sequence 6, 10, 14, 18, ...?
+
+Model output final answer:
+402
+
+Reference answer:
+402
+
+Stored result:
+correct = 0
+
+Reason:
+The extractor returned ":" instead of "402" because the output contained "The final answer is:" followed by the answer on the next line.
+
+2. domain/radical problem
+
+Problem:
+What is the smallest real number x in the domain of sqrt((x-3)^2-(x-8)^2)?
+
+Model output:
+\boxed{5.5}
+
+Reference:
+\boxed{\frac{11}{2}}
+
+Stored result:
+correct = 0
+
+Reason:
+5.5 and 11/2 are numerically equal, but the reference extraction failed on nested LaTeX braces inside \boxed{\frac{11}{2}}.
+
+3. linear-equation word problem
+
+Problem:
+Eight pounds of feathers and two ounces of gold cost 932; fourteen pounds of feathers and three ounces of gold cost 1402. What is the cost of five pounds of feathers and five ounces of gold?
+
+Model output final answer:
+2300
+
+Reference answer:
+2300
+
+Stored result:
+correct = 0
+
+Reason:
+Same final-answer extraction problem. The answer appears after a display-math wrapper / next-line final-answer phrase.
+
+Conclusion:
+
+The low stored math_reasoning accuracy is not reliable as a model-performance claim.
+The current evaluator is too strict/fragile for MATH answers and undercounts correct math outputs.
+
+Recommended next step:
+
+Before using math_reasoning PDR numbers in the paper, fix the math answer extractor/evaluator and recompute the RQ1 metrics from existing generation CSVs if possible.
+
+Suggested wording:
+
+Initial math_reasoning accuracy appeared low under the stored exact-match evaluator, but diagnostic inspection found many false negatives caused by fragile final-answer extraction and LaTeX/numeric normalization. Therefore, the current math PDR values should be treated as provisional until the math evaluator is repaired and the metrics are recomputed.
+
+Concrete clean-prompt math wrong example for manual inspection
+
+This is a real wrong answer under the original clean prompt, not just a formatting false negative.
+
+CSV source:
+
+results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+
+Row identity:
+
+case_id: promptrobust_pdr_paraphrase_math_21
+task: math_reasoning
+perturbation: paraphrase
+version: original
+sample_idx: 0
+stored correct: 0
+performance_score: 0.0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Suppose the roots of the polynomial $x^2 - mx + n$ are positive prime integers (not necessarily distinct). Given that $m < 20,$ how many possible values of $n$ are there?
+
+Model answer summary:
+
+The model uses roots p and q, with:
+
+m = p + q
+n = pq
+p and q are positive primes
+p + q < 20
+
+But the model incorrectly excludes many valid products. For example, when p = 2, q = 11 gives m = 13 and n = 22, which is valid because m < 20, but the model says 22 exceeds the limit. It makes the same mistake for several other products.
+
+Model final answer:
+
+8
+
+Reference / standard answer:
+
+18
+
+Why this is genuinely wrong:
+
+The condition is on m = p + q, not on n = pq.
+The model incorrectly treats large n values such as 22, 26, 34, 35, 55, 65, and 77 as invalid even when p + q < 20.
+
+Correct reasoning sketch:
+
+List unordered prime pairs (p, q) with p <= q and p + q < 20:
+
+(2,2), (2,3), (2,5), (2,7), (2,11), (2,13), (2,17)
+(3,3), (3,5), (3,7), (3,11), (3,13)
+(5,5), (5,7), (5,11), (5,13)
+(7,7), (7,11)
+
+Their products n are:
+
+4, 6, 10, 14, 22, 26, 34,
+9, 15, 21, 33, 39,
+25, 35, 55, 65,
+49, 77
+
+These are 18 distinct values.
+
+Therefore the standard answer is 18, and the model answer 8 is genuinely incorrect.
+
+Second concrete clean-prompt math wrong example for manual inspection
+
+This is another real wrong answer under the original clean prompt.
+
+CSV source:
+
+results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+
+Row identity:
+
+case_id: promptrobust_pdr_paraphrase_math_33
+task: math_reasoning
+perturbation: paraphrase
+version: original
+sample_idx: 0
+stored correct: 0
+performance_score: 0.0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: John computes the sum of the elements of each of the 15 two-element subsets of $\{1,2,3,4,5,6\}$. What is the sum of these 15 sums?
+
+Model answer summary:
+
+The model says each element k appears only with elements greater than k, so it uses counts:
+
+1 appears 5 times
+2 appears 4 times
+3 appears 3 times
+4 appears 2 times
+5 appears 1 time
+6 appears 0 times
+
+Then it computes:
+
+1*5 + 2*4 + 3*3 + 4*2 + 5*1 + 6*0
+= 5 + 8 + 9 + 8 + 5 + 0
+= 35
+
+Model final answer:
+
+35
+
+Reference / standard answer:
+
+105
+
+Why this is genuinely wrong:
+
+There are 6 elements. In all two-element subsets, each element appears with every other element, so each element appears 5 times, not 6-k times.
+
+Correct reasoning:
+
+Sum of original set:
+
+1 + 2 + 3 + 4 + 5 + 6 = 21
+
+Each element appears in exactly 5 two-element subsets.
+
+Therefore total sum of all subset sums:
+
+5 * 21 = 105
+
+So the standard answer is 105, and the model answer 35 is genuinely incorrect.
+
+Manual check of all 50 canonical clean math cases
+
+User request:
+
+There are 50 math reasoning questions. Check every wrong question and put the model output and standard answer here.
+
+Checking scope:
+
+- Source CSV: results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+- Task: math_reasoning
+- Version: original clean prompt
+- sample_idx: 0
+- One canonical clean output per math case math_01 through math_50
+- Because the same clean prompt is regenerated under each perturbation group, I used the first available perturbation order as the canonical row, normally paraphrase.
+
+Important note:
+
+The official stored `correct=0` field is not reliable for this manual check because many clean math answers are false negatives caused by answer extraction and formatting. I therefore manually excluded equivalent answers such as:
+
+- \frac{9}{7} vs \dfrac{9}{7}
+- [-2, 7] vs x \in [-2,7]
+- 40.00 vs $40
+- 7(x - 3)(x + 3) vs 7(x+3)(x-3)
+- 2187/5625 vs 243/625, which are equivalent after simplification
+
+Manual-check summary:
+
+canonical clean math cases checked: 50
+manual true wrong cases found: 6
+
+Manual true wrong case IDs:
+
+math_08
+math_09
+math_18
+math_21
+math_24
+math_33
+
+Wrong case 1: math_08
+
+case_id: promptrobust_pdr_paraphrase_math_08
+version: original
+sample_idx: 0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Mr. Madoff invests 1000 dollars in a fund that compounds annually at a constant interest rate.  After three years, his investment has grown to 1225 dollars.  What is the annual interest rate, as a percentage?  (Round your answer to the nearest integer.)
+
+Model output:
+
+To find the annual interest rate, we can use the formula for compound interest:
+
+\[
+A = P(1 + r)^t
+\]
+
+Where:
+- \( A \) is the amount of money accumulated after n years, including interest.
+- \( P \) is the principal amount (the initial amount of money).
+- \( r \) is the annual interest rate (decimal).
+- \( t \) is the time the money is invested for in years.
+
+In this case:
+- \( A = 1225 \)
+- \( P = 1000 \)
+- \( t = 3 \)
+
+We can rearrange the formula to solve for \( r \):
+
+\[
+1225 = 1000(1 + r)^3
+\]
+
+Dividing both sides by 1000 gives:
+
+\[
+1.225 = (1 + r)^3
+\]
+
+Now we take the cube root of both sides:
+
+\[
+1 + r = (1.225)^{1/3}
+\]
+
+Calculating the cube root:
+
+\[
+1 + r \approx 1.075
+\]
+
+Now, subtract 1 from both sides:
+
+\[
+r \approx 1.075 - 1
+\]
+
+\[
+r \approx 0.075
+\]
+
+To convert \( r \) to a percentage, we multiply by 100:
+
+\[
+r \approx 0.075 \times 100
+\]
+
+\[
+r \approx 7.5
+\]
+
+Rounding to the nearest integer:
+
+The annual interest rate is approximately 8%.
+
+8
+
+Model final answer:
+
+8
+
+Standard answer:
+
+7
+
+Manual reason:
+
+The cube root estimate is wrong. Since \(1.07^3 \approx 1.225\), the annual rate is about 7%, not 7.5% rounded to 8%.
+
+Wrong case 2: math_09
+
+case_id: promptrobust_pdr_paraphrase_math_09
+version: original
+sample_idx: 0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Four distinct integers $a$, $b$, $c$ and $d$ have the property that when added in pairs, the sums 10, 18, 19, 20, 21, and 29 are obtained. What are the four integers in increasing order? (place a comma and then a space between each integer)
+
+Model output:
+
+The model reasons from the six pair sums and eventually proposes:
+
+The integers are \(1, 9, 10, 19\).
+
+The correct increasing order of integers is:
+
+1, 9, 10, 19
+
+Model final answer:
+
+1, 9, 10, 19
+
+Standard answer:
+
+4, 6, 14, 15
+
+Manual reason:
+
+The model's proposed numbers do not generate the required pair sums. For example, 1 + 10 = 11 and 9 + 19 = 28, neither of which appears in the required set.
+
+Wrong case 3: math_18
+
+case_id: promptrobust_pdr_paraphrase_math_18
+version: original
+sample_idx: 0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: If $A$, $B$ and $C$ are positive integers such that $\frac{A\sqrt{B}}{C} = \frac{9}{2\sqrt{3}}$, what is the value of $A+B+C$ given that $A$ and $C$ have no common prime factors, and $B$ has no perfect-square factors other than 1?
+
+Model output:
+
+The model concludes:
+
+1. \(A = 9\)
+2. \(B = 3\)
+3. \(C = 2\)
+
+Adding these together:
+
+\[
+A + B + C = 9 + 3 + 2 = 14
+\]
+
+Thus the final answer is:
+
+\[
+\boxed{14}
+\]
+
+Model final answer:
+
+14
+
+Standard answer:
+
+8
+
+Manual reason:
+
+\[
+\frac{9}{2\sqrt{3}} = \frac{9\sqrt{3}}{6} = \frac{3\sqrt{3}}{2}
+\]
+
+So \(A=3\), \(B=3\), \(C=2\), and \(A+B+C=8\). The model used \(A=9\), which is not reduced correctly.
+
+Wrong case 4: math_21
+
+case_id: promptrobust_pdr_paraphrase_math_21
+version: original
+sample_idx: 0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: Suppose the roots of the polynomial $x^2 - mx + n$ are positive prime integers (not necessarily distinct). Given that $m < 20,$ how many possible values of $n$ are there?
+
+Model output:
+
+The model lists some prime pairs but incorrectly excludes several valid products. It concludes:
+
+Thus, there are \(8\) distinct possible values for \(n\).
+
+Final answer:
+
+\[
+8
+\]
+
+Model final answer:
+
+8
+
+Standard answer:
+
+18
+
+Manual reason:
+
+The condition is on \(m=p+q\), not on \(n=pq\). The model incorrectly excludes valid products such as 22, 26, 34, 35, 55, 65, and 77 even when \(p+q<20\).
+
+Wrong case 5: math_24
+
+case_id: promptrobust_pdr_paraphrase_math_24
+version: original
+sample_idx: 0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: At constant temperature, the pressure of a sample of gas is inversely proportional to its volume. I have some hydrogen in a 3.67 liter container with a pressure of 4 kPa. If I move all of it to a 1.835 liter container at the same temperature, what will the new pressure be in kPa?
+
+Model output:
+
+The model sets:
+
+\[
+P_1 V_1 = P_2 V_2
+\]
+
+and computes:
+
+\[
+P_2 = \frac{14.68}{1.835}
+\]
+
+Then it says:
+
+\[
+P_2 \approx 8.01
+\]
+
+Thus, the new pressure \(P_2\) is approximately:
+
+8.01 kPa
+
+Model final answer:
+
+8.01 kPa
+
+Standard answer:
+
+8
+
+Manual reason:
+
+\[
+14.68 / 1.835 = 8
+\]
+
+The model made a small arithmetic/division error. If a tolerant numeric scorer allowed rounding, this might be treated as near-correct, but under the exact MATH-style answer it is wrong.
+
+Wrong case 6: math_33
+
+case_id: promptrobust_pdr_paraphrase_math_33
+version: original
+sample_idx: 0
+
+Clean prompt:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Problem: John computes the sum of the elements of each of the 15 two-element subsets of $\{1,2,3,4,5,6\}$. What is the sum of these 15 sums?
+
+Model output:
+
+The model says each element \(k\) only pairs with elements greater than itself, so it uses:
+
+- For \(k = 1\): \(1 \times 5 = 5\)
+- For \(k = 2\): \(2 \times 4 = 8\)
+- For \(k = 3\): \(3 \times 3 = 9\)
+- For \(k = 4\): \(4 \times 2 = 8\)
+- For \(k = 5\): \(5 \times 1 = 5\)
+- For \(k = 6\): \(6 \times 0 = 0\)
+
+Then:
+
+\[
+5 + 8 + 9 + 8 + 5 + 0 = 35
+\]
+
+Thus, the sum of all the sums of the elements of the two-element subsets is \(35\).
+
+The final answer is:
+
+35
+
+Model final answer:
+
+35
+
+Standard answer:
+
+105
+
+Manual reason:
+
+Each element appears in 5 two-element subsets, not \(6-k\) subsets. The correct total is:
+
+\[
+(1+2+3+4+5+6) \times 5 = 21 \times 5 = 105
+\]
+
+Final manual conclusion:
+
+Under this canonical clean-sample check, 6 out of 50 math questions are true wrong answers.
+Many more rows are marked wrong in the stored CSV, but a substantial share are evaluator false negatives or equivalent formatting differences.
+
+Original clean prompt code-generation accuracy check
+
+User request:
+
+For original prompt input, what is the coding-task correctness? Check every wrong coding question carefully using the same method as math, and put the model output and standard answer in this log.
+
+Checking scope:
+
+- Source CSV: results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+- Task: code_generation
+- Dataset: HumanEval
+- Version: original clean prompt
+- sample_idx: 0
+- One canonical clean output per HumanEval case humaneval_01 through humaneval_50
+- Because the same original clean prompt is repeated under each perturbation group, I used one canonical row per case, normally the paraphrase-group original row.
+
+Official stored clean code result:
+
+canonical clean code cases: 50
+stored passed: 26
+stored wrong: 24
+stored clean single accuracy: 26 / 50 = 0.5200
+
+Stored wrong case IDs:
+
+humaneval_01
+humaneval_05
+humaneval_06
+humaneval_08
+humaneval_10
+humaneval_11
+humaneval_12
+humaneval_13
+humaneval_14
+humaneval_15
+humaneval_21
+humaneval_22
+humaneval_23
+humaneval_24
+humaneval_26
+humaneval_29
+humaneval_30
+humaneval_31
+humaneval_35
+humaneval_36
+humaneval_43
+humaneval_45
+humaneval_48
+humaneval_49
+
+Important evaluator finding:
+
+The official stored code correctness has a major false-negative issue.
+Many model outputs are valid function bodies inside Markdown code fences, for example:
+
+```python
+    return len(string)
+```
+
+The current evaluator strips the code fence using a regex that also removes the leading indentation on the first code line. Then it appends the result to the HumanEval prompt prefix. This can produce:
+
+- IndentationError
+- SyntaxError: 'return' outside function
+
+even when the function body is logically correct.
+
+Diagnostic robust evaluator:
+
+I re-ran the 50 canonical clean code outputs locally against the HumanEval unit tests.
+The diagnostic evaluator preserved indentation inside code fences and also tried a normalized body-indented candidate.
+
+Diagnostic result:
+
+canonical clean code cases: 50
+diagnostic robust passed: 49
+diagnostic robust wrong: 1
+diagnostic robust clean accuracy: 49 / 50 = 0.9800
+
+Recovered formatting/evaluator false negatives:
+
+23 of the 24 stored wrong cases passed after robust code extraction:
+
+humaneval_01
+humaneval_05
+humaneval_06
+humaneval_08
+humaneval_10
+humaneval_12
+humaneval_13
+humaneval_14
+humaneval_15
+humaneval_21
+humaneval_22
+humaneval_23
+humaneval_24
+humaneval_26
+humaneval_29
+humaneval_30
+humaneval_31
+humaneval_35
+humaneval_36
+humaneval_43
+humaneval_45
+humaneval_48
+humaneval_49
+
+These should not be treated as real code-generation failures. They are evaluator/code-extraction failures.
+
+The only robust true wrong code case:
+
+humaneval_11
+
+Row identity:
+
+case_id: promptrobust_pdr_paraphrase_humaneval_11
+task: code_generation
+dataset: HumanEval
+version: original
+sample_idx: 0
+entry_point: make_palindrome
+stored correct: 0
+diagnostic robust result: failed
+failure type: AssertionError
+
+Clean prompt:
+
+Complete the following Python function. Return only valid Python code, with no explanation.
+
+```python
+def is_palindrome(string: str) -> bool:
+    """ Test if given string is a palindrome """
+    return string == string[::-1]
+
+
+def make_palindrome(string: str) -> str:
+    """ Find the shortest palindrome that begins with a supplied string.
+    Algorithm idea is simple:
+    - Find the longest postfix of supplied string that is a palindrome.
+    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.
+    >>> make_palindrome('')
+    ''
+    >>> make_palindrome('cat')
+    'catac'
+    >>> make_palindrome('cata')
+    'catac'
+    """
+```
+
+Model output:
+
+```python
+def make_palindrome(string: str) -> str:
+    """ Find the shortest palindrome that begins with a supplied string.
+    Algorithm idea is simple:
+    - Find the longest postfix of supplied string that is a palindrome.
+    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.
+    >>> make_palindrome('')
+    ''
+    >>> make_palindrome('cat')
+    'catac'
+    >>> make_palindrome('cata')
+    'catac'
+    """
+    for i in range(len(string), -1, -1):
+        if string[:i] == string[:i][::-1]:
+            return string + string[i:][::-1]
+    return string
+```
+
+Standard answer / HumanEval tests:
+
+```python
+def check(candidate):
+    assert candidate('') == ''
+    assert candidate('x') == 'x'
+    assert candidate('xyz') == 'xyzyx'
+    assert candidate('xyx') == 'xyx'
+    assert candidate('jerry') == 'jerryrrej'
+```
+
+Why the model output is wrong:
+
+The required algorithm should find the longest palindromic suffix of the input string.
+The model instead checks whether the prefix string[:i] is a palindrome:
+
+```python
+if string[:i] == string[:i][::-1]:
+```
+
+This is the wrong side of the string. For example:
+
+- Input: "xyz"
+- Expected output: "xyzyx"
+- Model output: "xyzyx" may pass this case by accident.
+- Input: "jerry"
+- Expected output: "jerryrrej"
+- Model logic returns too early based on a palindromic prefix and fails the HumanEval test.
+
+Correct idea:
+
+The check should examine suffixes, roughly:
+
+```python
+for i in range(len(string)):
+    if is_palindrome(string[i:]):
+        return string + string[:i][::-1]
+```
+
+Final code-generation conclusion:
+
+The official stored original clean code accuracy is 0.5200, but this is not reliable because 23 out of 24 stored wrong cases are evaluator false negatives caused by code-fence/indentation extraction.
+
+After robust local re-evaluation of the same 50 original clean outputs, the code-generation clean accuracy is:
+
+49 / 50 = 0.9800
+
+Only humaneval_11 is a confirmed real logic error under the original clean prompt.
+
+Recommended action:
+
+Before using code_generation PDR results in the paper, fix the code evaluator to preserve indentation inside Markdown code fences and recompute the RQ1 metrics from the existing generation CSVs.
+
+Coding true wrong answer vs standard answer
+
+User request:
+
+Put the coding wrong-question answer and the standard answer into log.txt.
+
+Checking scope:
+
+- Source CSV: results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+- Source HumanEval local Arrow fields: prompt, canonical_solution, test, entry_point
+- Task: code_generation
+- Version: original clean prompt
+- sample_idx: 0
+- Canonical clean code cases checked: 50
+
+Important result:
+
+Official stored wrong cases: 24
+Robust re-evaluation true wrong cases: 1
+
+The other 23 stored wrong code cases are evaluator false negatives caused by Markdown code fence / indentation extraction, not true code logic failures.
+
+Only true wrong coding case:
+
+case_id: promptrobust_pdr_paraphrase_humaneval_11
+entry_point: make_palindrome
+stored correct: 0
+robust re-evaluation: failed HumanEval tests
+
+Clean prompt:
+
+```python
+def is_palindrome(string: str) -> bool:
+    """ Test if given string is a palindrome """
+    return string == string[::-1]
+
+
+def make_palindrome(string: str) -> str:
+    """ Find the shortest palindrome that begins with a supplied string.
+    Algorithm idea is simple:
+    - Find the longest postfix of supplied string that is a palindrome.
+    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.
+    >>> make_palindrome('')
+    ''
+    >>> make_palindrome('cat')
+    'catac'
+    >>> make_palindrome('cata')
+    'catac'
+    """
+```
+
+Model output:
+
+```python
+def make_palindrome(string: str) -> str:
+    """ Find the shortest palindrome that begins with a supplied string.
+    Algorithm idea is simple:
+    - Find the longest postfix of supplied string that is a palindrome.
+    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.
+    >>> make_palindrome('')
+    ''
+    >>> make_palindrome('cat')
+    'catac'
+    >>> make_palindrome('cata')
+    'catac'
+    """
+    for i in range(len(string), -1, -1):
+        if string[:i] == string[:i][::-1]:
+            return string + string[i:][::-1]
+    return string
+```
+
+Standard answer / canonical_solution:
+
+```python
+    if not string:
+        return ''
+
+    beginning_of_suffix = 0
+
+    while not is_palindrome(string[beginning_of_suffix:]):
+        beginning_of_suffix += 1
+
+    return string + string[:beginning_of_suffix][::-1]
+```
+
+Standard HumanEval tests:
+
+```python
+def check(candidate):
+    assert candidate('') == ''
+    assert candidate('x') == 'x'
+    assert candidate('xyz') == 'xyzyx'
+    assert candidate('xyx') == 'xyx'
+    assert candidate('jerry') == 'jerryrrej'
+```
+
+Why the model answer is wrong:
+
+The correct algorithm must find the longest palindromic suffix of the string.
+The standard solution checks suffixes:
+
+```python
+string[beginning_of_suffix:]
+```
+
+The model instead checks prefixes:
+
+```python
+string[:i]
+```
+
+This is the wrong side of the string. It can pass some simple cases by accident, but it fails the HumanEval tests, especially:
+
+```python
+make_palindrome('jerry') == 'jerryrrej'
+```
+
+Final conclusion:
+
+For the original clean coding prompt, after robust re-evaluation, the true clean code accuracy is:
+
+49 / 50 = 0.9800
+
+The only confirmed coding wrong answer is humaneval_11 / make_palindrome, shown above with model output and standard answer.
+
+RQ1 50x5 recomputation after math/code evaluator audit
+
+User request:
+
+Recompute yesterday's 50-case data using the updated checking results.
+
+Source:
+
+results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+
+Recomputed output files:
+
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_generation_scores.csv
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_metrics.csv
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_report.md
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_summary.json
+
+Recomputed evaluation policy:
+
+- factual_qa: kept original continuous SQuAD-style performance_score.
+- math_reasoning: used repaired final-answer extraction, numeric equivalence, and manually audited equivalences such as intervals, dollars, fractions, and factored forms.
+- code_generation: used robust HumanEval execution that preserves indentation inside Markdown code fences.
+
+Important:
+
+This is a recomputation from existing generation outputs. It does not call the model again.
+
+Aggregate recomputed result:
+
+metric_rows: 750
+generation_rows: 7500
+changed_generation_scores: 2392
+
+Average clean single-sample performance:     0.9413
+Average perturbed single-sample performance: 0.9382
+Average clean repeated performance:          0.9426
+Average perturbed repeated performance:      0.9395
+
+Dataset-level uncorrected PDR loss:
+
+1 - 0.9426 = 0.0574
+
+Dataset-level perturbed PDR loss:
+
+1 - 0.9395 = 0.0605
+
+Dataset-level corrected PDR:
+
+0.0605 - 0.0574 = 0.0031
+
+Interpretation:
+
+After correcting math/code evaluator false negatives, the aggregate clean performance is much higher than in the original report.
+The corrected PDR is now 0.0031, i.e. a 0.31 percentage-point absolute drop.
+
+Task-level recomputed result:
+
+task              n     clean single   perturbed single   clean repeated   perturbed repeated   uncorrected loss   corrected PDR
+factual_qa        250   0.9800         0.9787             0.9789           0.9770               0.0211             0.0020
+math_reasoning    250   0.8800         0.8680             0.8776           0.8736               0.1224             0.0040
+code_generation   250   0.9640         0.9680             0.9712           0.9680               0.0288             0.0032
+
+Task-by-perturbation recomputed corrected PDR:
+
+paraphrase / factual_qa:          0.0072
+paraphrase / math_reasoning:      0.0160
+paraphrase / code_generation:     0.0200
+
+reordering / factual_qa:         -0.0013
+reordering / math_reasoning:      0.0240
+reordering / code_generation:    -0.0080
+
+formatting / factual_qa:          0.0040
+formatting / math_reasoning:     -0.0080
+formatting / code_generation:     0.0000
+
+context_injection / factual_qa:   0.0013
+context_injection / math_reasoning: -0.0120
+context_injection / code_generation: 0.0040
+
+surface_noise / factual_qa:      -0.0013
+surface_noise / math_reasoning:   0.0000
+surface_noise / code_generation:  0.0000
+
+Comparison with original stored report:
+
+Original stored clean repeated performance:     0.6279
+Recomputed clean repeated performance:          0.9426
+
+Original stored perturbed repeated performance: 0.6179
+Recomputed perturbed repeated performance:      0.9395
+
+Original stored corrected PDR:                  0.0100
+Recomputed corrected PDR:                       0.0031
+
+Main conclusion:
+
+The original RQ1 PDR result was strongly affected by evaluator false negatives in math_reasoning and code_generation.
+After recomputing with repaired evaluation, clean and perturbed performance are both high, and the aggregate perturbation-specific loss is very small: corrected PDR = 0.0031.
+
+Recommended paper phrasing:
+
+After auditing the math and code evaluators, we recomputed the 50x5 RQ1 results from the existing generations. The corrected evaluation substantially increased clean repeated performance from 0.6279 to 0.9426, indicating that the original lower score was largely due to evaluator false negatives. Under the repaired evaluation, perturbed repeated performance is 0.9395, yielding a small corrected PDR of 0.0031, or a 0.31 percentage-point absolute drop.
+
+Clean-prompt repeated-input PDR by task
+
+User question:
+
+What is the PDR when the clean prompt is input multiple times? Report by task.
+
+Answer:
+
+For repeated clean-prompt inputs, the relevant quantity is the clean-prompt loss:
+
+clean repeated PDR/loss = 1 - clean repeated performance
+
+This is also called `uncorrected_pdr_loss` in the current scripts.
+
+Important distinction:
+
+If clean prompt is compared against itself, the additional corrected PDR is 0 by definition.
+But the clean prompt still has a nonzero baseline error/loss because the model does not answer every clean prompt correctly.
+
+Using the recomputed V2 results:
+
+task              clean repeated performance   clean repeated PDR/loss
+factual_qa        0.9789                       0.0211
+math_reasoning    0.8776                       0.1224
+code_generation   0.9712                       0.0288
+
+Interpretation:
+
+factual_qa:
+
+clean repeated performance = 0.9789
+clean repeated PDR/loss = 1 - 0.9789 = 0.0211
+
+This means the model's repeated clean-prompt error/loss on factual QA is about 2.11 percentage points.
+
+math_reasoning:
+
+clean repeated performance = 0.8776
+clean repeated PDR/loss = 1 - 0.8776 = 0.1224
+
+This means the model's repeated clean-prompt error/loss on math reasoning is about 12.24 percentage points.
+
+code_generation:
+
+clean repeated performance = 0.9712
+clean repeated PDR/loss = 1 - 0.9712 = 0.0288
+
+This means the model's repeated clean-prompt error/loss on code generation is about 2.88 percentage points.
+
+Overall:
+
+average clean repeated performance = 0.9426
+overall clean repeated PDR/loss = 1 - 0.9426 = 0.0574
+
+So after evaluator repair, the clean-prompt repeated-input baseline loss is:
+
+- factual_qa: 0.0211
+- math_reasoning: 0.1224
+- code_generation: 0.0288
+- overall: 0.0574
+
+Recommended wording:
+
+Under repeated clean-prompt sampling, the uncorrected PDR loss is 0.0574 overall. By task, clean-prompt repeated loss is 0.0211 for factual QA, 0.1224 for math reasoning, and 0.0288 for code generation. These values measure baseline clean-prompt error, not perturbation-induced loss; the perturbation-specific corrected PDR is computed separately by subtracting clean loss from perturbed loss.
+
+Math reasoning clean-prompt accuracy by repeated sample
+
+User question:
+
+Using math reasoning as the example, the clean prompt is currently input 5 times. What is the model's correctness for each of the 5 outputs?
+
+Source:
+
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_generation_scores.csv
+
+Scoring:
+
+Recomputed V2 math evaluator with repaired answer extraction and manually audited equivalence handling.
+
+Important counting note:
+
+There are two useful counting views:
+
+1. Full experiment-row view:
+   Each sample index has 250 math original-clean rows because the 50 math cases are repeated under 5 perturbation-family groups.
+
+2. Canonical 50-case view:
+   Each sample index has 50 math original-clean rows. This uses the paraphrase-group original clean rows as one representative clean set.
+
+Full experiment-row view:
+
+sample_idx   n     correct   accuracy
+0            250   220       0.8800
+1            250   223       0.8920
+2            250   221       0.8840
+3            250   217       0.8680
+4            250   216       0.8640
+
+Canonical 50-case view:
+
+sample_idx   n    correct   accuracy
+0            50   44        0.8800
+1            50   46        0.9200
+2            50   44        0.8800
+3            50   42        0.8400
+4            50   43        0.8600
+
+Interpretation:
+
+For the canonical 50 math questions, the five clean-prompt repeated generations have accuracies:
+
+sample 1: 44/50 = 0.8800
+sample 2: 46/50 = 0.9200
+sample 3: 44/50 = 0.8800
+sample 4: 42/50 = 0.8400
+sample 5: 43/50 = 0.8600
+
+The average across the five canonical clean samples is:
+
+(0.8800 + 0.9200 + 0.8800 + 0.8400 + 0.8600) / 5 = 0.8760
+
+This is close to the task-level repeated clean performance reported in the full recomputed RQ1 table.
+
+Math reasoning clean-prompt-only repeated accuracy, no perturbation rows included
+
+Clarified user question:
+
+Using math reasoning as the example, consider only clean prompt repeated inputs, with no perturbation included. Each question currently has 5 clean outputs. What are the accuracies for the 5 repeated outputs?
+
+Correct counting scope:
+
+- Task: math_reasoning
+- Prompt version: original / clean
+- Perturbation rows: not included as perturbed prompts
+- Canonical clean set: 50 math questions
+- Samples per question: 5
+- Total evaluated clean outputs: 50 * 5 = 250
+
+Because the CSV stores original clean rows under each perturbation-family group, using all `version=original` rows would count the same clean-prompt design multiple times. For this clean-only check, I use one canonical clean copy per question, the paraphrase-group original rows:
+
+version = original
+perturbation = paraphrase
+task = math_reasoning
+
+This does not mean the prompt is paraphrased. These rows are still the original clean prompts; `paraphrase` is only the experiment group label attached to that case_id.
+
+Clean-only math accuracy by repeated output:
+
+sample_idx   clean outputs   correct   accuracy
+0            50              44        0.8800
+1            50              46        0.9200
+2            50              44        0.8800
+3            50              42        0.8400
+4            50              43        0.8600
+
+In plain words:
+
+First clean generation for each of the 50 math questions:
+
+44 correct out of 50 = 88.00%
+
+Second clean generation:
+
+46 correct out of 50 = 92.00%
+
+Third clean generation:
+
+44 correct out of 50 = 88.00%
+
+Fourth clean generation:
+
+42 correct out of 50 = 84.00%
+
+Fifth clean generation:
+
+43 correct out of 50 = 86.00%
+
+Average clean-only math accuracy across the 5 repeated generations:
+
+(44 + 46 + 44 + 42 + 43) / (50 * 5)
+= 219 / 250
+= 0.8760
+
+So, with no perturbation included, the math reasoning clean-prompt repeated accuracy is:
+
+sample 1: 0.8800
+sample 2: 0.9200
+sample 3: 0.8800
+sample 4: 0.8400
+sample 5: 0.8600
+overall across 5 clean repeats: 0.8760
+
+Manual inspection of math clean-prompt cases with inconsistent correctness across 5 outputs
+
+User request:
+
+Check the clean-prompt repeated outputs. For each math question whose 5 clean outputs differ in correctness, explain how the wrong outputs are wrong.
+
+Scope:
+
+- Task: math_reasoning
+- Prompt: clean/original only
+- Perturbation prompts: excluded
+- Canonical clean set: paraphrase-group original rows
+- 50 questions * 5 clean outputs = 250 outputs
+- Scoring source: results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_generation_scores.csv
+- Generation source: results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+
+Cases with inconsistent correctness across the 5 clean outputs:
+
+math_03, math_08, math_09, math_11, math_18, math_22, math_26, math_29, math_33, math_35
+
+Important manual-audit note:
+
+Two of these inconsistencies are not real model errors:
+
+- math_11 sample 4 is mathematically correct but the evaluator extracted the full expression `h^{-1}(x)=...` instead of just the final expression.
+- math_26 sample 4 is mathematically correct but uses the unicode infinity symbol / encoding variant, which the evaluator did not normalize.
+
+Therefore, the table below distinguishes true model errors from evaluator/format artifacts.
+
+Detailed comparison:
+
+| case | standard answer | five clean outputs | wrong / issue explanation |
+|---|---|---|---|
+| math_03 | 9/7 | sample1 9/7 correct; sample2 9/7 correct; sample3 9/7 correct; sample4 9/7 correct; sample5 16/7 wrong | sample5 confuses the ceiling/fractional-part setup and ends with x=16/7. Checking: ceil(16/7)+16/7 = 3+16/7 = 37/7, not 23/7. |
+| math_08 | 7 | sample1 8 wrong; sample2 7 correct; sample3 8 wrong; sample4 8 wrong; sample5 7 correct | Wrong samples approximate cube root too high and round 7.5% to 8%. Correct rate is about 7%, because 1.07^3 is about 1.225. |
+| math_09 | 4, 6, 14, 15 | sample1 1,9,10,19 wrong; sample2 3,7,8,21 wrong; sample3 4,6,14,15 correct; sample4 3,5,15,16 wrong; sample5 4,6,14,15 correct | Wrong samples propose integer sets whose pairwise sums do not match the required set 10,18,19,20,21,29. |
+| math_11 | (x+2)/7 | sample1 correct; sample2 correct; sample3 correct; sample4 `h^{-1}(x)=(x+2)/7`; sample5 correct | sample4 is actually correct. This is an evaluator false negative caused by including the function label in the extracted answer. |
+| math_18 | 8 | sample1 14 wrong; sample2 8 correct; sample3 8 correct; sample4 8 correct; sample5 12 wrong | sample1 fails to reduce 9/(2sqrt(3)) correctly and uses A=9,B=3,C=2, giving 14. Correct is 3sqrt(3)/2, so A=3,B=3,C=2 and sum is 8. sample5 also gives an incorrect parameter sum. |
+| math_22 | $40 | sample1 40.00 correct; sample2 10 wrong; sample3 20 wrong; sample4 20.00 wrong; sample5 20 wrong | Wrong samples start from the original paid price 1.25 instead of the current offer 2.50. Since the current offer doubles 4 more times, the correct future offer is 2.50 * 16 = 40. |
+| math_26 | [0,infty) | sample1 correct; sample2 correct; sample3 correct; sample4 `[0, infinity)` unicode/encoding variant; sample5 correct | sample4 is actually correct. This is an evaluator false negative caused by unicode infinity / encoding normalization. |
+| math_29 | 5 | sample1 5 correct; sample2 5 correct; sample3 -1/2 wrong; sample4 5 correct; sample5 5 correct | sample3 mishandles complex conjugate multiplication. It computes (3/2)^2 - (sqrt(11)/2)^2 and forgets that i^2=-1, so the second term should add, giving 5. |
+| math_33 | 105 | sample1 35 wrong; sample2 105 correct; sample3 105 correct; sample4 105 correct; sample5 35 wrong | Wrong samples count each element only with larger elements, using counts 5,4,3,2,1,0. In all two-element subsets, each element appears 5 times, so total is 5*(1+2+3+4+5+6)=105. |
+| math_35 | 243/625 | sample1 2187/5625 correct equivalent; sample2 243/625 correct; sample3 243/15625 wrong; sample4 729/19683 wrong; sample5 27/25 wrong | Wrong samples make arithmetic/simplification errors in the eighth term of the geometric sequence. The correct value is (125/9)*(3/5)^7 = 243/625. |
+
+Manual conclusion:
+
+Among the 10 math questions with inconsistent clean-output correctness:
+
+- 8 cases contain real model-output variability with some wrong samples:
+  math_03, math_08, math_09, math_18, math_22, math_29, math_33, math_35
+
+- 2 cases are evaluator/format artifacts rather than real wrong answers:
+  math_11, math_26
+
+This means the clean-prompt repeated outputs show real stochastic variability on a small number of math problems, but the V2 evaluator still has a few normalization gaps for symbolic/function-label and unicode-infinity answers.
+
+Recommendation: using PDR/correctness to estimate model sample noise
+
+User question:
+
+Can we get model sample noise from PDR, analogous to how similarity-based sample noise is computed?
+
+Short answer:
+
+Yes. For PDR/correctness, the cleanest approach is to define sample noise as within-prompt variability in correctness across repeated generations.
+
+Similarity sample noise uses output distances among repeated generations from the same prompt.
+PDR sample noise should analogously use correctness/performance differences among repeated generations from the same prompt.
+
+Recommended definition:
+
+For each case and prompt version, we have repeated correctness scores:
+
+clean prompt:
+
+c_1, c_2, c_3, c_4, c_5
+
+where each c_i is usually 0 or 1 for math/code, and can be continuous for factual QA.
+
+Define correctness sample noise as the average pairwise absolute difference:
+
+PDR_sample_noise_case = average over i<j of |c_i - c_j|
+
+For binary correctness, this has an intuitive meaning:
+
+- If all 5 outputs are correct: [1,1,1,1,1], sample noise = 0
+- If all 5 outputs are wrong: [0,0,0,0,0], sample noise = 0
+- If outputs are mixed, e.g. [1,1,1,0,0], sample noise > 0
+
+For n samples with k correct and n-k wrong, binary pairwise sample noise is:
+
+PDR_sample_noise = k * (n-k) / C(n,2)
+
+For n=5:
+
+[1,1,1,1,1] -> 0/10 = 0.0
+[1,1,1,1,0] -> 4/10 = 0.4
+[1,1,1,0,0] -> 6/10 = 0.6
+[1,1,0,0,0] -> 6/10 = 0.6
+[1,0,0,0,0] -> 4/10 = 0.4
+[0,0,0,0,0] -> 0/10 = 0.0
+
+This is better than standard deviation for reporting because it directly matches the similarity-sample-noise idea: pairwise within-prompt variability.
+
+How to connect it to PDR:
+
+PDR is based on performance loss:
+
+clean_loss = 1 - mean(clean correctness)
+perturbed_loss = 1 - mean(perturbed correctness)
+corrected_PDR = perturbed_loss - clean_loss
+
+The corresponding sample-noise baseline should not be subtracted from loss directly as if it were loss.
+Instead, it should be reported as uncertainty/instability in the correctness estimate.
+
+Recommended paired quantities:
+
+1. Clean repeated performance:
+
+mean(c_1,...,c_5)
+
+2. Clean repeated loss / uncorrected PDR:
+
+1 - mean(c_1,...,c_5)
+
+3. Clean correctness sample noise:
+
+average pairwise |c_i - c_j|
+
+4. Perturbed repeated performance:
+
+mean(p_1,...,p_5)
+
+5. Corrected PDR:
+
+mean(clean correctness) - mean(perturbed correctness)
+
+6. Perturbed correctness sample noise:
+
+average pairwise |p_i - p_j|
+
+7. Optional pooled sample noise:
+
+PDR_sample_noise_pooled = average(clean_sample_noise, perturbed_sample_noise)
+
+For comparing perturbation effect to sample noise:
+
+Use a ratio or contrast such as:
+
+effect_to_noise_ratio = abs(corrected_PDR) / pooled_PDR_sample_noise
+
+or:
+
+noise_adjusted_PDR_signal = abs(corrected_PDR) - pooled_PDR_sample_noise
+
+But be careful:
+
+If using subtraction, call it "signal beyond within-prompt correctness variability", not "corrected PDR loss".
+
+Recommended statistical test:
+
+Use bootstrap resampling over the 5 clean and 5 perturbed samples for each case:
+
+1. Resample 5 clean outputs with replacement.
+2. Resample 5 perturbed outputs with replacement.
+3. Compute clean_mean, perturbed_mean, corrected_PDR.
+4. Repeat many times.
+5. Report confidence interval for corrected_PDR.
+6. Estimate probability that corrected_PDR > 0.
+
+This is stronger than only reporting a sample-noise scalar.
+
+Recommended implementation plan:
+
+Add these columns to the recomputed metrics CSV:
+
+- clean_correctness_pairwise_noise
+- perturbed_correctness_pairwise_noise
+- pooled_correctness_pairwise_noise
+- abs_corrected_pdr
+- effect_to_noise_ratio
+- pdr_signal_beyond_noise = abs_corrected_pdr - pooled_correctness_pairwise_noise
+- pdr_signal_beyond_noise_clipped = max(0, abs_corrected_pdr - pooled_correctness_pairwise_noise)
+
+For task-level reporting:
+
+Aggregate by task:
+
+- mean clean repeated performance
+- mean perturbed repeated performance
+- mean corrected PDR
+- mean clean correctness sample noise
+- mean perturbed correctness sample noise
+- mean pooled correctness sample noise
+- mean effect-to-noise ratio
+
+Important interpretation:
+
+Do not say:
+
+"sample noise is additional PDR loss"
+
+Better wording:
+
+"Correctness sample noise measures within-prompt variability in task success across repeated generations. It quantifies how unstable the performance estimate is even before perturbation. Corrected PDR measures the mean clean-vs-perturbed performance difference. Comparing corrected PDR with correctness sample noise indicates whether the perturbation effect is large relative to ordinary repeated-generation variability."
+
+Best recommendation for this project:
+
+Use pairwise correctness sample noise as the PDR analogue of embedding-distance sample noise.
+
+Formula:
+
+correctness_sample_noise = average_{i<j} |score_i - score_j|
+
+Then report corrected PDR and sample noise side by side, and optionally add bootstrap confidence intervals for corrected PDR.
+
+Why [1,1,1,1,0] has sample noise = 0.4
+
+User question:
+
+Why is sample noise 0.4 for [1,1,1,1,0]?
+
+Answer:
+
+The recommended correctness sample noise is the average pairwise absolute difference:
+
+sample_noise = average_{i<j} |score_i - score_j|
+
+For 5 repeated outputs, there are:
+
+C(5,2) = 5 * 4 / 2 = 10
+
+pairwise comparisons.
+
+For:
+
+[1, 1, 1, 1, 0]
+
+label the five outputs as:
+
+s1 = 1
+s2 = 1
+s3 = 1
+s4 = 1
+s5 = 0
+
+All 10 pairwise differences are:
+
+|s1 - s2| = |1 - 1| = 0
+|s1 - s3| = |1 - 1| = 0
+|s1 - s4| = |1 - 1| = 0
+|s1 - s5| = |1 - 0| = 1
+
+|s2 - s3| = |1 - 1| = 0
+|s2 - s4| = |1 - 1| = 0
+|s2 - s5| = |1 - 0| = 1
+
+|s3 - s4| = |1 - 1| = 0
+|s3 - s5| = |1 - 0| = 1
+
+|s4 - s5| = |1 - 0| = 1
+
+Sum of pairwise differences:
+
+0 + 0 + 0 + 1 + 0 + 0 + 1 + 0 + 1 + 1 = 4
+
+Average pairwise difference:
+
+4 / 10 = 0.4
+
+So:
+
+[1,1,1,1,0] -> sample noise = 0.4
+
+Intuition:
+
+There are 4 correct outputs and 1 wrong output.
+The wrong output disagrees with each of the 4 correct outputs.
+So there are 4 disagreeing pairs out of 10 total pairs.
+
+Therefore:
+
+sample_noise = 4 / 10 = 0.4
+
+General binary formula:
+
+If there are n repeated outputs and k are correct, then:
+
+number of correct-wrong disagreeing pairs = k * (n-k)
+number of total pairs = C(n,2)
+
+So:
+
+sample_noise = k * (n-k) / C(n,2)
+
+For [1,1,1,1,0]:
+
+n = 5
+k = 4
+
+sample_noise = 4 * (5-4) / C(5,2)
+             = 4 * 1 / 10
+             = 0.4
+
+Recommendation: decomposing PDR loss into model-intrinsic loss and perturbation-induced loss
+
+User question:
+
+I want to evaluate PDR loss and distinguish which part is caused by the model itself and which part is caused by perturbation. What is a good approach?
+
+Chinese answer:
+
+我建议把 PDR 的 loss 分成三层，而不是只给一个总数：
+
+1. clean baseline loss:
+
+这是原始 clean prompt 下模型本来就会犯错的部分。
+它可以理解为模型本身能力、任务难度、采样随机性、评价器误差等共同造成的 baseline loss。
+
+公式：
+
+clean_performance = mean(clean repeated correctness)
+clean_baseline_loss = 1 - clean_performance
+
+2. perturbation-induced loss:
+
+这是扰动 prompt 相比 clean prompt 额外造成的性能下降。
+这才是更接近“由 perturbation 带来的 loss”的部分。
+
+公式：
+
+perturbed_performance = mean(perturbed repeated correctness)
+perturbed_loss = 1 - perturbed_performance
+perturbation_induced_loss = perturbed_loss - clean_baseline_loss
+
+等价地：
+
+perturbation_induced_loss = clean_performance - perturbed_performance
+
+也就是当前代码里的 corrected_PDR。
+
+3. sampling instability / sample noise:
+
+这是同一个 prompt 多次生成时，正确性本身是否稳定。
+它不应该被解释成额外 loss，而应该解释成 performance estimate 的不稳定性。
+
+公式：
+
+correctness_sample_noise = average_{i<j} |score_i - score_j|
+
+Recommended decomposition:
+
+For each task, report:
+
+clean_baseline_loss
+perturbation_induced_loss
+clean_sample_noise
+perturbed_sample_noise
+
+Example wording:
+
+The total perturbed-prompt loss can be decomposed into the clean-prompt baseline loss and the additional perturbation-induced loss:
+
+perturbed_loss = clean_baseline_loss + perturbation_induced_loss
+
+where:
+
+clean_baseline_loss = 1 - clean_performance
+perturbation_induced_loss = perturbed_loss - clean_baseline_loss
+
+This directly answers:
+
+- model/task baseline error: clean_baseline_loss
+- perturbation extra effect: perturbation_induced_loss
+- repeated-generation instability: sample_noise
+
+Using current recomputed V2 results:
+
+Overall:
+
+clean repeated performance = 0.9426
+perturbed repeated performance = 0.9395
+
+clean_baseline_loss = 1 - 0.9426 = 0.0574
+perturbed_loss = 1 - 0.9395 = 0.0605
+perturbation_induced_loss = 0.0605 - 0.0574 = 0.0031
+
+Interpretation:
+
+Most of the remaining loss is baseline clean-prompt loss:
+
+0.0574 comes from the clean prompt condition.
+0.0031 is the additional perturbation-induced loss.
+
+So under the repaired evaluation, the perturbation adds only a small amount of extra loss.
+
+Task-level decomposition from recomputed V2:
+
+factual_qa:
+
+clean_performance = 0.9789
+perturbed_performance = 0.9770
+clean_baseline_loss = 0.0211
+perturbation_induced_loss = 0.0020
+
+math_reasoning:
+
+clean_performance = 0.8776
+perturbed_performance = 0.8736
+clean_baseline_loss = 0.1224
+perturbation_induced_loss = 0.0040
+
+code_generation:
+
+clean_performance = 0.9712
+perturbed_performance = 0.9680
+clean_baseline_loss = 0.0288
+perturbation_induced_loss = 0.0032
+
+Recommended table for the paper:
+
+| task | clean performance | perturbed performance | clean baseline loss | perturbation-induced loss | interpretation |
+|---|---:|---:|---:|---:|---|
+| factual_qa | 0.9789 | 0.9770 | 0.0211 | 0.0020 | mostly baseline, tiny perturbation loss |
+| math_reasoning | 0.8776 | 0.8736 | 0.1224 | 0.0040 | larger baseline task difficulty, small perturbation loss |
+| code_generation | 0.9712 | 0.9680 | 0.0288 | 0.0032 | small baseline loss, small perturbation loss |
+
+Even better case-level decomposition:
+
+For each case:
+
+clean_pass_rate = mean(clean scores)
+perturbed_pass_rate = mean(perturbed scores)
+case_baseline_loss = 1 - clean_pass_rate
+case_perturbation_loss = clean_pass_rate - perturbed_pass_rate
+
+Then classify cases:
+
+1. stable clean correct:
+
+clean_pass_rate = 1.0
+
+The model can solve the clean prompt reliably.
+If perturbed_pass_rate drops, the loss is more plausibly perturbation-induced.
+
+2. stable clean wrong:
+
+clean_pass_rate = 0.0
+
+The model already fails the clean prompt.
+Perturbation cannot be blamed for this baseline failure.
+
+3. unstable clean:
+
+0.0 < clean_pass_rate < 1.0
+
+The model is intrinsically unstable on this case.
+Perturbation effects should be interpreted cautiously and compared against sample noise.
+
+4. perturbation harmful:
+
+perturbed_pass_rate < clean_pass_rate
+
+5. perturbation neutral:
+
+perturbed_pass_rate = clean_pass_rate
+
+6. perturbation helpful:
+
+perturbed_pass_rate > clean_pass_rate
+
+This classification is very useful because aggregate corrected PDR can hide the mechanism.
+
+Recommended metrics:
+
+At task level, report:
+
+- mean clean_baseline_loss
+- mean perturbation_induced_loss
+- harmful_case_share = share of cases where perturbed_pass_rate < clean_pass_rate
+- helpful_case_share = share of cases where perturbed_pass_rate > clean_pass_rate
+- neutral_case_share = share of cases where perturbed_pass_rate = clean_pass_rate
+- mean clean_sample_noise
+- mean perturbed_sample_noise
+
+Recommended interpretation logic:
+
+If clean_baseline_loss is large but perturbation_induced_loss is small:
+
+The task is hard for the model, but perturbations do not add much extra harm.
+
+If clean_baseline_loss is small but perturbation_induced_loss is large:
+
+The model can solve the clean task, but perturbations cause real robustness loss.
+
+If sample_noise is large:
+
+Single-sample PDR is unreliable; repeated sampling is necessary.
+
+If perturbation_induced_loss is smaller than sample_noise:
+
+The perturbation effect is weak relative to ordinary repeated-generation variability.
+
+If perturbation_induced_loss is larger than sample_noise:
+
+The perturbation effect is more likely to be a real robustness signal.
+
+Recommended final framing:
+
+不要把所有 perturbed loss 都归因于 perturbation。
+
+更好的写法是：
+
+模型在 clean prompt 下已有 baseline loss。PDR 的关键不是 perturbed prompt 的总 loss，而是 perturbed loss 相对于 clean baseline loss 的增量。我们将 clean baseline loss 视为模型/任务本身带来的错误，将 corrected PDR 视为 perturbation 额外带来的错误，并用 correctness sample noise 衡量 repeated-generation variability 对该估计的影响。
+
+In English-style formula:
+
+total_perturbed_loss = model_clean_baseline_loss + perturbation_induced_loss
+
+where:
+
+model_clean_baseline_loss = 1 - mean(clean repeated correctness)
+perturbation_induced_loss = mean(clean repeated correctness) - mean(perturbed repeated correctness)
+
+sample_noise is reported separately as uncertainty/instability, not as loss.
+
+Manual check of correct clean math cases
+
+User request:
+
+Check the math questions that were judged correct. Compare the model answer and the standard answer one by one.
+
+Checking scope:
+
+- Source CSV: results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+- Task: math_reasoning
+- Version: original clean prompt
+- sample_idx: 0
+- One canonical clean output per math case math_01 through math_50
+- Excluded the 6 manually confirmed true wrong cases:
+  math_08, math_09, math_18, math_21, math_24, math_33
+
+Summary:
+
+Total canonical clean math cases: 50
+Manual true wrong cases: 6
+Manual correct/equivalent cases checked below: 44
+
+Answer comparison table:
+
+| case | model final answer | standard answer | check |
+|---|---|---|---|
+| math_01 | 2 | 2 | exact match |
+| math_02 | 10 | 10 | exact match |
+| math_03 | \frac{9}{7} | \dfrac{9}{7} | equivalent, same fraction |
+| math_04 | i | i | exact match |
+| math_05 | 4 | 4 | exact match |
+| math_06 | 402 | 402 | exact match |
+| math_07 | [-2, 7] | x \in [-2,7] | equivalent interval notation |
+| math_10 | -\frac{1}{8} | -\frac{1}{8} | exact match |
+| math_11 | \frac{x + 2}{7} | \frac{x+2}{7} | equivalent after whitespace normalization |
+| math_12 | -15 | -15 | exact match |
+| math_13 | 10 | 10 | exact match |
+| math_14 | 8 | 8 | exact match |
+| math_15 | 75 | 75 | exact match |
+| math_16 | 5.5 | \frac{11}{2} | equivalent, 5.5 = 11/2 |
+| math_17 | -25 | -25 | exact match |
+| math_19 | 3 | 3 | exact match |
+| math_20 | 187.5 | 187.5 | exact match |
+| math_22 | 40.00 | \$40 | equivalent, same dollar amount |
+| math_23 | 5 | 5 | exact match |
+| math_25 | 3125 | 3125 | exact match |
+| math_26 | [0, \infty) | [0,\infty) | equivalent interval notation |
+| math_27 | \frac{1}{2} | .5 | equivalent, 1/2 = 0.5 |
+| math_28 | 12, 10, 6 | 12, 10, 6 | exact match |
+| math_29 | 5 | 5 | exact match |
+| math_30 | 16 | 16 | exact match |
+| math_31 | 2300 | 2300 | exact match |
+| math_32 | 5 | 5 | exact match |
+| math_34 | -13.5 | -13.5 | exact match |
+| math_35 | \frac{2187}{5625} | \frac{243}{625} | equivalent after simplifying by 9 |
+| math_36 | 2 | 2 | exact match |
+| math_37 | (-\sqrt{3}, \sqrt{3}) | (-\sqrt{3}, \sqrt{3}) | exact match |
+| math_38 | 23 | 23 | exact match |
+| math_39 | 49 | 49 | exact match |
+| math_40 | 2x^9 - 8x^7 + 9x^6 - 16x^5 - 12x^4 + 9x^3 - 24x^2 | 2x^9 - 8x^7 + 9x^6 - 16x^5 - 12x^4 + 9x^3 - 24x^2 | exact match |
+| math_41 | (-\infty, -8) \cup (8, \infty) | (-\infty,-8)\cup (8,\infty) | equivalent interval notation |
+| math_42 | 0 | 0 | exact match |
+| math_43 | 2 | 2 | exact match |
+| math_44 | 16 | 16 | exact match |
+| math_45 | \frac{1}{12} | \frac{1}{12} | exact match |
+| math_46 | 6 + 9i | 6+9i | equivalent after whitespace normalization |
+| math_47 | 2 | 2 | exact match |
+| math_48 | 20 | 20 | exact match |
+| math_49 | 7(x - 3)(x + 3) | 7(x+3) (x-3) | equivalent, factor order/spacing |
+| math_50 | y^4 - 2y^3 + 7y^2 + y - 5 | y^4-2y^3+7y^2+y-5 | equivalent after whitespace normalization |
+
+Notes on non-exact but correct cases:
+
+- math_03: \frac and \dfrac are the same mathematical fraction.
+- math_07: [-2, 7] and x \in [-2,7] describe the same solution set.
+- math_16: 5.5 equals 11/2.
+- math_22: 40.00 dollars equals $40.
+- math_26: [0, \infty) and [0,\infty) are the same interval.
+- math_27: 1/2 equals .5.
+- math_35: 2187/5625 simplifies by dividing numerator and denominator by 9, giving 243/625.
+- math_41: same interval, only spacing differs.
+- math_46: same complex number, only spacing differs.
+- math_49: same factored expression, factor order/spacing differs.
+- math_50: same polynomial, only spacing differs.
+
+Conclusion:
+
+After comparing model final answers with standard answers for the 44 manually correct clean math cases, they are either exact matches or mathematically equivalent expressions. This supports the earlier conclusion that the low stored math accuracy is mainly caused by evaluator false negatives, not by these answers being wrong.
+
+RQ1 interpretation using repaired PDR results, excluding open-ended writing
+
+User question:
+
+Based on the current new PDR results, return to RQ1:
+
+RQ1. Applying a noise-baseline correction (that is, subtracting the random variation arising from the model's own repeated generations), is the ranking of the five perturbation types (paraphrasing, reordering, formatting changes, context injection, and surface noise) by their effect on output semantic similarity consistent across the four task types (factual question answering, mathematical reasoning, code generation, and open-ended writing), or is this ranking itself task-dependent?
+
+Exclude open-ended writing, because PDR was not computed for it.
+
+Answer:
+
+Using the repaired PDR results and excluding open-ended writing, the ranking is task-dependent rather than consistent across tasks.
+
+Important scope clarification:
+
+The original RQ1 wording is about semantic similarity. The repaired PDR results measure task correctness / performance loss, not semantic similarity directly. Therefore, the PDR result should be presented as correctness-side evidence for RQ1, not as a direct semantic-similarity ranking.
+
+Tasks included:
+
+- factual_qa
+- math_reasoning
+- code_generation
+
+Task excluded:
+
+- open_ended_writing, because PDR/correctness was not computed for it.
+
+Repaired PDR data source:
+
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_report.md
+
+Corrected PDR by perturbation and task:
+
+factual_qa:
+
+paraphrase:          0.0072
+formatting:          0.0040
+context_injection:   0.0013
+reordering:         -0.0013
+surface_noise:      -0.0013
+
+math_reasoning:
+
+reordering:          0.0240
+paraphrase:          0.0160
+surface_noise:       0.0000
+formatting:         -0.0080
+context_injection:  -0.0120
+
+code_generation:
+
+paraphrase:          0.0200
+context_injection:   0.0040
+formatting:          0.0000
+surface_noise:       0.0000
+reordering:         -0.0080
+
+Ranking by harmful corrected PDR:
+
+factual_qa:
+
+paraphrase > formatting > context_injection > reordering ≈ surface_noise
+
+math_reasoning:
+
+reordering > paraphrase > surface_noise > formatting > context_injection
+
+code_generation:
+
+paraphrase > context_injection > formatting ≈ surface_noise > reordering
+
+Interpretation:
+
+The ranking is not stable across the three objective tasks.
+
+Paraphrasing is the most consistently harmful perturbation in the repaired PDR result:
+
+- factual_qa: highest corrected PDR
+- math_reasoning: second highest corrected PDR
+- code_generation: highest corrected PDR
+
+However, the rest of the ranking changes substantially by task:
+
+- reordering is the most harmful perturbation for math_reasoning, but is slightly beneficial/neutral for factual_qa and code_generation.
+- formatting is mildly harmful for factual_qa, neutral for code_generation, and slightly helpful for math_reasoning.
+- context_injection is mildly harmful for factual_qa and code_generation, but slightly helpful for math_reasoning.
+- surface_noise is essentially neutral under repaired PDR.
+
+Therefore, the answer to RQ1 under repaired PDR is:
+
+The perturbation ranking is task-dependent. There is no universal ranking of perturbation types across factual QA, mathematical reasoning, and code generation. Paraphrasing is the most consistently harmful perturbation across the three objective tasks, but the ordering of the remaining perturbation types varies by task.
+
+Suggested paper wording:
+
+After repairing the math and code evaluators, the PDR-based correctness analysis shows that perturbation effects are small in magnitude and task-dependent. Excluding open-ended writing, paraphrasing is the only perturbation that remains consistently harmful across factual QA, mathematical reasoning, and code generation. However, the complete ranking of perturbation types is not stable: reordering is most harmful for math reasoning but not for factual QA or code generation, while formatting, context injection, and surface noise are near-neutral or even slightly beneficial depending on the task. Thus, the repaired PDR evidence supports a task-dependent rather than universal perturbation ranking.
+
+Recommended caveat:
+
+Because PDR measures correctness loss rather than semantic similarity, this result should be used as task-performance evidence alongside the semantic-similarity/noise-corrected drift analysis. The semantic-similarity ranking and correctness-loss ranking may not be identical.
+
+Meaning of positive values in rq1_pdr_recomputed_v2_corrected_pdr_by_task_bars
+
+User question:
+
+In `rq1_pdr_recomputed_v2_corrected_pdr_by_task_bars`, what does a positive value mean? Does it mean loss appears after perturbation?
+
+Answer:
+
+Yes. A positive corrected PDR value means the perturbation condition has lower repeated performance than the clean condition.
+
+Formula:
+
+corrected_PDR = perturbed_loss - clean_loss
+
+Because:
+
+clean_loss = 1 - clean_performance
+perturbed_loss = 1 - perturbed_performance
+
+Therefore:
+
+corrected_PDR = (1 - perturbed_performance) - (1 - clean_performance)
+              = clean_performance - perturbed_performance
+
+So:
+
+If corrected_PDR > 0:
+
+clean_performance > perturbed_performance
+
+This means performance dropped after perturbation.
+In plain language: perturbation introduced additional loss.
+
+If corrected_PDR = 0:
+
+clean_performance = perturbed_performance
+
+This means no average performance change after perturbation.
+
+If corrected_PDR < 0:
+
+clean_performance < perturbed_performance
+
+This means the perturbed prompt performed better than the clean prompt in this run.
+It should not be interpreted as loss. It is a negative loss / improvement.
+
+Example from the figure:
+
+Math reasoning / reordering:
+
+corrected_PDR = +2.40 percentage points
+
+This means:
+
+clean repeated performance - perturbed repeated performance = 0.0240
+
+So after reordering perturbation, math reasoning performance dropped by 2.40 percentage points relative to clean prompt.
+
+Code generation / reordering:
+
+corrected_PDR = -0.80 percentage points
+
+This means:
+
+perturbed performance was 0.80 percentage points higher than clean performance.
+It is not a perturbation-induced loss; it is a small improvement in this run.
+
+Important wording:
+
+For positive bars, it is okay to say:
+
+"The perturbation induced additional loss."
+"Performance dropped after perturbation."
+
+For negative bars, do not say:
+
+"negative loss appeared"
+
+Better wording:
+
+"The perturbed prompt slightly improved performance relative to the clean prompt."
+"The corrected PDR is negative, indicating no harmful perturbation effect in this condition."
+
+For near-zero bars:
+
+Use:
+
+"No measurable average perturbation-induced loss."
+
+Recommended figure caption wording:
+
+Positive corrected PDR values indicate perturbation-induced performance loss relative to the clean prompt. Negative values indicate that perturbed prompts performed slightly better than clean prompts in repeated sampling. Values near zero indicate no measurable average perturbation effect.
+
+Concrete examples where math performance improved after perturbation
+
+User request:
+
+Math performance sometimes improves after perturbation. Find concrete examples and explain them.
+
+Source:
+
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_metrics.csv
+results/rq1_recomputed/rq1_pdr_50x5_recomputed_v2_generation_scores.csv
+results/generations_rq1_pdr_newloss_three_task_50x5_combined.csv
+
+Scope:
+
+- task: math_reasoning
+- repaired V2 scoring
+- compare original clean 5-sample pass rate with perturbed 5-sample pass rate
+
+Overall math case-level direction:
+
+Among 250 math case-perturbation units:
+
+neutral: 194
+harmful: 31
+helpful: 25
+
+So helpful cases exist, but they are not dominant. Most cases are neutral, and harmful cases are slightly more common than helpful cases.
+
+Important interpretation:
+
+When perturbed performance is higher than clean performance, it does not automatically mean the perturbation is intrinsically helpful.
+In many cases, this reflects repeated-generation variability: the clean prompt sampled several wrong reasoning paths, while the perturbed prompt sampled more correct reasoning paths.
+
+Example 1: paraphrase improves math_09
+
+case_id:
+
+promptrobust_pdr_paraphrase_math_09
+
+Perturbation:
+
+paraphrase
+
+Problem:
+
+Four distinct integers a, b, c and d have the property that when added in pairs, the sums 10, 18, 19, 20, 21, and 29 are obtained. What are the four integers in increasing order?
+
+Standard answer:
+
+4, 6, 14, 15
+
+Clean prompt instruction:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Perturbed prompt instruction:
+
+Resolve the mathematics problem. Place the final answer exclusively on the last line.
+
+Clean outputs:
+
+sample 1: 1, 9, 10, 19 -> wrong
+sample 2: 3, 7, 8, 21 -> wrong
+sample 3: 4, 6, 14, 15 -> correct
+sample 4: 3, 5, 15, 16 -> wrong
+sample 5: 4, 6, 14, 15 -> correct
+
+Clean pass rate:
+
+2/5 = 0.4
+
+Perturbed outputs:
+
+sample 1: 4, 6, 14, 15 -> correct
+sample 2: 4, 6, 14, 15 -> correct
+sample 3: 4, 6, 14, 15 -> correct
+sample 4: 4, 6, 14, 15 -> correct
+sample 5: 4, 6, 14, 15 -> correct
+
+Perturbed pass rate:
+
+5/5 = 1.0
+
+Improvement:
+
+1.0 - 0.4 = +0.6
+
+Explanation:
+
+The clean samples often chose incorrect integer sets whose pairwise sums do not match the required six sums. The paraphrased instruction did not change the math problem, but in this run all five perturbed generations followed the correct reasoning path. This is a clear performance improvement in the sample, but it should be interpreted cautiously as sampling variability plus possible prompt wording effect, not definitive evidence that paraphrasing always helps this problem.
+
+Example 2: context injection improves math_22
+
+case_id:
+
+promptrobust_pdr_context_injection_math_22
+
+Perturbation:
+
+context_injection
+
+Problem:
+
+Mike paid $1.25 for a stamp three years ago. He was just offered double that amount for the stamp. Assuming the stamp's offer price doubles every three years, how many dollars will he be offered in 12 more years?
+
+Standard answer:
+
+$40
+
+Clean prompt instruction:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Perturbed prompt instruction:
+
+Solve the mathematics problem. Put the final answer only on the last line and false is not true.
+
+Clean outputs:
+
+sample 1: $20.00 -> wrong
+sample 2: 20 -> wrong
+sample 3: $20.00 -> wrong
+sample 4: 20.00 -> wrong
+sample 5: 20.00 -> wrong
+
+Clean pass rate:
+
+0/5 = 0.0
+
+Perturbed outputs:
+
+sample 1: 40 -> correct
+sample 2: 20 -> wrong
+sample 3: 40.00 -> correct
+sample 4: $40.00 -> correct
+sample 5: 20.00 -> wrong
+
+Perturbed pass rate:
+
+3/5 = 0.6
+
+Improvement:
+
+0.6 - 0.0 = +0.6
+
+Explanation:
+
+The clean outputs repeatedly start from the original paid price $1.25 and apply four future doublings, producing $20. The correct reasoning starts from the current offer, which is already double the original price: $2.50. Then 12 more years means four more doublings, so $2.50 * 16 = $40. The context-injected prompt did not add relevant mathematical information, but in this run it sampled the correct interpretation more often.
+
+Example 3: formatting improves math_35
+
+case_id:
+
+promptrobust_pdr_formatting_math_35
+
+Perturbation:
+
+formatting
+
+Problem:
+
+Consider the geometric sequence 125/9, 25/3, 5, 3, ... What is the eighth term of the sequence? Express your answer as a common fraction.
+
+Standard answer:
+
+243/625
+
+Clean prompt instruction:
+
+Solve the mathematics problem. Put the final answer only on the last line.
+
+Perturbed prompt instruction:
+
+Question: Solve the mathematics problem. Put the final answer only on the last line. Answer:
+
+Clean outputs:
+
+sample 1: 2187/5625 -> correct equivalent, simplifies to 243/625
+sample 2: 2187/5625 -> correct equivalent
+sample 3: 29/75 -> wrong
+sample 4: 5/13 -> wrong
+sample 5: 27/125 -> wrong
+
+Clean pass rate:
+
+2/5 = 0.4
+
+Perturbed outputs:
+
+sample 1: 2187/5625 -> correct equivalent
+sample 2: 2187/5625 -> correct equivalent
+sample 3: 243/15625 -> wrong
+sample 4: 243/625 -> correct
+sample 5: 243/625 -> correct
+
+Perturbed pass rate:
+
+4/5 = 0.8
+
+Improvement:
+
+0.8 - 0.4 = +0.4
+
+Explanation:
+
+The task requires repeated multiplication by the common ratio 3/5. Wrong outputs come from simplification or exponent arithmetic errors. The formatted prompt sampled more correct simplifications in this run.
+
+Example 4: surface noise improves math_09
+
+case_id:
+
+promptrobust_pdr_surface_noise_math_09
+
+Perturbation:
+
+surface_noise
+
+Problem:
+
+Same pairwise-sums integer problem as math_09.
+
+Standard answer:
+
+4, 6, 14, 15
+
+Perturbed prompt instruction:
+
+Solve the matheematics prolem. Put the fnial answer onky on the last line.
+
+Clean outputs:
+
+sample 1: 3, 7, 14, 15 -> wrong
+sample 2: 1, 9, 10, 19 -> wrong
+sample 3: 4, 6, 14, 15 -> correct
+sample 4: 1, 9, 10, 19 -> wrong
+sample 5: 2, 8, 10, 19 -> wrong
+
+Clean pass rate:
+
+1/5 = 0.2
+
+Perturbed outputs:
+
+sample 1: 3, 7, 11, 25 -> wrong
+sample 2: 4, 6, 14, 15 -> correct
+sample 3: 4, 6, 14, 15 -> correct
+sample 4: 4, 6, 14, 15 -> correct
+sample 5: 4, 6, 14, 15 -> correct
+
+Perturbed pass rate:
+
+4/5 = 0.8
+
+Improvement:
+
+0.8 - 0.2 = +0.6
+
+Explanation:
+
+Even with typo noise in the instruction, the model more often found the correct integer set in the perturbed samples. This should not be interpreted as surface noise being generally helpful; it is a clear example of repeated-generation stochasticity where the perturbed condition happened to sample better reasoning paths.
+
+Overall conclusion:
+
+The math improvement cases are real in the sample-level data: perturbed pass rates can exceed clean pass rates for some case-perturbation pairs.
+
+However, the safest interpretation is:
+
+Some perturbations appear helpful on individual math cases because the model's reasoning is stochastic. The perturbed prompt can shift the sampled reasoning path and occasionally increase the pass rate. Since helpful cases are not dominant overall and many improvements occur on intrinsically unstable problems, these should be described as task/case-level variability rather than evidence that perturbations systematically improve math reasoning.
+
+Recommended paper wording:
+
+In several math reasoning cases, perturbed prompts achieved higher repeated pass rates than clean prompts. Manual inspection shows that these improvements typically occur on intrinsically unstable problems where clean generations alternate between correct and incorrect reasoning paths. The perturbation sometimes shifts the model toward the correct path, but this effect is not systematic: among 250 math case-perturbation units, 194 were neutral, 31 were harmful, and 25 were helpful. We therefore treat negative corrected PDR values as evidence of stochastic task-level variability rather than as a general beneficial effect of perturbation.
